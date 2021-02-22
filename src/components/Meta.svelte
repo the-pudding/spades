@@ -1,3 +1,7 @@
+<script>
+  export let copy;
+</script>
+
 <svelte:head>
   <title>Svelte Starter</title>
   <meta charset="utf-8" />

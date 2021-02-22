@@ -1,13 +1,18 @@
 {
   "google": [
       {
-        "id": "1352iFuTSDDFPNAXBbOaEXkF8mCdjPu6B43hpUF2P3C4",
+        "id": "13gaUEnapK0qVop695orryf4jqxTGcT4a4Pu-JbK8Lag",
         "filepath": "src/data/doc.json"
 			},
 			{
-				"id": "1te65h_nywgXVAzvV-9E5fmHGblcKvctf_cNZgeam9Tk",
+				"id": "1p4RwcRKIkUCUbUcoCJIo_U3VK729AQqz_VLpu7Bevbs",
 				"gid": "0",
-				"filepath": "src/data/sheet.csv"
+				"filepath": "src/data/bands.csv"
+			},
+			{
+				"id": "1ZLbcMr-adwyiyH01x9wwdnQtb5QdR-YyZEasxI3XILo",
+				"gid": "0",
+				"filepath": "src/data/members.csv"
 			}
     ]
 }
