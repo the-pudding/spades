@@ -5,8 +5,7 @@
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
 
-  const prop = "followers";
-  let visible = false;
+  let active = false;
 
   const clean = (d) => ({
     ...d,
@@ -20,7 +19,6 @@
   };
 
   const bandData = bands.map(clean);
-  // const memberData = members.map(clean);
   const memberData = members.map(clean).map((d) => ({
     ...d,
     ...getBandData(d.band),
@@ -35,10 +33,12 @@
     ...bandData.map((d) => d.followers)
   );
   const yDomain = [0, max];
+  const xDomain = [0, 100];
+  const xRange = [0, ratioX * 100];
+  const yRange = [ratioY * 100, 0];
   const yScale = scalePow().exponent(0.25);
 </script>
 
-<button on:click="{() => (visible = !visible)}">Toggle</button>
 <div class="chart-container">
   <figure style="padding-bottom: {100 / fixedAspectRatio}%">
     <LayerCake
@@ -46,35 +46,35 @@
       x="rank"
       y="followers"
       yDomain="{yDomain}"
-      xDomain="{[0, 100]}"
+      xDomain="{xDomain}"
       yScale="{yScale}"
-      xRange="{[0, ratioX * 100]}"
-      yRange="{[ratioY * 100, 0]}"
+      xRange="{xRange}"
+      yRange="{yRange}"
       position="absolute"
       ssr="{true}"
       percentRange="{true}"
-      custom="{{ fixedAspectRatio, visible }}"
+      custom="{{ fixedAspectRatio, active }}"
     >
       <Html>
-        <Dots r="{6}" />
+        <Dots r="{8}" />
       </Html>
     </LayerCake>
     <LayerCake
       data="{bandData}"
       x="rank"
       y="followers"
-      xDomain="{[0, 100]}"
+      xDomain="{xDomain}"
       yScale="{yScale}"
       yDomain="{yDomain}"
-      xRange="{[0, ratioX * 100]}"
-      yRange="{[ratioY * 100, 0]}"
+      xRange="{xRange}"
+      yRange="{yRange}"
       position="absolute"
       ssr="{true}"
       percentRange="{true}"
-      custom="{{ fixedAspectRatio }}"
+      custom="{{ fixedAspectRatio, active, type: 'band' }}"
     >
       <Html>
-        <Dots r="{6}" />
+        <Dots r="{4}" bind:active />
       </Html>
     </LayerCake>
   </figure>
@@ -90,6 +90,7 @@
   figure {
     position: relative;
     width: 100%;
-    background: pink;
+    border-bottom: 2px dashed gray;
+    border-right: 2px dashed gray;
   }
 </style>

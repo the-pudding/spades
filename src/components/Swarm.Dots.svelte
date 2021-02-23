@@ -4,7 +4,7 @@
 
   export let r = 4;
 
-  const { data, xGet, yGet, rGet, xScale, yScale, rScale } = getContext(
+  const { data, xGet, yGet, rGet, xScale, yScale, rScale, custom } = getContext(
     "LayerCake"
   );
   let simData = [];
@@ -36,6 +36,8 @@
   };
 
   $: $data, runSim();
+
+  $: ratio = $custom.fixedAspectRatio;
 
   onMount(() => {});
 </script>

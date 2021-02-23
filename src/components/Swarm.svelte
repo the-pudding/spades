@@ -51,6 +51,7 @@
       position="absolute"
       ssr="{true}"
       percentRange="{true}"
+      custom="{{ fixedAspectRatio }}"
     >
       <Html>
         <Dots r="{4}" />
