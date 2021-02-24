@@ -1,14 +1,14 @@
 <script>
   import { getContext, createEventDispatcher } from "svelte";
   import { tweened } from "svelte/motion";
-  import { cubicInOut } from "svelte/easing";
+  import { cubicOut } from "svelte/easing";
 
   export let d;
   export let r = 4;
 
   const dispatch = createEventDispatcher();
   const { xScale, yScale, custom, width, height } = getContext("LayerCake");
-  const pos = tweened(null, { duration: 500, easing: cubicInOut });
+  const pos = tweened(null, { duration: 750, easing: cubicOut });
   const { name, band, imageUrl1 } = d;
 
   $: w = r / $custom.fixedAspectRatio;
@@ -16,9 +16,9 @@
   $: active = $custom.active === band;
   $: propX = active ? "rank" : "bandRank";
   $: propY = active ? "followers" : "bandFollowers";
-  $: pos.set([d[propX] || d.rank, d[propY] || d.followers]);
-  $: x = ($xScale($pos[0]) / 100) * $width;
-  $: y = ($yScale($pos[1]) / 100) * $height;
+  $: pos.set([$xScale(d[propX] || d.rank), $yScale(d[propY] || d.followers)]);
+  $: x = ($pos[0] / 100) * $width;
+  $: y = ($pos[1] / 100) * $height;
 
   const onEnter = () => {
     dispatch("enter", name);
@@ -39,7 +39,7 @@
   <!-- <div class="inner" style="background-image: url({d.imageUrl1});">
     <span>{d.spotifyName}</span>
   </div> -->
-  <p>{d.spotifyName}</p>
+  <p>{d.name}</p>
 </div>
 
 <style>

@@ -15,12 +15,12 @@
 
 <Intro copy="{copy}" />
 
-<section>
-  <Swarm />
-</section>
 <!-- <section>
-  <Scatter />
+  <Swarm />
 </section> -->
+<section>
+  <Scatter />
+</section>
 <!-- <section>
   <Scatter2 />
 </section> -->
