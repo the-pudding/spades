@@ -16,8 +16,6 @@
   const getDelta = (d) => {
     const comp = getBandAmount(d.band);
     return +d[prop] - comp;
-    // const fraction = +d[prop] / comp;
-    // return fraction;
   };
 
   const data = members

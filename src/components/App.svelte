@@ -18,9 +18,9 @@
 <section>
   <Swarm />
 </section>
-<section>
+<!-- <section>
   <Scatter />
-</section>
+</section> -->
 <!-- <section>
   <Scatter2 />
 </section> -->
