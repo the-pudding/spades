@@ -43,13 +43,14 @@
 </script>
 
 <p class="zero" style="left: {$xScale(0) / 2}%"></p>
-{#each simData as { x, y, id, name, delta, imageUrl1, followers }}
+{#each simData as { x, y, id, name, delta, image, followers }}
   <div
     class:bigger="{delta > 0}"
     data-name="{name}"
     data-delta="{delta}"
     style="width: {$rScale(followers)}%; height: {$rScale(followers) *
-      2}%; left: {x / 2}%; top: {y}%; background-image: url({imageUrl1});"
+      2}%; left: {x /
+      2}%; top: {y}%; background-image: url('https://i.scdn.co/image/{image}');"
   >
     <span>{name}</span>
   </div>
@@ -66,6 +67,7 @@
     transform: translate(-50%, -50%);
     transition: transform 250ms;
     transform-origin: 50% 50%;
+    filter: grayscale(100%);
   }
   div:hover {
     transform: translate(-50%, -50%) scale(2);

@@ -11,9 +11,9 @@
 
 <Meta />
 
-<Header />
+<!-- <Header /> -->
 
-<Intro copy="{copy}" />
+<!-- <Intro copy="{copy}" /> -->
 
 <!-- <section>
   <Swarm />
@@ -28,6 +28,6 @@
 <!-- <Footer /> -->
 <style>
   section {
-    margin: 2em auto;
+    margin: 0 auto;
   }
 </style>

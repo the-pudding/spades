@@ -13,12 +13,16 @@
 
   $: w = r / $custom.fixedAspectRatio;
   $: h = w;
+  $: x = $custom.xProp;
+  $: y = $custom.yProp;
   $: active = $custom.active === band;
-  $: propX = active ? "rank" : "bandRank";
-  $: propY = active ? "followers" : "bandFollowers";
-  $: pos.set([$xScale(d[propX] || d.rank), $yScale(d[propY] || d.followers)]);
-  $: x = ($pos[0] / 100) * $width;
-  $: y = ($pos[1] / 100) * $height;
+  $: propX = active ? x : `band${x}`;
+  $: propY = active ? y : `band${y}`;
+
+  $: pos.set([$xScale(d[propX] || d[x]), $yScale(d[propY] || d[y])]);
+  $: left = ($pos[0] / 100) * $width;
+  $: top = ($pos[1] / 100) * $height;
+  $: style = `transform: translate(${left}px, ${top}px);`;
 
   const onEnter = () => {
     dispatch("enter", name);
@@ -32,13 +36,10 @@
   class="outer"
   class:band="{$custom.type === 'band'}"
   class:highlight="{active}"
-  style="transform: translate({x}px, {y}px);"
+  style="{style}"
   on:mouseenter="{onEnter}"
   on:mouseout="{onExit}"
 >
-  <!-- <div class="inner" style="background-image: url({d.imageUrl1});">
-    <span>{d.spotifyName}</span>
-  </div> -->
   <p>{d.name}</p>
 </div>
 
@@ -66,17 +67,11 @@
     transform: translate(-50%, -50%);
     width: 100%;
     height: 100%;
-    transition: all 250ms ease-in-out;
+    transition: transform 250ms ease-in-out;
     transform-origin: 50% 50%;
+    will-change: transform;
   }
 
-  /* .outer:hover {
-    z-index: 1000;
-  }
-
-  .outer:hover .inner {
-    transform: translate(-50%, -50%) scale(4);
-  } */
   p {
     font-size: 1em;
     background: yellow;
@@ -84,6 +79,7 @@
     border: 1px solid black;
     padding: 0 0.25em;
   }
+
   span {
     display: none;
     width: 10em;
