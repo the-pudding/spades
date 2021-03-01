@@ -3,12 +3,12 @@
   <head>
 		<!-- Meta.svelte -->
 		<title>Svelte Starter</title><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="description" content=""><meta name="author" content=""><meta name="news_keywords" content=""><meta property="og:title" content=""><meta property="og:site_name" content=""><meta property="og:url" content=""><meta property="og:description" content=""><meta property="og:type" content="article"><meta property="og:locale" content="en_US"><meta property="og:image" content=""><meta property="og:image:type" content="image/jpeg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="600"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content=""><meta name="twitter:creator" content=""><meta name="twitter:title" content=""><meta name="twitter:description" content=""><meta name="twitter:image:src" content=""><meta name="robots" content="max-image-preview:large"><link rel="canonical" href="">
-		<link rel="stylesheet" href="assets/styles/normalize.css?version=1613742057766" />
+		<link rel="stylesheet" href="assets/styles/normalize.css?version=1614627515596" />
 		<!-- Pudding fonts -->
-		<link rel="stylesheet" href="assets/styles/font.css?version=1613742057766" />
-		<link rel="stylesheet" href="assets/styles/water.css?version=1613742057766" />
-		<link rel="stylesheet" href="assets/styles/global.css?version=1613742057766" />
-		<link rel="stylesheet" href="build/bundle.css?version=1613742057766" />
+		<link rel="stylesheet" href="assets/styles/font.css?version=1614627515596" />
+		<link rel="stylesheet" href="assets/styles/water.css?version=1614627515596" />
+		<link rel="stylesheet" href="assets/styles/global.css?version=1614627515596" />
+		<link rel="stylesheet" href="build/bundle.css?version=1614627515596" />
   </head>
 
   <body>
@@ -17,146 +17,370 @@
 			<!-- App.svelte -->
       
 
-<header><div class="wordmark svelte-c6yjz3"><a href="https://pudding.cool" class="svelte-c6yjz3"><?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="wordmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 192.6 50" style="enable-background:new 0 0 192.6 50;" xml:space="preserve">
-<g>
-	<path class="st0" d="M150.1,9.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S148.6,9.5,150.1,9.5z"/>
-	<path class="st0" d="M147.2,17.3h5.6v18.2h-5.6V17.3z"/>
-	<path class="st0" d="M77.1,9.5h-1.9h-7v19.3v6.7h5.6v-6.7v-1.4h1.4h1.9c4.9,0,8.9-4,8.9-8.9S82.1,9.5,77.1,9.5z M77.1,21.8h-1.9
-		h-1.4v-1.4v-3.8v-1.4h1.4h1.9c1.8,0,3.3,1.5,3.3,3.3S79,21.8,77.1,21.8z"/>
-	<path class="st0" d="M105.7,17.6h-5.6v8.9c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0,4.9,4,8.9,8.9,8.9
-		s8.9-4,8.9-8.9V17.6z"/>
-	<path class="st0" d="M164.1,17.6c-4.9,0-8.9,4-8.9,8.9v8.9h5.6v-8.9c0-1.8,1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3v8.9h5.6v-8.9
-		C173,21.6,169,17.6,164.1,17.6z"/>
-	<path class="st0" d="M119.7,16.2v1.4h-1.4h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3
-		C119.7,12.8,119.7,16.2,119.7,16.2z M119.8,24.6v3.8v1.4h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4V24.6z"/>
-	<path class="st0" d="M139.3,16.2v1.4h-1.4H136c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3V16.2z M139.4,24.6v3.8
-		v1.4h-1.5H136c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4v1.4H139.4z"/>
-	<path class="st0" d="M183.7,17.6c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h1.4v1.4v0.9v1.4v1.4c0,1.8-1.5,3.3-3.3,3.3
-		s-3.3-1.5-3.3-3.3V38l-5.6,3.3c0.4,4.5,4.2,8.1,8.9,8.1c4.9,0,8.9-4,8.9-8.9v-1.4v-2.3V17.6h-7H183.7z M187,23.4v1.4v3.8V30h-1.4
-		h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9C185.6,23.4,187,23.4,187,23.4z"/>
-	<path class="st0" d="M28.6,17.6c-1.2,0-2.3,0.2-3.3,0.6V9.5l-5.6,3.3v13.7v2v6.9h5.6v-6.9l0,0v-2c0-1.8,1.5-3.3,3.3-3.3
-		s3.3,1.5,3.3,3.3v8.9h5.6v-8.9C37.5,21.6,33.5,17.6,28.6,17.6z"/>
-	<path class="st0" d="M17.8,9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5z"/>
-	<path class="st0" d="M48.3,30.2c-0.4,0-1.2-0.1-1.8-0.4l5.2-2.1l5.6-2.3l-1-2.3l-0.1-0.2c-0.1-0.3-0.3-0.6-0.5-1
-		c-0.1-0.1-0.1-0.2-0.2-0.3c0,0,0-0.1-0.1-0.1l-0.1-0.1l-0.1-0.1c-1.6-2.2-4-3.5-6.7-3.7l0,0h-0.6c-4.9,0-8.9,4-8.9,8.9
-		c0,0.4,0,0.9,0.1,1.4l0,0V28c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.2,0.8v0.1v0.1c0.1,0.3,0.2,0.7,0.4,1v0.1v0.1
-		c0.1,0.3,0.3,0.5,0.4,0.8c0,0.1,0.1,0.1,0.1,0.2l0,0c0.1,0.2,0.3,0.4,0.4,0.6c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1
-		c1.7,2.1,4.4,3.4,7.2,3.4h6.1v-5.2C54.5,30.2,50.6,30.2,48.3,30.2L48.3,30.2z M56.2,22.9L56.2,22.9L56.2,22.9z M44.6,25.7
-		L44.6,25.7l-0.2,0.1c0.2-1.9,1.8-3.5,3.7-3.5c0.9,0,1.8,0.4,2.4,0.9L46.2,25L44.6,25.7L44.6,25.7z"/>
-</g>
-</svg></a></div>
-</header>
 
-<section id="demo" class="svelte-yrsd42">
-  <div class="svelte-yrsd42"><h1>This is a headline from a copy doc</h1></div>
 
-  <div class="svelte-yrsd42"><p>Hello svelter! Here is an inline svg icon:
-      
-      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-feather svelte-1l6t571" style="transform: rotate(0deg);"><g><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></g></svg></p></div>
 
-  <div class="svelte-yrsd42"><p>A table from CSV data</p>
-    <table><thead><tr><th class="svelte-yrsd42">Name</th>
-          <th class="svelte-yrsd42">Value</th></tr></thead>
-      <tbody>
-        <tr><td class="svelte-yrsd42">Russell</td>
-            <td class="svelte-yrsd42">1</td>
-          </tr><tr><td class="svelte-yrsd42">Amelia</td>
-            <td class="svelte-yrsd42">2</td>
-          </tr></tbody></table></div>
 
-  <div class="svelte-yrsd42"><p>An image from &quot;public/assets&quot;</p>
-    
-    <img alt="sad toast" src="assets/toast.png" class="svelte-yrsd42"></div>
 
-  <div class="svelte-yrsd42"><p>A server-side rendered chart using Layercake</p>
-    
-    <div class="chart-container svelte-1sls8yb"><figure style="padding-bottom: 100%" class="svelte-1sls8yb"><div class="layercake-container svelte-1ll0j6t" style="
+<section class="svelte-1gp4gj6"><div class="chart-container svelte-yl29c5"><figure style="padding-bottom: NaN%" class="svelte-yl29c5"><div class="layercake-container svelte-1ll0j6t" style="
 			position:absolute;
 			top:0;right:0;bottom:0;left:0;
 			
-		"><svg viewBox="0 0 100 100" preserveAspectRatio="none" style="top: 0px; right:0px; bottom:0px; left:0px;width:calc(100% - 0px);height:calc(100% - 0px);" class="svelte-ocozda"><defs></defs><g><circle cx="0" cy="100" r="4"></circle><circle cx="66.66666666666666" cy="55.55555555555556" r="4"></circle><circle cx="100" cy="0" r="4"></circle></g></svg>
-      <div class="layercake-layout-html svelte-1u9nfei" style="top: 0px; right:0px; bottom:0px; left:0px;"><p style="left: 0%; top: 100%;" class="svelte-omfgrc">A</p><p style="left: 66.66666666666666%; top: 55.55555555555556%;" class="svelte-omfgrc">B</p><p style="left: 100%; top: 0%;" class="svelte-omfgrc">C</p>
-</div></div></figure>
+		"><div class="layercake-layout-html svelte-1u9nfei" style="top: 0px; right:0px; bottom:0px; left:0px;"><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 59.591555474576765px);"><p class="svelte-8zwmy5">Daron Jones</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 59.591555474576765px);"><p class="svelte-8zwmy5">Marvin &quot;Slim&quot; Scandrick</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 59.591555474576765px);"><p class="svelte-8zwmy5">Mike Marcel Keith</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 59.591555474576765px);"><p class="svelte-8zwmy5">Q Parker</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 64.03932393460674px);"><p class="svelte-8zwmy5">Irish Grinstead</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 64.03932393460674px);"><p class="svelte-8zwmy5">LeMisha Grinstead</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 64.03932393460674px);"><p class="svelte-8zwmy5">Meelah</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 52.976589900493856px);"><p class="svelte-8zwmy5">Chris Kirkpatrick</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 52.976589900493856px);"><p class="svelte-8zwmy5">JC Chasez</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 52.976589900493856px);"><p class="svelte-8zwmy5">Joey Fatone</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 52.976589900493856px);"><p class="svelte-8zwmy5">Justin Timberlake</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 52.976589900493856px);"><p class="svelte-8zwmy5">Lance Bass</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 29.776814957106133px);"><p class="svelte-8zwmy5">Ashton Irwin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 29.776814957106133px);"><p class="svelte-8zwmy5">Calum Hood</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 29.776814957106133px);"><p class="svelte-8zwmy5">Luke Hemmings</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 29.776814957106133px);"><p class="svelte-8zwmy5">Michael Clifford</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(42.42424242424242px, 84.06057685219912px);"><p class="svelte-8zwmy5">&quot;Ritchie&quot; Neville Dobson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(42.42424242424242px, 84.06057685219912px);"><p class="svelte-8zwmy5">Abz Love</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(42.42424242424242px, 84.06057685219912px);"><p class="svelte-8zwmy5">Jason Paul &quot;J&quot; Brown</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(42.42424242424242px, 84.06057685219912px);"><p class="svelte-8zwmy5">Scott Robinson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(42.42424242424242px, 84.06057685219912px);"><p class="svelte-8zwmy5">Sean Conlon</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 68.16063209717808px);"><p class="svelte-8zwmy5">Drew Lachey</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 68.16063209717808px);"><p class="svelte-8zwmy5">Jeff Timmons</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 68.16063209717808px);"><p class="svelte-8zwmy5">Justin Jeffre</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 68.16063209717808px);"><p class="svelte-8zwmy5">Nick Lachey</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 66.7492021231075px);"><p class="svelte-8zwmy5">Melanie Blatt</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 66.7492021231075px);"><p class="svelte-8zwmy5">Natalie Appleton</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 66.7492021231075px);"><p class="svelte-8zwmy5">Nicole Appleton</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 66.7492021231075px);"><p class="svelte-8zwmy5">Shaznay Lewis</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 66.7492021231075px);"><p class="svelte-8zwmy5">Simone Rainford</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(94.94949494949495px, 37.85723240599525px);"><p class="svelte-8zwmy5">Henry Santos</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(94.94949494949495px, 37.85723240599525px);"><p class="svelte-8zwmy5">Lenny Santos</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(94.94949494949495px, 37.85723240599525px);"><p class="svelte-8zwmy5">Max Santos</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(94.94949494949495px, 37.85723240599525px);"><p class="svelte-8zwmy5">Romeo Santos</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(8.080808080808081px, 71.97005078765588px);"><p class="svelte-8zwmy5">Darryl Anthony</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(8.080808080808081px, 71.97005078765588px);"><p class="svelte-8zwmy5">Dion Allen</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(8.080808080808081px, 71.97005078765588px);"><p class="svelte-8zwmy5">Kenny Terry</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(8.080808080808081px, 71.97005078765588px);"><p class="svelte-8zwmy5">Marc Nelson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(8.080808080808081px, 71.97005078765588px);"><p class="svelte-8zwmy5">Shawn Rivera</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(29.292929292929294px, 63.32348939202289px);"><p class="svelte-8zwmy5">J-Boog</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(29.292929292929294px, 63.32348939202289px);"><p class="svelte-8zwmy5">Lil&#39; Fizz</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(29.292929292929294px, 63.32348939202289px);"><p class="svelte-8zwmy5">Omarion</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(29.292929292929294px, 63.32348939202289px);"><p class="svelte-8zwmy5">Raz-B</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 40.52055093029081px);"><p class="svelte-8zwmy5">AJ McLean</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 40.52055093029081px);"><p class="svelte-8zwmy5">Brian Littrell</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 40.52055093029081px);"><p class="svelte-8zwmy5">Howie D</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 40.52055093029081px);"><p class="svelte-8zwmy5">Kevin Richardson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 40.52055093029081px);"><p class="svelte-8zwmy5">Nick Carter</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 64.15008255548132px);"><p class="svelte-8zwmy5">Keren Woodward</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 64.15008255548132px);"><p class="svelte-8zwmy5">Sara Dallin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 64.15008255548132px);"><p class="svelte-8zwmy5">Siobhan Fahey</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(12.121212121212121px, 78.73486796579967px);"><p class="svelte-8zwmy5">Christian Burns</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(12.121212121212121px, 78.73486796579967px);"><p class="svelte-8zwmy5">Mark Barry</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(12.121212121212121px, 78.73486796579967px);"><p class="svelte-8zwmy5">Stephen &quot;Ste&quot; McNally</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 48.668317080895626px);"><p class="svelte-8zwmy5">Carlos Pena Vega</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 48.668317080895626px);"><p class="svelte-8zwmy5">James Maslow</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 48.668317080895626px);"><p class="svelte-8zwmy5">Kendall Schmidt</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 48.668317080895626px);"><p class="svelte-8zwmy5">Logan Henderson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(32.323232323232325px, 9.840074175219582px);"><p class="svelte-8zwmy5">JENNIE</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(32.323232323232325px, 9.840074175219582px);"><p class="svelte-8zwmy5">Jisoo</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(32.323232323232325px, 9.840074175219582px);"><p class="svelte-8zwmy5">Lisa</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(32.323232323232325px, 9.840074175219582px);"><p class="svelte-8zwmy5">Rosé</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 63.092402225766044px);"><p class="svelte-8zwmy5">&quot;Black&quot; Hannibal</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 63.092402225766044px);"><p class="svelte-8zwmy5">Eric Williams</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 63.092402225766044px);"><p class="svelte-8zwmy5">Mark Middleton</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 63.092402225766044px);"><p class="svelte-8zwmy5">Teddy Riley</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.77512276720363px);"><p class="svelte-8zwmy5">Michael McCary</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.77512276720363px);"><p class="svelte-8zwmy5">Nathan Morris</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.77512276720363px);"><p class="svelte-8zwmy5">Shawn Stockman</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.77512276720363px);"><p class="svelte-8zwmy5">Wanya Morris</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Charmayne Maxena &quot;Maxee&quot; Maxwell</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Kina Cosper</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Kymberli Wright</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Monica &quot;Mimi&quot; Doby</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Nicci Gilbert</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Racquel Roberts</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Teisha Brown</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">j-hope</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">Jimin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">Jin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">Jungkook</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">RM</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">SUGA</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">V</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 67.74748932391478px);"><p class="svelte-8zwmy5">Bryan Abrams</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 67.74748932391478px);"><p class="svelte-8zwmy5">Kevin Thornton</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 67.74748932391478px);"><p class="svelte-8zwmy5">Mark Calderon</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 67.74748932391478px);"><p class="svelte-8zwmy5">Sam Watters</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 64.7644724751953px);"><p class="svelte-8zwmy5">Aubrey O&#39;Day</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 64.7644724751953px);"><p class="svelte-8zwmy5">Aundrea Fimbres</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 64.7644724751953px);"><p class="svelte-8zwmy5">D. Woods</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 64.7644724751953px);"><p class="svelte-8zwmy5">Dawn Richard</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(7.07070707070707px, 64.7644724751953px);"><p class="svelte-8zwmy5">Shannon Bex</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(78.78787878787878px, 70.63621757240024px);"><p class="svelte-8zwmy5">Big Mike</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(78.78787878787878px, 70.63621757240024px);"><p class="svelte-8zwmy5">Brian Angel</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(78.78787878787878px, 70.63621757240024px);"><p class="svelte-8zwmy5">Qwanell &quot;Que&quot; Mosley</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(78.78787878787878px, 70.63621757240024px);"><p class="svelte-8zwmy5">Robert Curry</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(78.78787878787878px, 70.63621757240024px);"><p class="svelte-8zwmy5">Willie Taylor</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 36.99407950176413px);"><p class="svelte-8zwmy5">Beyoncé</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 36.99407950176413px);"><p class="svelte-8zwmy5">Farrah Franklin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 36.99407950176413px);"><p class="svelte-8zwmy5">Kelly Rowland</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 36.99407950176413px);"><p class="svelte-8zwmy5">LaTavia Roberson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 36.99407950176413px);"><p class="svelte-8zwmy5">LeToya Luckett</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 36.99407950176413px);"><p class="svelte-8zwmy5">Michelle Williams</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 71.65106722273218px);"><p class="svelte-8zwmy5">Alex Chester</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 71.65106722273218px);"><p class="svelte-8zwmy5">Ashley Poole</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 71.65106722273218px);"><p class="svelte-8zwmy5">Diana Ortiz</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 71.65106722273218px);"><p class="svelte-8zwmy5">Holly Blake-Arnstein</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 71.65106722273218px);"><p class="svelte-8zwmy5">Kasey Sheridan</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 71.65106722273218px);"><p class="svelte-8zwmy5">Melissa Schuman</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 58.58400089216425px);"><p class="svelte-8zwmy5">Cindy Herron</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 58.58400089216425px);"><p class="svelte-8zwmy5">Dawn Robinson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 58.58400089216425px);"><p class="svelte-8zwmy5">Maxine Jones</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 58.58400089216425px);"><p class="svelte-8zwmy5">Terry Ellis</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 72.31895166084621px);"><p class="svelte-8zwmy5">Ann Curless</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 72.31895166084621px);"><p class="svelte-8zwmy5">Gioia Bruno</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 72.31895166084621px);"><p class="svelte-8zwmy5">Jeanette Jurado</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 72.31895166084621px);"><p class="svelte-8zwmy5">Kelly Moneymaker</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(39.39393939393939px, 19.772690727804264px);"><p class="svelte-8zwmy5">Ally Brooke</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(39.39393939393939px, 19.772690727804264px);"><p class="svelte-8zwmy5">Camila Cabello</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(39.39393939393939px, 19.772690727804264px);"><p class="svelte-8zwmy5">Dinah Jane</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(39.39393939393939px, 19.772690727804264px);"><p class="svelte-8zwmy5">Lauren Jauregui</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(39.39393939393939px, 19.772690727804264px);"><p class="svelte-8zwmy5">Normani</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(41.41414141414141px, 90.09886436130569px);"><p class="svelte-8zwmy5">Bobby Leslie</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(41.41414141414141px, 90.09886436130569px);"><p class="svelte-8zwmy5">Chris Wolf</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(41.41414141414141px, 90.09886436130569px);"><p class="svelte-8zwmy5">Damon Sharpe</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(41.41414141414141px, 90.09886436130569px);"><p class="svelte-8zwmy5">Eddie Garcia</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(41.41414141414141px, 90.09886436130569px);"><p class="svelte-8zwmy5">Patrick J. Dancy</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.49153648266417px);"><p class="svelte-8zwmy5">Marcus Sanders</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.49153648266417px);"><p class="svelte-8zwmy5">Roderick &quot;Pooh&quot; Clark</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.49153648266417px);"><p class="svelte-8zwmy5">Russell Neal</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.49153648266417px);"><p class="svelte-8zwmy5">Tony Thompson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.49153648266417px);"><p class="svelte-8zwmy5">Treston Irby</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 75.54238142831386px);"><p class="svelte-8zwmy5">Kelton &quot;LDB&quot; Kessee</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 75.54238142831386px);"><p class="svelte-8zwmy5">Marques Houston</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 75.54238142831386px);"><p class="svelte-8zwmy5">Young Rome</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 83.431542538762px);"><p class="svelte-8zwmy5">Angela Slates</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 83.431542538762px);"><p class="svelte-8zwmy5">Debra Mitchell</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 83.431542538762px);"><p class="svelte-8zwmy5">Di Reed</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 83.431542538762px);"><p class="svelte-8zwmy5">Joi Marshall</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 83.431542538762px);"><p class="svelte-8zwmy5">Myracle Holloway</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 53.967127321498985px);"><p class="svelte-8zwmy5">DeVante Swing</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 53.967127321498985px);"><p class="svelte-8zwmy5">Jojo Hailey</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 53.967127321498985px);"><p class="svelte-8zwmy5">K-Ci</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(3.0303030303030303px, 53.967127321498985px);"><p class="svelte-8zwmy5">Mr. Dalvin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 35.947308905333095px);"><p class="svelte-8zwmy5">Joe Jonas</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 35.947308905333095px);"><p class="svelte-8zwmy5">Kevin Jonas</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 35.947308905333095px);"><p class="svelte-8zwmy5">Nick Jonas</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 72.06748125764622px);"><p class="svelte-8zwmy5">Bernadette Cooper</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 72.06748125764622px);"><p class="svelte-8zwmy5">Cheryl Cooley</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 72.06748125764622px);"><p class="svelte-8zwmy5">Joyce Irby</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 72.06748125764622px);"><p class="svelte-8zwmy5">Lorena Porter Shelby</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 72.06748125764622px);"><p class="svelte-8zwmy5">Lynn Malsby</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 72.06748125764622px);"><p class="svelte-8zwmy5">Robbin Grider</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(61.61616161616161px, 70.32726456868795px);"><p class="svelte-8zwmy5">Charlie Masso</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(61.61616161616161px, 70.32726456868795px);"><p class="svelte-8zwmy5">Draco Rosa</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(61.61616161616161px, 70.32726456868795px);"><p class="svelte-8zwmy5">Miguel Cancel</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(61.61616161616161px, 70.32726456868795px);"><p class="svelte-8zwmy5">Ray Acevedo</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(61.61616161616161px, 70.32726456868795px);"><p class="svelte-8zwmy5">Ricky Martin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(61.61616161616161px, 70.32726456868795px);"><p class="svelte-8zwmy5">Roy Rosello</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 71.35958557429304px);"><p class="svelte-8zwmy5">Craig Crippen</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 71.35958557429304px);"><p class="svelte-8zwmy5">Jacob Perez</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 71.35958557429304px);"><p class="svelte-8zwmy5">Rayan Lopez</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(71.71717171717171px, 71.35958557429304px);"><p class="svelte-8zwmy5">Santo August</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(9.090909090909092px, 83.5358136265016px);"><p class="svelte-8zwmy5">Dennis Seaton</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(9.090909090909092px, 83.5358136265016px);"><p class="svelte-8zwmy5">Frederick &quot;Junior&quot; Waite</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(9.090909090909092px, 83.5358136265016px);"><p class="svelte-8zwmy5">Kelvin Grant</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(9.090909090909092px, 83.5358136265016px);"><p class="svelte-8zwmy5">Michael Grant</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(9.090909090909092px, 83.5358136265016px);"><p class="svelte-8zwmy5">Patrick Waite</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 56.64031466784112px);"><p class="svelte-8zwmy5">Bobby Brown</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 56.64031466784112px);"><p class="svelte-8zwmy5">Johnny Gill</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 56.64031466784112px);"><p class="svelte-8zwmy5">Michael Bivins</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 56.64031466784112px);"><p class="svelte-8zwmy5">Ralph Tresvant</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 56.64031466784112px);"><p class="svelte-8zwmy5">Ricky Bell</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 56.64031466784112px);"><p class="svelte-8zwmy5">Ronnie DeVoe</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 63.73413770234557px);"><p class="svelte-8zwmy5">Danny Wood</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 63.73413770234557px);"><p class="svelte-8zwmy5">Donnie Wahlberg</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 63.73413770234557px);"><p class="svelte-8zwmy5">Joey McIntyre</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 63.73413770234557px);"><p class="svelte-8zwmy5">Jonathan Knight</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 63.73413770234557px);"><p class="svelte-8zwmy5">Jordan Knight</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(5.05050505050505px, 77.95661428337213px);"><p class="svelte-8zwmy5">Brian Desveaux</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(5.05050505050505px, 77.95661428337213px);"><p class="svelte-8zwmy5">Jeremy Dean</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(5.05050505050505px, 77.95661428337213px);"><p class="svelte-8zwmy5">John Hampson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(5.05050505050505px, 77.95661428337213px);"><p class="svelte-8zwmy5">Nick Dimichino</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(5.05050505050505px, 77.95661428337213px);"><p class="svelte-8zwmy5">Vincent Tattanelli</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(26.262626262626267px, 84.45675606311829px);"><p class="svelte-8zwmy5">Anthony DaCosta</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(26.262626262626267px, 84.45675606311829px);"><p class="svelte-8zwmy5">Frank Pangelinan</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(26.262626262626267px, 84.45675606311829px);"><p class="svelte-8zwmy5">Jacob Ceniceros</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(26.262626262626267px, 84.45675606311829px);"><p class="svelte-8zwmy5">Rigo Luna</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 9.086076040798986px);"><p class="svelte-8zwmy5">Harry Styles</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 9.086076040798986px);"><p class="svelte-8zwmy5">Liam Payne</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 9.086076040798986px);"><p class="svelte-8zwmy5">Louis Tomlinson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 9.086076040798986px);"><p class="svelte-8zwmy5">Niall Horan</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 9.086076040798986px);"><p class="svelte-8zwmy5">ZAYN</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(37.37373737373738px, 82.13014630208569px);"><p class="svelte-8zwmy5">Benjamin &quot;Black&quot; Bush</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(37.37373737373738px, 82.13014630208569px);"><p class="svelte-8zwmy5">Smoke E. Digglera</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(37.37373737373738px, 82.13014630208569px);"><p class="svelte-8zwmy5">Static Major</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 63.660171859040645px);"><p class="svelte-8zwmy5">Carl Martin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 63.660171859040645px);"><p class="svelte-8zwmy5">Darnell Van Rensalier</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 63.660171859040645px);"><p class="svelte-8zwmy5">Garfield Bright</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 63.660171859040645px);"><p class="svelte-8zwmy5">Marc Gay</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 59.364393682437935px);"><p class="svelte-8zwmy5">Gary &#39;G&#39; Jenkins</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 59.364393682437935px);"><p class="svelte-8zwmy5">Gary &quot;Big G&quot; Glenn</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 59.364393682437935px);"><p class="svelte-8zwmy5">James &quot;Jimmy&quot; Gates, Jr.</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 59.364393682437935px);"><p class="svelte-8zwmy5">Johnathen Rasboro</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 59.364393682437935px);"><p class="svelte-8zwmy5">Timothy Cameron</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(25.252525252525253px, 77.46219069962557px);"><p class="svelte-8zwmy5">Angel Lopez</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(25.252525252525253px, 77.46219069962557px);"><p class="svelte-8zwmy5">George Montes</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(25.252525252525253px, 77.46219069962557px);"><p class="svelte-8zwmy5">Javier Montes</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(25.252525252525253px, 77.46219069962557px);"><p class="svelte-8zwmy5">Pedro Quiles</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 65.91623602146448px);"><p class="svelte-8zwmy5">Andre Dalyrimple</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 65.91623602146448px);"><p class="svelte-8zwmy5">Brian Dalyrimple</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 65.91623602146448px);"><p class="svelte-8zwmy5">Christopher Dalyrimple</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 65.91623602146448px);"><p class="svelte-8zwmy5">Jase4Real</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.07987186599995px);"><p class="svelte-8zwmy5">Emma Bunton</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.07987186599995px);"><p class="svelte-8zwmy5">Geri Halliwell</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.07987186599995px);"><p class="svelte-8zwmy5">Mel B</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.07987186599995px);"><p class="svelte-8zwmy5">Melanie C</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 48.07987186599995px);"><p class="svelte-8zwmy5">Victoria Beckham</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(95.95959595959596px, 64.32962238443108px);"><p class="svelte-8zwmy5">Amelle Berrabah</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(95.95959595959596px, 64.32962238443108px);"><p class="svelte-8zwmy5">Heidi Range</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(95.95959595959596px, 64.32962238443108px);"><p class="svelte-8zwmy5">Jade Ewen</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(95.95959595959596px, 64.32962238443108px);"><p class="svelte-8zwmy5">Keisha Buchanan</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(95.95959595959596px, 64.32962238443108px);"><p class="svelte-8zwmy5">Mutya Buena</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(95.95959595959596px, 64.32962238443108px);"><p class="svelte-8zwmy5">Siobhan Donaghy</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 57.48534342338941px);"><p class="svelte-8zwmy5">Gary Barlow</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 57.48534342338941px);"><p class="svelte-8zwmy5">Howard Donald</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 57.48534342338941px);"><p class="svelte-8zwmy5">Jason Orange</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 57.48534342338941px);"><p class="svelte-8zwmy5">Mark Owen</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(6.0606060606060606px, 57.48534342338941px);"><p class="svelte-8zwmy5">Robbie Williams</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 58.988481677046px);"><p class="svelte-8zwmy5">Annette Zilinskas</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 58.988481677046px);"><p class="svelte-8zwmy5">Debbi Peterson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 58.988481677046px);"><p class="svelte-8zwmy5">Susanna Hoffs</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 58.988481677046px);"><p class="svelte-8zwmy5">Vicki Peterson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(10.1010101010101px, 72.12200050012294px);"><p class="svelte-8zwmy5">Ben Romans</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(10.1010101010101px, 72.12200050012294px);"><p class="svelte-8zwmy5">Eric Dill</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(10.1010101010101px, 72.12200050012294px);"><p class="svelte-8zwmy5">Ethan Mentzer</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(10.1010101010101px, 72.12200050012294px);"><p class="svelte-8zwmy5">Joe Guese</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(10.1010101010101px, 72.12200050012294px);"><p class="svelte-8zwmy5">Joey Zehr</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 38.9539996103067px);"><p class="svelte-8zwmy5">Ashley Roberts</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 38.9539996103067px);"><p class="svelte-8zwmy5">Carmit Bachar</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 38.9539996103067px);"><p class="svelte-8zwmy5">Jessica Sutta</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 38.9539996103067px);"><p class="svelte-8zwmy5">Kimberly Wyatt</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 38.9539996103067px);"><p class="svelte-8zwmy5">Melody Thornton</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(4.040404040404041px, 38.9539996103067px);"><p class="svelte-8zwmy5">Nicole Scherzinger</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 47.73435807385281px);"><p class="svelte-8zwmy5">Jay McGuiness</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 47.73435807385281px);"><p class="svelte-8zwmy5">Max George</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 47.73435807385281px);"><p class="svelte-8zwmy5">Nathan Sykes</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 47.73435807385281px);"><p class="svelte-8zwmy5">Siva Michael Kaneswaran</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(2.0202020202020203px, 47.73435807385281px);"><p class="svelte-8zwmy5">Tom Parker</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 45.98675867284228px);"><p class="svelte-8zwmy5">Crystal Jones</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 45.98675867284228px);"><p class="svelte-8zwmy5">Lisa &quot;Left Eye&quot; Lopes</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 45.98675867284228px);"><p class="svelte-8zwmy5">T-Boz</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(11.11111111111111px, 67.19838549547653px);"><p class="svelte-8zwmy5">Keisha Spivey</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(11.11111111111111px, 67.19838549547653px);"><p class="svelte-8zwmy5">Kima Raynor</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(11.11111111111111px, 67.19838549547653px);"><p class="svelte-8zwmy5">Pamela Long</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(46.464646464646464px, 68.35545246604357px);"><p class="svelte-8zwmy5">Allen McNeil</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(46.464646464646464px, 68.35545246604357px);"><p class="svelte-8zwmy5">John Harreld</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(46.464646464646464px, 68.35545246604357px);"><p class="svelte-8zwmy5">Reggie Warren</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(46.464646464646464px, 68.35545246604357px);"><p class="svelte-8zwmy5">Rodney Benford</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(46.464646464646464px, 68.35545246604357px);"><p class="svelte-8zwmy5">Steve Russell</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(19.19191919191919px, 48.595274261851905px);"><p class="svelte-8zwmy5">Brian McFadden</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(19.19191919191919px, 48.595274261851905px);"><p class="svelte-8zwmy5">Kian Egan</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(19.19191919191919px, 48.595274261851905px);"><p class="svelte-8zwmy5">Markus Feehily</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(19.19191919191919px, 48.595274261851905px);"><p class="svelte-8zwmy5">Nicky Byrne</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(19.19191919191919px, 48.595274261851905px);"><p class="svelte-8zwmy5">Shane Filan</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.96225922215497px);"><p class="svelte-8zwmy5">Carnie Wilson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.96225922215497px);"><p class="svelte-8zwmy5">Chynna Phillips</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(0px, 66.96225922215497px);"><p class="svelte-8zwmy5">Wendy Wilson</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">HA:TFELT</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">Hyerim</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">HyunA</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">Sohee</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">SUNMI</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">Sunye</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">Yubin</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 56.74383445105411px);"><p class="svelte-8zwmy5">Kandi</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 56.74383445105411px);"><p class="svelte-8zwmy5">LaTocha Scott</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 56.74383445105411px);"><p class="svelte-8zwmy5">Tameka &quot;Tiny&quot; Cottle</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 56.74383445105411px);"><p class="svelte-8zwmy5">Tamera Coggins-Wynn</p>
+</div><div class="outer svelte-8zwmy5" style="transform: translate(1.0101010101010102px, 56.74383445105411px);"><p class="svelte-8zwmy5">Tamika Scott</p>
+</div>
 </div></div>
+    <div class="layercake-container svelte-1ll0j6t" style="
+			position:absolute;
+			top:0;right:0;bottom:0;left:0;
+			
+		"><div class="layercake-layout-html svelte-1u9nfei" style="top: 0px; right:0px; bottom:0px; left:0px;"><div class="outer svelte-8zwmy5 band" style="transform: translate(3.0303030303030303px, 59.591555474576765px);"><p class="svelte-8zwmy5">112</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(3.0303030303030303px, 64.03932393460674px);"><p class="svelte-8zwmy5">702</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 52.976589900493856px);"><p class="svelte-8zwmy5">*NSYNC</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(6.0606060606060606px, 29.776814957106133px);"><p class="svelte-8zwmy5">5 Seconds of Summer</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(42.42424242424242px, 84.06057685219912px);"><p class="svelte-8zwmy5">5ive</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 68.16063209717808px);"><p class="svelte-8zwmy5">98º</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(3.0303030303030303px, 66.7492021231075px);"><p class="svelte-8zwmy5">All Saints</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(94.94949494949495px, 37.85723240599525px);"><p class="svelte-8zwmy5">Aventura</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(8.080808080808081px, 71.97005078765588px);"><p class="svelte-8zwmy5">Az Yet</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(29.292929292929294px, 63.32348939202289px);"><p class="svelte-8zwmy5">B2K</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 40.52055093029081px);"><p class="svelte-8zwmy5">Backstreet Boys</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 64.15008255548132px);"><p class="svelte-8zwmy5">Bananarama</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(12.121212121212121px, 78.73486796579967px);"><p class="svelte-8zwmy5">BBMAK</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(71.71717171717171px, 48.668317080895626px);"><p class="svelte-8zwmy5">Big Time Rush</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(32.323232323232325px, 9.840074175219582px);"><p class="svelte-8zwmy5">BLACKPINK</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(6.0606060606060606px, 63.092402225766044px);"><p class="svelte-8zwmy5">Blackstreet</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 48.77512276720363px);"><p class="svelte-8zwmy5">Boyz II Men</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(7.07070707070707px, 68.440748336371px);"><p class="svelte-8zwmy5">Brownstone</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 0px);"><p class="svelte-8zwmy5">BTS</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 67.74748932391478px);"><p class="svelte-8zwmy5">Color Me Badd</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(7.07070707070707px, 64.7644724751953px);"><p class="svelte-8zwmy5">Danity Kane</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(78.78787878787878px, 70.63621757240024px);"><p class="svelte-8zwmy5">DAY26</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 36.99407950176413px);"><p class="svelte-8zwmy5">Destiny&#39;s Child</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 71.65106722273218px);"><p class="svelte-8zwmy5">Dream</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 58.58400089216425px);"><p class="svelte-8zwmy5">En Vogue</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 72.31895166084621px);"><p class="svelte-8zwmy5">Exposé</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(39.39393939393939px, 19.772690727804264px);"><p class="svelte-8zwmy5">Fifth Harmony</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(41.41414141414141px, 90.09886436130569px);"><p class="svelte-8zwmy5">Guys Next Door</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 66.49153648266417px);"><p class="svelte-8zwmy5">Hi-Five</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(4.040404040404041px, 75.54238142831386px);"><p class="svelte-8zwmy5">Immature</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(3.0303030303030303px, 83.431542538762px);"><p class="svelte-8zwmy5">Jade</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(3.0303030303030303px, 53.967127321498985px);"><p class="svelte-8zwmy5">Jodeci</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 35.947308905333095px);"><p class="svelte-8zwmy5">Jonas Brothers</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(4.040404040404041px, 72.06748125764622px);"><p class="svelte-8zwmy5">Klymaxx</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(61.61616161616161px, 70.32726456868795px);"><p class="svelte-8zwmy5">Menudo</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(71.71717171717171px, 71.35958557429304px);"><p class="svelte-8zwmy5">Mindless Behavior</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(9.090909090909092px, 83.5358136265016px);"><p class="svelte-8zwmy5">Musical Youth</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(2.0202020202020203px, 56.64031466784112px);"><p class="svelte-8zwmy5">New Edition</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 63.73413770234557px);"><p class="svelte-8zwmy5">New Kids On The Block</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(5.05050505050505px, 77.95661428337213px);"><p class="svelte-8zwmy5">Nine Days</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(26.262626262626267px, 84.45675606311829px);"><p class="svelte-8zwmy5">Nu Flavor</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 9.086076040798986px);"><p class="svelte-8zwmy5">One Direction</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(37.37373737373738px, 82.13014630208569px);"><p class="svelte-8zwmy5">Playa</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 63.660171859040645px);"><p class="svelte-8zwmy5">Shai</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 59.364393682437935px);"><p class="svelte-8zwmy5">Silk</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(25.252525252525253px, 77.46219069962557px);"><p class="svelte-8zwmy5">Son By Four</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 65.91623602146448px);"><p class="svelte-8zwmy5">Soul For Real</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 48.07987186599995px);"><p class="svelte-8zwmy5">Spice Girls</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(95.95959595959596px, 64.32962238443108px);"><p class="svelte-8zwmy5">Sugababes</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(6.0606060606060606px, 57.48534342338941px);"><p class="svelte-8zwmy5">Take That</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 58.988481677046px);"><p class="svelte-8zwmy5">The Bangles</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(10.1010101010101px, 72.12200050012294px);"><p class="svelte-8zwmy5">The Click Five</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(4.040404040404041px, 38.9539996103067px);"><p class="svelte-8zwmy5">The Pussycat Dolls</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(2.0202020202020203px, 47.73435807385281px);"><p class="svelte-8zwmy5">The Wanted</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 45.98675867284228px);"><p class="svelte-8zwmy5">TLC</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(11.11111111111111px, 67.19838549547653px);"><p class="svelte-8zwmy5">Total</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(46.464646464646464px, 68.35545246604357px);"><p class="svelte-8zwmy5">Troop</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(19.19191919191919px, 48.595274261851905px);"><p class="svelte-8zwmy5">Westlife</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(0px, 66.96225922215497px);"><p class="svelte-8zwmy5">Wilson Phillips</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(75.75757575757575px, 65.8401856047317px);"><p class="svelte-8zwmy5">Wonder Girls</p>
+</div><div class="outer svelte-8zwmy5 band" style="transform: translate(1.0101010101010102px, 56.74383445105411px);"><p class="svelte-8zwmy5">Xscape</p>
+</div>
+</div></div></figure>
+</div></section>
 
-  <div class="svelte-yrsd42"><h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
-    <p>This is a paragraph with a <strong>strong</strong> tag and an
-      <em>em</em> tag. And here is a <mark>mark</mark> tag. Oh and a
-      <a href="#demo">link</a> tag.
-    </p></div>
 
-  <div class="svelte-yrsd42"><p>Some Elements:</p>
-    <p><button>Button</button></p>
-    <p><select><option value="Select">Select</option><option value="Thing 1">Thing 1</option><option value="Thing 2">Thing 2</option></select></p>
-    <p><input placeholder="input"></p>
-    <p><input type="range"></p></div>
-</section>
 
-<footer class="svelte-1p6xswo"><section class="stories svelte-1p6xswo"></section>
-
-  <section class="about svelte-1p6xswo"><div class="wordmark svelte-1p6xswo"><?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" id="wordmark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 192.6 50" style="enable-background:new 0 0 192.6 50;" xml:space="preserve">
-<g>
-	<path class="st0" d="M150.1,9.5c1.5,0,2.8,1.3,2.8,2.8s-1.3,2.8-2.8,2.8s-2.8-1.3-2.8-2.8S148.6,9.5,150.1,9.5z"/>
-	<path class="st0" d="M147.2,17.3h5.6v18.2h-5.6V17.3z"/>
-	<path class="st0" d="M77.1,9.5h-1.9h-7v19.3v6.7h5.6v-6.7v-1.4h1.4h1.9c4.9,0,8.9-4,8.9-8.9S82.1,9.5,77.1,9.5z M77.1,21.8h-1.9
-		h-1.4v-1.4v-3.8v-1.4h1.4h1.9c1.8,0,3.3,1.5,3.3,3.3S79,21.8,77.1,21.8z"/>
-	<path class="st0" d="M105.7,17.6h-5.6v8.9c0,1.8-1.5,3.3-3.3,3.3s-3.3-1.5-3.3-3.3v-8.9h-5.6v8.9c0,4.9,4,8.9,8.9,8.9
-		s8.9-4,8.9-8.9V17.6z"/>
-	<path class="st0" d="M164.1,17.6c-4.9,0-8.9,4-8.9,8.9v8.9h5.6v-8.9c0-1.8,1.5-3.3,3.3-3.3s3.3,1.5,3.3,3.3v8.9h5.6v-8.9
-		C173,21.6,169,17.6,164.1,17.6z"/>
-	<path class="st0" d="M119.7,16.2v1.4h-1.4h-1.9c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3
-		C119.7,12.8,119.7,16.2,119.7,16.2z M119.8,24.6v3.8v1.4h-1.4h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4V24.6z"/>
-	<path class="st0" d="M139.3,16.2v1.4h-1.4H136c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h7V16.2V9.5l-5.6,3.3V16.2z M139.4,24.6v3.8
-		v1.4h-1.5H136c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9h1.4v1.4H139.4z"/>
-	<path class="st0" d="M183.7,17.6c-4.9,0-8.9,4-8.9,8.9s4,8.9,8.9,8.9h1.9h1.4v1.4v0.9v1.4v1.4c0,1.8-1.5,3.3-3.3,3.3
-		s-3.3-1.5-3.3-3.3V38l-5.6,3.3c0.4,4.5,4.2,8.1,8.9,8.1c4.9,0,8.9-4,8.9-8.9v-1.4v-2.3V17.6h-7H183.7z M187,23.4v1.4v3.8V30h-1.4
-		h-1.9c-1.8,0-3.3-1.5-3.3-3.3s1.5-3.3,3.3-3.3h1.9C185.6,23.4,187,23.4,187,23.4z"/>
-	<path class="st0" d="M28.6,17.6c-1.2,0-2.3,0.2-3.3,0.6V9.5l-5.6,3.3v13.7v2v6.9h5.6v-6.9l0,0v-2c0-1.8,1.5-3.3,3.3-3.3
-		s3.3,1.5,3.3,3.3v8.9h5.6v-8.9C37.5,21.6,33.5,17.6,28.6,17.6z"/>
-	<path class="st0" d="M17.8,9.5H0v5.6h6.1v20.3h5.6V15.1h6.1V9.5z"/>
-	<path class="st0" d="M48.3,30.2c-0.4,0-1.2-0.1-1.8-0.4l5.2-2.1l5.6-2.3l-1-2.3l-0.1-0.2c-0.1-0.3-0.3-0.6-0.5-1
-		c-0.1-0.1-0.1-0.2-0.2-0.3c0,0,0-0.1-0.1-0.1l-0.1-0.1l-0.1-0.1c-1.6-2.2-4-3.5-6.7-3.7l0,0h-0.6c-4.9,0-8.9,4-8.9,8.9
-		c0,0.4,0,0.9,0.1,1.4l0,0V28c0,0,0,0,0,0.1c0,0,0,0,0,0.1c0,0.3,0.1,0.5,0.2,0.8v0.1v0.1c0.1,0.3,0.2,0.7,0.4,1v0.1v0.1
-		c0.1,0.3,0.3,0.5,0.4,0.8c0,0.1,0.1,0.1,0.1,0.2l0,0c0.1,0.2,0.3,0.4,0.4,0.6c0,0,0,0,0,0.1c0,0,0,0.1,0.1,0.1l0.1,0.1
-		c1.7,2.1,4.4,3.4,7.2,3.4h6.1v-5.2C54.5,30.2,50.6,30.2,48.3,30.2L48.3,30.2z M56.2,22.9L56.2,22.9L56.2,22.9z M44.6,25.7
-		L44.6,25.7l-0.2,0.1c0.2-1.9,1.8-3.5,3.7-3.5c0.9,0,1.8,0.4,2.4,0.9L46.2,25L44.6,25.7L44.6,25.7z"/>
-</g>
-</svg></div>
-    <p><a href="https://pudding.cool" class="svelte-1p6xswo">The Pudding</a>
-      is a digital publication that explains ideas debated in culture with
-      visual essays.
-    </p></section>
-
-  <section class="links svelte-1p6xswo"><ul class="svelte-1p6xswo"><li class="svelte-1p6xswo"><a href="https://pudding.cool/about" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">ABOUT</span></a>
-        </li><li class="svelte-1p6xswo"><a href="https://facebook.com/pudding.viz/" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">FACEBOOK</span></a>
-        </li><li class="svelte-1p6xswo"><a href="https://twitter.com/puddingviz/" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">TWITTER</span></a>
-        </li><li class="svelte-1p6xswo"><a href="https://www.instagram.com/the.pudding" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">INSTAGRAM</span></a>
-        </li><li class="svelte-1p6xswo"><a href="https://patreon.com/thepudding/" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">PATREON</span></a>
-        </li><li class="svelte-1p6xswo"><a href="https://pudding.cool/privacy/" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">PRIVACY</span></a>
-        </li><li class="svelte-1p6xswo"><a href="http://eepurl.com/czym6f" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">NEWSLETTER</span></a>
-        </li><li class="svelte-1p6xswo"><a href="https://pudding.cool/feed/index.xml" class="svelte-1p6xswo">
-            <span class="svelte-1p6xswo">RSS</span></a>
-        </li></ul></section>
-</footer>
     </main>
-    <script type="text/javascript" src="build/bundle.js?version=1613742057766" defer></script>
+    <script type="text/javascript" src="build/bundle.js?version=1614627515596" defer></script>
   </body>
 </html>

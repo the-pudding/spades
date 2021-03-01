@@ -24,11 +24,6 @@
       ...d,
       followers: +d.followers,
       delta: getDelta(d),
-    }))
-    .map((d) => ({
-      ...d,
-      // x: 50,
-      // y: d.delta,
     }));
 
   const ratioX = 2;
