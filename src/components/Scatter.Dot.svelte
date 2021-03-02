@@ -23,6 +23,7 @@
   $: left = ($pos[0] / 100) * $width;
   $: top = ($pos[1] / 100) * $height;
   $: style = `transform: translate(${left}px, ${top}px);`;
+  // $: style = `left: ${$pos[0]}%; top: ${$pos[1]}%;`;
 
   const onEnter = () => {
     dispatch("enter", name);
@@ -33,7 +34,6 @@
 </script>
 
 <div
-  class="outer"
   class:band="{$custom.type === 'band'}"
   class:highlight="{active}"
   style="{style}"
@@ -44,50 +44,30 @@
 </div>
 
 <style>
-  .outer {
+  div {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     pointer-events: none;
+    /* transform: translate(-50%, -50%); */
+    will-change: transform;
   }
-  .outer.highlight {
+
+  div.highlight {
     opacity: 1;
   }
-  .outer.band {
+
+  div.band {
     opacity: 1;
     pointer-events: auto;
-  }
-  .inner {
-    background: gray;
-    border-radius: 50%;
-    border: 2px solid white;
-    background-size: cover;
-    background-position: center center;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    transition: transform 250ms ease-in-out;
-    transform-origin: 50% 50%;
-    will-change: transform;
   }
 
   p {
     font-size: 1em;
-    background: yellow;
+    background: white;
     margin: 0;
     border: 1px solid black;
     padding: 0 0.25em;
-  }
-
-  span {
-    display: none;
-    width: 10em;
-    text-align: center;
-    transform: translate(0, -100%);
-    text-shadow: 0 0 4px white;
-    font-weight: bold;
-    display: none;
-    color: red;
   }
 </style>

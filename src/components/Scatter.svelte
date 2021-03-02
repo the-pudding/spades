@@ -44,11 +44,9 @@
   const yScale = scales[yProp];
 
   let active = false;
-  let ratioX = 1;
-  let ratioY = 1;
 
-  $: ratioX = $viewport.width;
-  $: ratioY = $viewport.height;
+  $: ratioX = $viewport.width || 1;
+  $: ratioY = $viewport.height || 1;
   $: fixedAspectRatio = ratioX / ratioY;
   $: xRange = [0, 100];
   $: yRange = [100, 0];
@@ -56,7 +54,7 @@
 
 <div class="chart-container">
   <figure style="padding-bottom: {100 / fixedAspectRatio}%">
-    <LayerCake
+    <!-- <LayerCake
       data="{memberData}"
       x="{xProp}"
       y="{yProp}"
@@ -74,7 +72,7 @@
       <Html>
         <Dots r="{8}" />
       </Html>
-    </LayerCake>
+    </LayerCake> -->
     <LayerCake
       data="{bandData}"
       x="{xProp}"
@@ -99,10 +97,10 @@
 
 <style>
   .chart-container {
-    width: 100%;
-    /* max-width: 100%; */
+    width: 90%;
+    /* max-width: 640px; */
     margin: 0 auto;
-    overflow: hidden;
+    /* overflow: hidden; */
   }
 
   figure {

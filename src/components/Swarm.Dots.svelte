@@ -1,8 +1,8 @@
 <script>
   import { forceSimulation, forceCollide, forceX, forceY } from "d3-force";
-  import { onMount, getContext } from "svelte";
+  import { getContext } from "svelte";
 
-  export let r = 4;
+  import forceCollideRect from "../utils/forceCollideRect.js";
 
   const { data, xGet, yGet, rGet, xScale, yScale, rScale, custom } = getContext(
     "LayerCake"
@@ -11,7 +11,13 @@
   const simulation = forceSimulation().stop();
 
   const runSim = () => {
-    simData = [...$data];
+    simData = [
+      ...$data.map((d) => ({
+        ...d,
+        width: $rGet(d) * 2,
+        height: $rGet(d) * 2,
+      })),
+    ];
     simulation
       .nodes(simData)
       .velocityDecay(0.5)
@@ -22,7 +28,8 @@
           .x((d) => $xGet(d))
           .strength(1)
       )
-      .force("collide", forceCollide($rGet).strength(1))
+      // .force("collide", forceCollide($rGet).strength(1))
+      .force("collide", forceCollideRect())
       .on("tick", () => {
         simData = [...simData];
       })
@@ -38,46 +45,55 @@
   $: $data, runSim();
 
   $: ratio = $custom.fixedAspectRatio;
-
-  onMount(() => {});
 </script>
 
 <p class="zero" style="left: {$xScale(0) / 2}%"></p>
 {#each simData as { x, y, id, name, delta, image, followers }}
   <div
+    class="dot"
     class:bigger="{delta > 0}"
     data-name="{name}"
     data-delta="{delta}"
     style="width: {$rScale(followers)}%; height: {$rScale(followers) *
-      2}%; left: {x /
-      2}%; top: {y}%; background-image: url('https://i.scdn.co/image/{image}');"
+      2}%; left: {x / 2}%; top: {y}%;"
   >
+    <div
+      class="image"
+      style="background-image: url('https://i.scdn.co/image/{image}');"
+    ></div>
     <span>{name}</span>
   </div>
 {/each}
 
 <style>
-  div {
+  .dot {
     position: absolute;
     background: gray;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     border: 2px solid white;
-    background-size: cover;
-    background-position: center center;
     transform: translate(-50%, -50%);
     transition: transform 250ms;
     transform-origin: 50% 50%;
-    filter: grayscale(100%);
   }
-  div:hover {
+  .dot:hover {
     transform: translate(-50%, -50%) scale(2);
     z-index: 1000;
   }
-  div:hover span {
+  .dot:hover span {
     display: block;
   }
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(100%);
+  }
   .bigger {
-    border: 3px solid red;
+    /* border: 3px solid red; */
   }
   span {
     display: block;
