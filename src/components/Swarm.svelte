@@ -41,6 +41,7 @@
       xScale="{scalePow().exponent(0.5)}"
       yDomain="{[0, ratioY * 100]}"
       xRange="{[0, ratioX * 100]}"
+      yRange="{[0, ratioY * 100]}"
       position="absolute"
       ssr="{true}"
       percentRange="{true}"

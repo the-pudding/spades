@@ -4,7 +4,6 @@
   import Intro from "./Intro.svelte";
   import Swarm from "./Swarm.svelte";
   import Scatter from "./Scatter.svelte";
-  import Scatter2 from "./Scatter2.svelte";
   import Footer from "./pudding/Footer.svelte";
   import copy from "../data/doc.json";
 </script>
@@ -15,15 +14,12 @@
 
 <!-- <Intro copy="{copy}" /> -->
 
-<!-- <section>
+<section>
   <Swarm />
-</section> -->
+</section>
 <section>
   <Scatter />
 </section>
-<!-- <section>
-  <Scatter2 />
-</section> -->
 
 <!-- <Footer /> -->
 <style>

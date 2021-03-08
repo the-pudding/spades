@@ -9,7 +9,7 @@
   const clean = (d) => ({
     ...d,
     followers: +d.followers,
-    rank: d.rank ? +d.rank : 101,
+    rank: d.rank ? +d.rank : 100,
   });
 
   const getBandData = (name) => {
@@ -21,8 +21,6 @@
     ...d,
     ...getBandData(d.band),
   }));
-
-  console.table(memberData);
 
   const maxFollowers = Math.max(
     ...memberData.map((d) => d.followers),
@@ -46,15 +44,17 @@
   const yScale = scales[yProp];
 
   let active = false;
+  let offsetHeight = 1;
+  let offsetWidth = 1;
 
   $: ratioX = $viewport.width || 1;
   $: ratioY = $viewport.height || 1;
   $: fixedAspectRatio = ratioX / ratioY;
-  $: xRange = [0, 100];
-  $: yRange = [100, 0];
+  $: xRange = [0, offsetWidth];
+  $: yRange = [offsetHeight * 1, 0];
 </script>
 
-<div class="chart-container">
+<div class="chart-container" bind:offsetWidth bind:offsetHeight>
   <figure style="padding-bottom: {100 / fixedAspectRatio}%">
     <!-- <LayerCake
       data="{memberData}"
