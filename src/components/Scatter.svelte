@@ -9,7 +9,8 @@
   const clean = (d) => ({
     ...d,
     followers: +d.followers,
-    rank: d.rank ? +d.rank : 101,
+    rank: d.topRank ? +d.topRank : 101,
+    hitCount: d.ranks.split("|").length,
   });
 
   const getBandData = (name) => {
@@ -22,6 +23,7 @@
     ...getBandData(d.band),
   }));
 
+  console.table(bandData);
   console.table(memberData);
 
   const maxFollowers = Math.max(

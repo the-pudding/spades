@@ -17,6 +17,7 @@
 <section>
   <Swarm />
 </section>
+
 <section>
   <Scatter />
 </section>

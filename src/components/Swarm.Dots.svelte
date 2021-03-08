@@ -47,11 +47,11 @@
 </script>
 
 <p class="zero" style="left: {$xScale(0) / 2}%"></p>
-{#each simData as { x, y, id, name, delta, image, followers }}
+{#each simData as { x, y, id, name, delta, imageUrl, followers }}
   <Dot
     x="{x}"
     y="{y}"
-    image="{image}"
+    imageUrl="{imageUrl}"
     name="{name}"
     delta="{delta}"
     size="{$rScale(followers)}"

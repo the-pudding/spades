@@ -4,7 +4,7 @@
   export let size;
   export let delta;
   export let name;
-  export let image;
+  export let imageUrl;
   export let followers;
 </script>
 
@@ -17,7 +17,7 @@
 >
   <div
     class="image"
-    style="background-image: url('https://i.scdn.co/image/{image}');"
+    style="background-image: url('https://i.scdn.co/image/{imageUrl}');"
   ></div>
   <span>{name}</span>
 </div>
