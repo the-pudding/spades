@@ -1,12 +1,12 @@
-band,name,id,,followers,spotifyName,imageUrl1,imageWidth1,imageHeight1,topRank,ranks,years,titles,imageUrl,imageWidth,imageHeight
+band,name,id,,followers,spotifyName,imageUrl1,imageWidth1,imageHeight1,topRank,ranks,dates,titles,imageUrl,imageWidth,imageHeight
 112,Daron Jones,24G8Xsvd4Xv2KXJqqG9ntG,,1275,Daron Jones,https://i.scdn.co/image/81bdae6a8925d9406e0c95e1051ff4c27a113048,320,320,,,,,81bdae6a8925d9406e0c95e1051ff4c27a113048,320,320
 112,"Marvin ""Slim"" Scandrick",33nrND6ODgesoa1Qmr5DbD,,2138,Slim,https://i.scdn.co/image/ab67616d00001e02f2efb644f1f27a1d28612756,300,300,,,,,ab67616d00001e02f2efb644f1f27a1d28612756,300,300
 112,Mike Marcel Keith,,,,,,,,,,,,,,
 112,"Quinnes ""Q"" Parker",0uqnxM3Rns1qIVpZheidd4,,3508,Q Parker,https://i.scdn.co/image/ae930d9dd3d106c4c03f74abf493f90360c4980d,320,320,,,,,ae930d9dd3d106c4c03f74abf493f90360c4980d,320,320
 *NSYNC,Chris Kirkpatrick,,,184,,,,,,,,,,,
-*NSYNC,JC Chasez,3p3U04w2DaiBzuYMZnYr00,,30773,JC Chasez,https://i.scdn.co/image/56d334c814b5633b4cf6d1effb2ad11d75ae86d7,200,200,35,35|88,2003|2004,"Blowin' Me Up (With Her Love),Some Girls (Dance With Women)",56d334c814b5633b4cf6d1effb2ad11d75ae86d7,200,200
+*NSYNC,JC Chasez,3p3U04w2DaiBzuYMZnYr00,,30773,JC Chasez,https://i.scdn.co/image/56d334c814b5633b4cf6d1effb2ad11d75ae86d7,200,200,35,35|88,2003-03-01|2004-02-14,Blowin' Me Up (With Her Love)|Some Girls (Dance With Women),56d334c814b5633b4cf6d1effb2ad11d75ae86d7,200,200
 *NSYNC,Joey Fatone,35rTRBGVuwYmhLMdamT2KY,,1129,Joey Fatone,https://i.scdn.co/image/ab67616d00001e027213747c2ede9c255a475654,300,300,,,,,ab67616d00001e027213747c2ede9c255a475654,300,300
-*NSYNC,Justin Timberlake,31TPClRtHm23RisEBtV3X7,,10335436,Justin Timberlake,https://i.scdn.co/image/f53e7e93947e91e5c257bdb2ca1b7c2b7e755a42,320,320,1,1|1|1|1|2|3|3|5|6|8|9|9|11|13|17|17|27|29|36|64|71|73,2006|2006|2007|2016|2013|2003|2013|2003|2007|2014|2018|2018|2002|2010|2007|2007|2003|2013|2013|2013|2018|2018,"SexyBack,My Love,What Goes Around...Comes Around,Can't Stop The Feeling!,Mirrors,Cry Me A River,Suit & Tie,Rock Your Body,Summer Love,Not A Bad Thing,Filthy,Say Something,Like I Love You,Hallelujah,LoveStoned,Until The End Of Time,Senorita,Take Back The Night,TKO,Pusher Love Girl,Supplies,Man Of The Woods",f53e7e93947e91e5c257bdb2ca1b7c2b7e755a42,320,320
+*NSYNC,Justin Timberlake,31TPClRtHm23RisEBtV3X7,,10335436,Justin Timberlake,https://i.scdn.co/image/f53e7e93947e91e5c257bdb2ca1b7c2b7e755a42,320,320,1,1|1|1|1|2|3|3|5|6|8|9|9|11|13|17|17|27|29|36|64|71|73,2006-09-09|2006-11-11|2007-03-03|2016-05-28|2013-06-15|2003-02-01|2013-04-06|2003-05-10|2007-06-09|2014-05-03|2018-01-20|2018-02-10|2002-10-12|2010-02-13|2007-10-06|2007-12-15|2003-09-27|2013-09-14|2013-12-14|2013-04-06|2018-02-03|2018-02-17,SexyBack|My Love|What Goes Around...Comes Around|Can't Stop The Feeling!|Mirrors|Cry Me A River|Suit & Tie|Rock Your Body|Summer Love|Not A Bad Thing|Filthy|Say Something|Like I Love You|Hallelujah|LoveStoned|Until The End Of Time|Senorita|Take Back The Night|TKO|Pusher Love Girl|Supplies|Man Of The Woods,f53e7e93947e91e5c257bdb2ca1b7c2b7e755a42,320,320
 *NSYNC,Lance Bass,,,262,,,,,,,,,,,
 2gether,Alex Solowitz,,,,,,,,,,,,,,
 2gether,Evan Farmer,,,159,,,,,,,,,,,
@@ -25,21 +25,21 @@ band,name,id,,followers,spotifyName,imageUrl1,imageWidth1,imageHeight1,topRank,r
 98º,Drew Lachey,,,52,,,,,,,,,,,
 98º,Jeff Timmons,6yn0dhVQEIvGXL2biKBvr5,,111,Jeff Timmons,https://i.scdn.co/image/24866457f1f23943f80af8c1f0c0bb9651356f50,200,157,,,,,24866457f1f23943f80af8c1f0c0bb9651356f50,200,157
 98º,Justin Jeffre,,,,,,,,,,,,,,
-98º,Nick Lachey,6ewMqjrF31lC8ywRsvm073,,141828,Nick Lachey,https://i.scdn.co/image/e1362bb3402517b8e79584cebdce664f7bd1d83b,320,320,6,6|87,2006|2006,"What's Left Of Me,I Can't Hate You Anymore",e1362bb3402517b8e79584cebdce664f7bd1d83b,320,320
+98º,Nick Lachey,6ewMqjrF31lC8ywRsvm073,,141828,Nick Lachey,https://i.scdn.co/image/e1362bb3402517b8e79584cebdce664f7bd1d83b,320,320,6,6|87,2006-05-13|2006-09-23,What's Left Of Me|I Can't Hate You Anymore,e1362bb3402517b8e79584cebdce664f7bd1d83b,320,320
 All-4-One,Alfred Nevarez,,,,,,,,,,,,,,
 All-4-One,Delious Kennedy,,,,,,,,,,,,,,
 All-4-One,Jamie Jones,,,173491,,,,,,,,,,,
 All-4-One,Tony Borowiak,,,,,,,,,,,,,,
-Aventura,"Anthony ""Romeo"" Santos",5lwmRuXgjX8xIwlnauTZIP,,12258997,Romeo Santos,https://i.scdn.co/image/2b956fd6d46ab322d8d4e9b4b7dc84a0dae9c1cf,320,320,45,45|77|79|83|91|95|97,2014|2017|2013|2011|2017|2017|2011,"Odio,Heroe Favorito,Propuesta Indecente,Promise,Imitadora,Bella y Sensual,You",2b956fd6d46ab322d8d4e9b4b7dc84a0dae9c1cf,320,320
+Aventura,"Anthony ""Romeo"" Santos",5lwmRuXgjX8xIwlnauTZIP,,12258997,Romeo Santos,https://i.scdn.co/image/2b956fd6d46ab322d8d4e9b4b7dc84a0dae9c1cf,320,320,45,45|77|79|83|91|95|97,2014-02-15|2017-03-04|2013-09-28|2011-11-26|2017-08-12|2017-12-23|2011-06-25,Odio|Heroe Favorito|Propuesta Indecente|Promise|Imitadora|Bella y Sensual|You,2b956fd6d46ab322d8d4e9b4b7dc84a0dae9c1cf,320,320
 Aventura,Henry Santos,1cUfMJtWJXfhTQvYGJQtaF,,39991,Henry Santos,https://i.scdn.co/image/1cb5d9ca00a4aee88e1fd30da4a97371a4febe59,320,320,,,,,1cb5d9ca00a4aee88e1fd30da4a97371a4febe59,320,320
 Aventura,Lenny Santos,,,653,,,,,,,,,,,
 Aventura,Max Santos,,,25,,,,,,,,,,,
 Az Yet,Darryl Anthony,,,6,,,,,,,,,,,
 Az Yet,Dion Allen,,,50,,,,,,,,,,,
 Az Yet,Kenny Terry,,,13,,,,,,,,,,,
-Az Yet,Marc Nelson,44In3Okeqcs641DLs1YuuD,,1612,Marc Nelson,https://i.scdn.co/image/ab67616d00001e02dc1e6e14c0b318a50d427471,300,300,27,27,1999,15 Minutes,ab67616d00001e02dc1e6e14c0b318a50d427471,300,300
+Az Yet,Marc Nelson,44In3Okeqcs641DLs1YuuD,,1612,Marc Nelson,https://i.scdn.co/image/ab67616d00001e02dc1e6e14c0b318a50d427471,300,300,27,27,1999-12-18,15 Minutes,ab67616d00001e02dc1e6e14c0b318a50d427471,300,300
 Az Yet,Shawn Rivera,,,4,,,,,,,,,,,
-B2K,"""Omarion"" Ishmael Grandberry",0f5nVCcR06GX8Qikz0COtT,,1958145,Omarion,https://i.scdn.co/image/6dfe920c0b6c780b071ad538f6707dc094315d7f,320,320,12,12|13|27|78|83|94,2007|2015|2005|2006|2009|2005,"Ice Box,Post To Be,O,Entourage,I Get It In,Touch",6dfe920c0b6c780b071ad538f6707dc094315d7f,320,320
+B2K,"""Omarion"" Ishmael Grandberry",0f5nVCcR06GX8Qikz0COtT,,1958145,Omarion,https://i.scdn.co/image/6dfe920c0b6c780b071ad538f6707dc094315d7f,320,320,12,12|13|27|78|83|94,2007-03-10|2015-05-09|2005-03-19|2006-09-02|2009-12-19|2005-07-30,Ice Box|Post To Be|O|Entourage|I Get It In|Touch,6dfe920c0b6c780b071ad538f6707dc094315d7f,320,320
 B2K,J-Boog,,,221750,,,,,,,,,,,
 B2K,Lil' Fizz,,,2109,,,,,,,,,,,
 B2K,Raz-B,,,2,,,,,,,,,,,
@@ -58,16 +58,16 @@ Big Time Rush,Logan Henderson,3GVijnoyMOcdVudcDvMrz5,,64897,Logan Henderson,http
 Blackstreet,"""Black"" Hannibal",,,4,,,,,,,,,,,
 Blackstreet,Eric Williams,,,86,,,,,,,,,,,
 Blackstreet,Mark Middleton,,,76,,,,,,,,,,,
-Blackstreet,Teddy Riley,5VDmBevaLkMLnK0rLOjijw,,11325,Teddy Riley,https://i.scdn.co/image/4963a8ff69d5f29d6cbb9475de7213fb87c185bf,200,300,62,62,1989,"My Fantasy (From ""Do The Right Thing"")",4963a8ff69d5f29d6cbb9475de7213fb87c185bf,200,300
+Blackstreet,Teddy Riley,5VDmBevaLkMLnK0rLOjijw,,11325,Teddy Riley,https://i.scdn.co/image/4963a8ff69d5f29d6cbb9475de7213fb87c185bf,200,300,62,62,1989-10-07,"My Fantasy (From ""Do The Right Thing"")",4963a8ff69d5f29d6cbb9475de7213fb87c185bf,200,300
 Boyz II Men,Michael McCary,,,98,,,,,,,,,,,
 Boyz II Men,Nathan Morris,,,106,,,,,,,,,,,
-Boyz II Men,Shawn Stockman,19dyJWLCu4CSuTgZN1l9Zn,,4172,Shawn Stockman,https://i.scdn.co/image/9f13bfe226b38300321616e3bc56912db541a02e,320,320,45,45,1996,"Visions Of A Sunset (From ""Mr. Holland's Opus"")",9f13bfe226b38300321616e3bc56912db541a02e,320,320
+Boyz II Men,Shawn Stockman,19dyJWLCu4CSuTgZN1l9Zn,,4172,Shawn Stockman,https://i.scdn.co/image/9f13bfe226b38300321616e3bc56912db541a02e,320,320,45,45,1996-02-24,"Visions Of A Sunset (From ""Mr. Holland's Opus"")",9f13bfe226b38300321616e3bc56912db541a02e,320,320
 Boyz II Men,Wanya Morris,,,1062,,,,,,,,,,,
 Brother Beyond,Carl Fysh,,,,,,,,,,,,,,
 Brother Beyond,David Ben White,,,,,,,,,,,,,,
 Brother Beyond,Nathan Moore,,,751,,,,,,,,,,,
 Brother Beyond,Steve Alexander,,,50,,,,,,,,,,,
-BTS,J-Hope,0b1sIQumIAsNbqAoIClSpy,,5328343,j-hope,https://i.scdn.co/image/3e7ff9125c518e290007ff8c5831bb621f3a8813,320,320,81,81,2019,Chicken Noodle Soup,3e7ff9125c518e290007ff8c5831bb621f3a8813,320,320
+BTS,J-Hope,0b1sIQumIAsNbqAoIClSpy,,5328343,j-hope,https://i.scdn.co/image/3e7ff9125c518e290007ff8c5831bb621f3a8813,320,320,81,81,2019-10-12,Chicken Noodle Soup,3e7ff9125c518e290007ff8c5831bb621f3a8813,320,320
 BTS,Jimin,,,1614,,,,,,,,,,,
 BTS,Jin,,,61371,,,,,,,,,,,
 BTS,Jungkook,,,14049,,,,,,,,,,,
@@ -94,7 +94,7 @@ Hanson,Zac Hanson,,,,,,,,,,,,,,
 Hi-Five,Marcus Sanders,,,606,,,,,,,,,,,
 Hi-Five,"Roderick ""Pooh"" Clark",,,,,,,,,,,,,,
 Hi-Five,Russell Neal,,,0,,,,,,,,,,,
-Hi-Five,Tony Thompson,4dC1SJh5elSp45qeyfgInn,,2753,Tony Thompson,https://i.scdn.co/image/fd9dd6b6396d645a3bb1c41ed8e464b5562390d9,200,200,59,59,1995,I Wanna Love Like That,fd9dd6b6396d645a3bb1c41ed8e464b5562390d9,200,200
+Hi-Five,Tony Thompson,4dC1SJh5elSp45qeyfgInn,,2753,Tony Thompson,https://i.scdn.co/image/fd9dd6b6396d645a3bb1c41ed8e464b5562390d9,200,200,59,59,1995-07-22,I Wanna Love Like That,fd9dd6b6396d645a3bb1c41ed8e464b5562390d9,200,200
 Hi-Five,Treston Irby,,,10,,,,,,,,,,,
 Ideal,J-Dante,,,94,,,,,,,,,,,
 Ideal,Maverick,,,1724,,,,,,,,,,,
@@ -102,7 +102,7 @@ Ideal,PZ,,,7,,,,,,,,,,,
 Ideal,Swab,,,192,,,,,,,,,,,
 Immature,"Jerome ""Romeo"" Jones",1vus7FPSN3bKTHtIsTjUXh,,610,Young Rome,https://i.scdn.co/image/e38466bf6342748c1fe0aff4356ad84cc7dc3766,200,276,,,,,e38466bf6342748c1fe0aff4356ad84cc7dc3766,200,276
 Immature,"Kelton ""LDB"" Kessee",,,,,,,,,,,,,,
-Immature,"Marques ""Batman"" Houston",1goOx6gnQdUllLfSMsL4Rt,,597376,Marques Houston,https://i.scdn.co/image/c9945bf1c16d33cc8604e5387f76d1aeb7e0d642,200,273,39,39|47|63|69|76|78,2003|2005|2003|2005|2004|2007,"Clubbin,Naked,That Girl,All Because Of You,Pop That Booty,Circle",c9945bf1c16d33cc8604e5387f76d1aeb7e0d642,200,273
+Immature,"Marques ""Batman"" Houston",1goOx6gnQdUllLfSMsL4Rt,,597376,Marques Houston,https://i.scdn.co/image/c9945bf1c16d33cc8604e5387f76d1aeb7e0d642,200,273,39,39|47|63|69|76|78,2003-11-01|2005-10-01|2003-03-15|2005-06-11|2004-01-03|2007-03-17,Clubbin|Naked|That Girl|All Because Of You|Pop That Booty|Circle,c9945bf1c16d33cc8604e5387f76d1aeb7e0d642,200,273
 Jagged Edge,Brandon Casey,,,133,,,,,,,,,,,
 Jagged Edge,Brian Casey,,,2010,,,,,,,,,,,
 Jagged Edge,Kyle Norman,,,0,,,,,,,,,,,
@@ -110,17 +110,17 @@ Jagged Edge,Richard Wingo,,,0,,,,,,,,,,,
 Jodeci,"""Mr. Dalvin"" DeGrate",74HWKzpZhzhYFFSbASDgx6,,266,Mr. Dalvin,https://i.scdn.co/image/8a3f77b1d08e955ef91f5b3002e1438f02cc623a,320,320,,,,,8a3f77b1d08e955ef91f5b3002e1438f02cc623a,320,320
 Jodeci,DeVante Swing,,,135,,,,,,,,,,,
 Jodeci,"Joel ""JoJo"" Hailey",07IN4tO2u845nv3vGkIIIM,,339,Jojo Hailey,https://i.scdn.co/image/92ffb161eb413e3ff3bcd8e86225bf8b989b8fcd,320,320,,,,,92ffb161eb413e3ff3bcd8e86225bf8b989b8fcd,320,320
-Jodeci,"Kedric ""K-Ci"" Hailey",4cynDosMoBQcVD9UKLq8eX,,2223,K-Ci,https://i.scdn.co/image/ab67616d00001e020a52a1f78bcfa93ba7694868,300,300,17,17,1995,If You Think You're Lonely Now,ab67616d00001e020a52a1f78bcfa93ba7694868,300,300
-Jonas Brothers,Joe Jonas,7gbmX8SsfjEjxDMzBi1ZOL,,1258396,Joe Jonas,https://i.scdn.co/image/f314ff68c7a5d440e95002a54602136c4a68f64c,320,320,30,30|92,2008|2011,"Gotta Find You,See No More",f314ff68c7a5d440e95002a54602136c4a68f64c,320,320
+Jodeci,"Kedric ""K-Ci"" Hailey",4cynDosMoBQcVD9UKLq8eX,,2223,K-Ci,https://i.scdn.co/image/ab67616d00001e020a52a1f78bcfa93ba7694868,300,300,17,17,1995-03-04,If You Think You're Lonely Now,ab67616d00001e020a52a1f78bcfa93ba7694868,300,300
+Jonas Brothers,Joe Jonas,7gbmX8SsfjEjxDMzBi1ZOL,,1258396,Joe Jonas,https://i.scdn.co/image/f314ff68c7a5d440e95002a54602136c4a68f64c,320,320,30,30|92,2008-07-05|2011-07-02,Gotta Find You|See No More,f314ff68c7a5d440e95002a54602136c4a68f64c,320,320
 Jonas Brothers,Kevin Jonas,11bdWrCwHE2gCdVARdASuu,,12603,,,,,,,,,,,
-Jonas Brothers,Nick Jonas,4Rxn7Im3LGfyRkY2FlHhWi,,7060644,Nick Jonas,https://i.scdn.co/image/6321142252f8a00a1de5db4ab89541d710300bd7,320,320,7,7|13|14|44|54|73|92,2015|2015|2016|2015|2017|2009|2010,"Jealous,Chains,Close,Levels,Bom Bidi Bom,Who I Am,Introducing Me",6321142252f8a00a1de5db4ab89541d710300bd7,320,320
+Jonas Brothers,Nick Jonas,4Rxn7Im3LGfyRkY2FlHhWi,,7060644,Nick Jonas,https://i.scdn.co/image/6321142252f8a00a1de5db4ab89541d710300bd7,320,320,7,7|13|14|44|54|73|92,2015-01-24|2015-04-18|2016-07-02|2015-10-24|2017-03-04|2009-12-19|2010-09-25,Jealous|Chains|Close|Levels|Bom Bidi Bom|Who I Am|Introducing Me,6321142252f8a00a1de5db4ab89541d710300bd7,320,320
 LFO,Brad Fischetti,,,57,,,,,,,,,,,
 LFO,Devin Lima,,,17,,,,,,,,,,,
 LFO,Richard Burton Cronin,,,,,,,,,,,,,,
 Menudo,Charlie Masso,7aGPqyuqFhcAaPEreb0LDW,,839,Charlie Masso,https://i.scdn.co/image/ab67616d00001e02d130cc0fd02cb5e480c6952d,300,300,,,,,ab67616d00001e02d130cc0fd02cb5e480c6952d,300,300
 Menudo,Miguel Cancel,0ZEyCAIp4oAa2DzCoIMaen,,352,Miguel Cancel,https://i.scdn.co/image/ab67616d00001e0217d7f067c31c9c0e7d9d7d50,300,300,,,,,ab67616d00001e0217d7f067c31c9c0e7d9d7d50,300,300
 Menudo,Raymond Acevedo,67fK5PJaRTtqjgNuG2yDQb,,116,Ray Acevedo,https://i.scdn.co/image/e1d7adddd3fe50822bfce5db8ce575ebc8a7bb31,320,320,,,,,e1d7adddd3fe50822bfce5db8ce575ebc8a7bb31,320,320
-Menudo,Ricky Martin,7slfeZO9LsJbWgpkIoXBUJ,,5749870,Ricky Martin,https://i.scdn.co/image/28b6705f46721e5f200ac48ba0e2a378fcaae335,320,320,1,1|2|12|13|22|45|65|67|74|74|88|89|97,1999|1999|2000|2001|2000|1999|2005|2000|2003|2010|1996|2006|2001,"Livin' La Vida Loca,She's All I Ever Had,She Bangs,Nobody Wants To Be Lonely,Shake Your Bon-Bon,The Cup Of Life (The Official Song Of The World Cup, France '98),I Don't Care,Private Emotion,Tal Vez,Lo Mejor De Mi Vida Eres Tu,Maria,Tu Recuerdo,Loaded",28b6705f46721e5f200ac48ba0e2a378fcaae335,320,320
+Menudo,Ricky Martin,7slfeZO9LsJbWgpkIoXBUJ,,5749870,Ricky Martin,https://i.scdn.co/image/28b6705f46721e5f200ac48ba0e2a378fcaae335,320,320,1,1|2|12|13|22|45|65|67|74|74|88|89|97,1999-05-08|1999-09-25|2000-12-02|2001-02-24|2000-02-12|1999-08-07|2005-10-29|2000-03-18|2003-05-31|2010-11-20|1996-10-05|2006-12-23|2001-06-16,"Livin' La Vida Loca|She's All I Ever Had|She Bangs|Nobody Wants To Be Lonely|Shake Your Bon-Bon|The Cup Of Life (The Official Song Of The World Cup, France '98)|I Don't Care|Private Emotion|Tal Vez|Lo Mejor De Mi Vida Eres Tu|Maria|Tu Recuerdo|Loaded",28b6705f46721e5f200ac48ba0e2a378fcaae335,320,320
 Menudo,"Robi ""Draco"" Rosa",4Vo7jk7sjpIFMk14dedex5,,103176,Draco Rosa,https://i.scdn.co/image/ecdd6790a6a1daddc63694c70725afbd81e32cfb,320,320,,,,,ecdd6790a6a1daddc63694c70725afbd81e32cfb,320,320
 Menudo,Roy Rosello,,,,,,,,,,,,,,
 Mindless Behavior,Craig Crippen,,,,,,,,,,,,,,
@@ -132,17 +132,17 @@ Musical Youth,"Frederick ""Junior"" Waite",,,,,,,,,,,,,,
 Musical Youth,Kelvin Grant,2apaIagRpZfyNdAlQOua20,,29,Kelvin Grant,https://i.scdn.co/image/ab67616d00001e0241b6367b532f1aa30e33cf34,300,300,,,,,ab67616d00001e0241b6367b532f1aa30e33cf34,300,300
 Musical Youth,Michael Grant,,,1,,,,,,,,,,,
 Musical Youth,Patrick Waite,,,291,,,,,,,,,,,
-New Edition,Bobby Brown,62sPt3fswraiEPnKQpAbdE,,725033,Bobby Brown,https://i.scdn.co/image/b1883b6a4dbde64bca76e79995333e45a5dea8fe,200,200,1,1|2|3|3|3|7|7|8|14|57|57,1989|1989|1989|1989|1992|1989|1992|1988|1993|1987|1993,"My Prerogative,On Our Own (From ""Ghostbusters II""),Roni,Every Little Step,Humpin' Around,Rock Wit'cha,Good Enough,Don't Be Cruel,Get Away,Girlfriend,That's The Way Love Is",b1883b6a4dbde64bca76e79995333e45a5dea8fe,200,200
-New Edition,Johnny Gill,7oHzn7edwmrYClrPRINkbn,,635884,Johnny Gill,https://i.scdn.co/image/cbdd38b6cd11c7696e96a443f978a611e4462070,200,200,3,3|10|28|43|53|56|84,1990|1990|1990|1997|1996|1993|1991,"Rub You The Right Way,My, My, My,Fairweather Friend,It's Your Body,Let's Get The Mood Right,The Floor,Wrap My Body Tight",cbdd38b6cd11c7696e96a443f978a611e4462070,200,200
+New Edition,Bobby Brown,62sPt3fswraiEPnKQpAbdE,,725033,Bobby Brown,https://i.scdn.co/image/b1883b6a4dbde64bca76e79995333e45a5dea8fe,200,200,1,1|2|3|3|3|7|7|8|14|57|57,1989-01-14|1989-08-05|1989-03-18|1989-06-10|1992-09-12|1989-11-04|1992-12-26|1988-10-15|1993-02-20|1987-01-24|1993-05-15,"My Prerogative|On Our Own (From ""Ghostbusters II"")|Roni|Every Little Step|Humpin' Around|Rock Wit'cha|Good Enough|Don't Be Cruel|Get Away|Girlfriend|That's The Way Love Is",b1883b6a4dbde64bca76e79995333e45a5dea8fe,200,200
+New Edition,Johnny Gill,7oHzn7edwmrYClrPRINkbn,,635884,Johnny Gill,https://i.scdn.co/image/cbdd38b6cd11c7696e96a443f978a611e4462070,200,200,3,3|10|28|43|53|56|84,1990-08-04|1990-09-29|1990-12-15|1997-02-15|1996-10-05|1993-06-19|1991-03-30,"Rub You The Right Way|My, My, My|Fairweather Friend|It's Your Body|Let's Get The Mood Right|The Floor|Wrap My Body Tight",cbdd38b6cd11c7696e96a443f978a611e4462070,200,200
 New Edition,Michael Bivins,,,138,,,,,,,,,,,
-New Edition,Ralph Tresvant,6MLDcHrNh4OqxDZAjMt5pt,,249679,Ralph Tresvant,https://i.scdn.co/image/af50fee1c505a377325f43a464d28cc118738f5b,200,258,4,4|34|54,1991|1991|1992,"Sensitivity,Stone Cold Gentleman,Money Can't Buy You Love (From ""Mo' Money"")",af50fee1c505a377325f43a464d28cc118738f5b,200,258
+New Edition,Ralph Tresvant,6MLDcHrNh4OqxDZAjMt5pt,,249679,Ralph Tresvant,https://i.scdn.co/image/af50fee1c505a377325f43a464d28cc118738f5b,200,258,4,4|34|54,1991-01-26|1991-04-13|1992-08-15,"Sensitivity|Stone Cold Gentleman|Money Can't Buy You Love (From ""Mo' Money"")",af50fee1c505a377325f43a464d28cc118738f5b,200,258
 New Edition,Ricky Bell,6GFHovQ3p5XrObOaBcySm0,,59,Ricky Bell,https://i.scdn.co/image/ab67616d00001e0216a7a55780aa5afac578f3c7,300,300,,,,,ab67616d00001e0216a7a55780aa5afac578f3c7,300,300
 New Edition,Ronnie DeVoe,,,119,,,,,,,,,,,
 New Kids On The Block,Danny Wood,6xPDkJZpIhEzBmAa1WOAYw,,4727,Danny Wood,https://i.scdn.co/image/0598c77e40a9665f49007d80ea6ae38cec5a7389,320,320,,,,,0598c77e40a9665f49007d80ea6ae38cec5a7389,320,320
 New Kids On The Block,Donnie Wahlberg,,,3610,,,,,,,,,,,
-New Kids On The Block,Joey McIntyre,3SIW6eVIZSz9V05WsaKIr3,,49142,Joey McIntyre,https://i.scdn.co/image/7e36988576374483fb695fb299b1222921cb7e4e,320,320,10,10|54,1999|1999,"Stay The Same,I Love You Came Too Late",7e36988576374483fb695fb299b1222921cb7e4e,320,320
+New Kids On The Block,Joey McIntyre,3SIW6eVIZSz9V05WsaKIr3,,49142,Joey McIntyre,https://i.scdn.co/image/7e36988576374483fb695fb299b1222921cb7e4e,320,320,10,10|54,1999-04-10|1999-09-11,Stay The Same|I Love You Came Too Late,7e36988576374483fb695fb299b1222921cb7e4e,320,320
 New Kids On The Block,Jonathan Knight,,,66,,,,,,,,,,,
-New Kids On The Block,Jordan Knight,2AEcSFddxmvXT0A7rBwyVL,,66414,Jordan Knight,https://i.scdn.co/image/f4e3f7b448b434089dcc526305a14806e4de052a,200,133,10,10,1999,Give It To You,f4e3f7b448b434089dcc526305a14806e4de052a,200,133
+New Kids On The Block,Jordan Knight,2AEcSFddxmvXT0A7rBwyVL,,66414,Jordan Knight,https://i.scdn.co/image/f4e3f7b448b434089dcc526305a14806e4de052a,200,133,10,10,1999-05-15,Give It To You,f4e3f7b448b434089dcc526305a14806e4de052a,200,133
 Nine Days,Brian Desveaux,5a1T20y1Qh8irL5zRP2prX,,32,Brian Desveaux,https://i.scdn.co/image/ab67616d00001e02100319a18da628ab7504fed2,300,300,,,,,ab67616d00001e02100319a18da628ab7504fed2,300,300
 Nine Days,Jeremy Dean,,,8,,,,,,,,,,,
 Nine Days,John Hampson,,,3,,,,,,,,,,,
@@ -160,11 +160,11 @@ O-Town,Dan Miller,,,2,,,,,,,,,,,
 O-Town,Erik-Michael Estrada,,,,,,,,,,,,,,
 O-Town,Jacob Underwood,,,16,,,,,,,,,,,
 O-Town,Trevor Penick,,,64,,,,,,,,,,,
-One Direction,Harry Styles,6KImCVD70vtIoJWnq6nGn3,,12813873,Harry Styles,https://i.scdn.co/image/44329fa8c646f4eb2bcf7af62afe195bfb2c4830,320,320,1,1|4|6|17|62|74|84|93|99,2020|2017|2020|2019|2019|2020|2019|2017|2019,"Watermelon Sugar,Sign Of The Times,Adore You,Lights Up,Falling,Golden,Cherry,Sweet Creature,She",44329fa8c646f4eb2bcf7af62afe195bfb2c4830,320,320
-One Direction,Liam Payne,5pUo3fmmHT8bhCyHE52hA6,,7219773,Liam Payne,https://i.scdn.co/image/1d99b8c429f9f6bddf4f45d1f2779f13805f96b8,320,320,10,10|76|98,2017|2018|2017,"Strip That Down,For You (Fifty Shades Freed),Bedroom Floor",1d99b8c429f9f6bddf4f45d1f2779f13805f96b8,320,320
-One Direction,Louis Tomlinson,57WHJIHrjOE3iAxpihhMnp,,4593298,Louis Tomlinson,https://i.scdn.co/image/91014738e54ecb8dbb0b5a0853ba8148032067f2,320,320,40,40,2017,Back To You,91014738e54ecb8dbb0b5a0853ba8148032067f2,320,320
-One Direction,Niall Horan,1Hsdzj7Dlq2I7tHP7501T4,,6794122,Niall Horan,https://i.scdn.co/image/42179cf495e77e1c76eca3190bc536fdc0e57947,320,320,11,11|20|63|66|97,2017|2017|2019|2017|2020,"Slow Hands,This Town,Nice To Meet Ya,Too Much To Ask,No Judgement",42179cf495e77e1c76eca3190bc536fdc0e57947,320,320
-One Direction,Zayn Malik,5ZsFI1h6hIdQRw2ti0hz81,,14594009,ZAYN,https://i.scdn.co/image/cd1e0a7b3bc0af4a654587fdd32ad639aa4bca24,320,320,1,1|2|44|55|59|66|73|89,2016|2017|2017|2016|2016|2017|2018|2020,"Pillowtalk,I Don't Wanna Live Forever (Fifty Shades Darker),Dusk Till Dawn,Like I Would,It's You,Still Got Time,Let Me,Better",cd1e0a7b3bc0af4a654587fdd32ad639aa4bca24,320,320
+One Direction,Harry Styles,6KImCVD70vtIoJWnq6nGn3,,12813873,Harry Styles,https://i.scdn.co/image/44329fa8c646f4eb2bcf7af62afe195bfb2c4830,320,320,1,1|4|6|17|62|74|84|93|99,2020-08-15|2017-04-29|2020-04-11|2019-10-26|2019-12-28|2020-11-07|2019-12-28|2017-05-20|2019-12-28,Watermelon Sugar|Sign Of The Times|Adore You|Lights Up|Falling|Golden|Cherry|Sweet Creature|She,44329fa8c646f4eb2bcf7af62afe195bfb2c4830,320,320
+One Direction,Liam Payne,5pUo3fmmHT8bhCyHE52hA6,,7219773,Liam Payne,https://i.scdn.co/image/1d99b8c429f9f6bddf4f45d1f2779f13805f96b8,320,320,10,10|76|98,2017-09-16|2018-02-24|2017-11-11,Strip That Down|For You (Fifty Shades Freed)|Bedroom Floor,1d99b8c429f9f6bddf4f45d1f2779f13805f96b8,320,320
+One Direction,Louis Tomlinson,57WHJIHrjOE3iAxpihhMnp,,4593298,Louis Tomlinson,https://i.scdn.co/image/91014738e54ecb8dbb0b5a0853ba8148032067f2,320,320,40,40,2017-08-12,Back To You,91014738e54ecb8dbb0b5a0853ba8148032067f2,320,320
+One Direction,Niall Horan,1Hsdzj7Dlq2I7tHP7501T4,,6794122,Niall Horan,https://i.scdn.co/image/42179cf495e77e1c76eca3190bc536fdc0e57947,320,320,11,11|20|63|66|97,2017-09-30|2017-01-14|2019-11-23|2017-10-07|2020-02-22,Slow Hands|This Town|Nice To Meet Ya|Too Much To Ask|No Judgement,42179cf495e77e1c76eca3190bc536fdc0e57947,320,320
+One Direction,Zayn Malik,5ZsFI1h6hIdQRw2ti0hz81,,14594009,ZAYN,https://i.scdn.co/image/cd1e0a7b3bc0af4a654587fdd32ad639aa4bca24,320,320,1,1|2|44|55|59|66|73|89,2016-02-20|2017-03-04|2017-09-30|2016-04-02|2016-03-19|2017-04-15|2018-04-28|2020-10-10,Pillowtalk|I Don't Wanna Live Forever (Fifty Shades Darker)|Dusk Till Dawn|Like I Would|It's You|Still Got Time|Let Me|Better,cd1e0a7b3bc0af4a654587fdd32ad639aa4bca24,320,320
 Perfect Gentlemen,Corey Blakely,,,,,,,,,,,,,,
 Perfect Gentlemen,Maurice Starr Jr.,,,,,,,,,,,,,,
 Perfect Gentlemen,Tyrone Sutton,,,,,,,,,,,,,,
@@ -188,11 +188,11 @@ Soul For Real,"""Jase4Real"" Oliver Dalyrimple",6veP9FCiOoBNG4nWWsuLaA,,123,Jase
 Soul For Real,Andre Dalyrimple,,,,,,,,,,,,,,
 Soul For Real,Brian Dalyrimple,,,,,,,,,,,,,,
 Soul For Real,Christopher Dalyrimple,,,,,,,,,,,,,,
-Take That,Gary Barlow,3ZcbVcd3fsf9qKK02UVzGB,,250170,Gary Barlow,https://i.scdn.co/image/f1e4459af7132a6071acb5122cda12f15c5e5245,320,320,44,44,1997,So Help Me Girl,f1e4459af7132a6071acb5122cda12f15c5e5245,320,320
+Take That,Gary Barlow,3ZcbVcd3fsf9qKK02UVzGB,,250170,Gary Barlow,https://i.scdn.co/image/f1e4459af7132a6071acb5122cda12f15c5e5245,320,320,44,44,1997-11-29,So Help Me Girl,f1e4459af7132a6071acb5122cda12f15c5e5245,320,320
 Take That,Howard Donald,2CrYSpwZF7UAfRMQ1DojYp,,658,Howard Donald,https://i.scdn.co/image/d69de7039080ec1be3b756832b3bce62a5777223,320,320,,,,,d69de7039080ec1be3b756832b3bce62a5777223,320,320
 Take That,Jason Orange,,,107,,,,,,,,,,,
 Take That,Mark Owen,1NCH3NhzIufLfHz32GLAzM,,22072,Mark Owen,https://i.scdn.co/image/9f6c97855ccf078750b7a512fec9f2606b5227d7,320,320,,,,,9f6c97855ccf078750b7a512fec9f2606b5227d7,320,320
-Take That,Robbie Williams,2HcwFjNelS49kFbfvMxQYw,,2123143,Robbie Williams,https://i.scdn.co/image/b012d6ae89b2911dc780fef766f1e23fb15c95ef,320,320,53,53|72,2000|1999,"Angels,Millennium",b012d6ae89b2911dc780fef766f1e23fb15c95ef,320,320
+Take That,Robbie Williams,2HcwFjNelS49kFbfvMxQYw,,2123143,Robbie Williams,https://i.scdn.co/image/b012d6ae89b2911dc780fef766f1e23fb15c95ef,320,320,53,53|72,2000-01-22|1999-06-19,Angels|Millennium,b012d6ae89b2911dc780fef766f1e23fb15c95ef,320,320
 The Boys,Bilal Abdulsamad,,,,,,,,,,,,,,
 The Boys,Hakeem Abdulsamad,,,,,,,,,,,,,,
 The Boys,Khiry Abdulsamad,,,,,,,,,,,,,,
@@ -224,8 +224,8 @@ Westlife,Shane Filan,3Q2ya2vGeOhQ9CaF9wWNP6,,105198,Shane Filan,https://i.scdn.c
 Youngstown,"David ""DC"" Yeager",,,,,,,,,,,,,,
 Youngstown,"James Lee ""Dallas""",,,,,,,,,,,,,,
 Youngstown,"Samuel ""Sammy"" Lopez Jr",,,,,,,,,,,,,,
-Destiny's Child,Beyoncé Knowles,6vWDO969PvNqNYHIOW5v0m,,26199288,Beyoncé,https://i.scdn.co/image/802895be7bc5339087ba36194b0b7307c467df96,320,320,1,1|1|1|1|1|2|3|3|3|4|4|5|10|10|11|11|13|13|16|18|19|20|23|28|29|35|37|37|38|39|41|41|43|45|46|47|50|57|57|59|61|63|65|65|67|71|76|78|82|90|98,2003|2003|2006|2006|2008|2014|2004|2007|2008|2004|2006|2009|2009|2016|2006|2016|2014|2016|2011|2016|2009|2011|2014|2016|2011|2016|2016|2020|2016|2009|2014|2016|2016|2014|2013|2016|2011|2004|2011|2006|2007|2016|2009|2019|2009|2011|2019|2012|2014|2019|2019,"Crazy In Love,Baby Boy,Check On It,Irreplaceable,Single Ladies (Put A Ring On It),Drunk In Love,Naughty Girl,Beautiful Liar,If I Were A Boy,Me, Myself And I,Deja Vu,Halo,Sweet Dreams,Formation,Ring The Alarm,Sorry,7/11,Hold Up,Best Thing I Never Had,6 Inch,Diva,Love On Top,Partition,Don't Hurt Yourself,Run The World (Girls),Freedom,Pray You Catch Me,Black Parade,All Night,Ego,***Flawless,Daddy Lessons,Sandcastles,XO,Get Me Bodied,Love Drought,Party,Dangerously In Love,1+1,Upgrade U,Listen,Forward,Video Phone,Before I Let Go,At Last,Countdown,Brown Skin Girl,Dance For You,Mine,Mood 4 Eva,Spirit",802895be7bc5339087ba36194b0b7307c467df96,320,320
-Destiny's Child,Kelly Rowland,3AuMNF8rQAKOzjYppFNAoB,,2558869,Kelly Rowland,https://i.scdn.co/image/3c19bcd0d4c50dd06df6dcae36f19fd74f71a193,320,320,17,17|27|30|72|88|97,2011|2002|2007|2013|2012|2003,"Motivation,Stole,Like This,Kisses Down Low,Ice,Can't Nobody",3c19bcd0d4c50dd06df6dcae36f19fd74f71a193,320,320
+Destiny's Child,Beyoncé Knowles,6vWDO969PvNqNYHIOW5v0m,,26199288,Beyoncé,https://i.scdn.co/image/802895be7bc5339087ba36194b0b7307c467df96,320,320,1,1|1|1|1|1|2|3|3|3|4|4|5|10|10|11|11|13|13|16|18|19|20|23|28|29|35|37|37|38|39|41|41|43|45|46|47|50|57|57|59|61|63|65|65|67|71|76|78|82|90|98,2003-07-12|2003-10-04|2006-02-04|2006-12-16|2008-12-13|2014-02-15|2004-06-05|2007-04-07|2008-11-08|2004-02-21|2006-08-12|2009-05-23|2009-11-07|2016-05-14|2006-09-30|2016-05-14|2014-12-20|2016-05-14|2011-08-13|2016-05-14|2009-03-07|2011-09-17|2014-03-15|2016-05-14|2011-06-11|2016-05-14|2016-05-14|2020-07-04|2016-05-14|2009-08-15|2014-12-13|2016-05-14|2016-05-14|2014-02-01|2013-11-23|2016-05-14|2011-12-17|2004-10-02|2011-06-11|2006-12-23|2007-02-03|2016-05-14|2009-12-12|2019-05-11|2009-02-07|2011-11-19|2019-08-03|2012-10-13|2014-01-11|2019-08-03|2019-07-27,"Crazy In Love|Baby Boy|Check On It|Irreplaceable|Single Ladies (Put A Ring On It)|Drunk In Love|Naughty Girl|Beautiful Liar|If I Were A Boy|Me, Myself And I|Deja Vu|Halo|Sweet Dreams|Formation|Ring The Alarm|Sorry|7/11|Hold Up|Best Thing I Never Had|6 Inch|Diva|Love On Top|Partition|Don't Hurt Yourself|Run The World (Girls)|Freedom|Pray You Catch Me|Black Parade|All Night|Ego|***Flawless|Daddy Lessons|Sandcastles|XO|Get Me Bodied|Love Drought|Party|Dangerously In Love|1+1|Upgrade U|Listen|Forward|Video Phone|Before I Let Go|At Last|Countdown|Brown Skin Girl|Dance For You|Mine|Mood 4 Eva|Spirit",802895be7bc5339087ba36194b0b7307c467df96,320,320
+Destiny's Child,Kelly Rowland,3AuMNF8rQAKOzjYppFNAoB,,2558869,Kelly Rowland,https://i.scdn.co/image/3c19bcd0d4c50dd06df6dcae36f19fd74f71a193,320,320,17,17|27|30|72|88|97,2011-08-06|2002-11-30|2007-07-21|2013-04-06|2012-12-15|2003-03-15,Motivation|Stole|Like This|Kisses Down Low|Ice|Can't Nobody,3c19bcd0d4c50dd06df6dcae36f19fd74f71a193,320,320
 Destiny's Child,Michelle Williams,6t7nbFAc2dUa7oNu7kBOui,,171190,Michelle Williams,https://i.scdn.co/image/31b531657aaccb3fb3c6caf5a702a850fd2289f8,320,320,,,,,31b531657aaccb3fb3c6caf5a702a850fd2289f8,320,320
 Destiny's Child,LaTavia Roberson,,,,,,,,,,,,,,
 Destiny's Child,LeToya Luckett,1EyK0glCKdNVaKjVxFOHCD,,340390,LeToya Luckett,https://i.scdn.co/image/febb6a85ebb540c313c606f55df329a08c5ee289,320,320,,,,,febb6a85ebb540c313c606f55df329a08c5ee289,320,320
@@ -234,7 +234,7 @@ Little Mix,Jade Thirlwall,,,,,,,,,,,,,,
 Little Mix,Leigh-Anne Pinnock,,,,,,,,,,,,,,
 Little Mix,Perrie Edwards,,,,,,,,,,,,,,
 Little Mix,Jesy Nelson,,,,,,,,,,,,,,
-TLC,"Tionne ""T-Boz"" Watkins",0UNB28n9hyPBlWMSuy5Wve,,352,T-Boz,https://i.scdn.co/image/ab67616d00001e02ec1131a08ae24df7d04a75b7,300,300,40,40,1996,"Touch Myself (From ""Fled"")",ab67616d00001e02ec1131a08ae24df7d04a75b7,300,300
+TLC,"Tionne ""T-Boz"" Watkins",0UNB28n9hyPBlWMSuy5Wve,,352,T-Boz,https://i.scdn.co/image/ab67616d00001e02ec1131a08ae24df7d04a75b7,300,300,40,40,1996-08-31,"Touch Myself (From ""Fled"")",ab67616d00001e02ec1131a08ae24df7d04a75b7,300,300
 TLC,"Lisa ""Left Eye"" Lopes",64ccradw8gAQn9gMQZmEha,,14941,"Lisa ""Left Eye"" Lopes",https://i.scdn.co/image/ab67616d00001e0202b307de1cdd13be7bb615b8,300,300,,,,,ab67616d00001e0202b307de1cdd13be7bb615b8,300,300
 TLC,Crystal Jones,,,,,,,,,,,,,,
 Spice Girls,Mel B,2vJU4d2jRQb4zJJIQRkyDB,,103420,Mel B,https://i.scdn.co/image/ab67616d00001e0211429634f4b8a4dba0d8bc1a,300,300,,,,,ab67616d00001e0211429634f4b8a4dba0d8bc1a,300,300
@@ -243,25 +243,25 @@ Spice Girls,Emma Bunton,2AEEnr6Le5zHzBwpnlZSmq,,132068,Emma Bunton,https://i.scd
 Spice Girls,Geri Halliwell,5orH1OWgjAYUX8sZ5gihTv,,130476,Geri Halliwell,https://i.scdn.co/image/1fa59149adf2b17db5bc6a2865a6d0328707df5c,320,320,,,,,1fa59149adf2b17db5bc6a2865a6d0328707df5c,320,320
 Spice Girls,Victoria Beckham,54w1dJI7MTjkRGNfGuu2fc,,75691,Victoria Beckham,https://i.scdn.co/image/ab67616d00001e02fbc98313ab1556a6ddd18a0e,300,300,,,,,ab67616d00001e02fbc98313ab1556a6ddd18a0e,300,300
 Fifth Harmony,Ally Brooke,6TXM1kV4L8DsDAkAfbOPYk,,370269,Ally Brooke,https://i.scdn.co/image/b8a2bb817044bcf03d4aa53cc2f10eb38a67d198,320,320,,,,,b8a2bb817044bcf03d4aa53cc2f10eb38a67d198,320,320
-Fifth Harmony,Normani,2cWZOOzeOm4WmBJRnD5R7I,,1104668,Normani,https://i.scdn.co/image/3ddad7b0f7281c2f8dc2ab8f1ee8607dbdb343f9,320,320,33,33,2019,Motivation,3ddad7b0f7281c2f8dc2ab8f1ee8607dbdb343f9,320,320
+Fifth Harmony,Normani,2cWZOOzeOm4WmBJRnD5R7I,,1104668,Normani,https://i.scdn.co/image/3ddad7b0f7281c2f8dc2ab8f1ee8607dbdb343f9,320,320,33,33,2019-08-31,Motivation,3ddad7b0f7281c2f8dc2ab8f1ee8607dbdb343f9,320,320
 Fifth Harmony,Dinah Jane,59KQTERLpPa7M0F25fRH6V,,317495,Dinah Jane,https://i.scdn.co/image/08767df1a56d736aa9be12d90eb4e649a10be3b9,320,320,,,,,08767df1a56d736aa9be12d90eb4e649a10be3b9,320,320
 Fifth Harmony,Lauren Jauregui,3J0BpFVUc9LeOIVeN5uNhU,,916456,Lauren Jauregui,https://i.scdn.co/image/2a49c8c45483eb5f031e35fb8c98298784eeadb5,320,320,,,,,2a49c8c45483eb5f031e35fb8c98298784eeadb5,320,320
-Fifth Harmony,Camila Cabello,4nDoRrQiYLoBzwC5BhVJzF,,20118733,Camila Cabello,https://i.scdn.co/image/6628c8b4acfa56206eaf83edd561f0549f8f23df,320,320,1,1|6|12|47|51|52|60|81|94,2018|2018|2020|2017|2019|2019|2019|2017|2020,"Havana,Never Be The Same,My Oh My,Crying In The Club,Consequences,Liar,Shameless,OMG,First Man",6628c8b4acfa56206eaf83edd561f0549f8f23df,320,320
+Fifth Harmony,Camila Cabello,4nDoRrQiYLoBzwC5BhVJzF,,20118733,Camila Cabello,https://i.scdn.co/image/6628c8b4acfa56206eaf83edd561f0549f8f23df,320,320,1,1|6|12|47|51|52|60|81|94,2018-01-27|2018-05-12|2020-04-25|2017-06-10|2019-01-12|2019-11-02|2019-09-21|2017-08-26|2020-02-08,Havana|Never Be The Same|My Oh My|Crying In The Club|Consequences|Liar|Shameless|OMG|First Man,6628c8b4acfa56206eaf83edd561f0549f8f23df,320,320
 BLACKPINK,Jisoo,,,,,,,,,,,,,,
 BLACKPINK,Jennie,250b0Wlc5Vk0CoUsaCY84M,,553927,JENNIE,https://i.scdn.co/image/85cd581d390f03938629d5fb393dae317a26e3e7,320,320,,,,,85cd581d390f03938629d5fb393dae317a26e3e7,320,320
 BLACKPINK,Rosé,,,,,,,,,,,,,,
 BLACKPINK,Lisa,,,,,,,,,,,,,,
-En Vogue,Terry Ellis,3VLPKOMqpsbmC1D2auAXR7,,3433,Terry Ellis,https://i.scdn.co/image/3b74abe05ba1a4cd991cc432bc0eacf14fa40d06,200,250,52,52,1995,Where Ever You Are,3b74abe05ba1a4cd991cc432bc0eacf14fa40d06,200,250
+En Vogue,Terry Ellis,3VLPKOMqpsbmC1D2auAXR7,,3433,Terry Ellis,https://i.scdn.co/image/3b74abe05ba1a4cd991cc432bc0eacf14fa40d06,200,250,52,52,1995-12-02,Where Ever You Are,3b74abe05ba1a4cd991cc432bc0eacf14fa40d06,200,250
 En Vogue,Dawn Robinson,,,,,,,,,,,,,,
 En Vogue,Cindy Herron,,,,,,,,,,,,,,
 En Vogue,Maxine Jones,0Jpj08MNDRaBHWmEMaTPaq,,218,Maxine Jones,https://i.scdn.co/image/1123e895ae6e2815506c3ea3ed92a1671592a476,320,320,,,,,1123e895ae6e2815506c3ea3ed92a1671592a476,320,320
-The Pussycat Dolls,Nicole Scherzinger,40xbWSB4JPdOkRyuTDy1oP,,1715566,Nicole Scherzinger,https://i.scdn.co/image/69bffe06f4894429e121263110374c8aefa37ba5,320,320,39,39|86,2011|2011,"Right There,Don't Hold Your Breath",69bffe06f4894429e121263110374c8aefa37ba5,320,320
+The Pussycat Dolls,Nicole Scherzinger,40xbWSB4JPdOkRyuTDy1oP,,1715566,Nicole Scherzinger,https://i.scdn.co/image/69bffe06f4894429e121263110374c8aefa37ba5,320,320,39,39|86,2011-07-30|2011-09-03,Right There|Don't Hold Your Breath,69bffe06f4894429e121263110374c8aefa37ba5,320,320
 The Pussycat Dolls,Carmit Bachar,,,,,,,,,,,,,,
 The Pussycat Dolls,Ashley Roberts,1NWnDQKWfNEhQr2WfLUN0C,,3023,Ashley Roberts,https://i.scdn.co/image/ab67616d00001e0268955a32feea470add836e4f,300,300,,,,,ab67616d00001e0268955a32feea470add836e4f,300,300
 The Pussycat Dolls,Jessica Sutta,6J2F6rTcNCJtktosxTxNw7,,6223,Jessica Sutta,https://i.scdn.co/image/8edcec97949fa204b15ad59ac186c83af97e4888,320,320,,,,,8edcec97949fa204b15ad59ac186c83af97e4888,320,320
 The Pussycat Dolls,Melody Thornton,1EibrdGchIU1GIgiqJR25K,,4762,Melody Thornton,https://i.scdn.co/image/1b6876c4265f0b4872df49c2497bb1f3bdb48ba8,320,320,,,,,1b6876c4265f0b4872df49c2497bb1f3bdb48ba8,320,320
 The Pussycat Dolls,Kimberly Wyatt,,,,,,,,,,,,,,
-The Bangles,Susanna Hoffs,2Sc4ukCRllIu02LZfHF0RL,,10157,Susanna Hoffs,https://i.scdn.co/image/7418d10db80f8e895df8d5d9575a957c974d5504,320,320,30,30|77,1991|1997,"My Side Of The Bed,All I Want",7418d10db80f8e895df8d5d9575a957c974d5504,320,320
+The Bangles,Susanna Hoffs,2Sc4ukCRllIu02LZfHF0RL,,10157,Susanna Hoffs,https://i.scdn.co/image/7418d10db80f8e895df8d5d9575a957c974d5504,320,320,30,30|77,1991-03-23|1997-01-25,My Side Of The Bed|All I Want,7418d10db80f8e895df8d5d9575a957c974d5504,320,320
 The Bangles,Debbi Peterson,,,,,,,,,,,,,,
 The Bangles,Vicki Peterson,,,,,,,,,,,,,,
 The Bangles,Annette Zilinskas,,,,,,,,,,,,,,
@@ -305,7 +305,7 @@ Klymaxx,Lorena Porter Shelby,,,,,,,,,,,,,,
 Klymaxx,Cheryl Cooley,,,,,,,,,,,,,,
 Klymaxx,Robbin Grider,,,,,,,,,,,,,,
 Klymaxx,Lynn Malsby,,,,,,,,,,,,,,
-Klymaxx,"Joyce ""Fenderella"" Irby",6EKHIeW7Q6rFM1jcLkHz33,,217,Joyce Irby,https://i.scdn.co/image/ab67616d00001e02d9cf1f5a30c6ac21036fb647,300,300,70,70,1990,I'll Be There,ab67616d00001e02d9cf1f5a30c6ac21036fb647,300,300
+Klymaxx,"Joyce ""Fenderella"" Irby",6EKHIeW7Q6rFM1jcLkHz33,,217,Joyce Irby,https://i.scdn.co/image/ab67616d00001e02d9cf1f5a30c6ac21036fb647,300,300,70,70,1990-03-10,I'll Be There,ab67616d00001e02d9cf1f5a30c6ac21036fb647,300,300
 Brownstone,"Monica ""Mimi"" Doby",,,,,,,,,,,,,,
 Brownstone,"Charmayne Maxena ""Maxee"" Maxwell",,,,,,,,,,,,,,
 Brownstone,"Nichole ""Nicci"" Gilbert",6SGcrRGQCscQdXQaIyOzPr,,377,Nicci Gilbert,https://i.scdn.co/image/aa8549fa9e60bac88f693e1837bb18984de83cc5,200,250,,,,,aa8549fa9e60bac88f693e1837bb18984de83cc5,200,250
@@ -325,7 +325,7 @@ Mary Jane Girls,"Kimberly ""Maxi"" Wuletich",,,,,,,,,,,,,,
 Mary Jane Girls,"Yvette ""Corvette"" Marine",,,,,,,,,,,,,,
 Mary Jane Girls,"Cheryl Ann ""Cheri"" Bailey aka Cheri Wells",,,,,,,,,,,,,,
 Mary Jane Girls,"Candice ""Candi"" Ghant",,,,,,,,,,,,,,
-Xscape,Kandi Burruss,0ThrQemMA2B8xxusTUl8IM,,118694,Kandi,https://i.scdn.co/image/24083cac1d32e9f22a683e8d281bc819a1dbc195,320,320,24,24,2000,Don't Think I'm Not,24083cac1d32e9f22a683e8d281bc819a1dbc195,320,320
+Xscape,Kandi Burruss,0ThrQemMA2B8xxusTUl8IM,,118694,Kandi,https://i.scdn.co/image/24083cac1d32e9f22a683e8d281bc819a1dbc195,320,320,24,24,2000-10-07,Don't Think I'm Not,24083cac1d32e9f22a683e8d281bc819a1dbc195,320,320
 Xscape,"Tameka ""Tiny"" Cottle",,,,,,,,,,,,,,
 Xscape,LaTocha Scott,,,,,,,,,,,,,,
 Xscape,Tamera Coggins-Wynn,,,,,,,,,,,,,,

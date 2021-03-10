@@ -2,6 +2,7 @@ import { quadtree } from "d3-quadtree";
 
 export default function forceCollideRect(padding = 0) {
   let nodes;
+	let size;
 
   function force() {
     const quad = quadtree(

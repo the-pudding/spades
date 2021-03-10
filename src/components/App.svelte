@@ -18,9 +18,9 @@
   <Swarm />
 </section>
 
-<section>
+<!-- <section>
   <Scatter />
-</section>
+</section> -->
 
 <!-- <Footer /> -->
 <style>

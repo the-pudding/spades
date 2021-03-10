@@ -1,47 +1,70 @@
 <script>
-  import { scaleLinear, scalePow } from "d3-scale";
+  import { scaleLinear, scalePow, scaleTime } from "d3-scale";
+  import { min, max } from "d3-array";
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
-  import Dots from "./Scatter.Dots.svelte";
+  import cleanData from "../utils/cleanData.js";
+  import Sets from "./Scatter.Sets.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
-
-  const clean = (d) => ({
-    ...d,
-    followers: +d.followers,
-    rank: d.topRank ? +d.topRank : 101,
-    hitCount: d.ranks.split("|").length,
-  });
 
   const getBandData = (name) => {
     const match = bandData.find((d) => d.name === name);
     return { bandfollowers: match.followers, bandrank: match.rank };
   };
-  const bandData = bands.map(clean);
-  const memberData = members.map(clean).map((d) => ({
-    ...d,
-    ...getBandData(d.band),
-  }));
 
-  console.table(bandData);
-  console.table(memberData);
+  // filter out bands with no member hits
+  const hasMemberHit = ({ name }) => {
+    const m = memberClean.filter((d) => d.band === name);
+    const hasHit = m.find((d) => d.hits);
+    return !!hasHit;
+  };
 
-  const maxFollowers = Math.max(
-    ...memberData.map((d) => d.followers),
-    ...bandData.map((d) => d.followers)
-  );
+  const memberClean = members.map(cleanData);
+  const bandClean = bands.map(cleanData);
+
+  const bandData = bandClean.filter(hasMemberHit);
+
+  const memberData = memberClean.filter((d) => d.hits);
+
+  const getMin = (prop) => {
+    return min([
+      ...memberData.map((d) => d[prop]),
+      ...bandData.map((d) => d[prop]),
+    ]);
+  };
+
+  const getMax = (prop) => {
+    return max([
+      ...memberData.map((d) => d[prop]),
+      ...bandData.map((d) => d[prop]),
+    ]);
+  };
+
+  const maxFollowers = getMax("followers");
+  const maxHits = getMax("hits");
+  const maxYear = getMax("topYear");
+  const minYear = getMin("topYear");
+  const maxDate = getMax("topDate");
+  const minDate = getMin("topDate");
 
   const domains = {
     followers: [0, maxFollowers],
-    rank: [1, 100],
+    hits: [0, maxHits],
+    topRank: [1, 100],
+    topYear: [minYear, maxYear],
+    topDate: [minDate, maxDate],
   };
   const scales = {
     followers: scalePow().exponent(0.25),
-    rank: scaleLinear(),
+    hits: scaleLinear(),
+    topRank: scaleLinear(),
+    topYear: scaleLinear(),
+    topDate: scaleTime(),
   };
 
-  const xProp = "rank";
-  const yProp = "followers";
+  const xProp = "topDate";
+  const yProp = "topRank";
   const xDomain = domains[xProp];
   const yDomain = domains[yProp];
   const xScale = scales[xProp];
@@ -51,34 +74,16 @@
 
   $: ratioX = $viewport.width || 1;
   $: ratioY = $viewport.height || 1;
-  $: fixedAspectRatio = ratioX / ratioY;
+  $: aspectRatio = 1 / 1;
   $: xRange = [0, 100];
-  $: yRange = [100, 0];
+  $: yRange = [0, 100];
 </script>
 
 <div class="chart-container">
-  <figure style="padding-bottom: {100 / fixedAspectRatio}%">
-    <!-- <LayerCake
-      data="{memberData}"
-      x="{xProp}"
-      y="{yProp}"
-      xDomain="{xDomain}"
-      yDomain="{yDomain}"
-      xScale="{xScale}"
-      yScale="{yScale}"
-      xRange="{xRange}"
-      yRange="{yRange}"
-      position="absolute"
-      ssr="{true}"
-      percentRange="{true}"
-      custom="{{ fixedAspectRatio, active, xProp, yProp }}"
-    >
-      <Html>
-        <Dots r="{8}" />
-      </Html>
-    </LayerCake> -->
+  <p>{yProp} vs {xProp}</p>
+  <figure style="padding-bottom: {100 / aspectRatio}%">
     <LayerCake
-      data="{bandData}"
+      data="{memberData.filter((d) => d.band === "Destiny's Child")}"
       x="{xProp}"
       y="{yProp}"
       xDomain="{xDomain}"
@@ -90,10 +95,10 @@
       position="absolute"
       ssr="{true}"
       percentRange="{true}"
-      custom="{{ fixedAspectRatio, active, xProp, yProp, type: 'band' }}"
+      custom="{{ aspectRatio, active, xProp, yProp }}"
     >
       <Html>
-        <Dots r="{4}" bind:active />
+        <Sets r="{4}" />
       </Html>
     </LayerCake>
   </figure>
@@ -102,8 +107,7 @@
 <style>
   .chart-container {
     width: 90%;
-    /* max-width: 640px; */
-    margin: 0 auto;
+    margin: 2em auto;
     /* overflow: hidden; */
   }
 
@@ -111,6 +115,6 @@
     position: relative;
     width: 100%;
     border-bottom: 2px dashed gray;
-    border-right: 2px dashed gray;
+    border-left: 2px dashed gray;
   }
 </style>

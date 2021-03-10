@@ -5,7 +5,13 @@
   export let delta;
   export let name;
   export let imageUrl;
-  export let followers;
+  export let ratio;
+
+  $: width = size / ratio;
+  $: height = size;
+  $: left = x / ratio;
+  $: top = y;
+  $: style = `width: ${width}%; height: ${height}%; left: ${left}%; top: ${top}%;`;
 </script>
 
 <div
@@ -13,7 +19,7 @@
   class:bigger="{delta > 0}"
   data-name="{name}"
   data-delta="{delta}"
-  style="width: {size}%; height: {size * 2}%; left: {x / 2}%; top: {y}%;"
+  style="{style}"
 >
   <div
     class="image"

@@ -1,6 +1,7 @@
 <script>
   import { scaleSymlog, scaleLog, scalePow } from "d3-scale";
   import { LayerCake, Html } from "layercake";
+  import viewport from "../stores/viewport.js";
   import Dots from "./Swarm.Dots.svelte";
   import Labels from "./Swarm.Labels.svelte";
   import bands from "../data/bands.csv";
@@ -26,26 +27,25 @@
       delta: getDelta(d),
     }));
 
-  const ratioX = 2;
-  const ratioY = 1;
-  const fixedAspectRatio = ratioX / ratioY;
+  $: ratioX = $viewport.width || 2;
+  $: ratioY = $viewport.height || 1;
+  $: aspectRatio = ratioX / ratioY;
 </script>
 
 <div class="chart-container">
-  <figure style="padding-bottom: {100 / fixedAspectRatio}%">
+  <figure style="padding-bottom: {100 / aspectRatio}%">
     <LayerCake
       data="{data}"
       x="delta"
       r="followers"
-      rRange="{[2, 8]}"
+      rRange="{[4, 16]}"
       xScale="{scalePow().exponent(0.5)}"
-      yDomain="{[0, ratioY * 100]}"
-      xRange="{[0, ratioX * 100]}"
-      yRange="{[0, ratioY * 100]}"
+      xRange="{[0, aspectRatio * 100]}"
+      yRange="{[0, 100]}"
       position="absolute"
       ssr="{true}"
       percentRange="{true}"
-      custom="{{ fixedAspectRatio }}"
+      custom="{{ aspectRatio }}"
     >
       <Html>
         <Dots r="{4}" />
@@ -56,14 +56,12 @@
 
 <style>
   .chart-container {
-    width: 90%;
-    /* max-width: 960px; */
+    max-width: 80%;
     margin: 0 auto;
   }
 
   figure {
     position: relative;
     width: 100%;
-    /* background: pink; */
   }
 </style>

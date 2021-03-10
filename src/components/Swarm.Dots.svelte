@@ -1,71 +1,51 @@
 <script>
   import { forceSimulation, forceCollide, forceX, forceY } from "d3-force";
+  import { sum } from "d3-array";
   import { getContext } from "svelte";
   import Dot from "./Swarm.Dot.svelte";
 
   import forceCollideRect from "../utils/forceCollideRect.js";
+  import forceCollideRect2 from "../utils/forceCollideRect2.js";
 
-  const { data, xGet, yGet, rGet, xScale, yScale, rScale, custom } = getContext(
-    "LayerCake"
-  );
+  const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
   let simData = [];
   const simulation = forceSimulation().stop();
 
   const runSim = () => {
+    console.log(ratio);
+    simulation.stop();
+
     simData = [
       ...$data.map((d) => ({
         ...d,
-        width: $rGet(d) * 2,
-        height: $rGet(d) * 2,
+        x: $xGet(d),
+        y: Math.random() * 100,
+        width: $rGet(d),
+        height: $rGet(d),
       })),
     ];
+
     simulation
       .nodes(simData)
       .velocityDecay(0.5)
-      .force("y", forceY(50).strength(0.2))
-      .force(
-        "x",
-        forceX()
-          .x((d) => $xGet(d))
-          .strength(1)
-      )
+      .force("y", forceY(midY).strength(0.5))
+      .force("x", forceX().x($xGet).strength(1))
       .force("collide", forceCollideRect())
-      .on("tick", () => {
-        simData = [...simData];
-      })
-      .stop();
+      .alpha(1)
+      .restart();
 
     for (var i = 0; i < 300; i++) {
       simulation.tick();
     }
+
     simData = [...simData];
   };
 
-  $: $data, runSim();
-
-  $: ratio = $custom.fixedAspectRatio;
+  $: midY = sum($yRange) / 2;
+  $: ratio = $custom.aspectRatio;
+  $: $data, ratio, runSim();
 </script>
 
-<p class="zero" style="left: {$xScale(0) / 2}%"></p>
-{#each simData as { x, y, id, name, delta, imageUrl, followers }}
-  <Dot
-    x="{x}"
-    y="{y}"
-    imageUrl="{imageUrl}"
-    name="{name}"
-    delta="{delta}"
-    size="{$rScale(followers)}"
-  />
+{#each simData as d}
+  <Dot {...d} size="{$rGet(d)}" ratio="{ratio}" />
 {/each}
-
-<style>
-  .zero {
-    height: 100%;
-    width: 1px;
-    border-left: 2px dashed black;
-    position: absolute;
-    top: 0;
-    margin: 0;
-    display: none;
-  }
-</style>
