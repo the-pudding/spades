@@ -29,7 +29,7 @@
 
   $: ratioX = $viewport.width || 2;
   $: ratioY = $viewport.height || 1;
-  $: aspectRatio = ratioX / ratioY;
+  $: aspectRatio = 2 / 1;
 </script>
 
 <div class="chart-container">
