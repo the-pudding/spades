@@ -4,6 +4,7 @@
   export let size;
   export let delta;
   export let name;
+  export let spotifyName;
   export let imageUrl;
   export let ratio;
 
@@ -25,7 +26,7 @@
     class="image"
     style="background-image: url('https://i.scdn.co/image/{imageUrl}');"
   ></div>
-  <span>{name}</span>
+  <span>{spotifyName}</span>
 </div>
 
 <style>
@@ -58,10 +59,12 @@
   }
   span {
     display: block;
-    width: 10em;
+    width: 8em;
     text-align: center;
-    transform: translate(0, -100%);
-    text-shadow: 0 0 4px white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    background: white;
     font-weight: bold;
     display: none;
     color: red;
