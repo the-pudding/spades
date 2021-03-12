@@ -8,17 +8,19 @@
 
   const dispatch = createEventDispatcher();
   const { xGet, yGet, custom, width, height } = getContext("LayerCake");
-  const pos = tweened(null, { duration: 750, easing: cubicOut });
+  // const pos = tweened(null, { duration: 750, easing: cubicOut });
   const { title, spotifyName, topRank } = d;
 
   $: w = r / $custom.aspectRatio;
   $: h = w;
 
-  $: pos.set([d.x, d.y]);
-  $: left = ($pos[0] / 100) * $width;
-  $: top = ($pos[1] / 100) * $height;
+  // $: pos.set([d.x, d.y]);
+  $: pos = [d.x, d.y];
+  $: left = (pos[0] / 100) * $width;
+  $: top = (pos[1] / 100) * $height;
   $: style = `transform: translate(${left}px, ${top}px);`;
-  // $: style = `left: ${$pos[0]}%; top: ${$pos[1]}%;`;
+  // $: style = `left: ${100 - $pos[0]}%; top: ${$pos[1]}%;`;
+  // $: style = "";
 
   const onEnter = () => {
     dispatch("enter", name);
@@ -29,13 +31,13 @@
 </script>
 
 <div
-  class:band="{$custom.type === 'band'}"
-  class:green="{spotifyName === 'Kelly Rowland'}"
+  class:band="{d.name === d.band}"
+  class:active="{d.band === $custom.activeBand}"
   style="{style}"
   on:mouseenter="{onEnter}"
   on:mouseout="{onExit}"
 >
-  <p>#{topRank} {title.split("(")[0].trim()}</p>
+  <p>#{topRank} {title}</p>
 </div>
 
 <style>
@@ -44,34 +46,41 @@
     top: 0;
     left: 0;
     opacity: 1;
-    pointer-events: none;
-    /* transform: translate(-50%, -50%); */
+    z-index: 0;
     will-change: transform;
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
-  }
-
-  .band {
-    /* opacity: 1; */
-    pointer-events: auto;
+    border: 1px solid var(--gray-light);
+    /* transform: translateX(-100%); */
+    transition: all 500ms ease-out;
+    white-space: nowrap;
   }
 
   p {
-    font-size: 1em;
+    font-size: 16px;
     margin: 0;
-    padding: 0 0.25em;
-    text-align: center;
+    padding: 0;
+    line-height: 1;
     position: relative;
+    background: transparent;
+    background: var(--off-white);
+    padding: 2px 4px;
+    color: var(--gray-light);
+    transition: all 500ms ease-out;
+  }
+
+  .active {
+    opacity: 1;
+    filter: grayscale(0);
+    z-index: 1;
+    border: 1px solid var(--off-black);
+    box-shadow: 0 0 3px 0 var(--off-black);
+  }
+
+  .active p {
     background: yellow;
-    border: 1px solid black;
+    color: var(--off-black);
   }
 
-  .green p {
-    background: yellowgreen;
-  }
-
-  .band p {
+  .active.band p {
     background: cyan;
   }
 </style>

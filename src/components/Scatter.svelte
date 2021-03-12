@@ -1,10 +1,11 @@
 <script>
   import { scaleLinear, scalePow, scaleTime } from "d3-scale";
-  import { min, max } from "d3-array";
+  import { min, max, extent, groups } from "d3-array";
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
   import cleanData from "../utils/cleanData.js";
   import Sets from "./Scatter.Sets.svelte";
+  import AxisY from "./Scatter.AxisY.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
 
@@ -20,26 +21,23 @@
     return !!hasHit;
   };
 
+  const getActiveDates = (band) => {
+    if (!band) return null;
+    const [key, data] = groupedData.find(([key]) => key === band);
+    const flatDates = [].concat(...data.map((d) => d.dates));
+    return extent(flatDates);
+  };
+
   const memberClean = members.map(cleanData);
   const bandClean = bands.map(cleanData);
 
   const bandData = bandClean.filter(hasMemberHit);
-
   const memberData = memberClean.filter((d) => d.hits);
+  const flatData = bandData.concat(memberData);
+  const groupedData = groups(flatData, (d) => d.band);
 
-  const getMin = (prop) => {
-    return min([
-      ...memberData.map((d) => d[prop]),
-      ...bandData.map((d) => d[prop]),
-    ]);
-  };
-
-  const getMax = (prop) => {
-    return max([
-      ...memberData.map((d) => d[prop]),
-      ...bandData.map((d) => d[prop]),
-    ]);
-  };
+  const getMin = (prop) => min(flatData, (d) => d[prop]);
+  const getMax = (prop) => max(flatData, (d) => d[prop]);
 
   const maxFollowers = getMax("followers");
   const maxHits = getMax("hits");
@@ -55,6 +53,7 @@
     topYear: [minYear, maxYear],
     topDate: [minDate, maxDate],
   };
+
   const scales = {
     followers: scalePow().exponent(0.25),
     hits: scaleLinear(),
@@ -63,58 +62,71 @@
     topDate: scaleTime(),
   };
 
-  const xProp = "topDate";
-  const yProp = "topRank";
+  const yProp = "topDate";
+  const xProp = "topRank";
   const xDomain = domains[xProp];
   const yDomain = domains[yProp];
   const xScale = scales[xProp];
   const yScale = scales[yProp];
 
-  let active = false;
+  let activeBand = null;
 
   $: ratioX = $viewport.width || 1;
   $: ratioY = $viewport.height || 1;
-  $: aspectRatio = 1 / 1;
+  $: aspectRatio = ratioX / ratioY;
   $: xRange = [0, 100];
   $: yRange = [0, 100];
+  $: activeDates = getActiveDates(activeBand);
 </script>
 
 <div class="chart-container">
-  <p>{yProp} vs {xProp}</p>
   <figure style="padding-bottom: {100 / aspectRatio}%">
-    <LayerCake
-      data="{memberData.filter((d) => d.band === "Destiny's Child")}"
-      x="{xProp}"
-      y="{yProp}"
-      xDomain="{xDomain}"
-      yDomain="{yDomain}"
-      xScale="{xScale}"
-      yScale="{yScale}"
-      xRange="{xRange}"
-      yRange="{yRange}"
-      position="absolute"
-      ssr="{true}"
-      percentRange="{true}"
-      custom="{{ aspectRatio, active, xProp, yProp }}"
-    >
-      <Html>
-        <Sets r="{4}" />
-      </Html>
-    </LayerCake>
+    {#each groupedData as [key, data]}
+      <LayerCake
+        data="{data}"
+        x="{xProp}"
+        y="{yProp}"
+        xDomain="{xDomain}"
+        yDomain="{activeDates || yDomain}"
+        xScale="{xScale}"
+        yScale="{yScale}"
+        xRange="{xRange}"
+        yRange="{yRange}"
+        position="absolute"
+        ssr="{true}"
+        percentRange="{true}"
+        custom="{{ aspectRatio, xProp, yProp, activeBand }}"
+      >
+        <Html>
+          <AxisY />
+          <Sets r="{4}" />
+        </Html>
+      </LayerCake>
+    {/each}
   </figure>
+  <select bind:value="{activeBand}">
+    <option value="">Show all</option>
+    {#each groupedData as [key]}
+      <option>{key}</option>
+    {/each}
+  </select>
 </div>
 
 <style>
   .chart-container {
-    width: 90%;
-    margin: 2em auto;
-    /* overflow: hidden; */
+    width: 100%;
+    margin: 0;
   }
 
   figure {
     position: relative;
     width: 100%;
-    border-bottom: 2px dashed gray;
-    border-left: 2px dashed gray;
+  }
+
+  select {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
   }
 </style>

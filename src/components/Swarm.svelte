@@ -2,7 +2,7 @@
   import { scaleSymlog, scaleLog, scalePow } from "d3-scale";
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
-  import Dots from "./Swarm.Dots.svelte";
+  import Nodes from "./Swarm.Nodes.svelte";
   import Labels from "./Swarm.Labels.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
@@ -48,7 +48,7 @@
       custom="{{ aspectRatio }}"
     >
       <Html>
-        <Dots r="{4}" />
+        <Nodes r="{4}" />
       </Html>
     </LayerCake>
   </figure>

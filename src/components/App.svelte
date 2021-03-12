@@ -14,13 +14,13 @@
 
 <!-- <Intro copy="{copy}" /> -->
 
-<section>
-  <Swarm />
-</section>
-
 <!-- <section>
-  <Scatter />
+  <Swarm />
 </section> -->
+
+<section>
+  <Scatter />
+</section>
 
 <!-- <Footer /> -->
 <style>

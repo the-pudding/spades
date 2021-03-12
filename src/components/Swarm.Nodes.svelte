@@ -2,7 +2,7 @@
   import { forceSimulation, forceCollide, forceX, forceY } from "d3-force";
   import { sum } from "d3-array";
   import { getContext } from "svelte";
-  import Dot from "./Swarm.Dot.svelte";
+  import Node from "./Swarm.Node.svelte";
 
   import forceCollideRect from "../utils/forceCollideRect.js";
   import forceCollideRect2 from "../utils/forceCollideRect2.js";
@@ -47,5 +47,5 @@
 </script>
 
 {#each simData as d}
-  <Dot {...d} size="{$rGet(d)}" ratio="{ratio}" />
+  <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
 {/each}
