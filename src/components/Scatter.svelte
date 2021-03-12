@@ -70,6 +70,7 @@
   const yScale = scales[yProp];
 
   let activeBand = null;
+  let zoom;
 
   $: ratioX = $viewport.width || 1;
   $: ratioY = $viewport.height || 1;
@@ -87,7 +88,7 @@
         x="{xProp}"
         y="{yProp}"
         xDomain="{xDomain}"
-        yDomain="{activeDates || yDomain}"
+        yDomain="{zoom ? activeDates || yDomain : yDomain}"
         xScale="{xScale}"
         yScale="{yScale}"
         xRange="{xRange}"
@@ -106,17 +107,19 @@
   </figure>
   <nav>
     <select bind:value="{activeBand}">
-      <option value="">Show all</option>
+      <option value="">Show all (band)</option>
       {#each groupedData as [key]}
         <option>{key}</option>
       {/each}
     </select>
     <select bind:value="{activeBand}">
-      <option value="">Show all</option>
+      <option value="">Show all (solo)</option>
       {#each memberData as { spotifyName, band }}
         <option value="{band}">{spotifyName}</option>
       {/each}
     </select>
+    <label for="zoom">zoom</label>
+    <input name="zoom" type="checkbox" bind:checked="{zoom}" />
   </nav>
 </div>
 
@@ -133,8 +136,12 @@
 
   nav {
     position: fixed;
+    display: flex;
+    background: wheat;
     top: 0;
     left: 0;
     z-index: 1000;
+    padding: 0.5em;
+    align-items: center;
   }
 </style>
