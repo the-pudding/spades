@@ -14,9 +14,9 @@
 
 <!-- <Intro copy="{copy}" /> -->
 
-<!-- <section>
+<section>
   <Swarm />
-</section> -->
+</section>
 
 <section>
   <Scatter />
