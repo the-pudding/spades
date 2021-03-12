@@ -75,7 +75,7 @@
   $: ratioY = $viewport.height || 1;
   $: aspectRatio = ratioX / ratioY;
   $: xRange = [0, 100];
-  $: yRange = [0, 100];
+  $: yRange = [5, 95];
   $: activeDates = getActiveDates(activeBand);
 </script>
 
@@ -104,12 +104,20 @@
       </LayerCake>
     {/each}
   </figure>
-  <select bind:value="{activeBand}">
-    <option value="">Show all</option>
-    {#each groupedData as [key]}
-      <option>{key}</option>
-    {/each}
-  </select>
+  <nav>
+    <select bind:value="{activeBand}">
+      <option value="">Show all</option>
+      {#each groupedData as [key]}
+        <option>{key}</option>
+      {/each}
+    </select>
+    <select bind:value="{activeBand}">
+      <option value="">Show all</option>
+      {#each memberData as { spotifyName, band }}
+        <option value="{band}">{spotifyName}</option>
+      {/each}
+    </select>
+  </nav>
 </div>
 
 <style>
@@ -123,7 +131,7 @@
     width: 100%;
   }
 
-  select {
+  nav {
     position: fixed;
     top: 0;
     left: 0;

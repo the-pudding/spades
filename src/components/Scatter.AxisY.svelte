@@ -4,9 +4,7 @@
   const { yScale, height } = getContext("LayerCake");
 
   $: ticks = $yScale.ticks(5);
-  $: uniqueCount = [...new Set(ticks.map((d) => d.getFullYear()))].length;
-  $: yearLevel = ticks.length === uniqueCount;
-  $: format = yearLevel ? "%Y" : "%b %Y";
+  $: format = "%Y";
 </script>
 
 <div>
@@ -24,7 +22,7 @@
     top: 0;
     margin: 0;
     line-height: 1;
-    transition: transform 500ms ease-out;
+    transition: transform 1000ms ease-in-out;
     font-size: 32px;
     font-weight: bold;
     color: var(--gray-light);

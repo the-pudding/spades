@@ -50,7 +50,7 @@
     will-change: transform;
     border: 1px solid var(--gray-light);
     /* transform: translateX(-100%); */
-    transition: all 500ms ease-out;
+    transition: all 1000ms ease-in-out;
     white-space: nowrap;
   }
 
@@ -64,7 +64,7 @@
     background: var(--off-white);
     padding: 2px 4px;
     color: var(--gray-light);
-    transition: all 500ms ease-out;
+    transition: all 1000ms ease-in-out;
   }
 
   .active {

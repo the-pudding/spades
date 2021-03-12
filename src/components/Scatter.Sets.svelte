@@ -53,13 +53,13 @@
         "x",
         forceX()
           .x((d) => $xGet(d))
-          .strength(1)
+          .strength(0.9)
       )
       .force(
         "y",
         forceY()
           .y((d) => $yGet(d))
-          .strength(1)
+          .strength(0.5)
       )
       .force("collide", forceCollideRect())
 
