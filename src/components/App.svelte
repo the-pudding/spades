@@ -12,14 +12,14 @@
 
 <!-- <Header /> -->
 
-<!-- <Intro copy="{copy}" /> -->
+<Intro copy="{copy}" />
 
 <section>
-  <Swarm />
+  <Swarm copy="{copy}" />
 </section>
 
 <section>
-  <Scatter />
+  <Scatter copy="{copy}" />
 </section>
 
 <!-- <Footer /> -->

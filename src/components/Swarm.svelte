@@ -2,10 +2,13 @@
   import { scaleSymlog, scaleLog, scalePow } from "d3-scale";
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
+  import FigureInfo from "./FigureInfo.svelte";
   import Nodes from "./Swarm.Nodes.svelte";
   import Labels from "./Swarm.Labels.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
+
+  export let copy;
 
   const prop = "followers";
 
@@ -31,6 +34,8 @@
   $: ratioY = $viewport.height || 1;
   $: aspectRatio = 2 / 1;
 </script>
+
+<FigureInfo hed="{copy.popularityHed}" dek="{copy.popularityDek}" />
 
 <div class="chart-container">
   <figure style="padding-bottom: {100 / aspectRatio}%">

@@ -31,13 +31,14 @@
 </script>
 
 <div
+  class="node-{d.i}"
   class:band="{d.name === d.band}"
   class:active="{d.band === $custom.activeBand}"
   style="{style}"
   on:mouseenter="{onEnter}"
   on:mouseout="{onExit}"
 >
-  <p>#{topRank} {title}</p>
+  <p class="scatter-node-text">#{topRank} {title}</p>
 </div>
 
 <style>
@@ -45,26 +46,20 @@
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 1;
     z-index: 0;
-    will-change: transform;
+    will-change: transform, opacity;
     border: 1px solid var(--gray-light);
-    /* transform: translateX(-100%); */
-    transition: all 1000ms ease-in-out;
+    transition: transform 1000ms ease-in-out, opacity 1000ms ease-in-out;
     white-space: nowrap;
+    box-shadow: 0 0 3px 0 var(--gray);
   }
 
   p {
-    font-size: 16px;
-    margin: 0;
-    padding: 0;
-    line-height: 1;
     position: relative;
-    background: transparent;
-    background: var(--off-white);
-    padding: 2px 4px;
+    background-color: var(--off-white);
     color: var(--gray-light);
     transition: all 1000ms ease-in-out;
+    will-change: background-color, color;
   }
 
   .active {
@@ -72,15 +67,35 @@
     filter: grayscale(0);
     z-index: 1;
     border: 1px solid var(--off-black);
-    box-shadow: 0 0 3px 0 var(--off-black);
   }
 
   .active p {
-    background: yellow;
     color: var(--off-black);
   }
 
-  .active.band p {
-    background: cyan;
+  .node-0.active p {
+    background-color: #aff05b;
+  }
+
+  .node-1.active p {
+    background-color: #6e40aa;
+    color: var(--off-white);
+  }
+
+  .node-2.active p {
+    background-color: #b23cb2;
+    color: var(--off-white);
+  }
+
+  .node-3.active p {
+    background-color: #ee4395;
+  }
+
+  .node-4.active p {
+    background-color: #ff5e63;
+  }
+
+  .node-5.active p {
+    background-color: #ff8c38;
   }
 </style>

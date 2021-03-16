@@ -54,8 +54,8 @@
     background-position: center center;
     filter: grayscale(100%);
   }
-  .bigger {
-    /* border: 3px solid red; */
+  .bigger .image {
+    filter: grayscale(0);
   }
   span {
     display: block;

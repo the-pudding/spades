@@ -5,15 +5,16 @@
 
   import forceCollideRect from "../utils/forceCollideRect.js";
 
-  export let r;
-  export let active;
+  export let key;
 
   let ready;
   let shadow;
   let dimensions = [];
   let simData = [];
 
-  const { data, xGet, yGet, yDomain, width, height } = getContext("LayerCake");
+  const { data, xGet, yGet, yDomain, width, height, custom } = getContext(
+    "LayerCake"
+  );
 
   const simulation = forceSimulation().stop();
 
@@ -29,6 +30,7 @@
 
         a += 1;
         return {
+          i,
           spotifyName,
           name,
           band,
@@ -53,13 +55,13 @@
         "x",
         forceX()
           .x((d) => $xGet(d))
-          .strength(0.9)
+          .strength(1)
       )
       .force(
         "y",
         forceY()
           .y((d) => $yGet(d))
-          .strength(0.5)
+          .strength(0.05)
       )
       .force("collide", forceCollideRect())
 
@@ -77,12 +79,18 @@
 
   const renderShadow = () => {
     if (!shadow) return false;
-    shadow.querySelectorAll("p").forEach((el) => {
+    // if (!window.songs) window.songs = [];
+    shadow.querySelectorAll("p.lg").forEach((el) => {
       const bbox = el.getBoundingClientRect();
       dimensions.push({
         width: Math.ceil((bbox.width / $width) * 100) + 2,
         height: Math.ceil((bbox.height / $height) * 100),
       });
+      // window.songs.push({
+      //   i: el.dataset.id,
+      //   w: bbox.width,
+      //   h: bbox.height,
+      // });
     });
     runSim();
   };
@@ -94,19 +102,32 @@
 <div class="shadow" bind:this="{shadow}">
   {#each $data as d}
     {#each d.dates as date, i}
-      <p>#{d.ranks[i]} {d.titles[i]}</p>
+      <p data-id="{d.name}" class="lg scatter-node-text">
+        #{d.ranks[i]}
+        {d.titles[i]}
+      </p>
+      <!-- <p
+        data-id="{d.name}|{i}"
+        class="sm scatter-node-text scatter-node-text--sm"
+      >
+        #{d.ranks[i]}
+        {d.titles[i]}
+      </p> -->
     {/each}
   {/each}
 </div>
 
 {#each simData as d}
-  <Node
-    r="{r}"
-    d="{d}"
-    on:enter="{({ detail }) => (active = detail)}"
-    on:exit="{({ detail }) => (active = null)}"
-  />
+  <Node d="{d}" />
 {/each}
+
+<ul>
+  {#each $data as d, i}
+    <li class:active="{$custom.activeBand === key}" class="node-{i}">
+      <p>{d.spotifyName}</p>
+    </li>
+  {/each}
+</ul>
 
 <style>
   .shadow {
@@ -115,12 +136,26 @@
     visibility: none;
   }
 
-  .shadow p {
+  ul {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+  }
+
+  li {
+    display: none;
+  }
+
+  li.active {
+    display: block;
+  }
+
+  li p {
     display: inline-block;
+    padding: 0.5em;
     margin: 0;
-    padding: 0;
-    font-size: 16px;
-    padding: 2px 4px;
     line-height: 1;
   }
 </style>

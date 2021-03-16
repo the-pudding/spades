@@ -1,13 +1,17 @@
 <script>
+  import { onMount } from "svelte";
   import { scaleLinear, scalePow, scaleTime } from "d3-scale";
   import { min, max, extent, groups } from "d3-array";
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
   import cleanData from "../utils/cleanData.js";
+  import FigureInfo from "./FigureInfo.svelte";
   import Sets from "./Scatter.Sets.svelte";
   import AxisY from "./Scatter.AxisY.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
+
+  export let copy;
 
   const getBandData = (name) => {
     const match = bandData.find((d) => d.name === name);
@@ -70,7 +74,7 @@
   const yScale = scales[yProp];
 
   let activeBand = null;
-  let zoom;
+  let zoom = true;
 
   $: ratioX = $viewport.width || 1;
   $: ratioY = $viewport.height || 1;
@@ -78,7 +82,16 @@
   $: xRange = [0, 100];
   $: yRange = [5, 95];
   $: activeDates = getActiveDates(activeBand);
+
+  // onMount(() => {
+  //   setTimeout(() => {
+  //     window.songs = JSON.stringify(window.songs);
+  //     console.log("data ready");
+  //   }, 5000);
+  // });
 </script>
+
+<FigureInfo hed="{copy.successHed}" dek="{copy.successDek}" />
 
 <div class="chart-container">
   <figure style="padding-bottom: {100 / aspectRatio}%">
@@ -100,7 +113,7 @@
       >
         <Html>
           <AxisY />
-          <Sets r="{4}" />
+          <Sets key="{key}" />
         </Html>
       </LayerCake>
     {/each}
@@ -112,12 +125,6 @@
         <option>{key}</option>
       {/each}
     </select>
-    <select bind:value="{activeBand}">
-      <option value="">Show all (solo)</option>
-      {#each memberData as { spotifyName, band }}
-        <option value="{band}">{spotifyName}</option>
-      {/each}
-    </select>
     <label for="zoom">zoom</label>
     <input name="zoom" type="checkbox" bind:checked="{zoom}" />
   </nav>
@@ -127,6 +134,7 @@
   .chart-container {
     width: 100%;
     margin: 0;
+    padding: 2em;
   }
 
   figure {
