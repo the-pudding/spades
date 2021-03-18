@@ -3,23 +3,32 @@
 </script>
 
 <header>
-  <div class="wordmark">
-    <a href="https://pudding.cool">{@html wordmark}</a>
-  </div>
+  <p>
+    <a href="https://pudding.cool">{@html wordmark}</a> <span>wonders...</span>
+  </p>
 </header>
 
 <style>
-  .wordmark {
-    max-width: 10em;
-    margin: 1em auto;
+  header {
+    max-width: 40em;
+    margin: 0 auto;
   }
 
-  .wordmark a {
+  p {
+    display: flex;
+    align-items: center;
+    line-height: 1;
+  }
+
+  a {
+    display: inline-block;
+    max-width: 8em;
     border: none;
     color: var(--fg);
+    margin-right: 0.5em;
   }
 
-  .wordmark a:hover {
-    background-color: transparent;
+  span {
+    transform: translateY(-2px);
   }
 </style>

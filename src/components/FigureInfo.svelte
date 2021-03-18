@@ -1,16 +1,20 @@
 <script>
   export let hed;
-  export let dek;
 </script>
 
 <div>
   <h2>{hed}</h2>
-  <p>{dek}</p>
 </div>
 
 <style>
   div {
     margin: 0 auto;
+    margin-top: 4em;
     max-width: 40em;
+  }
+
+  h2 {
+    font-size: 32px;
+    line-height: 1.2;
   }
 </style>

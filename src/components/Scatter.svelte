@@ -5,7 +5,6 @@
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
   import cleanData from "../utils/cleanData.js";
-  import FigureInfo from "./FigureInfo.svelte";
   import Sets from "./Scatter.Sets.svelte";
   import AxisY from "./Scatter.AxisY.svelte";
   import bands from "../data/bands.csv";
@@ -91,8 +90,6 @@
   // });
 </script>
 
-<FigureInfo hed="{copy.successHed}" dek="{copy.successDek}" />
-
 <div class="chart-container">
   <figure style="padding-bottom: {100 / aspectRatio}%">
     {#each groupedData as [key, data]}
@@ -140,6 +137,7 @@
   figure {
     position: relative;
     width: 100%;
+    overflow: hidden;
   }
 
   nav {

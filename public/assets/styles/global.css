@@ -49,6 +49,17 @@
   --highlight: var(--yellow);
 }
 
+p {
+	line-height: 1.6;
+	font-size: 20px;
+}
+
+blockquote {
+	padding: 0.25em 1em;
+	margin: 2em 0;
+	background: var(--off-white);
+}
+
 .skip-to-main {
   border: none;
   width: 1px;
@@ -83,30 +94,4 @@
   padding: 2px 4px;
   font-size: 14px;
   line-height: 1;
-}
-
-.node-0.active p {
-	background-color: #aff05b;
-}
-
-.node-1.active p {
-  background-color: #6e40aa;
-  color: var(--off-white);
-}
-
-.node-2.active p {
-  background-color: #b23cb2;
-  color: var(--off-white);
-}
-
-.node-3.active p {
-  background-color: #ee4395;
-}
-
-.node-4.active p {
-  background-color: #ff5e63;
-}
-
-.node-5.active p {
-  background-color: #ff8c38;
 }

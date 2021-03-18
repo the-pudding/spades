@@ -3,8 +3,7 @@
 </script>
 
 <div>
-  <h1>{copy.title}</h1>
-  <p>{copy.description}</p>
+  <h1>{copy.description}</h1>
 </div>
 
 <div>
@@ -12,12 +11,17 @@
     {#if type === "text"}
       <p>{@html value}</p>
     {:else if type === "quote"}
-      <blockquote>{value}</blockquote>
+      <blockquote><p>{value}</p></blockquote>
     {/if}
   {/each}
 </div>
 
 <style>
+  h1 {
+    font-size: 56px;
+    line-height: 1.125;
+    margin-bottom: 1em;
+  }
   div {
     max-width: 40em;
     margin: 0 auto;

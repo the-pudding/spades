@@ -158,4 +158,30 @@
     margin: 0;
     line-height: 1;
   }
+
+  .node-0.active p {
+    background-color: #aff05b;
+  }
+
+  .node-1.active p {
+    background-color: #6e40aa;
+    color: var(--off-white);
+  }
+
+  .node-2.active p {
+    background-color: #b23cb2;
+    color: var(--off-white);
+  }
+
+  .node-3.active p {
+    background-color: #ee4395;
+  }
+
+  .node-4.active p {
+    background-color: #ff5e63;
+  }
+
+  .node-5.active p {
+    background-color: #ff8c38;
+  }
 </style>
