@@ -1,7 +1,7 @@
 <script>
   import { timeFormat } from "d3-time-format";
   import { getContext } from "svelte";
-  const { yScale, height } = getContext("LayerCake");
+  const { yScale } = getContext("LayerCake");
 
   $: ticks = $yScale.ticks(5);
   $: format = "%Y";
@@ -9,7 +9,7 @@
 
 <div>
   {#each ticks as tick}
-    <p style="transform: translate(0, {($yScale(tick) / 100) * $height}px)">
+    <p style="transform: translate(0, {$yScale(tick)}px)">
       {timeFormat(format)(tick)}
     </p>
   {/each}

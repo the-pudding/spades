@@ -23,12 +23,13 @@
   a {
     display: inline-block;
     max-width: 8em;
+    width: 100%;
     border: none;
     color: var(--fg);
     margin-right: 0.5em;
   }
 
   span {
-    transform: translateY(-2px);
+    transform: translateY(-1px);
   }
 </style>

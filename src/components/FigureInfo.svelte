@@ -3,7 +3,10 @@
 </script>
 
 <div>
-  <h2>{hed}</h2>
+  <h2>
+    {hed}
+    <slot />
+  </h2>
 </div>
 
 <style>

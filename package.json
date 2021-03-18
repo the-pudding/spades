@@ -13,6 +13,7 @@
     "archieml": "^0.4.2",
     "autoprefixer": "^10.2.4",
     "compression": "^1.7.4",
+		"d3-dsv": "^1.2.0",
     "d3-force": "^2.1.1",
     "d3-interpolate": "^2.0.1",
     "d3-quadtree": "^2.0.0",

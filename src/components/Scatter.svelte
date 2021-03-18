@@ -5,12 +5,21 @@
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
   import cleanData from "../utils/cleanData.js";
+  import Shadow from "./Scatter.Shadow.svelte";
   import Sets from "./Scatter.Sets.svelte";
   import AxisY from "./Scatter.AxisY.svelte";
+  import Legend from "./Scatter.Legend.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
+  import scatterDimensions from "../data/scatterDimensions.csv";
 
-  export let copy;
+  export let scatterBands;
+  export let activeBand;
+
+  let mounted = false;
+
+  const PAD = 16;
+  const MAX_SONG_WIDTH = max(scatterDimensions, (d) => +d.width);
 
   const getBandData = (name) => {
     const match = bandData.find((d) => d.name === name);
@@ -72,62 +81,59 @@
   const xScale = scales[xProp];
   const yScale = scales[yProp];
 
-  let activeBand = null;
-  let zoom = true;
-
   $: ratioX = $viewport.width || 1;
   $: ratioY = $viewport.height || 1;
   $: aspectRatio = ratioX / ratioY;
-  $: xRange = [0, 100];
-  $: yRange = [5, 95];
+  $: xRange = [PAD, ratioX - MAX_SONG_WIDTH - PAD];
+  $: yRange = [PAD * 6, ratioY - PAD * 10];
   $: activeDates = getActiveDates(activeBand);
+  $: currentBand = groupedData.find(([key]) => key === activeBand);
 
-  // onMount(() => {
-  //   setTimeout(() => {
-  //     window.songs = JSON.stringify(window.songs);
-  //     console.log("data ready");
-  //   }, 5000);
-  // });
+  onMount(() => {
+    mounted = true;
+    scatterBands = groupedData.map(([key]) => key);
+  });
 </script>
 
-<div class="chart-container">
-  <figure style="padding-bottom: {100 / aspectRatio}%">
-    {#each groupedData as [key, data]}
-      <LayerCake
-        data="{data}"
-        x="{xProp}"
-        y="{yProp}"
-        xDomain="{xDomain}"
-        yDomain="{zoom ? activeDates || yDomain : yDomain}"
-        xScale="{xScale}"
-        yScale="{yScale}"
-        xRange="{xRange}"
-        yRange="{yRange}"
-        position="absolute"
-        ssr="{true}"
-        percentRange="{true}"
-        custom="{{ aspectRatio, xProp, yProp, activeBand }}"
-      >
-        <Html>
-          <AxisY />
-          <Sets key="{key}" />
-        </Html>
-      </LayerCake>
-    {/each}
-  </figure>
-  <nav>
-    <select bind:value="{activeBand}">
-      <option value="">Show all (band)</option>
-      {#each groupedData as [key]}
-        <option>{key}</option>
+<!-- <Shadow data="{flatData}" /> -->
+
+{#if mounted}
+  <div class="ui">
+    <Legend band="{currentBand}" />
+  </div>
+
+  <div class="chart-container">
+    <figure style="padding-bottom: {100 / aspectRatio}%">
+      {#each groupedData as [key, data]}
+        <LayerCake
+          data="{data}"
+          x="{xProp}"
+          y="{yProp}"
+          xDomain="{xDomain}"
+          yDomain="{activeDates || yDomain}"
+          xScale="{xScale}"
+          yScale="{yScale}"
+          xRange="{xRange}"
+          yRange="{yRange}"
+          position="absolute"
+          custom="{{ aspectRatio, xProp, yProp, activeBand }}"
+        >
+          <Html>
+            <AxisY />
+            <Sets key="{key}" />
+          </Html>
+        </LayerCake>
       {/each}
-    </select>
-    <label for="zoom">zoom</label>
-    <input name="zoom" type="checkbox" bind:checked="{zoom}" />
-  </nav>
-</div>
+    </figure>
+  </div>
+{/if}
 
 <style>
+  .ui {
+    display: flex;
+    padding: 0 2rem;
+  }
+
   .chart-container {
     width: 100%;
     margin: 0;
@@ -140,14 +146,37 @@
     overflow: hidden;
   }
 
-  nav {
-    position: fixed;
-    display: flex;
-    background: wheat;
+  figure:before {
+    position: absolute;
     top: 0;
     left: 0;
-    z-index: 1000;
-    padding: 0.5em;
-    align-items: center;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    background-image: linear-gradient(
+      to top,
+      rgba(255, 255, 255, 0) 0,
+      var(--bg) 67%,
+      var(--bg) 100%
+    );
+    content: "";
+    z-index: var(--z-top);
+  }
+
+  figure:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2rem;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0,
+      var(--bg) 67%,
+      var(--bg) 100%
+    );
+    content: "";
+    z-index: var(--z-top);
   }
 </style>

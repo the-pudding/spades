@@ -20,6 +20,13 @@
   --green: #34a29e;
   --red: #ff533d;
   --yellow: #e5e338;
+	--node-0: #aff05b;
+	--node-1: #6e40aa;
+	--node-2: #b23cb2;
+	--node-3: #ee4395;
+	--node-4: #ff5e63;
+	--node-5: #ff8c38;
+  
 
   --bg: var(--white);
   --fg: var(--off-black);
@@ -55,9 +62,10 @@ p {
 }
 
 blockquote {
-	padding: 0.25em 1em;
-	margin: 2em 0;
+	padding: 0.25em 0.75em;
+	margin: 2em auto;
 	background: var(--off-white);
+	border-left: 4px solid var(--gray-light);
 }
 
 .skip-to-main {

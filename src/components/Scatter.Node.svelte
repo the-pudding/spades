@@ -7,20 +7,15 @@
   export let r = 4;
 
   const dispatch = createEventDispatcher();
-  const { xGet, yGet, custom, width, height } = getContext("LayerCake");
-  // const pos = tweened(null, { duration: 750, easing: cubicOut });
+  const { xGet, yGet, custom } = getContext("LayerCake");
   const { title, spotifyName, topRank } = d;
 
   $: w = r / $custom.aspectRatio;
   $: h = w;
 
-  // $: pos.set([d.x, d.y]);
-  $: pos = [d.x, d.y];
-  $: left = (pos[0] / 100) * $width;
-  $: top = (pos[1] / 100) * $height;
+  $: left = d.x;
+  $: top = d.y;
   $: style = `transform: translate(${left}px, ${top}px);`;
-  // $: style = `left: ${100 - $pos[0]}%; top: ${$pos[1]}%;`;
-  // $: style = "";
 
   const onEnter = () => {
     dispatch("enter", name);
@@ -38,7 +33,7 @@
   on:mouseenter="{onEnter}"
   on:mouseout="{onExit}"
 >
-  <p class="scatter-node-text">#{topRank} {title}</p>
+  <p class="scatter-node-text"><span>#{topRank}</span> {title}</p>
 </div>
 
 <style>
@@ -55,6 +50,7 @@
   }
 
   p {
+    display: block;
     position: relative;
     background-color: var(--off-white);
     color: var(--gray-light);
@@ -67,6 +63,7 @@
     filter: grayscale(0);
     z-index: 1;
     border: 1px solid var(--off-black);
+    box-shadow: 0 0 6px 0 var(--off-black);
   }
 
   .active p {
@@ -74,28 +71,28 @@
   }
 
   .node-0.active p {
-    background-color: #aff05b;
+    background-color: var(--node-0);
   }
 
   .node-1.active p {
-    background-color: #6e40aa;
+    background-color: var(--node-1);
     color: var(--off-white);
   }
 
   .node-2.active p {
-    background-color: #b23cb2;
+    background-color: var(--node-2);
     color: var(--off-white);
   }
 
   .node-3.active p {
-    background-color: #ee4395;
+    background-color: var(--node-3);
   }
 
   .node-4.active p {
-    background-color: #ff5e63;
+    background-color: var(--node-4);
   }
 
   .node-5.active p {
-    background-color: #ff8c38;
+    background-color: var(--node-5);
   }
 </style>

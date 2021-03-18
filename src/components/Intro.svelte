@@ -18,7 +18,7 @@
 
 <style>
   h1 {
-    font-size: 56px;
+    font-size: 42px;
     line-height: 1.125;
     margin-bottom: 1em;
   }
