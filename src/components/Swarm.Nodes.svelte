@@ -12,7 +12,6 @@
   const simulation = forceSimulation().stop();
 
   const runSim = () => {
-    console.log(ratio);
     simulation.stop();
 
     simData = [

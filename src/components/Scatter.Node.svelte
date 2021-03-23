@@ -81,11 +81,11 @@
 
   .node-2.active p {
     background-color: var(--node-2);
-    color: var(--off-white);
   }
 
   .node-3.active p {
     background-color: var(--node-3);
+    color: var(--off-white);
   }
 
   .node-4.active p {

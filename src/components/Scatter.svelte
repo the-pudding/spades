@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { scaleLinear, scalePow, scaleTime } from "d3-scale";
-  import { min, max, extent, groups } from "d3-array";
+  import { min, max, extent, groups, ascending } from "d3-array";
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
   import cleanData from "../utils/cleanData.js";
@@ -48,6 +48,8 @@
   const flatData = bandData.concat(memberData);
   const groupedData = groups(flatData, (d) => d.band);
 
+  groupedData.sort((a, b) => ascending(a[0], b[0]));
+
   const getMin = (prop) => min(flatData, (d) => d[prop]);
   const getMax = (prop) => max(flatData, (d) => d[prop]);
 
@@ -91,17 +93,15 @@
 
   onMount(() => {
     mounted = true;
-    scatterBands = groupedData.map(([key]) => key);
+    scatterBands = groupedData.map(([key, data]) =>
+      data.map((d) => d.spotifyName)
+    );
   });
 </script>
 
 <!-- <Shadow data="{flatData}" /> -->
 
 {#if mounted}
-  <div class="ui">
-    <Legend band="{currentBand}" />
-  </div>
-
   <div class="chart-container">
     <figure style="padding-bottom: {100 / aspectRatio}%">
       {#each groupedData as [key, data]}
