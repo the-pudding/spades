@@ -27,7 +27,7 @@
     simulation
       .nodes(simData)
       .velocityDecay(0.5)
-      .force("y", forceY(midY).strength(0.5))
+      .force("y", forceY(midY).strength(0.2))
       .force("x", forceX().x($xGet).strength(1))
       .force("collide", forceCollideRect())
       .alpha(1)

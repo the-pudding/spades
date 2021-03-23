@@ -3,6 +3,7 @@
   import { LayerCake, Html } from "layercake";
   import viewport from "../stores/viewport.js";
   import Nodes from "./Swarm.Nodes.svelte";
+  import Axis from "./Swarm.Axis.svelte";
   import Labels from "./Swarm.Labels.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
@@ -49,6 +50,7 @@
     >
       <Html>
         <Nodes r="{4}" />
+        <Axis />
       </Html>
     </LayerCake>
   </figure>

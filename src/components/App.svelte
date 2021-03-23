@@ -57,7 +57,7 @@
   <FigureSource source="{copy.popularitySource}" />
   <Prose grafs="{copy.popularityAfter}" />
 </section>
-
+<!-- 
 <section>
   <FigureInfo hed="{copy.successHed}">
     <select
@@ -74,7 +74,7 @@
   <Scatter bind:scatterBands activeBand="{scatterActiveBand}" />
   <FigureSource source="{copy.successSource}" />
   <Prose grafs="{copy.successAfter}" />
-</section>
+</section> -->
 
 <!-- <Footer /> -->
 <style>
