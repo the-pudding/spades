@@ -87,7 +87,8 @@
     display: inline-block;
     /* font-size: 0.85em; */
     padding: 0 0.25em;
-    line-height: inherit;
+    margin: 0;
+    line-height: 1.2;
     padding-right: 1.25em;
     text-align: center;
     color: var(--fg);
