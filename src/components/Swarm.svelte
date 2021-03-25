@@ -1,13 +1,15 @@
 <script>
   import { scaleSymlog, scaleLog, scalePow } from "d3-scale";
-  import { LayerCake, Html } from "layercake";
+  import { LayerCake, Html, Svg } from "layercake";
   import viewport from "../stores/viewport.js";
   import Nodes from "./Swarm.Nodes.svelte";
   import Axis from "./Swarm.Axis.svelte";
+  import Voronoi from "./Swarm.Voronoi.svelte";
   import Labels from "./Swarm.Labels.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
 
+  let simData;
   const prop = "followers";
 
   const getBandAmount = (name) => {
@@ -30,7 +32,7 @@
 
   $: ratioX = $viewport.width || 2;
   $: ratioY = $viewport.height || 1;
-  $: aspectRatio = 2 / 1;
+  $: aspectRatio = 2.5 / 1;
 </script>
 
 <div class="chart-container">
@@ -39,7 +41,7 @@
       data="{data}"
       x="delta"
       r="followers"
-      rRange="{[4, 16]}"
+      rRange="{[5, 22]}"
       xScale="{scalePow().exponent(0.5)}"
       xRange="{[0, aspectRatio * 100]}"
       yRange="{[0, 100]}"
@@ -49,8 +51,8 @@
       custom="{{ aspectRatio }}"
     >
       <Html>
-        <Nodes r="{4}" />
         <Axis />
+        <Nodes r="{4}" bind:simData />
       </Html>
     </LayerCake>
   </figure>

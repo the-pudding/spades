@@ -54,19 +54,26 @@
     background-position: center center;
     filter: grayscale(100%);
   }
+  .bigger {
+    border-color: var(--off-white);
+  }
   .bigger .image {
     filter: grayscale(0);
   }
   span {
     display: block;
-    width: 8em;
+    white-space: nowrap;
     text-align: center;
     position: absolute;
     left: 50%;
     transform: translate(-50%, -100%);
+    padding: 0 0.25em;
     background: white;
     font-weight: bold;
     display: none;
     color: red;
+  }
+  .bigger span {
+    background: var(--off-white);
   }
 </style>

@@ -4,20 +4,19 @@
 
 <div>
   <h2>
-    {hed}
+    {@html hed}
     <slot />
   </h2>
 </div>
 
 <style>
   div {
-    margin: 0 auto;
-    margin-top: 4em;
+    margin: 4em auto 2em auto;
     max-width: 40em;
   }
 
   h2 {
     font-size: 32px;
-    line-height: 1.4;
+    line-height: 1.2;
   }
 </style>

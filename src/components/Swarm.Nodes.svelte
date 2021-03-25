@@ -3,12 +3,11 @@
   import { sum } from "d3-array";
   import { getContext } from "svelte";
   import Node from "./Swarm.Node.svelte";
-
   import forceCollideRect from "../utils/forceCollideRect.js";
-  import forceCollideRect2 from "../utils/forceCollideRect2.js";
+
+  export let simData;
 
   const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
-  let simData = [];
   const simulation = forceSimulation().stop();
 
   const runSim = () => {
@@ -26,7 +25,7 @@
 
     simulation
       .nodes(simData)
-      .velocityDecay(0.5)
+      .velocityDecay(0.2)
       .force("y", forceY(midY).strength(0.2))
       .force("x", forceX().x($xGet).strength(1))
       .force("collide", forceCollideRect())
@@ -45,6 +44,8 @@
   $: $data, ratio, runSim();
 </script>
 
-{#each simData as d}
-  <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
-{/each}
+{#if simData}
+  {#each simData as d}
+    <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
+  {/each}
+{/if}
