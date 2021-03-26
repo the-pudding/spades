@@ -49,6 +49,10 @@
     box-shadow: 0 0 3px 0 var(--gray);
   }
 
+  div:hover {
+    z-index: 2;
+  }
+
   p {
     display: block;
     position: relative;
@@ -64,6 +68,7 @@
     z-index: 1;
     border: 1px solid var(--off-black);
     box-shadow: 0 0 6px 0 var(--off-black);
+    cursor: crosshair;
   }
 
   .active p {

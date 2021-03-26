@@ -14,6 +14,7 @@
 
   let scatterActiveBand;
   let scatterBands = [];
+  let scatterEl;
 
   const setMemberText = (band) => {
     const post = band ? "" : "and members";
@@ -42,8 +43,17 @@
     return name;
   };
 
+  const scrollToInfo = () => {
+    if (!scatterEl) return;
+    const { top } = scatterEl.getBoundingClientRect();
+    const y = window.scrollY;
+    console.log(y, top);
+    window.scrollTo(0, y + top);
+  };
+
   $: membersText = setMemberText(scatterActiveBand);
   $: mobileScatter = !$mq.lg;
+  $: scatterActiveBand, scrollToInfo();
 </script>
 
 <Meta />
@@ -64,7 +74,7 @@
   <Prose grafs="{copy.popularityAfter}" />
 </section>
 
-<section>
+<section bind:this="{scatterEl}">
   {#if mobileScatter}
     <FigureInfo hed="{copy.successHed}" />
   {:else}

@@ -228,7 +228,7 @@
 
   @media only screen and (min-width: 1024px) {
     .chart-container {
-      padding: 2em;
+      padding: 0 2em;
     }
   }
 </style>
