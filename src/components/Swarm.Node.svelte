@@ -8,10 +8,11 @@
   export let imageUrl;
   export let ratio;
 
-  $: width = size / ratio;
-  $: height = size;
-  $: left = x / ratio;
-  $: top = y;
+  $: factor = ratio < 1 ? 1 / ratio : 1;
+  $: width = size / ratio / factor;
+  $: height = size / factor;
+  $: left = x / ratio / factor;
+  $: top = y / factor;
   $: style = `width: ${width}%; height: ${height}%; left: ${left}%; top: ${top}%;`;
 </script>
 
@@ -37,13 +38,16 @@
     transition: transform 250ms;
     transform-origin: 50% 50%;
   }
+
   .dot:hover {
     transform: translate(-50%, -50%) scale(2);
     z-index: 1000;
   }
+
   .dot:hover span {
     display: block;
   }
+
   .image {
     position: absolute;
     top: 0;
@@ -54,12 +58,15 @@
     background-position: center center;
     filter: grayscale(100%);
   }
+
   .bigger {
     border-color: var(--off-white);
   }
+
   .bigger .image {
     filter: grayscale(0);
   }
+
   span {
     display: block;
     white-space: nowrap;
@@ -72,7 +79,9 @@
     font-weight: bold;
     display: none;
     color: red;
+    pointer-events: none;
   }
+
   .bigger span {
     background: var(--off-white);
   }

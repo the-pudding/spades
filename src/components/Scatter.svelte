@@ -94,7 +94,7 @@
   onMount(() => {
     mounted = true;
     scatterBands = groupedData.map(([key, data]) =>
-      data.map((d) => d.spotifyName)
+      data.map((d) => ({ name: d.spotifyName, count: d.dates.length }))
     );
   });
 </script>

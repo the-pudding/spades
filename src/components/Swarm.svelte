@@ -1,7 +1,7 @@
 <script>
-  import { scaleSymlog, scaleLog, scalePow } from "d3-scale";
+  import { scalePow } from "d3-scale";
   import { LayerCake, Html, Svg } from "layercake";
-  import viewport from "../stores/viewport.js";
+  import mq from "../stores/mq.js";
   import Nodes from "./Swarm.Nodes.svelte";
   import Axis from "./Swarm.Axis.svelte";
   import Voronoi from "./Swarm.Voronoi.svelte";
@@ -10,16 +10,17 @@
   import members from "../data/members.csv";
 
   let simData;
-  const prop = "followers";
+
+  const xScale = scalePow().exponent(0.5);
 
   const getBandAmount = (name) => {
     const match = bands.find((d) => d.name === name);
-    return +match[prop];
+    return +match.followers;
   };
 
   const getDelta = (d) => {
     const comp = getBandAmount(d.band);
-    return +d[prop] - comp;
+    return +d.followers - comp;
   };
 
   const data = members
@@ -30,9 +31,13 @@
       delta: getDelta(d),
     }));
 
-  $: ratioX = $viewport.width || 2;
-  $: ratioY = $viewport.height || 1;
-  $: aspectRatio = 2.5 / 1;
+  $: mobile = !$mq.sm;
+  $: x = mobile ? 2 : 2.5;
+  $: aspectRatio = mobile ? 1 / x : x / 1;
+  $: low = 0;
+  $: high = 100 * x;
+  $: xRange = [mobile ? high : low, mobile ? low : high];
+  $: rRange = [5, 22];
 </script>
 
 <div class="chart-container">
@@ -41,18 +46,17 @@
       data="{data}"
       x="delta"
       r="followers"
-      rRange="{[5, 22]}"
-      xScale="{scalePow().exponent(0.5)}"
-      xRange="{[0, aspectRatio * 100]}"
-      yRange="{[0, 100]}"
+      xScale="{xScale}"
+      xRange="{xRange}"
+      rRange="{rRange}"
       position="absolute"
       ssr="{true}"
       percentRange="{true}"
-      custom="{{ aspectRatio }}"
+      custom="{{ aspectRatio, mobile }}"
     >
       <Html>
         <Axis />
-        <Nodes r="{4}" bind:simData />
+        <Nodes bind:simData />
       </Html>
     </LayerCake>
   </figure>

@@ -1,4 +1,5 @@
 <script>
+  import { descending } from "d3-array";
   import Meta from "./Meta.svelte";
   import Header from "./pudding/Header.svelte";
   import Intro from "./Intro.svelte";
@@ -17,10 +18,13 @@
     const post = band ? "" : "and members";
 
     if (!band) return post;
-    const names = scatterBands
-      .find((d) => d[0] === scatterActiveBand)
-      .slice(1)
-      .map((d, i) => `<span class="node node-${i + 1}">${d}</span>`);
+    const people = scatterBands
+      .find((d) => d[0].name === scatterActiveBand)
+      .slice(1);
+    people.sort((a, b) => descending(a.count, b.count));
+    const names = people.map(
+      (d, i) => `<span class="node node-${i + 1}">${d.name}</span>`
+    );
 
     if (names.length > 1) return `${post}, ${names.join(", ")}`;
 
@@ -50,15 +54,15 @@
   <Intro copy="{copy}" />
 </section>
 
-<!-- <section>
+<section>
   <Prose grafs="{copy.popularityBefore}" />
   <FigureInfo hed="{copy.popularityHed}" />
   <Swarm />
   <FigureSource source="{copy.popularitySource}" />
   <Prose grafs="{copy.popularityAfter}" />
-</section> -->
+</section>
 
-<section>
+<!-- <section>
   <FigureInfo hed="{copy.successHed}">
     <select
       bind:value="{scatterActiveBand}"
@@ -66,7 +70,7 @@
     >
       <option value="">all bands</option>
       {#each scatterBands as names}
-        <option value="{names[0]}">{shorten(names[0])}</option>
+        <option value="{names[0].name}">{shorten(names[0].name)}</option>
       {/each}
     </select>
     <span>{@html membersText}</span>
@@ -74,7 +78,7 @@
   <Scatter bind:scatterBands activeBand="{scatterActiveBand}" />
   <FigureSource source="{copy.successSource}" />
   <Prose grafs="{copy.successAfter}" />
-</section>
+</section> -->
 
 <!-- <Footer /> -->
 <style>

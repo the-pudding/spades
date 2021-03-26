@@ -18,5 +18,6 @@
   h2 {
     font-size: 32px;
     line-height: 1.4;
+    user-select: none;
   }
 </style>
