@@ -11,6 +11,7 @@
   --black: #000;
   --off-black: #282828;
   --gray-dark: #5b5b5b;
+	--grayer: #7b7b7b;
   --gray: #949494;
   --gray-light: #c9c9c9;
   --off-white: #f0f0f0;
@@ -22,10 +23,10 @@
   --yellow: #e5e338;
 	--node-0: #aff05b;
 	--node-1: #6e40aa;
-	--node-2: #b23cb2;
-	--node-3: #ee4395;
-	--node-4: #ff5e63;
-	--node-5: #ff8c38;
+	--node-3: #b23cb2;
+	--node-5: #ee4395;
+	--node-2: #ff5e63;
+	--node-4: #ff8c38;
   
 
   --bg: var(--white);
@@ -38,12 +39,12 @@
 
   --body-font: var(--sans);
   --background-body: var(--white);
-  --background-ui: var(--off-white);
+  --background-ui: var(--white);
   --background-alt: var(--off-white);
   --selection: var(--gray);
   --text-main: var(--off-black);
   --links: var(--purple);
-  --focus: var(--green);
+  --focus: var(--gray-light);
   --border: var(--gray-light);
   --animation-duration: 0.1s;
   --button-hover: var(--gray-light);
@@ -102,4 +103,42 @@ blockquote {
   padding: 2px 4px;
   font-size: 14px;
   line-height: 1;
+}
+
+span.node {
+	transition: background-position 250ms ease-in-out;
+}
+
+span.node:hover {
+	background-position: 0px 0px;
+	
+}
+
+span.node-0 {
+	border-bottom: 6px solid var(--node-0);
+}
+
+span.node-1 {
+	border-bottom: 6px solid var(--node-1);
+}
+
+span.node-2 {
+	border-bottom: 6px solid var(--node-2);
+}
+
+span.node-3 {
+	border-bottom: 6px solid var(--node-3);
+}
+
+span.node-4 {
+	border-bottom: 6px solid var(--node-4);
+}
+
+span.node-5 {
+	border-bottom: 6px solid var(--node-5);
+}
+
+span.gray-light {
+	background-color: var(--off-white);
+	padding: 0 0.25em;
 }
