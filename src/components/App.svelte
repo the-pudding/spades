@@ -10,6 +10,7 @@
   import FigureSource from "./FigureSource.svelte";
   import Footer from "./pudding/Footer.svelte";
   import copy from "../data/doc.json";
+  import mq from "../stores/mq.js";
 
   let scatterActiveBand;
   let scatterBands = [];
@@ -42,6 +43,7 @@
   };
 
   $: membersText = setMemberText(scatterActiveBand);
+  $: mobileScatter = !mq.lg;
 </script>
 
 <Meta />
@@ -62,23 +64,27 @@
   <Prose grafs="{copy.popularityAfter}" />
 </section>
 
-<!-- <section>
-  <FigureInfo hed="{copy.successHed}">
-    <select
-      bind:value="{scatterActiveBand}"
-      class:selected="{!!scatterActiveBand}"
-    >
-      <option value="">all bands</option>
-      {#each scatterBands as names}
-        <option value="{names[0].name}">{shorten(names[0].name)}</option>
-      {/each}
-    </select>
-    <span>{@html membersText}</span>
-  </FigureInfo>
+<section>
+  {#if mobileScatter}
+    <FigureInfo hed="{copy.successHed}" />
+  {:else}
+    <FigureInfo hed="{copy.successHedBig}">
+      <select
+        bind:value="{scatterActiveBand}"
+        class:selected="{!!scatterActiveBand}"
+      >
+        <option value="">all bands</option>
+        {#each scatterBands as names}
+          <option value="{names[0].name}">{shorten(names[0].name)}</option>
+        {/each}
+      </select>
+      <span>{@html membersText}</span>
+    </FigureInfo>
+  {/if}
   <Scatter bind:scatterBands activeBand="{scatterActiveBand}" />
   <FigureSource source="{copy.successSource}" />
   <Prose grafs="{copy.successAfter}" />
-</section> -->
+</section>
 
 <!-- <Footer /> -->
 <style>

@@ -10,6 +10,7 @@ export default function cleanData(d) {
 	const topYear = years.length ? years[0] : null;
 	const topDate = dates.length ? dates[0] : null;
 	const band = d.band || d.name;
+	const isBand = !d.band;
 	const titles = d.titles.split("|").filter((v) => v).map(v => {
 		if (v.startsWith("(")) return v.split(")")[1];
 		else return v.split("(")[0].trim();
@@ -33,7 +34,8 @@ export default function cleanData(d) {
 		topRank,
 		topYear,
 		topDate,
-		dimensions
+		dimensions,
+		isBand
 	};
 }
   

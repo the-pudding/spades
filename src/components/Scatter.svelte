@@ -3,6 +3,7 @@
   import { scaleLinear, scalePow, scaleTime } from "d3-scale";
   import { min, max, extent, groups, ascending } from "d3-array";
   import { LayerCake, Html } from "layercake";
+  import mq from "../stores/mq.js";
   import viewport from "../stores/viewport.js";
   import cleanData from "../utils/cleanData.js";
   import Shadow from "./Scatter.Shadow.svelte";
@@ -83,6 +84,9 @@
   const xScale = scales[xProp];
   const yScale = scales[yProp];
 
+  flatData.sort((a, b) => ascending(a.band, b.band));
+
+  $: mobile = !$mq.lg;
   $: ratioX = $viewport.width || 1;
   $: ratioY = $viewport.height || 1;
   $: aspectRatio = ratioX / ratioY;
@@ -94,7 +98,10 @@
   onMount(() => {
     mounted = true;
     scatterBands = groupedData.map(([key, data]) =>
-      data.map((d) => ({ name: d.spotifyName, count: d.dates.length }))
+      data.map((d) => ({
+        name: d.spotifyName,
+        count: d.ranks.length,
+      }))
     );
   });
 </script>
@@ -103,41 +110,54 @@
 
 {#if mounted}
   <div class="chart-container">
-    <figure style="padding-bottom: {100 / aspectRatio}%">
-      {#each groupedData as [key, data]}
-        <LayerCake
-          data="{data}"
-          x="{xProp}"
-          y="{yProp}"
-          xDomain="{xDomain}"
-          yDomain="{activeDates || yDomain}"
-          xScale="{xScale}"
-          yScale="{yScale}"
-          xRange="{xRange}"
-          yRange="{yRange}"
-          position="absolute"
-          custom="{{ aspectRatio, xProp, yProp, activeBand }}"
+    {#if mobile}
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Top 100s</th>
+          <th>#1 Hits</th>
+        </thead>
+        <tbody
+          >{#each flatData as { spotifyName, ranks, isBand }}
+            <tr class:isBand>
+              <td>{spotifyName}</td>
+              <td>{ranks.length}</td>
+              <td>{ranks.filter((d) => d === 1).length}</td>
+            </tr>
+          {/each}</tbody
         >
-          <Html>
-            <AxisY />
-            <Sets key="{key}" />
-          </Html>
-        </LayerCake>
-      {/each}
-    </figure>
+      </table>
+    {:else}
+      <figure style="padding-bottom: {100 / aspectRatio}%">
+        {#each groupedData as [key, data]}
+          <LayerCake
+            data="{data}"
+            x="{xProp}"
+            y="{yProp}"
+            xDomain="{xDomain}"
+            yDomain="{activeDates || yDomain}"
+            xScale="{xScale}"
+            yScale="{yScale}"
+            xRange="{xRange}"
+            yRange="{yRange}"
+            position="absolute"
+            custom="{{ aspectRatio, xProp, yProp, activeBand }}"
+          >
+            <Html>
+              <AxisY />
+              <Sets key="{key}" />
+            </Html>
+          </LayerCake>
+        {/each}
+      </figure>
+    {/if}
   </div>
 {/if}
 
 <style>
-  .ui {
-    display: flex;
-    padding: 0 2rem;
-  }
-
   .chart-container {
     width: 100%;
     margin: 0;
-    padding: 2em;
   }
 
   figure {
@@ -178,5 +198,37 @@
     );
     content: "";
     z-index: var(--z-top);
+  }
+
+  td,
+  th {
+    text-align: right;
+  }
+
+  td:first-of-type,
+  th:first-of-type {
+    text-align: left;
+  }
+
+  tr.isBand td {
+    background: var(--off-white);
+  }
+
+  td {
+    background: var(--white);
+  }
+
+  td:first-of-type {
+    padding-left: 1em;
+  }
+
+  tr.isBand td:first-of-type {
+    padding-left: 0.25em;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .chart-container {
+      padding: 2em;
+    }
   }
 </style>
