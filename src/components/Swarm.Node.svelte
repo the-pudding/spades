@@ -33,7 +33,7 @@
 <style>
   .dot {
     position: absolute;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     transform: translate(-50%, -50%);
     transition: transform 250ms;
     transform-origin: 50% 50%;
@@ -75,10 +75,10 @@
     left: 50%;
     transform: translate(-50%, -100%);
     padding: 0 0.25em;
-    background: white;
+    background: var(--white);
     font-weight: bold;
     display: none;
-    color: red;
+    color: var(--primary);
     pointer-events: none;
   }
 

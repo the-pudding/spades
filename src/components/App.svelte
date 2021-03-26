@@ -43,7 +43,7 @@
   };
 
   $: membersText = setMemberText(scatterActiveBand);
-  $: mobileScatter = !mq.lg;
+  $: mobileScatter = !$mq.lg;
 </script>
 
 <Meta />

@@ -72,11 +72,11 @@
 
   .node-0.active p {
     background-color: var(--node-0);
+    color: var(--white);
   }
 
   .node-1.active p {
     background-color: var(--node-1);
-    color: var(--off-white);
   }
 
   .node-2.active p {
@@ -85,7 +85,6 @@
 
   .node-3.active p {
     background-color: var(--node-3);
-    color: var(--off-white);
   }
 
   .node-4.active p {
@@ -94,5 +93,6 @@
 
   .node-5.active p {
     background-color: var(--node-5);
+    color: var(--white);
   }
 </style>
