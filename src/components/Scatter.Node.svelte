@@ -15,7 +15,7 @@
 
   $: left = d.x;
   $: top = d.y;
-  $: style = `transform: translate(${left}px, ${top}px);`;
+  $: style = `transform: translate3d(${left}px, ${top}px, 0);`;
 
   const onEnter = () => {
     dispatch("enter", name);
@@ -42,11 +42,12 @@
     top: 0;
     left: 0;
     z-index: 0;
-    will-change: transform, opacity;
+    will-change: transform;
     border: 1px solid var(--gray-light);
     transition: transform 1000ms ease-in-out, opacity 1000ms ease-in-out;
     white-space: nowrap;
     box-shadow: 0 0 3px 0 var(--gray);
+    backface-visibility: hidden;
   }
 
   div:hover {
@@ -59,12 +60,10 @@
     background-color: var(--off-white);
     color: var(--gray-light);
     transition: all 1000ms ease-in-out;
-    will-change: background-color, color;
   }
 
   .active {
     opacity: 1;
-    filter: grayscale(0);
     z-index: 1;
     border: 1px solid var(--off-black);
     box-shadow: 0 0 6px 0 var(--off-black);
