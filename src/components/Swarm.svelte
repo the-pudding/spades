@@ -9,6 +9,8 @@
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
 
+  export let downloadData;
+
   let simData;
 
   const xScale = scalePow().exponent(0.5);
@@ -30,6 +32,14 @@
       followers: +d.followers,
       delta: getDelta(d),
     }));
+
+  downloadData = data.map((d) => ({
+    name: d.spotifyName,
+    followers: d.followers,
+    band: d.band,
+    bandFollowers: getBandAmount(d.band),
+    delta: d.delta,
+  }));
 
   $: mobile = !$mq.sm;
   $: x = mobile ? 2 : 2.5;

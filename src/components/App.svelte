@@ -15,6 +15,8 @@
   let scatterActiveBand;
   let scatterBands = [];
   let scatterEl;
+  let downloadSwarmData;
+  let downloadScatterData;
 
   const setMemberText = (band) => {
     const post = band ? "" : "and members";
@@ -69,8 +71,12 @@
 <section>
   <Prose grafs="{copy.popularityBefore}" />
   <FigureInfo hed="{copy.popularityHed}" />
-  <Swarm />
-  <FigureSource source="{copy.popularitySource}" />
+  <Swarm bind:downloadData="{downloadSwarmData}" />
+  <FigureSource
+    source="{copy.popularitySource}"
+    data="{downloadSwarmData}"
+    filename="solo-artist-followers.csv"
+  />
   <Prose grafs="{copy.popularityAfter}" />
 </section>
 
@@ -91,8 +97,16 @@
       <span>{@html membersText}</span>
     </FigureInfo>
   {/if}
-  <Scatter bind:scatterBands activeBand="{scatterActiveBand}" />
-  <FigureSource source="{copy.successSource}" />
+  <Scatter
+    bind:scatterBands
+    activeBand="{scatterActiveBand}"
+    bind:downloadData="{downloadScatterData}"
+  />
+  <FigureSource
+    source="{copy.successSource}"
+    data="{downloadScatterData}"
+    filename="billboard-hits.csv"
+  />
   <Prose grafs="{copy.successAfter}" />
 </section>
 

@@ -16,6 +16,7 @@
 
   export let scatterBands;
   export let activeBand;
+  export let downloadData;
 
   let mounted = false;
 
@@ -85,6 +86,7 @@
   const yScale = scales[yProp];
 
   flatData.sort((a, b) => ascending(a.band, b.band));
+  downloadData = flatData;
 
   $: mobile = !$mq.lg;
   $: ratioX = $viewport.width || 1;
