@@ -1,7 +1,6 @@
 <script>
   import { scalePow } from "d3-scale";
   import { LayerCake, Html, Svg } from "layercake";
-  import mq from "../stores/mq.js";
   import Nodes from "./Swarm.Nodes.svelte";
   import Axis from "./Swarm.Axis.svelte";
   import Voronoi from "./Swarm.Voronoi.svelte";
@@ -10,6 +9,7 @@
   import members from "../data/members.csv";
 
   export let downloadData;
+  export let orientation = "horizontal";
 
   let simData;
 
@@ -41,7 +41,7 @@
     delta: d.delta,
   }));
 
-  $: mobile = !$mq.sm;
+  $: mobile = orientation === "vertical";
   $: x = mobile ? 2 : 2.5;
   $: aspectRatio = mobile ? 1 / x : x / 1;
   $: low = 0;

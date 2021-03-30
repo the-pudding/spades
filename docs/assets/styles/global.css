@@ -21,19 +21,31 @@
   --green: #34a29e;
   --red: #ff533d;
   --yellow: #e5e338;
-	--node-0: #aff05b;
+	--node-0: #AA3377;
+	--node-1: #66CCEE;
+	--node-2: #CCBB44;
+	--node-3: #228833;
+	--node-4: #EE6677;
+	--node-5: #4477AA;
+	/* --node-0: #aff05b;
 	--node-1: #6e40aa;
 	--node-3: #b23cb2;
 	--node-5: #ee4395;
 	--node-2: #ff5e63;
-	--node-4: #ff8c38;
-  
+	--node-4: #ff8c38; */
+	/* --node-0: #6929c4;
+	--node-1: #1192e8;
+	--node-2: #005d5d;
+	--node-3: #9f1853;
+	--node-4: #fa4d56;
+	--node-5: #570408; */
+	
 
   --bg: var(--white);
   --fg: var(--off-black);
   --default: var(--gray-light);
-  --primary: var(--red);
-  --secondary: var(--green);
+  --primary: var(--node-0);
+  --secondary: var(--node-1);
 
   /* water.css */
 

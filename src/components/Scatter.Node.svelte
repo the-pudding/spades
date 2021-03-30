@@ -50,10 +50,6 @@
     backface-visibility: hidden;
   }
 
-  div:hover {
-    z-index: 2;
-  }
-
   p {
     display: block;
     position: relative;
@@ -68,6 +64,10 @@
     border: 1px solid var(--off-black);
     box-shadow: 0 0 6px 0 var(--off-black);
     cursor: crosshair;
+  }
+
+  .active:hover {
+    z-index: 2;
   }
 
   .active p {

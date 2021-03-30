@@ -54,6 +54,7 @@
   };
 
   $: membersText = setMemberText(scatterActiveBand);
+  $: mobileSwarm = !$mq.lg;
   $: mobileScatter = !$mq.lg;
   $: scatterActiveBand, scrollToInfo();
 </script>
@@ -71,7 +72,12 @@
 <section>
   <Prose grafs="{copy.popularityBefore}" />
   <FigureInfo hed="{copy.popularityHed}" />
-  <Swarm bind:downloadData="{downloadSwarmData}" />
+  <div class="swarm" class:is-visible="{!mobileSwarm}">
+    <Swarm bind:downloadData="{downloadSwarmData}" />
+  </div>
+  <div class="swarm" class:is-visible="{mobileSwarm}">
+    <Swarm orientation="{'vertical'}" bind:downloadData="{downloadSwarmData}" />
+  </div>
   <FigureSource
     source="{copy.popularitySource}"
     data="{downloadSwarmData}"
@@ -115,6 +121,14 @@
   section {
     margin: 0 auto;
     padding: 0 1em;
+  }
+
+  .swarm {
+    display: none;
+  }
+
+  .swarm.is-visible {
+    display: block;
   }
 
   select {

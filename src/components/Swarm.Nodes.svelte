@@ -1,16 +1,19 @@
 <script>
   import { forceSimulation, forceCollide, forceX, forceY } from "d3-force";
   import { sum } from "d3-array";
-  import { getContext } from "svelte";
+  import { onMount, getContext } from "svelte";
   import Node from "./Swarm.Node.svelte";
   import forceCollideRect from "../utils/forceCollideRect.js";
 
   export let simData;
 
+  let mounted;
+
   const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
   const simulation = forceSimulation().stop();
 
   const runSim = () => {
+    if (mounted) return false;
     console.log("run sim");
     simulation.stop();
 
@@ -54,6 +57,10 @@
   $: ratio = $custom.aspectRatio;
   $: mobile = $custom.mobile;
   $: $data, ratio, runSim();
+
+  onMount(() => {
+    mounted = true;
+  });
 </script>
 
 {#if simData}
