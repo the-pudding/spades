@@ -63,7 +63,7 @@
     >
       <Html>
         <Axis />
-        <Nodes />
+        <Nodes orientation="{orientation}" />
       </Html>
     </LayerCake>
   </figure>

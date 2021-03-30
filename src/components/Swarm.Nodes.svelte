@@ -5,8 +5,7 @@
   import Node from "./Swarm.Node.svelte";
   import forceCollideRect from "../utils/forceCollideRect.js";
 
-  let simData;
-  let mounted;
+  export let orientation;
 
   const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
   const simulation = forceSimulation().stop();
@@ -14,7 +13,29 @@
   const isRendered =
     typeof document === "undefined"
       ? false
-      : !!document.querySelector(".swarm .node");
+      : !!document.querySelector(`.swarm-${orientation} .node`);
+
+  const getDataAttrs = (id) => {
+    const q = `.swarm-${orientation} [data-id="${id}"]`;
+    console.log(q);
+    const node = document.querySelector(q);
+    const x = +node.dataset.x;
+    const y = +node.dataset.y;
+    const width = +node.dataset.width;
+    const height = +node.dataset.height;
+    return { x, y, width, height };
+  };
+
+  const getSimData = () => {
+    return [
+      ...$data.map((d) => ({
+        ...d,
+        ...getDataAttrs(d.id),
+      })),
+    ];
+  };
+
+  let simData = isRendered ? getSimData() : undefined;
 
   const runSim = () => {
     if (isRendered) return false;
@@ -60,13 +81,9 @@
   $: ratio = $custom.aspectRatio;
   $: mobile = $custom.mobile;
   $: $data, ratio, runSim();
-
-  onMount(() => {
-    mounted = true;
-  });
 </script>
 
-{#if !isRendered && simData}
+{#if simData}
   {#each simData as d}
     <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
   {/each}

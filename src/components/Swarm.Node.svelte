@@ -1,9 +1,9 @@
 <script>
+  export let id;
   export let x;
   export let y;
   export let size;
   export let delta;
-  export let name;
   export let spotifyName;
   export let imageUrl;
   export let ratio;
@@ -19,8 +19,11 @@
 <div
   class="node"
   class:bigger="{delta > 0}"
-  data-name="{name}"
-  data-delta="{delta}"
+  data-x="{x}"
+  data-y="{y}"
+  data-width="{width}"
+  data-height="{height}"
+  data-id="{id}"
   style="{style}"
 >
   <div

@@ -49,7 +49,6 @@
     if (!scatterEl) return;
     const { top } = scatterEl.getBoundingClientRect();
     const y = window.scrollY;
-    console.log(y, top);
     window.scrollTo(0, y + top);
   };
 

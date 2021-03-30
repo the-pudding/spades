@@ -9,7 +9,6 @@
   import Shadow from "./Scatter.Shadow.svelte";
   import Sets from "./Scatter.Sets.svelte";
   import AxisY from "./Scatter.AxisY.svelte";
-  import Legend from "./Scatter.Legend.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
   import scatterDimensions from "../data/scatterDimensions.csv";
