@@ -5,15 +5,19 @@
   import Node from "./Swarm.Node.svelte";
   import forceCollideRect from "../utils/forceCollideRect.js";
 
-  export let simData;
-
+  let simData;
   let mounted;
 
   const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
   const simulation = forceSimulation().stop();
 
+  const isRendered =
+    typeof document === "undefined"
+      ? false
+      : !!document.querySelector(".swarm .node");
+
   const runSim = () => {
-    if (mounted) return false;
+    if (isRendered) return false;
     console.log("run sim");
     simulation.stop();
 

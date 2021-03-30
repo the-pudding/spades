@@ -17,7 +17,7 @@
 </script>
 
 <div
-  class="dot"
+  class="node"
   class:bigger="{delta > 0}"
   data-name="{name}"
   data-delta="{delta}"
@@ -31,7 +31,7 @@
 </div>
 
 <style>
-  .dot {
+  .node {
     position: absolute;
     border: 2px solid var(--white);
     transform: translate(-50%, -50%);
@@ -39,12 +39,12 @@
     transform-origin: 50% 50%;
   }
 
-  .dot:hover {
+  .node:hover {
     transform: translate(-50%, -50%) scale(2);
     z-index: 1000;
   }
 
-  .dot:hover span {
+  .node:hover span {
     display: block;
   }
 

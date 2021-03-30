@@ -10,8 +10,6 @@
   export let downloadData;
   export let orientation = "horizontal";
 
-  let simData;
-
   const xScale = scalePow().exponent(0.5);
 
   const getBandAmount = (name) => {
@@ -65,7 +63,7 @@
     >
       <Html>
         <Axis />
-        <Nodes bind:simData />
+        <Nodes />
       </Html>
     </LayerCake>
   </figure>
