@@ -22,6 +22,12 @@
   const PAD = 16;
   const MAX_SONG_WIDTH = max(scatterDimensions, (d) => +d.width);
 
+  const shorten = (name) => {
+    if (name === "The Pussycat Dolls") return "Pussycat Dolls";
+    else if (name === "New Kids On The Block") return "NKOTB";
+    return name;
+  };
+
   const getBandData = (name) => {
     const match = bandData.find((d) => d.name === name);
     return { bandfollowers: match.followers, bandrank: match.rank };
@@ -119,22 +125,24 @@
 {#if mounted}
   <div class="chart-container">
     {#if mobile}
-      <table>
-        <thead>
-          <th>Name</th>
-          <th>Top 100s</th>
-          <th>#1 Hits</th>
-        </thead>
-        <tbody
-          >{#each flatData as { spotifyName, ranks, isBand }}
-            <tr class:isBand>
-              <td>{spotifyName}</td>
-              <td>{ranks.length}</td>
-              <td>{ranks.filter((d) => d === 1).length}</td>
-            </tr>
-          {/each}</tbody
-        >
-      </table>
+      <figure class="bars">
+        {#each flatData as { spotifyName, ranks, isBand }}
+          <div class="artist" class:isBand>
+            <div class="info">
+              <span class="name">{shorten(spotifyName)}</span>
+            </div>
+            <div class="bar">
+              <div
+                class="inner"
+                data-name="{spotifyName}"
+                style="width: {(ranks.length / maxHits) * 100}%"
+              >
+                <span>{ranks.length}</span>
+              </div>
+            </div>
+          </div>
+        {/each}
+      </figure>
     {:else}
       <figure style="padding-bottom: {100 / aspectRatio}%">
         {#each groupedData as [key, data]}
@@ -159,6 +167,23 @@
         {/each}
       </figure>
     {/if}
+
+    <!-- <table>
+        <thead>
+          <th>Name</th>
+          <th>Top 100s</th>
+          <th>#1 Hits</th>
+        </thead>
+        <tbody
+          >{#each flatData as { spotifyName, ranks, isBand }}
+            <tr class:isBand>
+              <td>{spotifyName}</td>
+              <td>{ranks.length}</td>
+              <td>{ranks.filter((d) => d === 1).length}</td>
+            </tr>
+          {/each}</tbody
+        >
+      </table> -->
   </div>
 {/if}
 
@@ -232,6 +257,64 @@
 
   tr.isBand td:first-of-type {
     padding-left: 0.25em;
+  }
+
+  figure.bars:before,
+  figure.bars:after {
+    display: none;
+  }
+
+  figure.bars .artist {
+    display: flex;
+    margin-bottom: 0.25em;
+    align-items: center;
+  }
+
+  .bars .info {
+    width: 9em;
+    text-align: right;
+    padding-right: 0.5em;
+    line-height: 1;
+  }
+
+  .isBand {
+    margin-top: 1em;
+  }
+
+  .isBand .info {
+    font-weight: bold;
+    color: var(--node-0);
+  }
+
+  .bars .bar {
+    flex: 1;
+    height: 1.5em;
+  }
+
+  .bars .inner {
+    position: relative;
+    height: 100%;
+    text-align: right;
+    line-height: 1;
+    background: var(--gray-light);
+  }
+
+  .bars .isBand .inner {
+    background: var(--node-0);
+  }
+
+  .inner[data-name="Beyoncé"] span {
+    transform: translate(0, -50%);
+    right: 0.5em;
+  }
+
+  .inner span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: -0.5em;
+    transform: translate(100%, -50%);
+    white-space: nowrap;
   }
 
   @media only screen and (min-width: 1024px) {
