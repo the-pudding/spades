@@ -12,11 +12,11 @@
 <style>
   div {
     margin: 4em auto 2em auto;
-    max-width: 44em;
+    max-width: 40em;
   }
 
   h2 {
-    font-size: 32px;
+    font-size: 29px;
     line-height: 1.4;
     user-select: none;
   }

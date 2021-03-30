@@ -7,17 +7,16 @@
 
   export let orientation;
 
-  const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
-  const simulation = forceSimulation().stop();
-
-  const isRendered =
+  const prerendered =
     typeof document === "undefined"
       ? false
       : !!document.querySelector(`.swarm-${orientation} .node`);
 
+  const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
+  const simulation = forceSimulation().stop();
+
   const getDataAttrs = (id) => {
     const q = `.swarm-${orientation} [data-id="${id}"]`;
-    console.log(q);
     const node = document.querySelector(q);
     const x = +node.dataset.x;
     const y = +node.dataset.y;
@@ -35,10 +34,10 @@
     ];
   };
 
-  let simData = isRendered ? getSimData() : undefined;
+  let simData = prerendered ? getSimData() : [];
 
   const runSim = () => {
-    if (isRendered) return false;
+    if (prerendered) return false;
     simulation.stop();
 
     simData = [
@@ -83,8 +82,6 @@
   $: $data, ratio, runSim();
 </script>
 
-{#if simData}
-  {#each simData as d}
-    <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
-  {/each}
-{/if}
+{#each simData as d}
+  <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
+{/each}
