@@ -75,7 +75,7 @@
   <div class="swarm" class:is-visible="{!mobileSwarm}">
     <Swarm bind:downloadData="{downloadSwarmData}" />
   </div>
-  <div class="swarm" class:is-visible="{mobileSwarm}">
+  <div class="swarm swarm-vertical" class:is-visible="{mobileSwarm}">
     <Swarm orientation="{'vertical'}" bind:downloadData="{downloadSwarmData}" />
   </div>
   <FigureSource
@@ -129,6 +129,10 @@
 
   .swarm.is-visible {
     display: block;
+  }
+
+  .swarm-vertical {
+    padding-top: 10%;
   }
 
   select {

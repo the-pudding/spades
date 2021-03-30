@@ -3,7 +3,6 @@
   import { LayerCake, Html, Svg } from "layercake";
   import Nodes from "./Swarm.Nodes.svelte";
   import Axis from "./Swarm.Axis.svelte";
-  import Voronoi from "./Swarm.Voronoi.svelte";
   import Labels from "./Swarm.Labels.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
@@ -74,12 +73,18 @@
 
 <style>
   .chart-container {
-    max-width: 80%;
     margin: 0 auto;
+    max-width: 420px;
   }
 
   figure {
     position: relative;
     width: 100%;
+  }
+
+  @media only screen and (min-width: 1024px) {
+    .chart-container {
+      max-width: 80%;
+    }
   }
 </style>

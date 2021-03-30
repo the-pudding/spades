@@ -83,7 +83,9 @@
   }
 
   .tick.vertical p {
-    transform: translate(0, -100%);
+    transform: translate(-100%, -100%);
+    text-align: right;
+    padding-right: 0.5em;
   }
 
   .more {
