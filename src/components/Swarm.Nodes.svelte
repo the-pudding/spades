@@ -18,7 +18,6 @@
 
   const runSim = () => {
     if (isRendered) return false;
-    console.log("run sim");
     simulation.stop();
 
     simData = [
@@ -67,7 +66,7 @@
   });
 </script>
 
-{#if simData}
+{#if !isRendered && simData}
   {#each simData as d}
     <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
   {/each}
