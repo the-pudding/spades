@@ -12,7 +12,7 @@
 <style>
   div {
     margin: 4em auto 2em auto;
-    max-width: 40em;
+    max-width: 44em;
   }
 
   h2 {

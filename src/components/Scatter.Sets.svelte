@@ -1,6 +1,7 @@
 <script>
-  import { forceSimulation, forceCollide, forceX, forceY } from "d3-force";
   import { getContext, onMount } from "svelte";
+  import { forceSimulation, forceCollide, forceX, forceY } from "d3-force";
+  import { descending } from "d3-array";
   import Node from "./Scatter.Node.svelte";
 
   import forceCollideRect from "../utils/forceCollideRect.js";
@@ -35,6 +36,7 @@
       });
     });
     const flat = [].concat(...all);
+    flat.sort((a, b) => descending(a.topRank, b.topRank));
     return flat;
   };
 

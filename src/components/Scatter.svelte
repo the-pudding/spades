@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import { scaleLinear, scalePow, scaleTime } from "d3-scale";
-  import { min, max, extent, groups, ascending } from "d3-array";
+  import { min, max, extent, groups, ascending, descending } from "d3-array";
   import { LayerCake, Html } from "layercake";
   import mq from "../stores/mq.js";
   import viewport from "../stores/viewport.js";
@@ -51,6 +51,13 @@
   const groupedData = groups(flatData, (d) => d.band);
 
   groupedData.sort((a, b) => ascending(a[0], b[0]));
+  groupedData.forEach(([key, artists]) => {
+    artists.sort(
+      (c, d) =>
+        descending(c.name === key, d.name === key) ||
+        descending(c.dates.length, d.dates.length)
+    );
+  });
 
   const getMin = (prop) => min(flatData, (d) => d[prop]);
   const getMax = (prop) => max(flatData, (d) => d[prop]);

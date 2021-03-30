@@ -8,7 +8,7 @@
 
   const dispatch = createEventDispatcher();
   const { xGet, yGet, custom } = getContext("LayerCake");
-  const { title, spotifyName, topRank } = d;
+  const { title, spotifyName, topRank, i } = d;
 
   $: w = r / $custom.aspectRatio;
   $: h = w;
@@ -26,7 +26,7 @@
 </script>
 
 <div
-  class="node-{d.i}"
+  class="node-{i}"
   class:band="{d.name === d.band}"
   class:active="{d.band === $custom.activeBand}"
   style="{style}"
