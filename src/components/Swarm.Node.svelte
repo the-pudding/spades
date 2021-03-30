@@ -19,10 +19,10 @@
 <div
   class="node"
   class:bigger="{delta > 0}"
-  data-x="{x}"
-  data-y="{y}"
-  data-width="{width}"
-  data-height="{height}"
+  data-x="{x.toFixed(4)}"
+  data-y="{y.toFixed(4)}"
+  data-width="{width.toFixed(4)}"
+  data-height="{height.toFixed(4)}"
   data-id="{id}"
   style="{style}"
 >

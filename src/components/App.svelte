@@ -66,7 +66,7 @@
 <section>
   <Intro copy="{copy}" />
 </section>
-<!-- 
+
 <section>
   <Prose grafs="{copy.popularityBefore}" />
   <FigureInfo hed="{copy.popularityHed}" />
@@ -82,7 +82,7 @@
     filename="solo-artist-followers.csv"
   />
   <Prose grafs="{copy.popularityAfter}" />
-</section> -->
+</section>
 
 <section bind:this="{scatterEl}">
   {#if mobileScatter}
