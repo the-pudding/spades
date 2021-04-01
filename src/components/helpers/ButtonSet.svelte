@@ -28,6 +28,7 @@
           <input
             type="radio"
             id="{`${id}-${slug}`}"
+            name="name-{id}"
             class="sr-only"
             value="{value}"
             disabled="{disabled}"
