@@ -8,6 +8,7 @@
   import Prose from "./Prose.svelte";
   import FigureInfo from "./FigureInfo.svelte";
   import FigureSource from "./FigureSource.svelte";
+  import ButtonSet from "./helpers/ButtonSet.svelte";
   import Footer from "./pudding/Footer.svelte";
   import copy from "../data/doc.json";
   import mq from "../stores/mq.js";
@@ -17,6 +18,8 @@
   let scatterEl;
   let downloadSwarmData;
   let downloadScatterData;
+  let selectedScatter = "chart";
+  let selectedSwarm;
 
   const setMemberText = (band) => {
     const post = band ? "" : "and members";
@@ -55,6 +58,7 @@
   $: membersText = setMemberText(scatterActiveBand);
   $: mobileScatter = !$mq.lg;
   $: scatterActiveBand, scrollToInfo();
+  $: isSmall = !$mq.sm;
 </script>
 
 <Meta />
@@ -85,7 +89,7 @@
 </section>
 
 <section bind:this="{scatterEl}">
-  {#if mobileScatter}
+  {#if mobileScatter || selectedScatter === "table"}
     <FigureInfo hed="{copy.successHed}" />
   {:else}
     <FigureInfo hed="{copy.successHedBig}">
@@ -101,10 +105,19 @@
       <span>{@html membersText}</span>
     </FigureInfo>
   {/if}
+  <div class="scatter-view">
+    <ButtonSet
+      options="{[{ value: 'chart' }, { value: 'table' }]}"
+      legend="View as"
+      legendPosition="{isSmall ? 'left' : 'top'}"
+      bind:selected="{selectedScatter}"
+    />
+  </div>
   <Scatter
     bind:scatterBands
     activeBand="{scatterActiveBand}"
     bind:downloadData="{downloadScatterData}"
+    showTable="{selectedScatter === 'table'}"
   />
   <FigureSource
     source="{copy.successSource}"
@@ -146,12 +159,26 @@
     border-bottom: 6px solid var(--node-0);
   }
 
+  .scatter-view {
+    margin-bottom: 1em;
+  }
+
   @media only screen and (min-width: 1024px) {
     .swarm-vertical {
       display: none;
     }
     .swarm-horizontal {
       display: block;
+    }
+  }
+
+  @media only screen and (min-width: 640px) {
+    .scatter-view {
+      text-align: right;
+      position: relative;
+      z-index: var(--z-overlay);
+      height: 0;
+      margin-bottom: 0;
     }
   }
 </style>

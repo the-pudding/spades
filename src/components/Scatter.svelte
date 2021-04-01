@@ -9,6 +9,7 @@
   import Shadow from "./Scatter.Shadow.svelte";
   import Sets from "./Scatter.Sets.svelte";
   import AxisY from "./Scatter.AxisY.svelte";
+  import Table from "./Scatter.Table.svelte";
   import bands from "../data/bands.csv";
   import members from "../data/members.csv";
   import scatterDimensions from "../data/scatterDimensions.csv";
@@ -16,6 +17,7 @@
   export let scatterBands;
   export let activeBand;
   export let downloadData;
+  export let showTable;
 
   let mounted = false;
 
@@ -123,7 +125,7 @@
 <!-- <Shadow data="{flatData}" /> -->
 
 {#if mounted}
-  <div class="chart-container">
+  <div class="chart-container" class:is-visible="{!showTable}">
     {#if mobile}
       <figure class="bars">
         {#each flatData as { spotifyName, ranks, isBand }}
@@ -167,23 +169,9 @@
         {/each}
       </figure>
     {/if}
-
-    <!-- <table>
-        <thead>
-          <th>Name</th>
-          <th>Top 100s</th>
-          <th>#1 Hits</th>
-        </thead>
-        <tbody
-          >{#each flatData as { spotifyName, ranks, isBand }}
-            <tr class:isBand>
-              <td>{spotifyName}</td>
-              <td>{ranks.length}</td>
-              <td>{ranks.filter((d) => d === 1).length}</td>
-            </tr>
-          {/each}</tbody
-        >
-      </table> -->
+  </div>
+  <div class="table-container" class:is-visible="{showTable}">
+    <Table data="{flatData}" />
   </div>
 {/if}
 
@@ -191,6 +179,17 @@
   .chart-container {
     width: 100%;
     margin: 0;
+    display: none;
+  }
+
+  .table-container {
+    display: none;
+    max-width: 40em;
+    margin: 0 auto;
+  }
+
+  .is-visible {
+    display: block;
   }
 
   figure {

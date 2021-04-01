@@ -96,4 +96,11 @@
     height: 100%;
     background-color: var(--off-white);
   }
+
+  @media only screen and (max-width: 375px) {
+    .tick.vertical p {
+      transform: translate(25%, -100%);
+      padding-right: 0;
+    }
+  }
 </style>
