@@ -2,6 +2,7 @@
   import { getContext, createEventDispatcher } from "svelte";
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
+  import mq from "../stores/mq.js";
 
   export let d;
   export let r = 4;
@@ -15,7 +16,8 @@
 
   $: left = d.x;
   $: top = d.y;
-  $: style = `transform: translate3d(${left}px, ${top}px, 0);`;
+  $: dur = $mq.reducedMotion ? 0 : 1000;
+  $: style = `--dur: ${dur}ms; transform: translate3d(${left}px, ${top}px, 0);`;
 
   const onEnter = () => {
     dispatch("enter", name);
@@ -38,13 +40,14 @@
 
 <style>
   div {
+    --dur: 1000ms;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 0;
     will-change: transform;
     border: 1px solid var(--gray-light);
-    transition: transform 1000ms ease-in-out, opacity 1000ms ease-in-out;
+    transition: transform var(--dur) ease-in-out, opacity var(--dur) ease-in-out;
     white-space: nowrap;
     box-shadow: 0 0 3px 0 var(--gray);
     backface-visibility: hidden;
@@ -55,7 +58,7 @@
     position: relative;
     background-color: var(--off-white);
     color: var(--gray-light);
-    transition: all 1000ms ease-in-out;
+    transition: all var(--dur) ease-in-out;
   }
 
   .active {
