@@ -154,3 +154,13 @@ span.gray-light {
 	background-color: var(--off-white);
 	padding: 0 0.25em;
 }
+
+.sr-only {
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap; 
+	width: 1px;
+}
