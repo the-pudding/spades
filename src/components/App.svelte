@@ -49,7 +49,7 @@
   };
 
   const scrollToInfo = () => {
-    if (!scatterEl) return;
+    if (!scatterEl || !scatterActiveBand) return;
     const { top } = scatterEl.getBoundingClientRect();
     const y = window.scrollY;
     window.scrollTo(0, y + top);

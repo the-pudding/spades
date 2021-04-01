@@ -83,7 +83,7 @@
   }
 
   .tick.vertical p {
-    transform: translate(-100%, -100%);
+    transform: translate(-100%, -50%);
     text-align: right;
     padding-right: 0.5em;
   }
@@ -99,8 +99,9 @@
 
   @media only screen and (max-width: 375px) {
     .tick.vertical p {
-      transform: translate(25%, -100%);
+      transform: translate(0, -50%);
       padding-right: 0;
+      padding-left: 0.25em;
     }
   }
 </style>
