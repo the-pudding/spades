@@ -1,5 +1,6 @@
 <script>
   import { scalePow } from "d3-scale";
+  import { format } from "d3-format";
   import { LayerCake, Html, Svg } from "layercake";
   import Nodes from "./Swarm.Nodes.svelte";
   import Axis from "./Swarm.Axis.svelte";
@@ -32,10 +33,10 @@
 
   downloadData = data.map((d) => ({
     name: d.spotifyName,
-    followers: d.followers,
     band: d.band,
-    bandFollowers: getBandAmount(d.band),
-    delta: d.delta,
+    followers: format(".3s")(d.followers),
+    band_followers: format(".3s")(getBandAmount(d.band)),
+    follower_difference: format(".3s")(d.delta),
   }));
 
   $: mobile = orientation === "vertical";

@@ -12,7 +12,7 @@
       ? false
       : !!document.querySelector(`.swarm-${orientation} .node`);
 
-  const { data, xGet, rGet, yRange, custom } = getContext("LayerCake");
+  const { data, xGet, rGet, rScale, yRange, custom } = getContext("LayerCake");
   const simulation = forceSimulation().stop();
 
   const getDataAttrs = (id) => {
@@ -83,5 +83,14 @@
 </script>
 
 {#each simData as d}
-  <Node {...d} size="{$rGet(d)}" ratio="{ratio}" />
+  <Node
+    id="{d.id}"
+    x="{d.x}"
+    y="{d.y}"
+    delta="{d.delta}"
+    spotifyName="{d.spotifyName}"
+    imageUrl="{d.imageUrl}"
+    ratio="{ratio}"
+    size="{$rGet(d)}"
+  />
 {/each}

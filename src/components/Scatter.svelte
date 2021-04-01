@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { timeFormat } from "d3-time-format";
   import { scaleLinear, scalePow, scaleTime } from "d3-scale";
   import { min, max, extent, groups, ascending, descending } from "d3-array";
   import { LayerCake, Html } from "layercake";
@@ -100,7 +101,16 @@
   const yScale = scales[yProp];
 
   flatData.sort((a, b) => ascending(a.band, b.band));
-  downloadData = flatData;
+  downloadData = flatData.reduce((previous, current) => {
+    const rows = current.dates.map((d, i) => ({
+      name: current.spotifyName,
+      band: current.band === current.name ? null : current.band,
+      title: current.titles[i],
+      peak_date: timeFormat("%Y-%m-%d")(d),
+      peak_rank: current.ranks[i],
+    }));
+    return previous.concat(rows);
+  }, []);
 
   $: mobile = !$mq.lg;
   $: ratioX = $viewport.width || 1;
