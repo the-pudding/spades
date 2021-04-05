@@ -12,11 +12,11 @@ export default function cleanData(d) {
 	const band = d.band || d.name;
 	const isBand = !d.band;
 	const titles = d.titles.split("|").filter((v) => v).map(v => {
-		if (v.startsWith("(")) return v.split(")")[1];
+		if (v.startsWith("(")) return v.split(")")[1].trim();
 		else return v.split("(")[0].trim();
 	});
 	const dimensions = dates.map((v, i) => {
-		const match = scatterDimensions.find(({id}) => id === `${d.name}|${i}`);
+		const match = scatterDimensions.find(({ id }) => id === `${d.name}|${i}`);
 		const width = match ? +match.width + 1 : null;
 		const height = match ? +match.height + 1 : null;
 		return { width, height };
@@ -38,4 +38,4 @@ export default function cleanData(d) {
 		isBand
 	};
 }
-  
+

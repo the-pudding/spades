@@ -20,6 +20,7 @@
         const topDate = date;
         const topRank = d.ranks[j];
         const title = d.titles[j];
+        const preview = d.previews[j];
         const dim = d.dimensions[j];
         const { spotifyName, name, band } = d;
 
@@ -31,6 +32,7 @@
           topDate,
           topRank,
           title,
+          preview,
           ...dim,
         };
       });
@@ -76,5 +78,5 @@
 </script>
 
 {#each simData as d}
-  <Node d="{d}" />
+  <Node d="{d}" on:preview />
 {/each}

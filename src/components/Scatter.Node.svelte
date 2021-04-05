@@ -19,11 +19,8 @@
   $: dur = $mq.reducedMotion ? 0 : 1000;
   $: style = `--dur: ${dur}ms; transform: translate3d(${left}px, ${top}px, 0);`;
 
-  const onEnter = () => {
-    dispatch("enter", name);
-  };
-  const onExit = () => {
-    dispatch("exit");
+  const onClick = () => {
+    dispatch("preview", d.preview);
   };
 </script>
 
@@ -32,8 +29,7 @@
   class:band="{d.name === d.band}"
   class:active="{d.band === $custom.activeBand}"
   style="{style}"
-  on:mouseenter="{onEnter}"
-  on:mouseout="{onExit}"
+  on:click="{onClick}"
 >
   <p class="scatter-node-text"><span>#{topRank}</span> {title}</p>
 </div>
@@ -59,6 +55,7 @@
     background-color: var(--off-white);
     color: var(--gray-light);
     transition: all var(--dur) ease-in-out;
+    user-select: none;
   }
 
   .active {
@@ -66,7 +63,7 @@
     z-index: 1;
     border: 1px solid var(--off-black);
     box-shadow: 0 0 6px 0 var(--off-black);
-    cursor: crosshair;
+    cursor: pointer;
   }
 
   .active:hover {

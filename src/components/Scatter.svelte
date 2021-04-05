@@ -3,6 +3,7 @@
   import { timeFormat } from "d3-time-format";
   import { scaleLinear, scalePow, scaleTime } from "d3-scale";
   import { min, max, extent, groups, ascending, descending } from "d3-array";
+  import { csvParse } from "d3-dsv";
   import { LayerCake, Html } from "layercake";
   import mq from "../stores/mq.js";
   import viewport from "../stores/viewport.js";
@@ -21,6 +22,8 @@
   export let showTable;
 
   let mounted = false;
+  let groupedWithPreviewData = [];
+  let audioEl;
 
   const PAD = 16;
   const MAX_SONG_WIDTH = max(scatterDimensions, (d) => +d.width);
@@ -48,6 +51,14 @@
     const [key, data] = groupedData.find(([key]) => key === band);
     const flatDates = [].concat(...data.map((d) => d.dates));
     return extent(flatDates);
+  };
+
+  const onPreview = ({ detail }) => {
+    if (detail) {
+      audioEl.volume = 0.5;
+      audioEl.src = detail;
+      audioEl.play();
+    }
   };
 
   const memberClean = members.map(cleanData);
@@ -121,14 +132,37 @@
   $: activeDates = getActiveDates(activeBand);
   $: currentBand = groupedData.find(([key]) => key === activeBand);
 
-  onMount(() => {
-    mounted = true;
+  onMount(async () => {
     scatterBands = groupedData.map(([key, data]) =>
       data.map((d) => ({
         name: d.spotifyName,
         count: d.ranks.length,
       }))
     );
+
+    const response = await fetch("assets/tracks.csv");
+    const text = await response.text();
+    const tracks = csvParse(text);
+
+    const getPreviews = (d) => {
+      const previews = d.titles.map((title) => {
+        const match = tracks.find(
+          (t) => t.name === d.spotifyName && t.title === title
+        );
+        return match ? match.preview : null;
+      });
+      return previews;
+    };
+
+    groupedWithPreviewData = groupedData.map(([key, data]) => {
+      const dataWithTrack = data.map((d) => ({
+        ...d,
+        previews: getPreviews(d),
+      }));
+      return [key, dataWithTrack];
+    });
+
+    mounted = true;
   });
 </script>
 
@@ -157,7 +191,7 @@
       </figure>
     {:else}
       <figure style="padding-bottom: {100 / aspectRatio}%">
-        {#each groupedData as [key, data]}
+        {#each groupedWithPreviewData as [key, data]}
           <LayerCake
             data="{data}"
             x="{xProp}"
@@ -173,7 +207,7 @@
           >
             <Html>
               <AxisY />
-              <Sets key="{key}" />
+              <Sets key="{key}" on:preview="{onPreview}" />
             </Html>
           </LayerCake>
         {/each}
@@ -184,6 +218,8 @@
     <Table data="{flatData}" />
   </div>
 {/if}
+
+<audio bind:this="{audioEl}" src=""> </audio>
 
 <style>
   .chart-container {
