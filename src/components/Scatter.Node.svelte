@@ -3,6 +3,7 @@
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
   import mq from "../stores/mq.js";
+  import Icon from "../components/helpers/Icon.svelte";
 
   export let d;
   export let r = 4;
@@ -32,6 +33,7 @@
   on:click="{onClick}"
 >
   <p class="scatter-node-text"><span>#{topRank}</span> {title}</p>
+  {#if d.preview}<span class="icon"><Icon name="volume-2" /></span>{/if}
 </div>
 
 <style>
@@ -98,5 +100,23 @@
   .node-5.active p {
     background-color: var(--node-5);
     color: var(--white);
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(1);
+    transform-origin: 50% 50%;
+    transition: all 150ms ease-out;
+    width: 1em;
+    z-index: -1;
+  }
+
+  .active:hover .icon {
+    opacity: 1;
+    transform: translate(-50%, -125%) scale(3);
   }
 </style>

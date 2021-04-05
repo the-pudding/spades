@@ -61,6 +61,10 @@
     }
   };
 
+  const stopAudio = () => {
+    if (audioEl && audioEl.src) audioEl.pause();
+  };
+
   const memberClean = members.map(cleanData);
   const bandClean = bands.map(cleanData);
 
@@ -131,6 +135,7 @@
   $: yRange = [PAD * 6, ratioY - PAD * 10];
   $: activeDates = getActiveDates(activeBand);
   $: currentBand = groupedData.find(([key]) => key === activeBand);
+  $: currentBand, stopAudio();
 
   onMount(async () => {
     scatterBands = groupedData.map(([key, data]) =>
