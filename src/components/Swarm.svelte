@@ -5,8 +5,8 @@
   import Nodes from "./Swarm.Nodes.svelte";
   import Axis from "./Swarm.Axis.svelte";
   import Labels from "./Swarm.Labels.svelte";
-  import bands from "../data/bands.csv";
-  import members from "../data/members.csv";
+  import bands from "../data/bands-swarm.csv";
+  import members from "../data/members-swarm.csv";
 
   export let downloadData;
   export let orientation = "horizontal";

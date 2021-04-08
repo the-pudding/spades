@@ -3,7 +3,6 @@
   import { forceSimulation, forceCollide, forceX, forceY } from "d3-force";
   import { descending } from "d3-array";
   import Node from "./Scatter.Node.svelte";
-
   import forceCollideRect from "../utils/forceCollideRect.js";
 
   let simData = [];

@@ -5,9 +5,7 @@ export default function cleanData(d) {
 	const topRank = d.topRank ? +d.topRank : null;
 	const ranks = d.ranks.split("|").filter((v) => v).map((v) => +v);
 	const dates = d.dates.split("|").filter((v) => v).map((v) => new Date(v));
-	const years = dates.map(v => v.getFullYear());
 	const hits = ranks.length;
-	const topYear = years.length ? years[0] : null;
 	const topDate = dates.length ? dates[0] : null;
 	const band = d.band || d.name;
 	const isBand = !d.band;
@@ -28,11 +26,9 @@ export default function cleanData(d) {
 		followers,
 		ranks,
 		dates,
-		years,
 		titles,
 		hits,
 		topRank,
-		topYear,
 		topDate,
 		dimensions,
 		isBand

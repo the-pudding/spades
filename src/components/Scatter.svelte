@@ -12,8 +12,6 @@
   import Sets from "./Scatter.Sets.svelte";
   import AxisY from "./Scatter.AxisY.svelte";
   import Table from "./Scatter.Table.svelte";
-  import bands from "../data/bands.csv";
-  import members from "../data/members.csv";
   import scatterDimensions from "../data/scatterDimensions.csv";
 
   export let scatterBands;
@@ -23,10 +21,23 @@
 
   let mounted = false;
   let groupedWithPreviewData = [];
+  let flatData = [];
   let audioEl;
+  let xDomain;
+  let yDomain;
+  let xScale;
+  let yScale;
+  let maxFollowers;
+  let maxHits;
+  let maxDate;
+  let minDate;
+  let domains;
 
   const PAD = 16;
   const MAX_SONG_WIDTH = max(scatterDimensions, (d) => +d.width);
+
+  const getMin = (data, prop) => min(data, (d) => d[prop]);
+  const getMax = (data, prop) => max(data, (d) => d[prop]);
 
   const shorten = (name) => {
     if (name === "The Pussycat Dolls") return "Pussycat Dolls";
@@ -34,28 +45,23 @@
     return name;
   };
 
-  const getBandData = (name) => {
-    const match = bandData.find((d) => d.name === name);
-    return { bandfollowers: match.followers, bandrank: match.rank };
-  };
-
   // filter out bands with no member hits
-  const hasMemberHit = ({ name }) => {
-    const m = memberClean.filter((d) => d.band === name);
+  const hasMemberHit = (data, name) => {
+    const m = data.filter((d) => d.band === name);
     const hasHit = m.find((d) => d.hits);
     return !!hasHit;
   };
 
-  const getActiveDates = (band) => {
-    if (!band) return null;
-    const [key, data] = groupedData.find(([key]) => key === band);
+  const getActiveDates = (datas, band) => {
+    if (!band || !datas.length) return null;
+    const [key, data] = datas.find(([key]) => key === band);
     const flatDates = [].concat(...data.map((d) => d.dates));
     return extent(flatDates);
   };
 
   const onPreview = ({ detail }) => {
     if (detail) {
-      audioEl.volume = 0.5;
+      audioEl.volume = 0.3;
       audioEl.src = detail;
       audioEl.play();
     }
@@ -65,67 +71,15 @@
     if (audioEl && audioEl.src) audioEl.pause();
   };
 
-  const memberClean = members.map(cleanData);
-  const bandClean = bands.map(cleanData);
-
-  const bandData = bandClean.filter(hasMemberHit);
-  const memberData = memberClean.filter((d) => d.hits);
-  const flatData = bandData.concat(memberData);
-  const groupedData = groups(flatData, (d) => d.band);
-
-  groupedData.sort((a, b) => ascending(a[0], b[0]));
-  groupedData.forEach(([key, artists]) => {
-    artists.sort(
-      (c, d) =>
-        descending(c.name === key, d.name === key) ||
-        descending(c.dates.length, d.dates.length)
-    );
-  });
-
-  const getMin = (prop) => min(flatData, (d) => d[prop]);
-  const getMax = (prop) => max(flatData, (d) => d[prop]);
-
-  const maxFollowers = getMax("followers");
-  const maxHits = getMax("hits");
-  const maxYear = getMax("topYear");
-  const minYear = getMin("topYear");
-  const maxDate = getMax("topDate");
-  const minDate = getMin("topDate");
-
-  const domains = {
-    followers: [0, maxFollowers],
-    hits: [0, maxHits],
-    topRank: [1, 100],
-    topYear: [minYear, maxYear],
-    topDate: [minDate, maxDate],
-  };
-
   const scales = {
     followers: scalePow().exponent(0.25),
     hits: scaleLinear(),
     topRank: scaleLinear(),
-    topYear: scaleLinear(),
     topDate: scaleTime(),
   };
 
   const yProp = "topDate";
   const xProp = "topRank";
-  const xDomain = domains[xProp];
-  const yDomain = domains[yProp];
-  const xScale = scales[xProp];
-  const yScale = scales[yProp];
-
-  flatData.sort((a, b) => ascending(a.band, b.band));
-  downloadData = flatData.reduce((previous, current) => {
-    const rows = current.dates.map((d, i) => ({
-      name: current.spotifyName,
-      band: current.band === current.name ? null : current.band,
-      title: current.titles[i],
-      peak_date: timeFormat("%Y-%m-%d")(d),
-      peak_rank: current.ranks[i],
-    }));
-    return previous.concat(rows);
-  }, []);
 
   $: mobile = !$mq.lg;
   $: ratioX = $viewport.width || 1;
@@ -133,11 +87,62 @@
   $: aspectRatio = ratioX / ratioY;
   $: xRange = [PAD, ratioX - MAX_SONG_WIDTH - PAD];
   $: yRange = [PAD * 6, ratioY - PAD * 10];
-  $: activeDates = getActiveDates(activeBand);
-  $: currentBand = groupedData.find(([key]) => key === activeBand);
+  $: activeDates = getActiveDates(groupedWithPreviewData, activeBand);
+  $: currentBand = groupedWithPreviewData.find(([key]) => key === activeBand);
   $: currentBand, stopAudio();
 
   onMount(async () => {
+    const members = await fetch("assets/members.csv");
+    const membersText = await members.text();
+    const memberClean = csvParse(membersText).map(cleanData);
+    const bands = await fetch("assets/bands.csv");
+    const bandsText = await bands.text();
+    const bandClean = csvParse(bandsText).map(cleanData);
+
+    const bandData = bandClean.filter((d) => hasMemberHit(memberClean, d.name));
+    const memberData = memberClean.filter((d) => d.hits);
+
+    flatData = bandData.concat(memberData);
+
+    const groupedData = groups(flatData, (d) => d.band);
+
+    groupedData.sort((a, b) => ascending(a[0], b[0]));
+    groupedData.forEach(([key, artists]) => {
+      artists.sort(
+        (c, d) =>
+          descending(c.name === key, d.name === key) ||
+          descending(c.dates.length, d.dates.length)
+      );
+    });
+
+    maxFollowers = getMax(flatData, "followers");
+    maxHits = getMax(flatData, "hits");
+    maxDate = getMax(flatData, "topDate");
+    minDate = getMin(flatData, "topDate");
+
+    domains = {
+      followers: [0, maxFollowers],
+      hits: [0, maxHits],
+      topRank: [1, 100],
+      topDate: [minDate, maxDate],
+    };
+
+    xDomain = domains[xProp];
+    yDomain = domains[yProp];
+    xScale = scales[xProp];
+    yScale = scales[yProp];
+
+    flatData.sort((a, b) => ascending(a.band, b.band));
+    downloadData = flatData.reduce((previous, current) => {
+      const rows = current.dates.map((d, i) => ({
+        name: current.spotifyName,
+        band: current.band === current.name ? null : current.band,
+        title: current.titles[i],
+        peak_date: timeFormat("%Y-%m-%d")(d),
+        peak_rank: current.ranks[i],
+      }));
+      return previous.concat(rows);
+    }, []);
     scatterBands = groupedData.map(([key, data]) =>
       data.map((d) => ({
         name: d.spotifyName,
@@ -281,32 +286,6 @@
     );
     content: "";
     z-index: var(--z-top);
-  }
-
-  td,
-  th {
-    text-align: right;
-  }
-
-  td:first-of-type,
-  th:first-of-type {
-    text-align: left;
-  }
-
-  tr.isBand td {
-    background: var(--off-white);
-  }
-
-  td {
-    background: var(--white);
-  }
-
-  td:first-of-type {
-    padding-left: 1em;
-  }
-
-  tr.isBand td:first-of-type {
-    padding-left: 0.25em;
   }
 
   figure.bars:before,
