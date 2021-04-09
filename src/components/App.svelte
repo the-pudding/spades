@@ -71,7 +71,7 @@
   <Intro copy="{copy}" />
 </section>
 
-<!-- <section>
+<section>
   <Prose grafs="{copy.popularityBefore}" />
   <FigureInfo hed="{copy.popularityHed}" />
   <div class="swarm swarm-horizontal">
@@ -86,7 +86,7 @@
     filename="solo-artist-followers.csv"
   />
   <Prose grafs="{copy.popularityAfter}" />
-</section> -->
+</section>
 
 <section bind:this="{scatterEl}">
   {#if mobileScatter || selectedScatter === "table"}
