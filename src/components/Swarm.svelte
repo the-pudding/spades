@@ -23,13 +23,11 @@
     return +d.followers - comp;
   };
 
-  const data = members
-    .filter((d) => d.id)
-    .map((d) => ({
-      ...d,
-      followers: +d.followers,
-      delta: getDelta(d),
-    }));
+  const data = members.map((d) => ({
+    ...d,
+    followers: +d.followers,
+    delta: getDelta(d),
+  }));
 
   downloadData = data.map((d) => ({
     name: d.spotifyName,
