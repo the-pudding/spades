@@ -23,8 +23,9 @@
     return +d.followers - comp;
   };
 
-  const data = members.map((d) => ({
+  const data = members.map((d, i) => ({
     ...d,
+    id: i,
     followers: +d.followers,
     delta: getDelta(d),
   }));
