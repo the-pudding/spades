@@ -186,7 +186,10 @@
 {#if mounted}
   <div class="chart-container" class:is-visible="{!showTable}">
     {#if mobile}
-      <figure class="bars">
+      <figure
+        class="bars"
+        alt="Scatter plot of every song by bands and their members that charted on the Billboard Hot 100 between 1980 and 2020 where you can see when members had more or less hits than their band"
+      >
         {#each flatData as { spotifyName, ranks, isBand }}
           <div class="artist" class:isBand>
             <div class="info">

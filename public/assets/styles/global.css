@@ -56,7 +56,7 @@
   --selection: var(--gray);
   --text-main: var(--off-black);
   --links: var(--purple);
-  --focus: var(--gray-light);
+  --focus: var(--purple);
   --border: var(--gray-light);
   --animation-duration: 0.1s;
   --button-hover: var(--gray-light);

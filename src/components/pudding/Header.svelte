@@ -4,7 +4,8 @@
 
 <header>
   <p>
-    <a href="https://pudding.cool">{@html wordmark}</a> <span>wonders...</span>
+    <a href="https://pudding.cool" aria-label="The Pudding">{@html wordmark}</a>
+    <span>wonders...</span>
   </p>
 </header>
 

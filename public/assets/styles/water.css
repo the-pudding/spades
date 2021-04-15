@@ -99,7 +99,6 @@ label {
 button,
 input:not([type="checkbox"]):not([type="radio"]),
 input[type="range"],
-select,
 textarea {
   -webkit-appearance: none;
 }
@@ -115,18 +114,6 @@ textarea:not([cols]) {
 textarea:not([rows]) {
   min-height: 40px;
   height: 140px;
-}
-select {
-  background: var(--background-ui) var(--select-arrow) calc(100% - 12px) 50%/12px no-repeat;
-  padding-right: 32px;
-}
-select::-ms-expand {
-  display: none;
-}
-select[multiple] {
-  padding-right: 8px;
-  background-image: none;
-  overflow-y: auto;
 }
 button:hover,
 input[type="button"]:hover,

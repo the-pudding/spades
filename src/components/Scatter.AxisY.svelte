@@ -29,6 +29,6 @@
     transition: transform var(--dur) ease-in-out;
     font-size: 32px;
     font-weight: bold;
-    color: var(--gray-light);
+    color: var(--gray);
   }
 </style>

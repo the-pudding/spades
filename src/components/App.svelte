@@ -61,7 +61,7 @@
   $: isSmall = !$mq.sm;
 </script>
 
-<Meta />
+<Meta copy="{copy}" />
 
 <section>
   <Header />
@@ -94,6 +94,7 @@
   {:else}
     <FigureInfo hed="{copy.successHedBig}">
       <select
+        aria-label="Band"
         bind:value="{scatterActiveBand}"
         class:selected="{!!scatterActiveBand}"
       >
@@ -127,7 +128,8 @@
   <Prose grafs="{copy.successAfter}" />
 </section>
 
-<!-- <Footer /> -->
+<Footer />
+
 <style>
   section {
     margin: 0 auto;

@@ -48,7 +48,10 @@
 </script>
 
 <div class="chart-container">
-  <figure style="padding-bottom: {100 / aspectRatio}%">
+  <figure
+    style="padding-bottom: {100 / aspectRatio}%"
+    alt="Swarm plot of solo artists previously in groups and their Spotify follower count relative to their group where Beyoncé has the biggest increase"
+  >
     <LayerCake
       data="{data}"
       x="delta"
