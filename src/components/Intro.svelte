@@ -3,7 +3,7 @@
 </script>
 
 <div>
-  <h1>{copy.description}</h1>
+  <h1>{copy.title}</h1>
 </div>
 
 <div>
