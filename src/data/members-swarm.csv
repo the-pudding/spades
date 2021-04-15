@@ -1,4 +1,4 @@
-band,name,followers,spotifyName,imageUrl
+band,name,followers,spotifyName,imageUrl,headshot
 112,Daron Jones,1275,Daron Jones,81bdae6a8925d9406e0c95e1051ff4c27a113048
 112,"Marvin ""Slim"" Scandrick",2138,Slim,ab67616d00001e02f2efb644f1f27a1d28612756
 112,"Quinnes ""Q"" Parker",3508,Q Parker,ae930d9dd3d106c4c03f74abf493f90360c4980d
@@ -9,10 +9,10 @@ band,name,followers,spotifyName,imageUrl
 5ive,"""Abz Love"" Abidin Breen",223,Abz Love,ab67616d00001e02d83b58106c17a67faec60b3f
 98º,Jeff Timmons,111,Jeff Timmons,24866457f1f23943f80af8c1f0c0bb9651356f50
 98º,Nick Lachey,141828,Nick Lachey,e1362bb3402517b8e79584cebdce664f7bd1d83b
-Aventura,"Anthony ""Romeo"" Santos",12258997,Romeo Santos,2b956fd6d46ab322d8d4e9b4b7dc84a0dae9c1cf
+Aventura,"Anthony ""Romeo"" Santos",12258997,Romeo Santos,2b956fd6d46ab322d8d4e9b4b7dc84a0dae9c1cf,true
 Aventura,Henry Santos,39991,Henry Santos,1cb5d9ca00a4aee88e1fd30da4a97371a4febe59
 Az Yet,Marc Nelson,1612,Marc Nelson,ab67616d00001e02dc1e6e14c0b318a50d427471
-B2K,"""Omarion"" Ishmael Grandberry",1958145,Omarion,6dfe920c0b6c780b071ad538f6707dc094315d7f
+B2K,"""Omarion"" Ishmael Grandberry",1958145,Omarion,6dfe920c0b6c780b071ad538f6707dc094315d7f,true
 Backstreet Boys,"""AJ"" McLean",27963,AJ McLean,3374377277f114a1fbdcce9a1510ff546bbc6603
 Backstreet Boys,Brian Littrell,27559,Brian Littrell,ab67616d00001e029620c87e4ff122a3b1d6e842
 Backstreet Boys,Howie Dorough,19343,Howie D,63bafc6ba6efba9beae41a5f25329f6d39b9a53c
@@ -24,10 +24,10 @@ Big Time Rush,Kendall Schmidt,23621,Kendall Schmidt,1d5c3c49ead26b2b313366a4b757
 Big Time Rush,Logan Henderson,64897,Logan Henderson,b2840b070e4de18488d6aad9ecdeb002e63a86d5
 Blackstreet,Teddy Riley,11325,Teddy Riley,4963a8ff69d5f29d6cbb9475de7213fb87c185bf
 Boyz II Men,Shawn Stockman,4172,Shawn Stockman,9f13bfe226b38300321616e3bc56912db541a02e
-BTS,J-Hope,5328343,j-hope,3e7ff9125c518e290007ff8c5831bb621f3a8813
+BTS,J-Hope,5328343,j-hope,3e7ff9125c518e290007ff8c5831bb621f3a8813,true
 BTS,RM,4735003,RM,721ed458946bcc6a43a0dbc8371dcea7d50df07f
 BTS,Suga,388594,SUGA,d11282afed0dd7898b08a9cd58d71e6f22120d53
-BTS,V,2467534,V,ab67616d00001e0220af30dc4a6011fc11632211
+BTS,V,2467534,V,ab67616d00001e0220af30dc4a6011fc11632211,true
 Color Me Badd,Kevin Thornton,12,Kevin Thornton,ab67616d00001e023488aacc12b9d68a9dc4cc7b
 Color Me Badd,Mark Calderon,35,Mark Calderon,ab67616d00001e022584f02037be8ea2613e0380
 Day26,"""Big Mike"" McCluney",50876,Big Mike,ab67616d00001e02e65fca39f45b07aeb243fa68
@@ -37,7 +37,7 @@ Day26,Willie Taylor,23531,Willie Taylor,1d122257642ad266b7ac4bb2b02756c8cab2e3e0
 Guys Next Door,Damon Sharpe,1062,Damon Sharpe,e54a7bda5b3bc2cc8f19704fe92a132eb120f330
 Hi-Five,Tony Thompson,2753,Tony Thompson,fd9dd6b6396d645a3bb1c41ed8e464b5562390d9
 Immature,"Jerome ""Romeo"" Jones",610,Young Rome,e38466bf6342748c1fe0aff4356ad84cc7dc3766
-Immature,"Marques ""Batman"" Houston",597376,Marques Houston,c9945bf1c16d33cc8604e5387f76d1aeb7e0d642
+Immature,"Marques ""Batman"" Houston",597376,Marques Houston,c9945bf1c16d33cc8604e5387f76d1aeb7e0d642,true
 Jodeci,"""Mr. Dalvin"" DeGrate",266,Mr. Dalvin,8a3f77b1d08e955ef91f5b3002e1438f02cc623a
 Jodeci,"Joel ""JoJo"" Hailey",339,Jojo Hailey,92ffb161eb413e3ff3bcd8e86225bf8b989b8fcd
 Jodeci,"Kedric ""K-Ci"" Hailey",2223,K-Ci,ab67616d00001e020a52a1f78bcfa93ba7694868
@@ -47,7 +47,7 @@ Jonas Brothers,Nick Jonas,7060644,Nick Jonas,6321142252f8a00a1de5db4ab89541d7103
 Menudo,Charlie Masso,839,Charlie Masso,ab67616d00001e02d130cc0fd02cb5e480c6952d
 Menudo,Miguel Cancel,352,Miguel Cancel,ab67616d00001e0217d7f067c31c9c0e7d9d7d50
 Menudo,Raymond Acevedo,116,Ray Acevedo,e1d7adddd3fe50822bfce5db8ce575ebc8a7bb31
-Menudo,Ricky Martin,5749870,Ricky Martin,28b6705f46721e5f200ac48ba0e2a378fcaae335
+Menudo,Ricky Martin,5749870,Ricky Martin,28b6705f46721e5f200ac48ba0e2a378fcaae335,true
 Menudo,"Robi ""Draco"" Rosa",103176,Draco Rosa,ecdd6790a6a1daddc63694c70725afbd81e32cfb
 Mindless Behavior,Santo August,4686,Santo August,ab67616d00001e023a4a9043ea7ec26dd0c3a941
 Musical Youth,Dennis Seaton,6,Dennis Seaton,ab67616d00001e0282d0535990ff65d71c780002
@@ -61,7 +61,7 @@ New Kids On The Block,Joey McIntyre,49142,Joey McIntyre,7e36988576374483fb695fb2
 New Kids On The Block,Jordan Knight,66414,Jordan Knight,f4e3f7b448b434089dcc526305a14806e4de052a
 Nine Days,Brian Desveaux,32,Brian Desveaux,ab67616d00001e02100319a18da628ab7504fed2
 Nu Flavor,Rico Luna,584,Rigo Luna,ab67616d00001e02aa907a0df55a7c13ef5aafae
-One Direction,Harry Styles,12813873,Harry Styles,44329fa8c646f4eb2bcf7af62afe195bfb2c4830
+One Direction,Harry Styles,12813873,Harry Styles,44329fa8c646f4eb2bcf7af62afe195bfb2c4830,true
 One Direction,Liam Payne,7219773,Liam Payne,1d99b8c429f9f6bddf4f45d1f2779f13805f96b8
 One Direction,Louis Tomlinson,4593298,Louis Tomlinson,91014738e54ecb8dbb0b5a0853ba8148032067f2
 One Direction,Niall Horan,6794122,Niall Horan,42179cf495e77e1c76eca3190bc536fdc0e57947
@@ -131,7 +131,7 @@ All Saints,Shaznay Lewis,8064,Shaznay Lewis,1b9d98e2c5bb831f4a01eecd50608def8ac6
 The Sugababes,Mutya Buena,25736,Mutya Buena,59140800b6389e4ffe771b00e54a983402a0df26
 The Sugababes,Siobhán Donaghy,13485,Siobhan Donaghy,25d90f5069e30ba9094d93b5dfb2779f42d57b5b
 Wonder Girls,Yeeun,67903,HA:TFELT,8774f094276bdfa4c13c60b38d9ed4e65bd1dc01
-Wonder Girls,Sunmi,2044252,SUNMI,dbed4c51255f28a9e0b292ac9c35a5ba3d7a1c1f
+Wonder Girls,Sunmi,2044252,SUNMI,dbed4c51255f28a9e0b292ac9c35a5ba3d7a1c1f,true
 Wonder Girls,Hyuna,1235551,HyunA,3a750f175a55b342964b8b5a3dd6fbce2ccee495
 Wonder Girls,Yubin,130818,Yubin,ab67616d00001e0273e866ef4532ee86549c498c
 Danity Kane,Aubrey O'Day,17547,Aubrey O'Day,4ad08e32bdeda7127989305f12b4e944e66961c4

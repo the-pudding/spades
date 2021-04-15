@@ -90,6 +90,7 @@
     delta="{d.delta}"
     spotifyName="{d.spotifyName}"
     imageUrl="{d.imageUrl}"
+    headshot="{d.headshot}"
     ratio="{ratio}"
     size="{$rGet(d)}"
   />

@@ -6,14 +6,19 @@
   export let delta;
   export let spotifyName;
   export let imageUrl;
+  export let headshot;
   export let ratio;
 
+  $: slug = spotifyName.toLowerCase().replace(/\W/g, "_");
   $: factor = ratio < 1 ? 1 / ratio : 1;
   $: width = size / ratio / factor;
   $: height = size / factor;
   $: left = x / ratio / factor;
   $: top = y / factor;
   $: style = `width: ${width}%; height: ${height}%; left: ${left}%; top: ${top}%;`;
+  $: url = headshot
+    ? `assets/headshots/${slug}@2x.jpg`
+    : `https://i.scdn.co/image/${imageUrl}`;
 </script>
 
 <div
@@ -26,10 +31,7 @@
   data-id="{id}"
   style="{style}"
 >
-  <div
-    class="image"
-    style="background-image: url('https://i.scdn.co/image/{imageUrl}');"
-  ></div>
+  <div class="image" style="background-image: url({url});"></div>
   <span>{spotifyName}</span>
 </div>
 
