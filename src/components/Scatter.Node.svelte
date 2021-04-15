@@ -19,9 +19,10 @@
   $: top = d.y;
   $: dur = $mq.reducedMotion ? 0 : 1000;
   $: style = `--dur: ${dur}ms; transform: translate3d(${left}px, ${top}px, 0);`;
+  $: vol = $custom.preview === d.preview ? "x" : "2";
 
   const onClick = () => {
-    dispatch("preview", d.preview);
+    if (d.preview) dispatch("preview", d.preview);
   };
 </script>
 
@@ -33,7 +34,7 @@
   on:click="{onClick}"
 >
   <p class="scatter-node-text"><span>#{topRank}</span> {title}</p>
-  {#if d.preview}<span class="icon"><Icon name="volume-2" /></span>{/if}
+  {#if d.preview}<span class="icon"><Icon name="volume-{vol}" /></span>{/if}
 </div>
 
 <style>

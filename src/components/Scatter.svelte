@@ -32,6 +32,7 @@
   let maxDate;
   let minDate;
   let domains;
+  let preview;
 
   const PAD = 16;
   const MAX_SONG_WIDTH = max(scatterDimensions, (d) => +d.width);
@@ -60,9 +61,13 @@
   };
 
   const onPreview = ({ detail }) => {
-    if (detail) {
+    if (detail === preview) {
+      stopAudio();
+      preview = null;
+    } else {
+      preview = detail;
       audioEl.volume = 0.3;
-      audioEl.src = detail;
+      audioEl.src = preview;
       audioEl.play();
     }
   };
@@ -213,7 +218,7 @@
             xRange="{xRange}"
             yRange="{yRange}"
             position="absolute"
-            custom="{{ aspectRatio, xProp, yProp, activeBand }}"
+            custom="{{ aspectRatio, xProp, yProp, activeBand, preview }}"
           >
             <Html>
               <AxisY />
