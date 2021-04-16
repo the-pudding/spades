@@ -18,3 +18,15 @@
     {/each}</tbody
   >
 </table>
+
+<style>
+  tr {
+    background-color: var(--off-white);
+    border-bottom: 1px solid var(--bg);
+  }
+
+  .isBand {
+    background-color: var(--primary);
+    color: var(--bg);
+  }
+</style>

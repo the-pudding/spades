@@ -128,6 +128,10 @@
   <Prose grafs="{copy.successAfter}" />
 </section>
 
+<section id="method">
+  <Prose className="small" grafs="{copy.method}" />
+</section>
+
 <Footer />
 
 <style>
