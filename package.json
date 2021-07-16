@@ -37,7 +37,8 @@
     "shelljs": "^0.8.4",
     "sirv-cli": "^1.0.11",
     "svelte": "^3.32.3",
-    "svelte-preprocess": "^4.6.9"
+    "svelte-preprocess": "^4.6.9",
+    "swiper": "^6.7.5"
   },
   "scripts": {
     "build": "rollup -c",
@@ -50,7 +51,6 @@
     "start": "sirv public --host"
   },
   "dependencies": {
-    "d3-selection": "^3.0.0",
-    "swiper": "^6.7.5"
+    "d3-selection": "^3.0.0"
   }
 }

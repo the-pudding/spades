@@ -15,6 +15,7 @@
   import {selectAll} from 'd3-selection';
   import { onMount } from "svelte";
 
+  let mounted;
 
 
   import { Swiper, SwiperSlide } from 'swiper/svelte';
@@ -26,6 +27,8 @@
   SwiperCore.use([Mousewheel,Pagination]);
   
   onMount(() => {
+    mounted = true;
+
     selectAll("a").attr("target","_blank").each(d => {
       console.log("here");
     });
@@ -41,27 +44,28 @@
   <Header />
 </section> -->
 
-<section>
-  <!-- svelte-ignore missing-declaration -->
-  <Swiper
-    direction="{'vertical'}" slidesPerView="{1}" spaceBetween="{30}" mousewheel="{true}"
-    on:slideChange={() => console.log('slide change')}
-    on:swiper={(e) => console.log(e.detail[0])}
-  >
-  
+<!-- svelte-ignore missing-declaration -->
+{#if mounted}
+  <section>
+    <Swiper
+      direction="{'vertical'}" slidesPerView="{1}" spaceBetween="{30}" mousewheel="{true}"
+      on:slideChange={() => console.log('slide change')}
+      on:swiper={(e) => console.log(e.detail[0])}
+    >
+
+      {#each copy.cards as card}
+        <SwiperSlide>
+          {#each card.cardText as cardText}
+            <p>{@html cardText.value}</p>
+          {/each}
+        </SwiperSlide>
+      {/each}
+    </Swiper>
+
+  </section>
+{/if}
 
 
-
-    {#each copy.cards as card}
-      <SwiperSlide>
-        {#each card.cardText as cardText}
-          <p>{@html cardText.value}</p>
-        {/each}
-      </SwiperSlide>
-    {/each}
-  </Swiper>
-
-</section>
 
 <section>
 </section>
