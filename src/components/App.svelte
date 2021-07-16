@@ -12,66 +12,63 @@
   import Footer from "./pudding/Footer.svelte";
   import copy from "../data/doc.json";
   import mq from "../stores/mq.js";
+  import {selectAll} from 'd3-selection';
+  import { onMount } from "svelte";
 
-  let scatterActiveBand;
-  let scatterBands = [];
-  let scatterEl;
-  let downloadSwarmData;
-  let downloadScatterData;
-  let selectedScatter = "chart";
-  let selectedSwarm;
 
-  const setMemberText = (band) => {
-    const post = band ? "" : "and members";
 
-    if (!band) return post;
-    const people = scatterBands
-      .find((d) => d[0].name === scatterActiveBand)
-      .slice(1);
-    people.sort((a, b) => descending(a.count, b.count));
-    const names = people.map(
-      (d, i) => `<span class="node node-${i + 1}">${d.name}</span>`
-    );
+  import { Swiper, SwiperSlide } from 'swiper/svelte';
+  import SwiperCore, {
+    Mousewheel,Pagination
+  } from 'swiper/core';
 
-    if (names.length > 1) return `${post}, ${names.join(", ")}`;
+  // install Swiper modules
+  SwiperCore.use([Mousewheel,Pagination]);
+  
+  onMount(() => {
+    selectAll("a").attr("target","_blank").each(d => {
+      console.log("here");
+    });
+  });
 
-    // const joined = names.join(", ");
-    // const i = joined.lastIndexOf(", ");
-    // const before = joined.substring(0, i);
-    // const after = joined.substring(i + 1, joined.length);
-    return `${post} and ${names[0]}`;
-  };
+  
 
-  const shorten = (name) => {
-    if (name === "The Pussycat Dolls") return "Pussycat Dolls";
-    else if (name === "New Kids On The Block") return "NKOTB";
-    return name;
-  };
-
-  const scrollToInfo = () => {
-    if (!scatterEl || !scatterActiveBand) return;
-    const { top } = scatterEl.getBoundingClientRect();
-    const y = window.scrollY;
-    window.scrollTo(0, y + top);
-  };
-
-  $: membersText = setMemberText(scatterActiveBand);
-  $: mobileScatter = !$mq.lg;
-  $: scatterActiveBand, scrollToInfo();
-  $: isSmall = !$mq.sm;
 </script>
 
 <Meta copy="{copy}" />
 
-<section>
+<!-- <section>
   <Header />
+</section> -->
+
+<section>
+  <!-- svelte-ignore missing-declaration -->
+  <Swiper
+    direction="{'vertical'}" slidesPerView="{1}" spaceBetween="{30}" mousewheel="{true}"
+    on:slideChange={() => console.log('slide change')}
+    on:swiper={(e) => console.log(e.detail[0])}
+  >
+  
+
+
+
+    {#each copy.cards as card}
+      <SwiperSlide>
+        {#each card.cardText as cardText}
+          <p>{@html cardText.value}</p>
+        {/each}
+      </SwiperSlide>
+    {/each}
+  </Swiper>
+
 </section>
 
 <section>
-  <Intro copy="{copy}" />
 </section>
 
-<section>
+
+
+<!-- <section>
   <Prose grafs="{copy.popularityBefore}" />
   <FigureInfo hed="{copy.popularityHed}" />
   <div class="swarm swarm-horizontal">
@@ -86,9 +83,9 @@
     filename="solo-artist-followers.csv"
   />
   <Prose grafs="{copy.popularityAfter}" />
-</section>
+</section> -->
 
-<section bind:this="{scatterEl}">
+<!-- <section bind:this="{scatterEl}">
   {#if mobileScatter || selectedScatter === "table"}
     <FigureInfo hed="{copy.successHed}" />
   {:else}
@@ -130,9 +127,9 @@
 
 <section id="method">
   <Prose className="small" grafs="{copy.method}" />
-</section>
+</section> -->
 
-<Footer />
+<!-- <Footer /> -->
 
 <style>
   section {
@@ -140,51 +137,8 @@
     padding: 0 1em;
   }
 
-  .swarm-horizontal {
-    display: none;
+  p {
+    font-size:16px;
   }
 
-  .swarm-vertical {
-    padding-top: 10%;
-  }
-
-  select {
-    display: inline-block;
-    /* font-size: 0.85em; */
-    padding: 0 0.25em;
-    margin: 0;
-    line-height: 1.2;
-    padding-right: 1.25em;
-    text-align: center;
-    color: var(--fg);
-    border-bottom: 6px solid var(--gray);
-    border-radius: 0;
-  }
-
-  select.selected {
-    border-bottom: 6px solid var(--node-0);
-  }
-
-  .scatter-view {
-    margin-bottom: 1em;
-  }
-
-  @media only screen and (min-width: 1024px) {
-    .swarm-vertical {
-      display: none;
-    }
-    .swarm-horizontal {
-      display: block;
-    }
-  }
-
-  @media only screen and (min-width: 640px) {
-    .scatter-view {
-      text-align: right;
-      position: relative;
-      z-index: var(--z-overlay);
-      height: 0;
-      margin-bottom: 0;
-    }
-  }
 </style>
