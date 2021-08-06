@@ -83,7 +83,8 @@
 
     console.log("mounted")
 
-    select("#content").selectAll("a").attr("target","_blank")
+    let thing = select("#content").selectAll("a");
+    console.log(thing.size())
 
   });
 

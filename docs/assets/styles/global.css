@@ -19,7 +19,7 @@
   --purple: #a239ca;
   --blue: #4717f6;
   --green: #34a29e;
-  --red: #ff533d;
+  --red: #FE2B4C;
   --yellow: #e5e338;
 	--node-0: #AA3377;
 	--node-1: #66CCEE;
@@ -41,11 +41,15 @@
 	--node-5: #570408; */
 	
 
-  --bg: var(--white);
+  --bg: #E2E0DB;
   --fg: var(--off-black);
   --default: var(--gray-light);
   --primary: var(--node-0);
   --secondary: var(--node-1);
+
+  --card-bg: #FBF7F0;
+  --card-bd: #D2D2D2;
+
 
   /* water.css */
 
@@ -55,7 +59,7 @@
   --background-alt: var(--off-white);
   --selection: var(--gray);
   --text-main: var(--off-black);
-  --links: var(--purple);
+  --links: var(--blue);
   --focus: var(--purple);
   --border: var(--gray-light);
   --animation-duration: 0.1s;
@@ -163,4 +167,25 @@ span.gray-light {
 	position: absolute;
 	white-space: nowrap; 
 	width: 1px;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100vh;
+}
+
+.swiper-slide {
+  height: calc(100% - 4rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.card-slide {
+  border-radius: 20px;
+  box-shadow: 0 5px 34px rgba(0,0,0,.10);
+  border: 1px solid var(--card-bd);
+  background-color: var(--card-bg);
+  z-index: 100;
 }
