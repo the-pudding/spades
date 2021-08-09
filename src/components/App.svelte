@@ -75,7 +75,7 @@
   const onSwiper = (e) => {
       const [swiper] = e.detail;
       console.log(swiper);
-      swiper.slideTo(4);
+      swiper.slideTo(33);
   }
 
   onMount(() => {
@@ -102,23 +102,30 @@
 {#if mounted}
   <section class="card-container">
     <Swiper
-      direction="{'vertical'}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(.5)}" mousewheel="{{forceToAxis:true}}"
+      direction="{'vertical'}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(.5)}" mousewheel="{{forceToAxis:true, sensitivity: .1}}" breakpoints='{{
+        "640": {
+          "direction": 'horizontal'
+        }
+      }}'
       on:slideChange={() => console.log('slide change')}
-      on:swiper={onSwiper}
+      on:swiper={onSwiper} 
     >
 
       {#each copy.cards as card, index}
 
         {#if card.background}
-          <div class=pop-off-wrapper>
+          <div class="pop-off-wrapper">
             <div class="pop-off card-slide" on:click={pivotPopOff}>
+              <p class="pop-off-hed">{@html card.backgroundHed}</p>
               <div class="text-wrapper">
-                <p>{@html card.background}</p>
+                <p class="pop-off-para">{@html card.background}</p>
               </div>
             </div>
           </div>
           
         {/if}
+
+
         <SwiperSlide class="card-slide">
           <div class="card-wrapper">
 
@@ -128,16 +135,15 @@
             </div>
 
             {#if card.cardTitle}
-              <p class="card-title card-title-hidden">{ card.cardTitle }</p>
+              <p class="card-title">{ card.cardTitle }</p>
             {/if}
             {#if card.img}
-              <img class="{card.imgSize}" src="assets/{card.img}" alt={card.altText}>
+              <img class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} src="assets/{card.img}" alt={card.altText}>
             {/if}
 
-            <div class="text-wrapper">
+            <div class="text-wrapper" class:half-text-wrapper={!!card.img}>
               {#each card.cardText as cardText}
-                <!-- <p>{@index}</p> -->
-                <p>{@html cardText.value}</p>
+                <p class="para">{@html cardText.value}</p>
               {/each}
             </div>
           </div>
@@ -160,6 +166,32 @@
     font-size:1rem;
   }
 
+  .card-title {
+    font-size: 1.5rem;
+    text-align: center;
+    max-width: 250px;
+    margin: 0 auto;
+    line-height: 1.2;
+    margin-top: 1rem;
+    font-weight: 600;
+  }
+
+
+  .half-text-wrapper::-webkit-scrollbar-track {
+    background: #fbf7f0;
+  }
+
+  .half-text-wrapper::-webkit-scrollbar-corner {
+    background: #fbf7f0;
+  }
+
+  .half-text-wrapper::-webkit-resizer {
+    background: #fbf7f0;
+  }
+
+  
+
+
   .card-container {
     background-color: var(--bg);
   }
@@ -169,20 +201,19 @@
   }
 
   .pop-off-wrapper {
-    height: 1px;
     position:relative;
     z-index: 100;
+    height: 1px;
   }
 
   .pop-off {
     position: absolute;
     top: 0;
     left: 0;
-    height: 100vh;
-    width: 100%;
     z-index: 1000;
     transform: translate(calc(-100% + 120px), calc(0% - 150px)) rotate(25deg);
     transition: transform 0.3s; 
+    max-height: none;
   }
 
   .pop-off:before {
@@ -214,11 +245,25 @@
     display: none;
   }
 
+  .pop-off-hed {
+    pointer-events: none;
+    text-align: right;
+    width: 150px;
+    margin: 0;
+    margin-right: 1rem;
+    margin-left: auto;
+    margin-top: 1rem;
+    font-size: 1.2rem;  
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
   .card-wrapper {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height:100%;
   }
 
   .card-symbol {
@@ -234,6 +279,10 @@
   .text-wrapper {
     width: calc(100% - 2rem);
     margin: 0 auto;
+  }
+
+  .para {
+    user-select: none;
   }
 
   .card-color-black {
@@ -262,8 +311,60 @@
   }
 
   .half {
-    width: 100%;
+    height: 1px;
+    object-fit: contain;
+    flex-grow: 1;
   }
+
+  .half-text-wrapper {
+    height: calc(50% - 1rem);
+    margin-bottom: 1rem;
+    overflow-y: scroll;
+    padding-bottom: 3rem;
+  }
+
+  .half-text-wrapper:after {
+    content: '';
+    height: 3rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 10%, #fbf7f0 63%);
+  }
+
+  .full-width-image {
+    width: 100%;
+    height: auto;
+  }
+
+  @media only screen and (min-width: 640px) {
+
+    .pop-off-wrapper {
+      height: 100%;
+      z-index: 1000;
+      pointer-events: all;
+      cursor: pointer;
+      cursor: hand;
+    }
+
+    .pop-off {
+      min-width:450px;
+      transform: translate(calc(-100% - 50px), calc(50% - 30px)) rotate(-5deg);
+      top: 50%;
+    }
+
+    .pop-off-centered {
+      min-width:450px;
+      transform: translate(calc(-100% - 0px), calc(-50% - 0px)) rotate(0deg);
+      top: 50%;
+    }
+
+  }
+
+    
+
 
   
 
