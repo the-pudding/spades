@@ -13,9 +13,11 @@
   import copy from "../data/doc.json";
   import mq from "../stores/mq.js";
   import {selectAll, select} from 'd3-selection';
-  import { onMount } from "svelte";
+  import { onMount, tick } from "svelte";
 
   let mounted;
+  let innerSwiperIndex;
+  let countInner;
 
   let suit = {
     0: "♠",
@@ -30,6 +32,52 @@
     2: "red",
     3: "black"
   }
+
+
+  function getSuit(index) {
+    if(index < +innerSwiperIndex ) {
+      return suit[Math.floor(index/13)]
+    }
+    if(countInner){
+      return suit[Math.floor((index + countInner)/13)]
+    }
+    return "hi";
+  }
+
+  function getSuitColor(index) {
+    if(index < +innerSwiperIndex ) {
+      return suitColor[Math.floor(index/13)]
+    }
+    if(countInner){
+      return suitColor[Math.floor((index + countInner)/13)]
+    }
+    return "hi";
+  }
+
+
+  function getCardOrder(index) {
+    if(index < +innerSwiperIndex ) {
+      return cardOrder[(index) % 13]
+    }
+    if(countInner){
+      return cardOrder[(index + countInner) % 13]  
+    }
+    return "hi";
+  }
+
+  function getInnerCardOrder(index) {
+    return cardOrder[(+innerSwiperIndex + index) % 13]
+  }
+
+  function getInnerSuit(index) {
+    return suit[Math.floor((+innerSwiperIndex + index)/13)]
+  }
+
+  function getInnerSuitColor(index) {
+    return suitColor[Math.floor((+innerSwiperIndex + index)/13)]
+  }
+
+  
 
   let cardOrder = {
     0:2,
@@ -75,16 +123,28 @@
   const onSwiper = (e) => {
       const [swiper] = e.detail;
       console.log(swiper);
-      swiper.slideTo(33);
+      swiper.slideTo(22);
   }
 
-  onMount(() => {
+  onMount(async() => {
     mounted = true;
 
     console.log("mounted")
 
-    let thing = select("#content").selectAll("a");
-    console.log(thing.size())
+    
+    await tick();
+
+    for (let item in copy.cards) {
+
+      let props = Object.keys(copy.cards[item]);
+      if(props.indexOf("nested") > -1){
+        innerSwiperIndex = item;
+        countInner = copy.cards[item].cardText.length - 1;
+      }      
+    }
+    
+    select("#content").selectAll("a").attr("target","_blank");
+    select(".nested-swiper").node().parentNode.classList.add('card-style-none');
 
   });
 
@@ -127,27 +187,59 @@
 
 
         <SwiperSlide class="card-slide">
-          <div class="card-wrapper">
+          {#if card.nested}
+            <Swiper class="nested-swiper"
+              direction="{'horizontal'}" pagination='{{"clickable": true }}' grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(-1.5)}" mousewheel="{{forceToAxis:true, sensitivity: .1}}" breakpoints='{{
+                "640": {
+                  "direction": 'vertical'
+                }
+              }}'
+              on:slideChange={() => console.log('slide change')}
+              on:swiper={onSwiper} 
+            >
+              {#each card.cardText as cardText, indexInner}
+                
 
-            <div class="card-symbol card-color-{suitColor[Math.floor(index/13)]}">
-              <p class="card-num">{ cardOrder[(index) % 13] }</p>
-              <p class="card-suit">{ suit[Math.floor(index/13)] }</p>
-            </div>
+                  <SwiperSlide class="card-slide">
+                    {#if innerSwiperIndex}
+                      <div class="card-symbol card-color-{getInnerSuitColor(indexInner)}">
+                        <p class="card-num"> { getInnerCardOrder(indexInner)} </p>
+                        <p class="card-suit">{ getInnerSuit(indexInner) }</p>
+                      </div>
+                    {/if}
+                    {#each cardText.innerCardText as innerCardText }
+                      <p>{@html innerCardText.value}</p>
+                    {/each}
+                  </SwiperSlide>
 
-            {#if card.cardTitle}
-              <p class="card-title">{ card.cardTitle }</p>
-            {/if}
-            {#if card.img}
-              <img class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} src="assets/{card.img}" alt={card.altText}>
-            {/if}
-
-            <div class="text-wrapper" class:half-text-wrapper={!!card.img}>
-              {#each card.cardText as cardText}
-                <p class="para">{@html cardText.value}</p>
               {/each}
-            </div>
-          </div>
+            </Swiper>
           
+            
+          {:else}
+            <div class="card-wrapper">
+              {#if innerSwiperIndex}
+                <div class="card-symbol card-color-{getSuitColor(index)}">
+                  <p class="card-num"> { getCardOrder(index)} </p>
+                  <p class="card-suit">{ getSuit(index) }</p>
+                </div>
+              {/if}
+              
+
+              {#if card.cardTitle}
+                <p class="card-title">{ card.cardTitle }</p>
+              {/if}
+              {#if card.img}
+                <img class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} src="assets/{card.img}" alt={card.altText}>
+              {/if}
+
+              <div class="text-wrapper" class:half-text-wrapper={!!card.img}>
+                {#each card.cardText as cardText}
+                  <p class="para">{@html cardText.value}</p>
+                {/each}
+              </div>
+            </div>
+          {/if}
           
         </SwiperSlide>
       {/each}
@@ -338,6 +430,11 @@
     width: 100%;
     height: auto;
   }
+
+  .nested-swiper {
+    background: red;
+  }
+
 
   @media only screen and (min-width: 640px) {
 
