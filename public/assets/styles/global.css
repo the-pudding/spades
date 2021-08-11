@@ -216,7 +216,17 @@ span.gray-light {
   box-shadow: 0 5px 34px rgba(0,0,0,.10);
 }
 
+.flex-center {
+  display: flex;
+}
 
+.flex-center p {
+  margin: 0;
+}
+
+.align-right {
+  text-align: right;
+}
 
 
 
