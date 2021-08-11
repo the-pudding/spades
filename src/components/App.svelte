@@ -14,6 +14,8 @@
   import mq from "../stores/mq.js";
   import {selectAll, select} from 'd3-selection';
   import { onMount, tick } from "svelte";
+  import tableTalk from "../svg/table2.svg";
+
 
   let mounted;
   let innerSwiperIndex;
@@ -217,7 +219,16 @@
                     {/if}
 
                     {#if cardText.img}
-                      <img src="assets/{cardText.img}">
+                      <div class="img-wrapper">
+                        <img style="min-width:{cardText.imgMinWidth !== undefined, cardText.imgMinWidth}px; width:{cardText.imgWidth !== undefined, cardText.imgWidth}%;" src="assets/{cardText.img}">
+                        {#if cardText.imgTwo}
+                          <div class="svg-wrapper" style="min-width:{cardText.imgMinWidth !== undefined, cardText.imgMinWidth}px; width:{cardText.imgWidth !== undefined, cardText.imgWidth}%;">
+                            {#if cardText.imgTwo == "table2.svg"}
+                              {@html tableTalk}
+                            {/if}
+                          </div>
+                        {/if}
+                      </div>
                     {/if}
 
                     {#if cardText.html}
@@ -524,9 +535,20 @@
     bottom: 2rem;
     left: 0;
     right: 0;
-
-
   }
+
+  .img-wrapper img{
+    margin: 0 auto;
+  }
+
+  .img-wrapper .svg-wrapper {
+    margin: 0 auto;
+  }
+
+  .img-wrapper .svg-wrapper svg{
+    width: 100%;
+  }
+
 
 
   @media only screen and (min-width: 640px) {
