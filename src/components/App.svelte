@@ -123,7 +123,7 @@
   const onSwiper = (e) => {
       const [swiper] = e.detail;
       console.log(swiper);
-      swiper.slideTo(22);
+      swiper.slideTo(20);
   }
 
   onMount(async() => {
@@ -162,9 +162,10 @@
 {#if mounted}
   <section class="card-container">
     <Swiper
-      direction="{'vertical'}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(.5)}" mousewheel="{{forceToAxis:true, sensitivity: .1}}" breakpoints='{{
+      direction="{'vertical'}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(.5)}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
         "640": {
-          "direction": 'horizontal'
+          "direction": 'horizontal',
+          "freeMode": true
         }
       }}'
       on:slideChange={() => console.log('slide change')}
@@ -191,11 +192,10 @@
             <Swiper class="nested-swiper"
               direction="{'horizontal'}" pagination='{{"clickable": true }}' grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(-1.5)}" mousewheel="{{forceToAxis:true, sensitivity: .1}}" breakpoints='{{
                 "640": {
-                  "direction": 'vertical'
+                  "direction": 'horizontal'
                 }
               }}'
               on:slideChange={() => console.log('slide change')}
-              on:swiper={onSwiper} 
             >
               {#each card.cardText as cardText, indexInner}
                 
@@ -207,9 +207,43 @@
                         <p class="card-suit">{ getInnerSuit(indexInner) }</p>
                       </div>
                     {/if}
+
+                    {#if cardText.text}
+                      <p class="para para-center para-no-margin">{@html cardText.text}</p>
+                      
+                    {/if}
+                    {#if cardText.hed}
+                      <p class="card-title">{@html cardText.hed}</p>
+                    {/if}
+
+                    {#if cardText.img}
+                      <img src="assets/{cardText.img}">
+                    {/if}
+
+                    {#if cardText.html}
+                      {@html cardText.html}
+                    {/if}
                     {#each cardText.innerCardText as innerCardText }
-                      <p>{@html innerCardText.value}</p>
+                      <div class="text-wrapper text-wrapper-inner">
+                        <p>{@html innerCardText.value}</p>
+                      </div>
                     {/each}
+                    {#if cardText.pagination}
+                      <div class="pagination-wrapper">
+                        <div class="pagination-label" class:pagination-label-hidden={indexInner == card.cardText.length - 1}>
+                          <p class="pagination-label-text">{@html cardText.pagination}</p>
+                          <div class="pagination-label-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 15" fill="none">
+                              <path d="M22.9229 8.31355C23.3135 7.92303 23.3135 7.28986 22.9229 6.89934L16.559 0.535379C16.1684 0.144855 15.5353 0.144854 15.1448 0.535379C14.7542 0.925903 14.7542 1.55907 15.1448 1.94959L20.8016 7.60645L15.1448 13.2633C14.7542 13.6538 14.7542 14.287 15.1448 14.6775C15.5353 15.068 16.1684 15.068 16.559 14.6775L22.9229 8.31355ZM0.21582 8.60645L22.2158 8.60645L22.2158 6.60645L0.21582 6.60645L0.21582 8.60645Z" fill="black"/>
+                              </svg>
+                          </div>
+                        </div>
+                        <div class="pagination-count">
+                          <p>{indexInner+1} of {card.cardText.length}</p>
+                        </div>
+                      </div>
+                      
+                    {/if}
                   </SwiperSlide>
 
               {/each}
@@ -373,8 +407,21 @@
     margin: 0 auto;
   }
 
+  .text-wrapper-inner {
+    width: calc(100% - 3rem);
+    margin-right: 2rem;
+  }
+
+  .para-no-margin {
+   margin: 0 auto; 
+  }
+
   .para {
     user-select: none;
+  }
+
+  .para-center {
+    text-align:center;
   }
 
   .card-color-black {
@@ -433,6 +480,52 @@
 
   .nested-swiper {
     background: red;
+  }
+
+
+  .pagination-label {
+    display: flex;
+    justify-content: center;
+  }
+
+  .pagination-label-hidden {
+    display: none;
+  }
+
+
+  .pagination-label-arrow {
+    align-self: center;
+  }
+
+  .pagination-label-arrow svg {
+    display: block;
+    width: 25px;
+  }
+
+  .pagination-label-text {
+    text-transform: uppercase;
+    margin: 0;
+    display: block;
+    margin-right: 10px;
+  }
+
+  .pagination-count{
+    display: flex;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .pagination-count p{
+    margin: 0;
+  }
+
+  .pagination-wrapper {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+
+
   }
 
 

@@ -216,6 +216,13 @@ span.gray-light {
   box-shadow: 0 5px 34px rgba(0,0,0,.10);
 }
 
+.nested-swiper .text-wrapper {
+  width: calc(100% - 3rem);
+  margin-right: 2rem;
+}
+
+
+
 
 .swiper-pagination {
   position: absolute;
@@ -224,6 +231,9 @@ span.gray-light {
   transform: translate3d(0, 0, 0);
   z-index: 10;
 }
+
+
+
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
 }
@@ -234,6 +244,11 @@ span.gray-light {
   left: 0;
   width: 100%;
 }
+
+.nested-swiper .swiper-pagination {
+  left: -1rem;
+}
+
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
   font-size: 0;
@@ -355,3 +370,26 @@ button.swiper-pagination-bullet {
 .swiper-pagination-lock {
   display: none;
 }
+
+@media only screen and (min-width: 640px) {
+  .card-style-none {
+    z-index: 0;
+  }
+
+  .nested-swiper .swiper-wrapper .swiper-slide {
+    opacity: 0;
+    transition: opacity .5s;
+  }
+
+  .nested-swiper .swiper-wrapper .swiper-slide-active {
+    opacity: 1;
+  }
+
+  .nested-swiper .swiper-wrapper .swiper-slide-next {
+    opacity: 1;
+  }
+
+  .nested-swiper .swiper-wrapper .swiper-slide-prev {
+    opacity: 1;
+  }
+
