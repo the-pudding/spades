@@ -17,6 +17,7 @@
   import tableTalk from "../svg/table2.svg";
 
 
+  let startingSlide = 8;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -125,7 +126,7 @@
   const onSwiper = (e) => {
       const [swiper] = e.detail;
       console.log(swiper);
-      swiper.slideTo(20);
+      swiper.slideTo(startingSlide);
   }
 
   onMount(async() => {
@@ -156,10 +157,6 @@
 
 <Meta copy="{copy}" />
 
-<!-- <section>
-  <Header />
-</section> -->
-
 <!-- svelte-ignore missing-declaration -->
 {#if mounted}
   <section class="card-container">
@@ -176,17 +173,26 @@
 
       {#each copy.cards as card, index}
 
-        {#if card.background}
-          <div class="pop-off-wrapper">
-            <div class="pop-off card-slide" on:click={pivotPopOff}>
+
+      {#if card.background}
+        <div class="pop-off-wrapper">
+          <div class="pop-off card-slide" on:click={pivotPopOff}>
+            <div class="top-loop">
+              <div class="top-loop-svg">
+              </div>
+            </div>
+
+            <div class="internal-text-wrapper">
               <p class="pop-off-hed">{@html card.backgroundHed}</p>
               <div class="text-wrapper">
                 <p class="pop-off-para">{@html card.background}</p>
               </div>
             </div>
+            
           </div>
-          
-        {/if}
+        </div>
+        
+      {/if}
 
 
         <SwiperSlide class="card-slide">
@@ -262,7 +268,7 @@
           
             
           {:else}
-            <div class="card-wrapper">
+            <div class="card-wrapper" class:text-only-wrapper="{!!card.textOnlyCard}">
               {#if innerSwiperIndex}
                 <div class="card-symbol card-color-{getSuitColor(index)}">
                   <p class="card-num"> { getCardOrder(index)} </p>
@@ -272,17 +278,45 @@
               
 
               {#if card.cardTitle}
-                <p class="card-title">{ card.cardTitle }</p>
+                <p class:order-very-bottom="{!!card.titleBottom}" class:order-bottom="{!!card.textPosition}" class="card-title">{ card.cardTitle }</p>
               {/if}
               {#if card.img}
-                <img class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} src="assets/{card.img}" alt={card.altText}>
+                <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} style="min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
               {/if}
 
-              <div class="text-wrapper" class:half-text-wrapper={!!card.img}>
+              {#if card.backgroundFill}
+                <div class="card-background-fill">
+                  {#if card.backgroundImageFill}
+
+                    <div class="background-image-fill" style="background-image: url('assets/{card.backgroundFill}')">
+                    </div>
+                  
+                  {:else}
+                    <img src="assets/{card.backgroundFill}" alt="">
+                  {/if}
+                  
+                </div>
+              {/if}
+
+
+
+
+              <div class:half-text-wrapper="{card.imgSize == "half"}" class:order-top="{!!card.textPosition}" class:text-center="{!!card.textCenter}" style="max-width:{card.textWidthMax !== undefined, card.textWidthMax}px;" class="text-wrapper">
                 {#each card.cardText as cardText}
-                  <p class="para">{@html cardText.value}</p>
+                  <p class:tight-text="{!!card.tightText}" class="para">{@html cardText.value}</p>
                 {/each}
               </div>
+
+              {#if card.backCard}
+                <div class="back-card-wrapper">
+                  <div class="back-card card-slide">
+                    <div class="back-card-svg">
+
+                    </div>
+                  </div>
+                </div>
+              {/if}
+
             </div>
           {/if}
           
@@ -298,9 +332,81 @@
     margin: 0 auto;
   }
 
+  .back-card-wrapper {
+    height: 1px;
+    flex-grow: 1;
+    position: relative;
+  }
+
+  .back-card {
+    height: calc(100vh - 50px);
+    max-height: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background: #222;
+    border: none;
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,.35), 0px -11px 34px rgba(0,0,0,.24);
+  }
+
+  .back-card-svg {
+    height: calc(100% - 3rem);
+    width: calc(100% - 3rem);
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    background: url(assets/back-black.svg) no-repeat;
+  }
+
+  .back-card-svg:before {
+    content: '';
+    background: url(assets/hand-2.svg) no-repeat center;
+    width: 100px;
+    position: absolute;
+    top: -15px;
+    right: -10px;
+    height: 100px;
+    transform: translate(0, -50%);
+    z-index: 100;
+  }
+
+  .card-background-fill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+  .card-background-fill img {
+    height: 100%;
+  }
+
+  .back-card-svg:after {
+    content: '';
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 1.5rem);
+    border: 2px solid #9A75C3;
+    border: 2px solid #FFF;
+    position: absolute;
+    border-radius: 20px;
+    right: 0;
+    top: 0.75rem;
+    left: 0;
+    margin: 0 auto;
+  }
+
 
   p {
     font-size:1rem;
+  }
+
+  .tight-text {
+    margin: .5rem auto;
+    line-height: 1.2;
   }
 
   .card-title {
@@ -310,7 +416,9 @@
     margin: 0 auto;
     line-height: 1.2;
     margin-top: 1rem;
-    font-weight: 600;
+    font-weight: 300;
+    font-family: 'Ohno Blazeface';
+    text-transform: uppercase;
   }
 
 
@@ -327,7 +435,10 @@
   }
 
   
-
+.flex-grow {
+  height: 1px;
+  flex-grow: 1;
+}
 
   .card-container {
     background-color: var(--bg);
@@ -348,9 +459,22 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    transform: translate(calc(-100% + 120px), calc(0% - 150px)) rotate(25deg);
+    transform: translate(calc(-100% + 270px), calc(0% - 130px)) rotate(10deg);
     transition: transform 0.3s; 
     max-height: none;
+  }
+
+  .pop-off:after {
+    content: 'INSTRUCTIONS';
+    width: 100%;
+    position: absolute;
+    top: -6px;
+    right: 0px;
+    left: 0;
+    margin: 0 auto;
+    font-family: 'Lyon Text Web';
+    text-align: center;
+    transform: translate(0, -100%);
   }
 
   .pop-off:before {
@@ -368,6 +492,7 @@
 
   .pop-off .text-wrapper {
     pointer-events: none;
+    text-align: right;
   }
 
   .pop-off .text-wrapper a{
@@ -382,17 +507,53 @@
     display: none;
   }
 
+  .top-loop {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .top-loop-svg {
+    background: url(assets/loop-big.svg);
+    transform: translate3d(0,0,0);
+    background-repeat: no-repeat;
+    margin-left: auto;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+    width: 513px;
+    height: 785px;
+    pointer-events: none;
+  }
+
+  .internal-text-wrapper {
+    pointer-events:none;
+    margin-right: calc(38px + 1.5rem);
+    position: relative;
+    margin-top: calc(38px + 1.5rem);
+    pointer-events: none;
+  }
+
   .pop-off-hed {
     pointer-events: none;
     text-align: right;
-    width: 150px;
+    width: 250px;
     margin: 0;
     margin-right: 1rem;
     margin-left: auto;
     margin-top: 1rem;
-    font-size: 1.2rem;  
-    font-weight: 600;
+    font-size: 1.8rem; 
+    font-weight: 300;
     line-height: 1.2;
+    font-family: 'Ohno Blazeface';
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    font-size: 28px;
+    margin-bottom: 1rem;
+
   }
 
   .card-wrapper {
@@ -401,6 +562,12 @@
     flex-direction: column;
     justify-content: center;
     height:100%;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+  }
+
+  .card-wrapper img{
+    margin: 0 auto;
   }
 
   .card-symbol {
@@ -416,6 +583,39 @@
   .text-wrapper {
     width: calc(100% - 2rem);
     margin: 0 auto;
+  }
+
+  .text-only-wrapper {
+    justify-content: flex-start;
+    padding-top: 5.5rem;
+  }
+
+  .text-only-wrapper .text-wrapper p {
+    line-height: 1.4;
+  }
+
+  .text-wrapper p:first-of-type {
+    margin-top: 0;
+  }
+  
+  .text-only-wrapper .text-wrapper p:first-of-type::first-letter {
+    color: #000;
+    float: left;
+    font-family: 'Ohno Blazeface';
+    font-size: 75px;
+    line-height: 44px;
+    padding-top: 5px;
+    padding-right: 8px;
+    padding-left: 3px;
+    font-weight: 300;
+  }
+
+  .text-wrapper p:last-of-type {
+    margin-bottom: 0;
+  }
+
+  .text-wrapper a {
+    color: black;
   }
 
   .text-wrapper-inner {
@@ -450,6 +650,11 @@
     margin: 0;
     line-height: .9;
     text-align: center;
+    font-family: 'Ohno Blazeface'
+  }
+
+  .card-num {
+    margin-bottom: .5rem;
   }
 
   .card-suit {
@@ -460,17 +665,26 @@
     width: 100%;
   }
 
-  .half {
-    height: 1px;
-    object-fit: contain;
-    flex-grow: 1;
+  .background-image-fill {
+    background-size: 200%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+  }
+
+  .card-wrapper .half {
+    /* height: 1px; */
+    /* object-fit: contain; */
+    /* flex-grow: 1; */
+    margin-bottom: 1rem;
   }
 
   .half-text-wrapper {
-    height: calc(50% - 1rem);
-    margin-bottom: 1rem;
-    overflow-y: scroll;
-    padding-bottom: 3rem;
+    /* height: calc(50% - 1rem); */
+    /* margin-bottom: 1rem; */
+    /* overflow-y: scroll; */
+    /* padding-bottom: 3rem; */
   }
 
   .half-text-wrapper:after {
@@ -482,6 +696,7 @@
     right: 0;
     width: 100%;
     background: linear-gradient(180deg, rgba(255,255,255,0) 10%, #fbf7f0 63%);
+    display: none;
   }
 
   .full-width-image {
@@ -549,7 +764,21 @@
     width: 100%;
   }
 
+  .order-bottom {
+    order: 2;
+  }
 
+  .order-top {
+    order: 1;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .order-very-bottom {
+    order: 3;
+  }
 
   @media only screen and (min-width: 640px) {
 
