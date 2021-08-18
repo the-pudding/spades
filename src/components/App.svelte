@@ -17,7 +17,7 @@
   import tableTalk from "../svg/table2.svg";
 
 
-  let startingSlide = 8;
+  let startingSlide = 1;
   let mounted;
   let innerSwiperIndex;
   let countInner;
