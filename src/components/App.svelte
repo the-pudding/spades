@@ -517,7 +517,7 @@
   }
 
   .top-loop-svg {
-    background: url(assets/loop-big.svg);
+    background: url('../assets/loop-big.svg');
     transform: translate3d(0,0,0);
     background-repeat: no-repeat;
     margin-left: auto;
