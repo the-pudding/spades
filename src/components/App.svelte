@@ -288,7 +288,7 @@
                 <div class="card-background-fill">
                   {#if card.backgroundImageFill}
 
-                    <div class="background-image-fill" style="background-image: url('assets/{card.backgroundFill}')">
+                    <div class="background-image-fill" style="background-image: url('../assets/{card.backgroundFill}')">
                     </div>
                   
                   {:else}
@@ -355,12 +355,12 @@
     width: calc(100% - 3rem);
     margin: 0 auto;
     margin-top: 1.5rem;
-    background: url(assets/back-black.svg) no-repeat;
+    background: url('../assets/back-black.svg') no-repeat;
   }
 
   .back-card-svg:before {
     content: '';
-    background: url(assets/hand-2.svg) no-repeat center;
+    background: url('../assets/hand-2.svg') no-repeat center;
     width: 100px;
     position: absolute;
     top: -15px;
@@ -484,7 +484,7 @@
     position: absolute;
     top: -6px;
     right: -25px;
-    background: url(assets/hand.png);
+    background: url('../assets/hand.png');
     background-repeat: no-repeat;
     background-size: contain;
     transform: rotate(-17deg);
