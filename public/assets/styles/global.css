@@ -218,14 +218,24 @@ span.gray-light {
 
 .flex-center {
   display: flex;
+  max-width: calc(100% - 2rem);
+  margin: 0 auto;
+  margin-bottom: .5rem;
+  border-bottom: 1px solid rgba(0,0,0,.32);
+  padding-bottom: .5rem;
 }
 
 .flex-center p {
   margin: 0;
+  font-size: 1rem;
+  margin-left: 1rem;
+  align-self: center;
 }
 
-.align-right {
+.flex-center .align-right {
   text-align: right;
+  margin-right: 1rem;
+  align-self: center;
 }
 
 

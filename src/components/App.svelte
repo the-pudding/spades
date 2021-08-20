@@ -13,11 +13,36 @@
   import copy from "../data/doc.json";
   import mq from "../stores/mq.js";
   import {selectAll, select} from 'd3-selection';
+	// import { interpolate } from 'flubber';
+	import { tweened } from 'svelte/motion';
+	import * as eases from 'svelte/easing';
+	import {cubicOut} from 'svelte/easing';
+	import {interpolate} from 'polymorph-js';
+
+  import CardBack from './CardBack.svelte'
+
   import { onMount, tick } from "svelte";
   import tableTalk from "../svg/table2.svg";
+  import { Swiper, SwiperSlide } from 'swiper/svelte';
+  import SwiperCore, {
+    Controller,Mousewheel,Pagination
+  } from 'swiper/core';
 
 
-  let startingSlide = 1;
+	const notween = (f,t) => () => t;
+	const tween = (f,t) => interpolate([f,t]);
+
+	const shape = tweened(undefined, {
+		interpolate,
+		easing: eases.cubicInOut,
+		duration: 400
+	});
+
+
+	$: $shape = null;
+
+
+  let startingSlide = 30;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -103,10 +128,7 @@
   }
 
 
-  import { Swiper, SwiperSlide } from 'swiper/svelte';
-  import SwiperCore, {
-    Controller,Mousewheel,Pagination
-  } from 'swiper/core';
+
 
   // install Swiper modules
   SwiperCore.use([Mousewheel,Pagination,Controller]);
@@ -148,6 +170,12 @@
     
     select("#content").selectAll("a").attr("target","_blank");
     select(".nested-swiper").node().parentNode.classList.add('card-style-none');
+
+
+
+
+
+
 
   });
 
@@ -281,7 +309,7 @@
                 <p class:order-very-bottom="{!!card.titleBottom}" class:order-bottom="{!!card.textPosition}" class="card-title">{ card.cardTitle }</p>
               {/if}
               {#if card.img}
-                <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} style="min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
+                <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} style="margin-bottom:{card.bottomSpacing !== undefined, card.bottomSpacing}; max-height:{card.imgMaxHeight !== undefined, card.imgMaxHeight}px;  min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
               {/if}
 
               {#if card.backgroundFill}
@@ -308,13 +336,9 @@
               </div>
 
               {#if card.backCard}
-                <div class="back-card-wrapper">
-                  <div class="back-card card-slide">
-                    <div class="back-card-svg">
+                <CardBack>
 
-                    </div>
-                  </div>
-                </div>
+                </CardBack>
               {/if}
 
             </div>
@@ -355,7 +379,7 @@
     width: calc(100% - 3rem);
     margin: 0 auto;
     margin-top: 1.5rem;
-    background: url('../assets/back-black.svg') no-repeat;
+    /* background: url('../assets/back-black.svg') no-repeat; */
   }
 
   .back-card-svg:before {
@@ -368,6 +392,10 @@
     height: 100px;
     transform: translate(0, -50%);
     z-index: 100;
+  }
+
+  .back-card-svg-2 {
+    display: none;
   }
 
   .card-background-fill {
@@ -438,6 +466,7 @@
 .flex-grow {
   height: 1px;
   flex-grow: 1;
+  object-fit: contain;
 }
 
   .card-container {
@@ -629,6 +658,7 @@
 
   .para {
     user-select: none;
+    line-height: 1.4;
   }
 
   .para-center {
@@ -774,6 +804,7 @@
 
   .text-center {
     text-align: center;
+    max-width: 330px;
   }
 
   .order-very-bottom {
