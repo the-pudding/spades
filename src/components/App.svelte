@@ -18,6 +18,7 @@
 	import * as eases from 'svelte/easing';
 	import {cubicOut} from 'svelte/easing';
 	import {interpolate} from 'polymorph-js';
+  import { transition } from 'd3-transition';
 
   import CardBack from './CardBack.svelte'
 
@@ -41,8 +42,8 @@
 
 	$: $shape = null;
 
-
-  let startingSlide = 30;
+  let started = false;
+  let startingSlide = 0;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -105,6 +106,96 @@
     return suitColor[Math.floor((+innerSwiperIndex + index)/13)]
   }
 
+
+  function changedSlideStart(index){
+
+    if(mainSwiper.activeIndex == 1 && !started){
+      mainSwiper.disable();
+    }
+
+    if(mainSwiper.activeIndex == 0 && started){
+      // select(".card-container").classed("not-started", false);
+      
+      selectAll(".open-box")
+        .style("display","none")
+
+    }
+  }
+
+  function changedSlide(index){
+
+    if(mainSwiper.activeIndex > 1){
+
+      select(".card-container").classed("not-started", true);
+
+      selectAll(".open-box")
+          .transition()
+          .duration(500)
+          .delay(2000)
+          .style("width","100%")
+          .style("left","0px")
+          .style("top",null)
+
+    }
+
+
+
+    if(mainSwiper.activeIndex == 1 && started){
+      select(".card-container").classed("not-started", false);
+      
+      selectAll(".open-box")
+        .style("display","none")
+
+    }
+
+
+    if(mainSwiper.activeIndex == 1 && !started){
+
+
+      // if(mainSwiper.activeIndex == 1 && !started){
+      //   window.setTimeout(function(d){
+      //   },2000)
+      // }
+
+      started = true;
+
+      select(".card-container").classed("not-started", false);
+
+      selectAll(".open-box")
+        .style("width","100%")
+        .style("left","0px")
+        .transition()
+        .duration(500)
+        .delay(1000)
+        // .style("width","110%")
+        // .style("left","-16px")
+        // .style("top","0px")
+
+
+      select(".first-slide")
+        .style("opacity",1)
+        .transition()
+        .duration(1000)
+        .delay(750)
+        .style("transform","translate(0,0) scale(.95)")
+        .on("end",function(){
+
+          selectAll(".open-box")
+            .transition()
+            .duration(500)
+            .style("opacity",0)
+
+          select(".first-slide")
+            .transition()
+            .duration(500)
+            .delay(500)
+            .style("transform","translate(0,0) scale(1)")
+          mainSwiper.enable();
+        })
+        ;
+    }
+  }
+
   
 
   let cardOrder = {
@@ -144,11 +235,12 @@
 
   }
 
+  let mainSwiper = null;
+
   // let controlledSwiper = null;
   const onSwiper = (e) => {
-      const [swiper] = e.detail;
-      console.log(swiper);
-      swiper.slideTo(startingSlide);
+      [mainSwiper] = e.detail;
+      mainSwiper.slideTo(startingSlide);
   }
 
   onMount(async() => {
@@ -187,17 +279,38 @@
 
 <!-- svelte-ignore missing-declaration -->
 {#if mounted}
-  <section class="card-container">
+  <section class="card-container not-started">
+
+    <div class="open-box-top open-box">
+        <img src="../assets/top_open.png" alt="">
+    </div>
+    <div class="open-box-bottom open-box">
+      <img src="../assets/bottom_open.png" alt="">
+    </div>
+
+    <div class="start-wrapper">
+
+    </div>
+
     <Swiper
       direction="{'vertical'}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(.5)}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
         "640": {
           "direction": 'horizontal',
-          "freeMode": true
+          "freeMode": true,
+          centeredSlides: true
         }
       }}'
-      on:slideChange={() => console.log('slide change')}
+      on:slideChangeTransitionEnd={(response) => changedSlide(response)}
+      on:slideChangeTransitionStart={(response) => changedSlideStart(response)}
+
+      
+
       on:swiper={onSwiper} 
     >
+
+    <SwiperSlide class="starting-slide card-slide">
+      <!-- <img src="assets/card_back_2.png" alt=""> -->
+    </SwiperSlide>
 
       {#each copy.cards as card, index}
 
@@ -222,13 +335,14 @@
         
       {/if}
 
+      
 
-        <SwiperSlide class="card-slide">
+        <SwiperSlide class="card-slide { index == 0 ? "first-slide" : ""}">
           {#if card.nested}
             <Swiper class="nested-swiper"
               direction="{'horizontal'}" pagination='{{"clickable": true }}' grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(-1.5)}" mousewheel="{{forceToAxis:true, sensitivity: .1}}" breakpoints='{{
                 "640": {
-                  "direction": 'horizontal'
+                  "direction": 'horizontal',
                 }
               }}'
               on:slideChange={() => console.log('slide change')}
@@ -356,47 +470,6 @@
     margin: 0 auto;
   }
 
-  .back-card-wrapper {
-    height: 1px;
-    flex-grow: 1;
-    position: relative;
-  }
-
-  .back-card {
-    height: calc(100vh - 50px);
-    max-height: none;
-    top: 0;
-    left: 0;
-    right: 0;
-    position: absolute;
-    background: #222;
-    border: none;
-    box-shadow: 0px 0px 3px 3px rgba(0,0,0,.35), 0px -11px 34px rgba(0,0,0,.24);
-  }
-
-  .back-card-svg {
-    height: calc(100% - 3rem);
-    width: calc(100% - 3rem);
-    margin: 0 auto;
-    margin-top: 1.5rem;
-    /* background: url('../assets/back-black.svg') no-repeat; */
-  }
-
-  .back-card-svg:before {
-    content: '';
-    background: url('../assets/hand-2.svg') no-repeat center;
-    width: 100px;
-    position: absolute;
-    top: -15px;
-    right: -10px;
-    height: 100px;
-    transform: translate(0, -50%);
-    z-index: 100;
-  }
-
-  .back-card-svg-2 {
-    display: none;
-  }
 
   .card-background-fill {
     position: absolute;
@@ -413,19 +486,7 @@
     height: 100%;
   }
 
-  .back-card-svg:after {
-    content: '';
-    width: calc(100% - 1.5rem);
-    height: calc(100% - 1.5rem);
-    border: 2px solid #9A75C3;
-    border: 2px solid #FFF;
-    position: absolute;
-    border-radius: 20px;
-    right: 0;
-    top: 0.75rem;
-    left: 0;
-    margin: 0 auto;
-  }
+
 
 
   p {
@@ -809,6 +870,46 @@
 
   .order-very-bottom {
     order: 3;
+  }
+
+  .start-wrapper {
+    position: absolute;
+    z-index: 10000;
+    pointer-events: all;
+    width: 100%;
+    height: 100vh;
+    display: none;
+  }
+
+  .not-started .open-box-top {
+    transform: translate(0, calc(-100% + 0px)) rotate(180deg);
+    top: -10px;
+    
+  }
+
+  .not-started .open-box-bottom {
+    transform: translate(0, calc(-100% + -169px)) rotate(180deg); 
+  }
+
+  .open-box {
+    transform: translate(0,-76%) rotate(180deg);
+    position: fixed;
+    z-index: 10000;
+    transition: transform .5s;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  .open-box-bottom {
+    z-index: 10000;
+    transform: translate(0, calc(-100% + 36px)) rotate(180deg);
+  }
+
+  .open-box-top {
+    z-index: 0;
+    transform: translate(0, calc(-100% + 205px)) rotate(180deg);
+    top: -10px;
   }
 
   @media only screen and (min-width: 640px) {

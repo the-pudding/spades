@@ -181,17 +181,61 @@ span.gray-light {
   margin-top: 1rem;
 }
 
+
+
 .card-slide {
   border-radius: 20px;
+  opacity: 1;
   box-shadow: 0 5px 34px rgba(0,0,0,.10);
   border: 1px solid var(--card-bd);
   background-color: var(--card-bg);
   z-index: 100;
   align-self: center;
   width:450px;
-  max-width: 100%;
+  max-width: calc(100% - 10px);
   height: 640px;
   max-height: calc(100% - 4rem);
+}
+
+.first-slide {
+  transform: translate(0,-100%) scale(.95);
+  opacity:0;
+}
+
+
+.starting-slide {
+  border-radius: 0px;
+  background: url(../case_1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: none;
+  opacity: 1;
+  z-index: 100000;
+  transition: transform .5s;
+}
+
+.swiper-container-initialized .starting-slide:not(.swiper-slide-active) {
+  transform: rotate(180deg);
+}
+
+
+.starting-slide:after {
+  content: 'swipe to start';
+  position: absolute;
+  padding: .5rem 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  font-family: 'Ohno Blazeface';
+  text-transform: uppercase;
+  font-size: 2rem;
+  background: white;
+  border-radius: 11px;
+  width: 270px;
+  margin: 0 auto;
+  color: black;
+  text-align: center;
+  transform: translate(0,50%);
 }
 
 .nested-swiper {
