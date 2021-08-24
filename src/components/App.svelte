@@ -20,15 +20,35 @@
 	import {interpolate} from 'polymorph-js';
   import { transition } from 'd3-transition';
 
+  import viewport from "../stores/viewPort.js";
+
+  import Trifold from './Trifold.svelte'
+
   import CardBack from './CardBack.svelte'
 
   import { onMount, tick } from "svelte";
   import tableTalk from "../svg/table2.svg";
+  import ageAint from "../svg/ageaint2.svg";
+  import feelTitle from "../svg/feel_title.svg";
+
+  import puddingLogo from "../svg/pudding/wordmark.svg";
+
   import { Swiper, SwiperSlide } from 'swiper/svelte';
   import SwiperCore, {
     Controller,Mousewheel,Pagination
   } from 'swiper/core';
 
+  let disableStartEvents = false;
+  $: $viewport.width, updateIsMobile();
+
+  function updateIsMobile() {
+    if($viewport.width > 640){
+      disableStartEvents = true;
+    }
+    else {
+      disableStartEvents = false;
+    }
+  }
 
 	const notween = (f,t) => () => t;
 	const tween = (f,t) => interpolate([f,t]);
@@ -43,7 +63,7 @@
 	$: $shape = null;
 
   let started = false;
-  let startingSlide = 0;
+  let startingSlide = 40;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -109,11 +129,11 @@
 
   function changedSlideStart(index){
 
-    if(mainSwiper.activeIndex == 1 && !started){
+    if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
       mainSwiper.disable();
     }
 
-    if(mainSwiper.activeIndex == 0 && started){
+    if(mainSwiper.activeIndex == 0 && started && !disableStartEvents){
       // select(".card-container").classed("not-started", false);
       
       selectAll(".open-box")
@@ -124,7 +144,7 @@
 
   function changedSlide(index){
 
-    if(mainSwiper.activeIndex > 1){
+    if(mainSwiper.activeIndex > 1 && !disableStartEvents){
 
       select(".card-container").classed("not-started", true);
 
@@ -140,7 +160,7 @@
 
 
 
-    if(mainSwiper.activeIndex == 1 && started){
+    if(mainSwiper.activeIndex == 1 && started && !disableStartEvents){
       select(".card-container").classed("not-started", false);
       
       selectAll(".open-box")
@@ -149,7 +169,7 @@
     }
 
 
-    if(mainSwiper.activeIndex == 1 && !started){
+    if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
 
 
       // if(mainSwiper.activeIndex == 1 && !started){
@@ -309,6 +329,11 @@
     >
 
     <SwiperSlide class="starting-slide card-slide">
+      <div class="masthead">
+        <a href="/" target="_blank">
+          {@html puddingLogo}
+        </a>
+      </div>
       <!-- <img src="assets/card_back_2.png" alt=""> -->
     </SwiperSlide>
 
@@ -337,8 +362,13 @@
 
       
 
-        <SwiperSlide class="card-slide { index == 0 ? "first-slide" : ""}">
-          {#if card.nested}
+        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
+
+          {#if card.trifold}
+            <Trifold content={card}>
+            </Trifold>
+
+          {:else if card.nested}
             <Swiper class="nested-swiper"
               direction="{'horizontal'}" pagination='{{"clickable": true }}' grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(-1.5)}" mousewheel="{{forceToAxis:true, sensitivity: .1}}" breakpoints='{{
                 "640": {
@@ -426,6 +456,21 @@
                 <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} style="margin-bottom:{card.bottomSpacing !== undefined, card.bottomSpacing}; max-height:{card.imgMaxHeight !== undefined, card.imgMaxHeight}px;  min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
               {/if}
 
+              {#if card.imgTwo}
+              <div class="img-wrapper">
+                <div alt={card.altText} class="svg-wrapper" style="min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;">
+                  {#if card.imgTwo == "ageaint2.svg"}
+                    {@html ageAint}
+                  {/if}
+                  {#if card.imgTwo == "feel_title.svg"}
+                    {@html feelTitle}
+                  {/if}
+                </div>
+              </div>
+
+              {/if}
+
+
               {#if card.backgroundFill}
                 <div class="card-background-fill">
                   {#if card.backgroundImageFill}
@@ -469,6 +514,34 @@
   section {
     margin: 0 auto;
   }
+
+  .masthead {
+    position: absolute;
+    width: 145px;
+    height: 50px;
+    top: 4px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translate(0,-100%);
+    padding-top: .5rem;
+  }
+
+  .masthead:after {
+    content: 'presents';
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translate(0,100%);
+    font-family: 'Lyon Text Web';
+    text-align: center;
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+
+
 
 
   .card-background-fill {

@@ -432,6 +432,12 @@ button.swiper-pagination-bullet {
   display: none;
 }
 
+.trifold-slide {
+  max-width: none;
+  border-radius: 0;
+  width: auto;
+}
+
 @media only screen and (min-width: 640px) {
   .card-style-none {
     z-index: 0;
@@ -454,3 +460,59 @@ button.swiper-pagination-bullet {
     opacity: 1;
   }
 
+  .first-slide {
+    transform: translate(0,0) scale(1);
+    opacity:1;
+  }
+
+  .starting-slide {
+    border-radius: 0px;
+    background: url(../case_open_full.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border: none;
+    opacity: 1;
+    z-index: 100000;
+    transition: transform .5s;
+    box-shadow: none;
+    height: 770px;
+    width: 470px;
+  }
+
+  .starting-slide:after {
+    content: 'scroll right to start \27B8';
+    position: absolute;
+    padding: .5rem 0;
+    top: 50%;
+    left: -100%;
+    font-family: 'Ohno Blazeface';
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    background: white;
+    border-radius: 11px;
+    width: 270px;
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    transform: translate(-100%,0);
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    left: 0;
+    right: auto;
+  }
+
+  .swiper-container-initialized .starting-slide:not(.swiper-slide-active) {
+    transform: none;
+  }
+
+  .open-box {
+    display: none;
+  }
+  
+
+}
