@@ -313,7 +313,7 @@
     </div>
 
     <Swiper
-      direction="{'vertical'}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(.5)}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
+      direction="{'vertical'}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
         "640": {
           "direction": 'horizontal',
           "freeMode": true,
@@ -362,13 +362,9 @@
 
       
 
-        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
+        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
 
-          {#if card.trifold}
-            <Trifold content={card}>
-            </Trifold>
-
-          {:else if card.nested}
+          {#if card.nested}
             <Swiper class="nested-swiper"
               direction="{'horizontal'}" pagination='{{"clickable": true }}' grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" spaceBetween="{convertRemToPixels(-1.5)}" mousewheel="{{forceToAxis:true, sensitivity: .1}}" breakpoints='{{
                 "640": {
@@ -453,7 +449,7 @@
                 <p class:order-very-bottom="{!!card.titleBottom}" class:order-bottom="{!!card.textPosition}" class="card-title">{ card.cardTitle }</p>
               {/if}
               {#if card.img}
-                <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize}" class:full-width-image={card.imgSetting == 'full-width'} style="margin-bottom:{card.bottomSpacing !== undefined, card.bottomSpacing}; max-height:{card.imgMaxHeight !== undefined, card.imgMaxHeight}px;  min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
+                <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize} {card.class}" class:full-width-image={card.imgSetting == 'full-width'} style="margin-bottom:{card.bottomSpacing !== undefined, card.bottomSpacing}; max-height:{card.imgMaxHeight !== undefined, card.imgMaxHeight}px;  min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
               {/if}
 
               {#if card.imgTwo}
@@ -475,7 +471,7 @@
                 <div class="card-background-fill">
                   {#if card.backgroundImageFill}
 
-                    <div class="background-image-fill" style="background-image: url('../assets/{card.backgroundFill}')">
+                    <div class="background-image-fill {card.backgroundFillWidthMax}" style="{card.styling} background-image: url('../assets/{$viewport.width < 640 ? card.backgroundFillMobile : card.backgroundFill}')">
                     </div>
                   
                   {:else}
