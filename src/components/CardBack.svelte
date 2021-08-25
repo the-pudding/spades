@@ -165,6 +165,7 @@ onMount(async() => {
     backface-visibility: hidden;
     transform: rotateY(180deg);
     pointer-events: none;
+    max-width: 100%;
   }
 
   .flipped {

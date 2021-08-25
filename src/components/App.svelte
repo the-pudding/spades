@@ -63,7 +63,7 @@
 	$: $shape = null;
 
   let started = false;
-  let startingSlide = 40;
+  let startingSlide = 0;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -449,7 +449,7 @@
                 <p class:order-very-bottom="{!!card.titleBottom}" class:order-bottom="{!!card.textPosition}" class="card-title">{ card.cardTitle }</p>
               {/if}
               {#if card.img}
-                <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize} {card.class}" class:full-width-image={card.imgSetting == 'full-width'} style="margin-bottom:{card.bottomSpacing !== undefined, card.bottomSpacing}; max-height:{card.imgMaxHeight !== undefined, card.imgMaxHeight}px;  min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
+                <img class:flex-grow="{!!card.imgFlex}" class:order-bottom="{!!card.textPosition}" alt={card.altText} class="{card.imgSize} {card.class}" class:full-width-image={card.imgSetting == 'full-width'} style="margin-bottom:{card.bottomSpacing !== undefined, card.bottomSpacing}; max-height:{card.imgMaxHeight !== undefined, card.imgMaxHeight}px;  max-width:{card.imgMaxWidth !== undefined, card.imgMaxWidth+'%'}; min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;" src="assets/{card.img}">
               {/if}
 
               {#if card.imgTwo}
@@ -513,14 +513,19 @@
 
   .masthead {
     position: absolute;
-    width: 145px;
-    height: 50px;
-    top: 4px;
+    width: 110px;
+    height: 41px;
+    top: 0px;
     left: 0;
     right: 0;
     margin: 0 auto;
-    transform: translate(0,-100%);
+    transform: translate(0,0%);
     padding-top: .5rem;
+    fill: white;
+  }
+
+  .masthead svg path {
+    fill: white;
   }
 
   .masthead:after {
@@ -535,6 +540,7 @@
     text-align: center;
     font-size: 0.9rem;
     opacity: 0.8;
+    display: none;
   }
 
 
@@ -597,6 +603,7 @@
   height: 1px;
   flex-grow: 1;
   object-fit: contain;
+  max-width: calc(100% - 10px);
 }
 
   .card-container {
@@ -981,6 +988,9 @@
     top: -10px;
   }
 
+  .card-wrapper img {
+  }
+
   @media only screen and (min-width: 640px) {
 
     .pop-off-wrapper {
@@ -1002,6 +1012,27 @@
       transform: translate(calc(-100% - 0px), calc(-50% - 0px)) rotate(0deg);
       top: 50%;
     }
+
+    .masthead {
+    position: absolute;
+    width: 145px;
+    height: 50px;
+    top: 4px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    transform: translate(0,-100%);
+    padding-top: .5rem;
+  }
+
+  .card-container {
+    background-color: #05051f;
+  }
+
+  .card-wrapper .flex-grow {
+    max-height: 300px;
+    margin-bottom: 1rem;
+  }
 
   }
 

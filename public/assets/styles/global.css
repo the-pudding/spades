@@ -197,7 +197,7 @@ span.gray-light {
   max-height: calc(100% - 4rem);
 }
 
-.first-slide {
+.swiper-container-android .first-slide, .first-slide {
   transform: translate(0,-100%) scale(.95);
   opacity:0;
 }
@@ -219,16 +219,20 @@ span.gray-light {
 }
 
 
+.masthead svg {
+  fill: white;
+}
+
 .starting-slide:after {
   content: 'swipe to start';
   position: absolute;
-  padding: .5rem 0;
+  padding: .5rem 1rem;
   bottom: 0;
   right: 0;
   left: 0;
   font-family: 'Ohno Blazeface';
   text-transform: uppercase;
-  font-size: 2rem;
+  font-size: 1.5rem;
   background: white;
   border-radius: 11px;
   width: 270px;
