@@ -55,10 +55,10 @@
   let countInner;
 
   let suit = {
-    0: "♠",
-    1: "♥",
-    2: "♦",
-    3: "♣"
+    0: "\u2660",
+    1: "\u2665",
+    2: "\u2666",
+    3: "\u2663"
   }
 
   let suitColor = {
@@ -115,17 +115,21 @@
 
   function changedSlideStart(index){
 
-    if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
-      mainSwiper.disable();
+    if(mainSwiper){
+        if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
+        mainSwiper.disable();
+      }
+
+      if(mainSwiper.activeIndex == 0 && started && !disableStartEvents){
+        // select(".card-container").classed("not-started", false);
+        
+        selectAll(".open-box")
+          .style("display","none")
+
+      }
     }
 
-    if(mainSwiper.activeIndex == 0 && started && !disableStartEvents){
-      // select(".card-container").classed("not-started", false);
-      
-      selectAll(".open-box")
-        .style("display","none")
-
-    }
+    
   }
 
   function changedSlide(index){
@@ -288,10 +292,10 @@
   <section class="card-container not-started">
 
     <div class="open-box-top open-box">
-        <img src="../assets/top_open.png" alt="">
+        <img src="assets/top_open.png" alt="">
     </div>
     <div class="open-box-bottom open-box">
-      <img src="../assets/bottom_open.png" alt="">
+      <img src="assets/bottom_open.png" alt="">
     </div>
 
     <div class="start-wrapper">
@@ -468,7 +472,7 @@
                 <div class="card-background-fill">
                   {#if card.backgroundImageFill}
 
-                    <div class="background-image-fill {card.backgroundFillWidthMax}" style="{card.styling} background-image: url('../assets/{$viewport.width < 640 ? card.backgroundFillMobile : card.backgroundFill}')">
+                    <div class="background-image-fill {card.backgroundFillWidthMax}" style="{card.styling} background-image: url('assets/{$viewport.width < 640 ? card.backgroundFillMobile : card.backgroundFill}')">
                     </div>
                   
                   {:else}
@@ -994,12 +998,12 @@
 
   .open-box-bottom {
     z-index: 10000;
-    transform: translate(0, calc(-100% + 36px)) rotate(180deg);
+    transform: translate(0, calc(-100% + 8vw)) rotate(180deg);
   }
 
   .open-box-top {
     z-index: 0;
-    transform: translate(0, calc(-100% + 205px)) rotate(180deg);
+    transform: translate(0, calc(-100% + 49vw)) rotate(180deg);
     top: -10px;
   }
 
