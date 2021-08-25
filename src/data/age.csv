@@ -1,0 +1,663 @@
+id,question,age,location,answer
+0,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,Other part of USA,Yes
+1,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,Other part of USA,Yes
+2,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,Other part of USA,Yes
+3,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,Other part of USA,Yes
+5,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,Not in the USA,Yes
+6,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The Midwest USAOther Part of the USA,Yes
+7,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,Other part of USA,Yes
+8,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+9,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+10,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The West Coast USA,No
+11,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+12,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The West Coast USA,Yes
+13,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The West Coast USA,Yes
+14,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The West Coast USA,Yes
+15,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The West Coast USA,Yes
+16,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+17,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,No
+18,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,No
+19,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,No
+20,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,No
+21,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The West Coast USA,No
+22,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The West Coast USA,No
+23,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,No
+24,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,No
+25,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,No
+26,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The West Coast USA,No
+27,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+28,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+29,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+30,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+31,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+32,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The West Coast USA,Yes
+33,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+34,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+35,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+36,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+37,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The West Coast USA,Yes
+38,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The West Coast USA,Yes
+39,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+40,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+41,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+42,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The West Coast USA,Yes
+43,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+44,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+45,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+46,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+47,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The West Coast USA,Yes
+48,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+49,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+50,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+51,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+52,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The West Coast USA,Yes
+53,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+54,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+55,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+56,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+57,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+58,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+59,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+60,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The West Coast USA,Yes
+61,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The West Coast USA,Yes
+62,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+63,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The West Coast USA,Yes
+64,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The West Coast USA,Yes
+65,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+66,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The West Coast USA,Yes
+67,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The West Coast USA,Yes
+68,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+69,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The West Coast USA,Yes
+70,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,Yes
+71,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The Midwest USA,Yes
+72,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+73,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The Midwest USA,Yes
+74,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The Midwest USA,Yes
+75,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+76,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The Midwest USA,Yes
+77,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+78,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+79,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The Midwest USA,Yes
+80,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USAThe East Coast USAThe South USA,No
+81,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USAThe South USA,No
+82,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USAThe South USA,Yes
+83,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+84,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,No
+85,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+86,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+87,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+88,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+89,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The Midwest USA,No
+90,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+91,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+92,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+93,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+94,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,No
+95,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,Yes
+96,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+97,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+98,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,No
+99,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+100,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+101,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,No
+102,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+103,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+104,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+105,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+106,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+107,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,No
+108,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+109,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+110,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,No
+111,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,No
+112,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,No
+113,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The Midwest USA,No
+114,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,No
+115,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,Yes
+116,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+117,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+118,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+119,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+120,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+121,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+122,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+123,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,Yes
+124,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The Midwest USA,Yes
+125,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+126,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The Midwest USA,Yes
+127,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+128,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+129,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+130,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The Midwest USA,Yes
+131,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+132,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+133,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The Midwest USA,Yes
+134,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The Midwest USA,Yes
+135,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The Midwest USA,Yes
+136,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USAThe South USA,Yes
+137,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USAThe South USA,No
+138,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The East Coast USAThe South USA,No
+139,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USAThe South USA,No
+140,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USAThe South USA,No
+141,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USAThe South USA,Yes
+142,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USAThe South USA,Yes
+143,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USAThe South USA,Yes
+144,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USAThe South USA,Yes
+145,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USAThe South USA,Yes
+146,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USAThe South USA,Yes
+147,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USAThe South USA,Yes
+148,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USAThe South USA,Yes
+149,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+150,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,No
+151,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+152,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,No
+153,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,No
+154,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,No
+155,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+156,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+157,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+158,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The South USA,Yes
+159,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+160,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+161,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+162,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+163,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+164,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The South USA,Yes
+165,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+166,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+167,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The South USA,Yes
+168,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+169,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,No
+170,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+171,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+172,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The South USA,Yes
+173,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+174,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+175,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,No
+176,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+177,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,No
+178,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The South USA,No
+179,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,No
+180,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,No
+181,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,No
+182,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,No
+183,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,No
+184,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",Prefernottosay,The South USA,Yes
+185,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+186,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+187,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+188,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",Prefernottosay,The South USA,Yes
+189,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+190,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+191,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+192,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+193,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+194,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+195,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+196,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+197,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+198,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+199,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+200,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+201,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+202,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+203,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+204,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+205,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+206,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+207,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+208,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The South USA,Yes
+209,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+210,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+211,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+212,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+213,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+214,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+215,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+216,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+217,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The South USA,Yes
+218,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+219,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+220,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+221,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+222,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The South USA,Yes
+223,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+224,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+225,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+226,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+227,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The South USA,Yes
+228,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The South USA,Yes
+229,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+230,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+231,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,Yes
+232,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+233,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+234,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The East Coast USA,Yes
+235,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The East Coast USA,Yes
+236,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+237,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The East Coast USA,Yes
+238,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+239,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,Yes
+240,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+241,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+242,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+243,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+244,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+245,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+246,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+247,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,No
+248,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+249,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+250,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+251,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+252,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+253,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+254,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+255,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+256,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+257,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+258,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+259,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+260,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",>54,The East Coast USA,No
+261,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+262,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+263,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+264,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+265,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+266,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+267,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,No
+268,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,No
+269,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,No
+270,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+271,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+272,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,No
+273,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+274,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+275,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+276,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+277,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+278,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+279,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+280,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,No
+281,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,No
+282,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,Yes
+283,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+284,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+285,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+286,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+287,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+288,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+289,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+290,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+291,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+292,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+293,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+294,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+295,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+296,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+297,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+298,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+299,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+300,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+301,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+302,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+303,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+304,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+305,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+306,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+307,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+308,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+309,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+310,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+311,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+312,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+313,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,Yes
+314,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+315,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+316,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",45-54,The East Coast USA,Yes
+317,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+318,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,Yes
+319,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+320,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+321,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+322,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+323,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+324,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+325,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+326,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+327,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+328,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",18-24,The East Coast USA,Yes
+329,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",35-44,The East Coast USA,Yes
+330,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+331,"When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",25-34,The East Coast USA,Yes
+0,Is talking over the table (about the game) allowed?,>54,Other part of USA,Yes
+1,Is talking over the table (about the game) allowed?,45-54,Other part of USA,No
+2,Is talking over the table (about the game) allowed?,45-54,Other part of USA,Yes
+3,Is talking over the table (about the game) allowed?,>54,Other part of USA,No
+5,Is talking over the table (about the game) allowed?,45-54,Not in the USA,No
+6,Is talking over the table (about the game) allowed?,45-54,The Midwest USAOther Part of the USA,No
+7,Is talking over the table (about the game) allowed?,45-54,Other part of USA,No
+8,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+9,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+10,Is talking over the table (about the game) allowed?,35-44,The West Coast USA,No
+11,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+12,Is talking over the table (about the game) allowed?,18-24,The West Coast USA,No
+13,Is talking over the table (about the game) allowed?,25-34,The West Coast USA,No
+14,Is talking over the table (about the game) allowed?,35-44,The West Coast USA,Yes
+15,Is talking over the table (about the game) allowed?,35-44,The West Coast USA,Yes
+16,Is talking over the table (about the game) allowed?,>54,The West Coast USA,No
+17,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+18,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+19,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+20,Is talking over the table (about the game) allowed?,>54,The West Coast USA,No
+21,Is talking over the table (about the game) allowed?,35-44,The West Coast USA,No
+22,Is talking over the table (about the game) allowed?,18-24,The West Coast USA,No
+23,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+24,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+25,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+26,Is talking over the table (about the game) allowed?,35-44,The West Coast USA,No
+27,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+28,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+29,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+30,Is talking over the table (about the game) allowed?,>54,The West Coast USA,In Special Circumstances
+31,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+32,Is talking over the table (about the game) allowed?,25-34,The West Coast USA,Yes
+33,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+34,Is talking over the table (about the game) allowed?,>54,The West Coast USA,Yes
+35,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+36,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+37,Is talking over the table (about the game) allowed?,18-24,The West Coast USA,Yes
+38,Is talking over the table (about the game) allowed?,25-34,The West Coast USA,In Special Circumstances
+39,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+40,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+41,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+42,Is talking over the table (about the game) allowed?,25-34,The West Coast USA,No
+43,Is talking over the table (about the game) allowed?,>54,The West Coast USA,No
+44,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+45,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+46,Is talking over the table (about the game) allowed?,>54,The West Coast USA,In Special Circumstances
+47,Is talking over the table (about the game) allowed?,18-24,The West Coast USA,No
+48,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+49,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+50,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+51,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+52,Is talking over the table (about the game) allowed?,35-44,The West Coast USA,No
+53,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+54,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+55,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,No
+56,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+57,Is talking over the table (about the game) allowed?,>54,The West Coast USA,Yes
+58,Is talking over the table (about the game) allowed?,>54,The West Coast USA,No
+59,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+60,Is talking over the table (about the game) allowed?,35-44,The West Coast USA,Yes
+61,Is talking over the table (about the game) allowed?,25-34,The West Coast USA,Yes
+62,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+63,Is talking over the table (about the game) allowed?,25-34,The West Coast USA,Yes
+64,Is talking over the table (about the game) allowed?,18-24,The West Coast USA,In Special Circumstances
+65,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,Yes
+66,Is talking over the table (about the game) allowed?,45-54,The West Coast USA,In Special Circumstances
+67,Is talking over the table (about the game) allowed?,18-24,The West Coast USA,In Special Circumstances
+68,Is talking over the table (about the game) allowed?,>54,The West Coast USA,No
+69,Is talking over the table (about the game) allowed?,>54,The West Coast USA,No
+70,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,Yes
+71,Is talking over the table (about the game) allowed?,>54,The Midwest USA,Yes
+72,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,Yes
+73,Is talking over the table (about the game) allowed?,>54,The Midwest USA,No
+74,Is talking over the table (about the game) allowed?,45-54,The Midwest USA,No
+75,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+76,Is talking over the table (about the game) allowed?,>54,The Midwest USA,In Special Circumstances
+77,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,In Special Circumstances
+78,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,Yes
+79,Is talking over the table (about the game) allowed?,45-54,The Midwest USA,No
+80,Is talking over the table (about the game) allowed?,18-24,The Midwest USAThe East Coast USAThe South USA,No
+81,Is talking over the table (about the game) allowed?,25-34,The Midwest USAThe South USA,No
+82,Is talking over the table (about the game) allowed?,25-34,The Midwest USAThe South USA,No
+83,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+84,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,No
+85,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+86,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+87,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+88,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+89,Is talking over the table (about the game) allowed?,45-54,The Midwest USA,No
+90,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+91,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+92,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+93,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+94,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+95,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,No
+96,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+97,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,Yes
+98,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+99,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+100,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+101,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,Yes
+102,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,In special circumstances
+103,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+104,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+105,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+106,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+107,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,In special circumstances
+108,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+109,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+110,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,No
+111,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+112,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+113,Is talking over the table (about the game) allowed?,45-54,The Midwest USA,No
+114,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+115,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,Yes
+116,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+117,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+118,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+119,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,No
+120,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+121,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+122,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+123,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,No
+124,Is talking over the table (about the game) allowed?,35-44,The Midwest USA,In special circumstances
+125,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+126,Is talking over the table (about the game) allowed?,18-24,The Midwest USA,No
+127,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+128,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+129,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+130,Is talking over the table (about the game) allowed?,45-54,The Midwest USA,No
+131,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+132,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+133,Is talking over the table (about the game) allowed?,>54,The Midwest USA,No
+134,Is talking over the table (about the game) allowed?,>54,The Midwest USA,Yes
+135,Is talking over the table (about the game) allowed?,25-34,The Midwest USA,No
+136,Is talking over the table (about the game) allowed?,35-44,The East Coast USAThe South USA,No
+137,Is talking over the table (about the game) allowed?,25-34,The East Coast USAThe South USA,In special circumstances
+138,Is talking over the table (about the game) allowed?,>54,The East Coast USAThe South USA,Yes
+139,Is talking over the table (about the game) allowed?,25-34,The East Coast USAThe South USA,No
+140,Is talking over the table (about the game) allowed?,18-24,The East Coast USAThe South USA,No
+141,Is talking over the table (about the game) allowed?,35-44,The East Coast USAThe South USA,No
+142,Is talking over the table (about the game) allowed?,18-24,The East Coast USAThe South USA,In special circumstances
+143,Is talking over the table (about the game) allowed?,25-34,The East Coast USAThe South USA,No
+144,Is talking over the table (about the game) allowed?,25-34,The East Coast USAThe South USA,No
+145,Is talking over the table (about the game) allowed?,18-24,The East Coast USAThe South USA,No
+146,Is talking over the table (about the game) allowed?,25-34,The East Coast USAThe South USA,No
+147,Is talking over the table (about the game) allowed?,35-44,The East Coast USAThe South USA,No
+148,Is talking over the table (about the game) allowed?,25-34,The East Coast USAThe South USA,In special circumstances
+149,Is talking over the table (about the game) allowed?,35-44,The South USA,Yes
+150,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+151,Is talking over the table (about the game) allowed?,25-34,The South USA,In special circumstances
+152,Is talking over the table (about the game) allowed?,45-54,The South USA,No
+153,Is talking over the table (about the game) allowed?,45-54,The South USA,No
+154,Is talking over the table (about the game) allowed?,45-54,The South USA,No
+155,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+156,Is talking over the table (about the game) allowed?,45-54,The South USA,Yes
+157,Is talking over the table (about the game) allowed?,18-24,The South USA,Yes
+158,Is talking over the table (about the game) allowed?,>54,The South USA,No
+159,Is talking over the table (about the game) allowed?,45-54,The South USA,Yes
+160,Is talking over the table (about the game) allowed?,45-54,The South USA,Yes
+161,Is talking over the table (about the game) allowed?,45-54,The South USA,No
+162,Is talking over the table (about the game) allowed?,45-54,The South USA,Yes
+163,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+164,Is talking over the table (about the game) allowed?,>54,The South USA,No
+165,Is talking over the table (about the game) allowed?,35-44,The South USA,Yes
+166,Is talking over the table (about the game) allowed?,45-54,The South USA,No
+167,Is talking over the table (about the game) allowed?,>54,The South USA,No
+168,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+169,Is talking over the table (about the game) allowed?,25-34,The South USA,In special circumstances
+170,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+171,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+172,Is talking over the table (about the game) allowed?,>54,The South USA,No
+173,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+174,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+175,Is talking over the table (about the game) allowed?,25-34,The South USA,Yes
+176,Is talking over the table (about the game) allowed?,35-44,The South USA,Yes
+177,Is talking over the table (about the game) allowed?,25-34,The South USA,In special circumstances
+178,Is talking over the table (about the game) allowed?,>54,The South USA,Yes
+179,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+180,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+181,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+182,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+183,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+184,Is talking over the table (about the game) allowed?,Prefernottosay,The South USA,No
+185,Is talking over the table (about the game) allowed?,25-34,The South USA,In special circumstances
+186,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+187,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+188,Is talking over the table (about the game) allowed?,Prefernottosay,The South USA,No
+189,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+190,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+191,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+192,Is talking over the table (about the game) allowed?,45-54,The South USA,No
+193,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+194,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+195,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+196,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+197,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+198,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+199,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+200,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+201,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+202,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+203,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+204,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+205,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+206,Is talking over the table (about the game) allowed?,18-24,The South USA,Yes
+207,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+208,Is talking over the table (about the game) allowed?,45-54,The South USA,No
+209,Is talking over the table (about the game) allowed?,25-34,The South USA,In special circumstances
+210,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+211,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+212,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+213,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+214,Is talking over the table (about the game) allowed?,25-34,The South USA,In special circumstances
+215,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+216,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+217,Is talking over the table (about the game) allowed?,18-24,The South USA,No
+218,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+219,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+220,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+221,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+222,Is talking over the table (about the game) allowed?,>54,The South USA,No
+223,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+224,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+225,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+226,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+227,Is talking over the table (about the game) allowed?,35-44,The South USA,No
+228,Is talking over the table (about the game) allowed?,25-34,The South USA,No
+229,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,No
+230,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,In Special Circumstances
+231,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,Yes
+232,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+233,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,Yes
+234,Is talking over the table (about the game) allowed?,>54,The East Coast USA,Yes
+235,Is talking over the table (about the game) allowed?,>54,The East Coast USA,Yes
+236,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,No
+237,Is talking over the table (about the game) allowed?,>54,The East Coast USA,No
+238,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,Yes
+239,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,No
+240,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,Yes
+241,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,No
+242,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+243,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+244,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+245,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+246,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+247,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+248,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+249,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+250,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+251,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+252,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+253,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+254,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+255,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+256,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+257,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+258,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,In special circumstances
+259,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,Yes
+260,Is talking over the table (about the game) allowed?,>54,The East Coast USA,No
+261,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+262,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+263,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+264,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+265,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+266,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+267,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+268,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,No
+269,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,In special circumstances
+270,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+271,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,In special circumstances
+272,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,In special circumstances
+273,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+274,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+275,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+276,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+277,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+278,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+279,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+280,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,In special circumstances
+281,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+282,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,No
+283,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+284,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,Yes
+285,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+286,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+287,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,Yes
+288,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+289,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,No
+290,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+291,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+292,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+293,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+294,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+295,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+296,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,Yes
+297,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,In special circumstances
+298,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+299,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,Yes
+300,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+301,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+302,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,In special circumstances
+303,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+304,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+305,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+306,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,No
+307,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,No
+308,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+309,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,Yes
+310,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+311,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+312,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+313,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,No
+314,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+315,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+316,Is talking over the table (about the game) allowed?,45-54,The East Coast USA,In special circumstances
+317,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,In special circumstances
+318,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,Yes
+319,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+320,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+321,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+322,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,Yes
+323,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,In special circumstances
+324,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+325,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,No
+326,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No
+327,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,In special circumstances
+328,Is talking over the table (about the game) allowed?,18-24,The East Coast USA,No
+329,Is talking over the table (about the game) allowed?,35-44,The East Coast USA,In special circumstances
+330,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,In special circumstances
+331,Is talking over the table (about the game) allowed?,25-34,The East Coast USA,No

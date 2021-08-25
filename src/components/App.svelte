@@ -19,8 +19,7 @@
   import { transition } from 'd3-transition';
 
   import viewport from "../stores/viewPort.js";
-
-  import Trifold from './Trifold.svelte'
+  import Age from './Age.svelte'
 
   import CardBack from './CardBack.svelte'
 
@@ -50,7 +49,7 @@
 
 
   let started = false;
-  let startingSlide = 30;
+  let startingSlide = 0;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -356,7 +355,7 @@
 
       
 
-        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
+        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.agecard ? "age-slide" : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
 
           {#if card.nested}
             <Swiper class="nested-swiper"
@@ -438,6 +437,10 @@
                 </div>
               {/if}
               
+
+              {#if card.agecard}
+                <Age></Age>
+              {/if}
 
               {#if card.cardTitle}
                 <p class:order-very-bottom="{!!card.titleBottom}" class:order-bottom="{!!card.textPosition}" class="card-title">{ card.cardTitle }</p>
