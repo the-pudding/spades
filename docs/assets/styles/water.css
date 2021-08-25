@@ -1,12 +1,12 @@
 /* adapted from https://github.com/kognise/water.css */
 :root {
-	--body-font: serif;	
+	--body-font: 'Lyon Text Web',serif;	
   --background-body: #fff;
   --background-ui: #f7f7f7;
   --background-alt: #f7f7f7;
   --selection: #9e9e9e;
   --text-main: #363636;
-  --links: #0076d1;
+  --links: #222;
   --focus: rgba(0, 150, 191, 0.67);
   --border: #dbdbdb;
   --animation-duration: 0.1s;
@@ -43,6 +43,8 @@ h6 {
 }
 p {
 	margin: 1rem 0;
+  font-family: var(--body-font);
+  font-family: 'Lyon Text Web';
 }
 button,
 input,
@@ -224,7 +226,8 @@ input[type="range"]:focus::-ms-fill-upper {
   background: var(--background-ui);
 }
 a {
-  color: var(--links);
+  color: #222;
+  font-weight: bold;
 }
 a:hover {
 
