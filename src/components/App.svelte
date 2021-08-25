@@ -50,7 +50,7 @@
 
 
   let started = false;
-  let startingSlide = 0;
+  let startingSlide = 30;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -321,6 +321,13 @@
           {@html puddingLogo}
         </a>
       </div>
+
+      <div class="byline">By 
+        <a href="https://pudding.cool/author/gabrielle-hickmon" target="_blank">
+          Gabrille Hickmon
+        </a>
+      </div>
+
       <!-- <img src="assets/card_back_2.png" alt=""> -->
     </SwiperSlide>
 
@@ -496,6 +503,24 @@
 <style>
   section {
     margin: 0 auto;
+  }
+
+  .byline {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2rem;
+    margin: 0 auto;
+    width: 100%;
+    transform: translate(0,-100%);
+    color: white;
+    text-align:center;
+    -webkit-font-smooth:antialiased;
+    font-family: 'Lyon Text Web', serif;
+  }
+
+  .byline a {
+    color: white;
   }
 
   .masthead {
@@ -1004,7 +1029,7 @@
     position: absolute;
     width: 145px;
     height: 50px;
-    top: 4px;
+    top: 14px;
     left: 0;
     right: 0;
     margin: 0 auto;
