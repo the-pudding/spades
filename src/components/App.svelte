@@ -13,11 +13,9 @@
   import copy from "../data/doc.json";
   import mq from "../stores/mq.js";
   import {selectAll, select} from 'd3-selection';
-	// import { interpolate } from 'flubber';
 	import { tweened } from 'svelte/motion';
 	import * as eases from 'svelte/easing';
 	import {cubicOut} from 'svelte/easing';
-	import {interpolate} from 'polymorph-js';
   import { transition } from 'd3-transition';
 
   import viewport from "../stores/viewPort.js";
@@ -50,17 +48,6 @@
     }
   }
 
-	const notween = (f,t) => () => t;
-	const tween = (f,t) => interpolate([f,t]);
-
-	const shape = tweened(undefined, {
-		interpolate,
-		easing: eases.cubicInOut,
-		duration: 400
-	});
-
-
-	$: $shape = null;
 
   let started = false;
   let startingSlide = 0;

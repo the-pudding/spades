@@ -7,7 +7,6 @@ import {selectAll, select} from 'd3-selection';
 import { transition } from 'd3-transition';
 import backCardOne from "../svg/card_back_1_2.svg";
 import backCardTwo from "../svg/data.svg";
-	import { interpolate } from 'flubber';
 import Prose from "./Prose.svelte";
 
 
