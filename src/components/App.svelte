@@ -113,30 +113,31 @@
   }
 
 
-  function changedSlideStart(index){
+  const changedSlideStart = (e) => {
 
-    if(mainSwiper){
-        if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
-        mainSwiper.disable();
+    const [swiper] = e.detail[0];
+
+    if(swiper.activeIndex > 1 && !disableStartEvents){
+
+      select(".card-container").classed("not-started", true);
+
+      selectAll(".open-box")
+          .transition()
+          .duration(500)
+          .delay(2000)
+          .style("width","100%")
+          .style("left","0px")
+          .style("top",null)
+
       }
-
-      if(mainSwiper.activeIndex == 0 && started && !disableStartEvents){
-        // select(".card-container").classed("not-started", false);
-        
-        selectAll(".open-box")
-          .style("display","none")
-
-      }
-    }
-
-    
   }
 
-  function changedSlide(index){
 
-    if(mainSwiper){
+  const changedSlideEnd = (e) => {
 
-      if(mainSwiper.activeIndex > 1 && !disableStartEvents){
+    const [swiper] = e.detail[0];
+
+      if(swiper.activeIndex > 1 && !disableStartEvents){
 
         select(".card-container").classed("not-started", true);
 
@@ -152,7 +153,7 @@
 
 
 
-      if(mainSwiper.activeIndex == 1 && started && !disableStartEvents){
+      if(swiper.activeIndex == 1 && started && !disableStartEvents){
         select(".card-container").classed("not-started", false);
         
         selectAll(".open-box")
@@ -161,7 +162,7 @@
       }
 
 
-      if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
+      if(swiper.activeIndex == 1 && !started && !disableStartEvents){
 
 
         // if(mainSwiper.activeIndex == 1 && !started){
@@ -202,11 +203,10 @@
               .duration(500)
               .delay(500)
               .style("transform","translate(0,0) scale(1)")
-            mainSwiper.enable();
+              swiper.enable();
           })
           ;
       }
-    }
   }
 
   
@@ -253,7 +253,6 @@
   // let controlledSwiper = null;
   const onSwiper = (e) => {
       [mainSwiper] = e.detail;
-      mainSwiper.slideTo(startingSlide);
   }
 
   onMount(async() => {
@@ -306,16 +305,16 @@
     </div>
 
     <Swiper
-      direction="{'vertical'}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
+      direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
         "640": {
           "direction": 'horizontal',
           "freeMode": true,
           centeredSlides: true
         }
       }}'
-      on:slideChangeTransitionEnd={(response) => changedSlide(response)}
-      on:slideChangeTransitionStart={(response) => changedSlideStart(response)}
-      on:swiper={onSwiper} 
+
+      on:slideChangeTransitionEnd={changedSlideEnd}
+      on:slideChangeTransitionStart={changedSlideStart}
     >
 
     <SwiperSlide class="starting-slide card-slide">
@@ -327,7 +326,7 @@
 
       <div class="byline">By 
         <a href="https://pudding.cool/author/gabrielle-hickmon" target="_blank">
-          Gabrille Hickmon
+          Gabrielle Ione Hickmon
         </a>
       </div>
 
