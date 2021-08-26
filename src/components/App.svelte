@@ -49,7 +49,7 @@
 
 
   let started = false;
-  let startingSlide = 30;
+  let startingSlide = 0;
   let mounted;
   let innerSwiperIndex;
   let countInner;
