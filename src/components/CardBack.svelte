@@ -150,6 +150,7 @@ onMount(async() => {
     margin-top: .5rem;
     transform-style: preserve-3d;
     transition: transform 0.8s;
+    z-index: 100000;
   }
 
   .back-card {

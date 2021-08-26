@@ -49,7 +49,7 @@
 
 
   let started = false;
-  let startingSlide = 0;
+  let startingSlide = 30;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -406,7 +406,7 @@
                     {/if}
                     {#each cardText.innerCardText as innerCardText }
                       <div class="text-wrapper text-wrapper-inner">
-                        <p>{@html innerCardText.value}</p>
+                        <p class="para">{@html innerCardText.value}</p>
                       </div>
                     {/each}
                     {#if cardText.pagination}
@@ -490,6 +490,11 @@
                 {/each}
               </div>
 
+              {#if card.imageSource}
+                <p class="image-source image-source-single-line">{@html card.imageSource}</p>
+              {/if}
+
+
               {#if card.backCard}
                 <CardBack>
 
@@ -515,14 +520,15 @@
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -2rem;
+    bottom: -5px;
     margin: 0 auto;
     width: 100%;
-    transform: translate(0,-100%);
+    transform: translate(0,100%);
     color: white;
     text-align:center;
     -webkit-font-smooth:antialiased;
     font-family: 'Lyon Text Web', serif;
+    font-size: 14px;
   }
 
   .byline a {
@@ -579,7 +585,17 @@
     height: 100%;
   }
 
+  .image-source {
+    font-family: 'Lyon Text Web', serif;
+    font-size: .9rem;
+    width: calc(100% - 2rem);
+    margin: 0 auto;
+    opacity: .8;
+  } 
 
+  .image-source-single-line {
+    margin-top: 1rem;
+  }
 
 
   p {
@@ -625,7 +641,7 @@
 }
 
   .card-container {
-    background-color: var(--bg);
+    background-color: #05051f;
   }
 
   .card-title-hidden {
@@ -774,7 +790,7 @@
     padding-top: 5.5rem;
   }
 
-  .text-only-wrapper .text-wrapper p {
+  .text-only-wrapper .text-wrapper .para {
     line-height: 1.4;
   }
 
@@ -953,14 +969,18 @@
     order: 2;
   }
 
-  .order-top {
-    order: 1;
-  }
-
   .text-center {
     text-align: center;
     max-width: 330px;
   }
+
+  .order-top {
+    order: 1;
+    margin-bottom: 1rem;
+    max-width: calc(100% - 8rem);
+  }
+
+  
 
   .order-very-bottom {
     order: 3;
@@ -1011,6 +1031,10 @@
 
   @media only screen and (min-width: 640px) {
 
+    .byline {
+      font-size: 1rem;
+    }
+
     .pop-off-wrapper {
       height: 100%;
       z-index: 1000;
@@ -1043,9 +1067,7 @@
     padding-top: .5rem;
   }
 
-  .card-container {
-    background-color: #05051f;
-  }
+
 
   .card-wrapper .flex-grow {
     max-height: 300px;
@@ -1054,6 +1076,39 @@
 
   }
 
+  @media only screen and (max-width: 350px) {
+
+    .text-only-wrapper .text-wrapper p:first-of-type::first-letter {
+      font-size: 60px;
+      line-height: 38px;
+    }
+
+    .text-only-wrapper .text-wrapper .para {
+      line-height: 1.3;
+    }
+
+    .para {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    .card-title {
+      font-size: 1.2rem;
+      max-width: 210px;
+    }
+
+    .pop-off {
+      transform: translate(calc(-100% + 241px), calc(0% - 110px)) rotate(10deg);
+    }
+
+    .pop-off-para {
+      font-size: 14px;
+    }
+
+    .pop-off-hed {
+      font-size: 18px;
+    }
+}
     
 
 
