@@ -134,75 +134,78 @@
 
   function changedSlide(index){
 
-    if(mainSwiper.activeIndex > 1 && !disableStartEvents){
+    if(mainSwiper){
 
-      select(".card-container").classed("not-started", true);
+      if(mainSwiper.activeIndex > 1 && !disableStartEvents){
 
-      selectAll(".open-box")
-          .transition()
-          .duration(500)
-          .delay(2000)
+        select(".card-container").classed("not-started", true);
+
+        selectAll(".open-box")
+            .transition()
+            .duration(500)
+            .delay(2000)
+            .style("width","100%")
+            .style("left","0px")
+            .style("top",null)
+
+      }
+
+
+
+      if(mainSwiper.activeIndex == 1 && started && !disableStartEvents){
+        select(".card-container").classed("not-started", false);
+        
+        selectAll(".open-box")
+          .style("display","none")
+
+      }
+
+
+      if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
+
+
+        // if(mainSwiper.activeIndex == 1 && !started){
+        //   window.setTimeout(function(d){
+        //   },2000)
+        // }
+
+        started = true;
+
+        select(".card-container").classed("not-started", false);
+
+        selectAll(".open-box")
           .style("width","100%")
           .style("left","0px")
-          .style("top",null)
-
-    }
-
-
-
-    if(mainSwiper.activeIndex == 1 && started && !disableStartEvents){
-      select(".card-container").classed("not-started", false);
-      
-      selectAll(".open-box")
-        .style("display","none")
-
-    }
+          .transition()
+          .duration(500)
+          .delay(1000)
+          // .style("width","110%")
+          // .style("left","-16px")
+          // .style("top","0px")
 
 
-    if(mainSwiper.activeIndex == 1 && !started && !disableStartEvents){
+        select(".first-slide")
+          .style("opacity",1)
+          .transition()
+          .duration(1000)
+          .delay(750)
+          .style("transform","translate(0,0) scale(.95)")
+          .on("end",function(){
 
+            selectAll(".open-box")
+              .transition()
+              .duration(500)
+              .style("opacity",0)
 
-      // if(mainSwiper.activeIndex == 1 && !started){
-      //   window.setTimeout(function(d){
-      //   },2000)
-      // }
-
-      started = true;
-
-      select(".card-container").classed("not-started", false);
-
-      selectAll(".open-box")
-        .style("width","100%")
-        .style("left","0px")
-        .transition()
-        .duration(500)
-        .delay(1000)
-        // .style("width","110%")
-        // .style("left","-16px")
-        // .style("top","0px")
-
-
-      select(".first-slide")
-        .style("opacity",1)
-        .transition()
-        .duration(1000)
-        .delay(750)
-        .style("transform","translate(0,0) scale(.95)")
-        .on("end",function(){
-
-          selectAll(".open-box")
-            .transition()
-            .duration(500)
-            .style("opacity",0)
-
-          select(".first-slide")
-            .transition()
-            .duration(500)
-            .delay(500)
-            .style("transform","translate(0,0) scale(1)")
-          mainSwiper.enable();
-        })
-        ;
+            select(".first-slide")
+              .transition()
+              .duration(500)
+              .delay(500)
+              .style("transform","translate(0,0) scale(1)")
+            mainSwiper.enable();
+          })
+          ;
+      }
     }
   }
 
@@ -312,9 +315,6 @@
       }}'
       on:slideChangeTransitionEnd={(response) => changedSlide(response)}
       on:slideChangeTransitionStart={(response) => changedSlideStart(response)}
-
-      
-
       on:swiper={onSwiper} 
     >
 
