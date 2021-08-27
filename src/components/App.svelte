@@ -18,6 +18,11 @@
 	import {cubicOut} from 'svelte/easing';
   import { transition } from 'd3-transition';
 
+  import spade from "../svg/spade.svg"
+  import heart from "../svg/heart.svg"
+  import diamond from "../svg/diamond.svg"
+  import club from "../svg/club.svg"
+
   import viewport from "../stores/viewPort.js";
   import Age from './Age.svelte'
 
@@ -49,16 +54,16 @@
 
 
   let started = false;
-  let startingSlide = 0;
+  let startingSlide = 59;
   let mounted;
   let innerSwiperIndex;
   let countInner;
 
   let suit = {
-    0: "\u2660",
-    1: "\u2665",
-    2: "\u2666",
-    3: "\u2663"
+    0: spade,
+    1: heart,
+    2: diamond,
+    3: club
   }
 
   let suitColor = {
@@ -305,7 +310,7 @@
     </div>
 
     <Swiper
-      direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{true}" slideToClickedSlide="{false}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
+      direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{true}" slideToClickedSlide="{false}" spaceBetween="{convertRemToPixels(.5)}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
         "640": {
           "direction": 'horizontal',
           "freeMode": true,
@@ -360,7 +365,7 @@
 
       
 
-        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.agecard ? "age-slide" : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
+        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.transformUp ? "post-background-slide" : ""} { !!card.agecard ? "age-slide" : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
 
           {#if card.nested}
             <Swiper class="nested-swiper"
@@ -378,7 +383,7 @@
                     {#if innerSwiperIndex}
                       <div class="card-symbol card-color-{getInnerSuitColor(indexInner)}">
                         <p class="card-num"> { getInnerCardOrder(indexInner)} </p>
-                        <p class="card-suit">{ getInnerSuit(indexInner) }</p>
+                        <div class="card-suit">{@html getInnerSuit(indexInner) }</div>
                       </div>
                     {/if}
 
@@ -438,7 +443,7 @@
               {#if innerSwiperIndex}
                 <div class="card-symbol card-color-{getSuitColor(index)}">
                   <p class="card-num"> { getCardOrder(index)} </p>
-                  <p class="card-suit">{ getSuit(index) }</p>
+                  <div class="card-suit">{@html getSuit(index) }</div>
                 </div>
               {/if}
               
@@ -730,7 +735,7 @@
   }
 
   .pop-off-centered {
-    transform: translate(0, calc(-100vh + 3rem)) rotate(0deg);
+    transform: translate(0, calc(-100% + 3rem)) rotate(0deg);
   }
 
   .pop-off-centered:before {
@@ -889,7 +894,12 @@
   }
 
   .card-suit {
-    font-size: 2rem;
+    width: 22px;
+    align-self: center;
+  }
+
+  .card-suit svg {
+    width: 100%;
   }
 
   .full {
