@@ -664,7 +664,7 @@
 
   
 .flex-grow {
-  height: 1px;
+  height: auto;
   flex-grow: 1;
   object-fit: contain;
   max-width: calc(100% - 10px);

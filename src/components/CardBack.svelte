@@ -151,7 +151,7 @@ onMount(async() => {
     transform-style: preserve-3d;
     transition: transform 0.8s;
     z-index: 100000;
-    transform: rotate(-2deg);
+    transform: translate3d(0,0,951px) rotateX(-2deg);
   }
 
   .back-card {
@@ -170,7 +170,7 @@ onMount(async() => {
   }
 
   .flipped {
-    transform: rotateY(180deg);
+    transform: translate3d(0,0,100px) rotateY(180deg);
   }
 
   .back-card-front {
