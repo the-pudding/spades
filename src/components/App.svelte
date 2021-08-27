@@ -49,7 +49,7 @@
 
 
   let started = false;
-  let startingSlide = 27;
+  let startingSlide = 0;
   let mounted;
   let innerSwiperIndex;
   let countInner;
@@ -330,6 +330,8 @@
         </a>
       </div>
 
+      <p class="title">How You play spades is how you play life<span>Spades in the African-American Community</span></p>
+
       <!-- <img src="assets/card_back_2.png" alt=""> -->
     </SwiperSlide>
 
@@ -516,6 +518,33 @@
     margin: 0 auto;
   }
 
+  .title {
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: white;
+    top: 5rem;
+    /* font-family: 'Lyon Text Web'; */
+    font-size: 1.4rem;
+    width: 154px;
+    transform: translate(-100%,0);
+    margin: 0 auto;
+    text-align: right;
+    font-family: 'Ohno Blazeface';
+    text-transform: uppercase;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.3;
+    display: none;
+  }
+
+  .title span {
+    font-size: 1rem;
+    font-family: 'Lyon Text Web', serif;
+    display: block;
+    text-transform: none;
+    margin-top: .5rem;
+  }
+
   .byline {
     position: absolute;
     left: 0;
@@ -529,6 +558,7 @@
     -webkit-font-smooth:antialiased;
     font-family: 'Lyon Text Web', serif;
     font-size: 14px;
+    display: none;
   }
 
   .byline a {
@@ -1026,13 +1056,21 @@
     top: -10px;
   }
 
-  .card-wrapper img {
-  }
+
 
   @media only screen and (min-width: 640px) {
 
     .byline {
       font-size: 1rem;
+    width: 100px;
+    transform: translate(-100%, 0);
+    bottom: 2rem;
+    right: auto;
+    display: block;
+    }
+
+    .title {
+      display: block;
     }
 
     .pop-off-wrapper {
@@ -1065,6 +1103,9 @@
     margin: 0 auto;
     transform: translate(0,-100%);
     padding-top: .5rem;
+    right: auto;
+    transform: translate(-100%,0);
+    display: block;
   }
 
 
