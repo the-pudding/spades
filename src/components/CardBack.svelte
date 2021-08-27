@@ -151,6 +151,7 @@ onMount(async() => {
     transform-style: preserve-3d;
     transition: transform 0.8s;
     z-index: 100000;
+    transform: rotate(-2deg);
   }
 
   .back-card {
