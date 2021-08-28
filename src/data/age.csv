@@ -661,3 +661,2651 @@ id,question,age,location,answer
 329,2,35-44,The East Coast USA,In special circumstances
 330,2,25-34,The East Coast USA,In special circumstances
 331,2,25-34,The East Coast USA,No
+0,3,>54,Other part of USA,Four
+1,3,45-54,Other part of USA,Three
+2,3,45-54,Other part of USA,Five
+3,3,>54,Other part of USA,Six
+5,3,45-54,Not in the USA,Four
+6,3,45-54,The Midwest USA,Four
+7,3,45-54,Other part of USA,Four
+8,3,45-54,The West Coast USA,Four
+9,3,45-54,The West Coast USA,Six
+10,3,35-44,The West Coast USA,Four
+11,3,45-54,The West Coast USA,Four
+12,3,18-24,The West Coast USA,Four
+13,3,25-34,The West Coast USA,
+14,3,35-44,The West Coast USA,Four
+15,3,35-44,The West Coast USA,Three
+16,3,>54,The West Coast USA,Five
+17,3,45-54,The West Coast USA,Three
+18,3,45-54,The West Coast USA,Four
+19,3,45-54,The West Coast USA,Five
+20,3,>54,The West Coast USA,Three
+21,3,35-44,The West Coast USA,Four
+22,3,18-24,The West Coast USA,Three
+23,3,45-54,The West Coast USA,Three
+24,3,45-54,The West Coast USA,Four
+25,3,45-54,The West Coast USA,Four
+26,3,35-44,The West Coast USA,Four
+27,3,45-54,The West Coast USA,Three
+28,3,45-54,The West Coast USA,Six
+29,3,45-54,The West Coast USA,Four
+30,3,>54,The West Coast USA,Four
+31,3,45-54,The West Coast USA,Five
+32,3,25-34,The West Coast USA,Five
+33,3,45-54,The West Coast USA,Four
+34,3,>54,The West Coast USA,Three
+35,3,45-54,The West Coast USA,Four
+36,3,45-54,The West Coast USA,Five
+37,3,18-24,The West Coast USA,Six
+38,3,25-34,The West Coast USA,Three
+39,3,45-54,The West Coast USA,Six
+40,3,45-54,The West Coast USA,Three
+41,3,45-54,The West Coast USA,Four
+42,3,25-34,The West Coast USA,Four
+43,3,>54,The West Coast USA,Three
+44,3,45-54,The West Coast USA,Four
+45,3,45-54,The West Coast USA,Four
+46,3,>54,The West Coast USA,Four
+47,3,18-24,The West Coast USA,Four
+48,3,45-54,The West Coast USA,Four
+49,3,45-54,The West Coast USA,Four
+50,3,45-54,The West Coast USA,Four
+51,3,45-54,The West Coast USA,Four
+52,3,35-44,The West Coast USA,Six
+53,3,45-54,The West Coast USA,Four
+54,3,45-54,The West Coast USA,Three
+55,3,45-54,The West Coast USA,Four
+56,3,45-54,The West Coast USA,Four
+57,3,>54,The West Coast USA,Four
+58,3,>54,The West Coast USA,Four
+59,3,45-54,The West Coast USA,Four
+60,3,35-44,The West Coast USA,Four
+61,3,25-34,The West Coast USA,Four
+62,3,45-54,The West Coast USA,Four
+63,3,25-34,The West Coast USA,Five
+64,3,18-24,The West Coast USA,Five
+65,3,45-54,The West Coast USA,Six
+66,3,45-54,The West Coast USA,Five
+67,3,18-24,The West Coast USA,Four
+68,3,>54,The West Coast USA,Five
+69,3,>54,The West Coast USA,Three
+70,3,18-24,The Midwest USA,Three
+71,3,>54,The Midwest USA,Four
+72,3,35-44,The Midwest USA,Five
+73,3,>54,The Midwest USA,Four
+74,3,45-54,The Midwest USA,Four
+75,3,25-34,The Midwest USA,Four
+76,3,>54,The Midwest USA,Four
+77,3,25-34,The Midwest USA,Five
+78,3,25-34,The Midwest USA,Four
+79,3,45-54,The Midwest USA,Three
+80,3,18-24,The South USA,Five
+81,3,25-34,The South USA,Four
+82,3,25-34,The South USA,Four
+83,3,25-34,The Midwest USA,Three
+84,3,18-24,The Midwest USA,Four
+85,3,25-34,The Midwest USA,Four
+86,3,25-34,The Midwest USA,Four
+87,3,25-34,The Midwest USA,
+88,3,25-34,The Midwest USA,Three
+89,3,45-54,The Midwest USA,Four
+90,3,35-44,The Midwest USA,Three
+91,3,35-44,The Midwest USA,Four
+92,3,35-44,The Midwest USA,Four
+93,3,35-44,The Midwest USA,Six
+94,3,35-44,The Midwest USA,Four
+95,3,18-24,The Midwest USA,Three
+96,3,35-44,The Midwest USA,Four
+97,3,25-34,The Midwest USA,Four
+98,3,35-44,The Midwest USA,Four
+99,3,35-44,The Midwest USA,Four
+100,3,25-34,The Midwest USA,Four
+101,3,18-24,The Midwest USA,Four
+102,3,25-34,The Midwest USA,Four
+103,3,25-34,The Midwest USA,Four
+104,3,25-34,The Midwest USA,Four
+105,3,25-34,The Midwest USA,Three
+106,3,25-34,The Midwest USA,Four
+107,3,35-44,The Midwest USA,Four
+108,3,25-34,The Midwest USA,Four
+109,3,25-34,The Midwest USA,Three
+110,3,18-24,The Midwest USA,Three
+111,3,35-44,The Midwest USA,Three
+112,3,35-44,The Midwest USA,Four
+113,3,45-54,The Midwest USA,Four
+114,3,25-34,The Midwest USA,Four
+115,3,18-24,The Midwest USA,Four
+116,3,35-44,The Midwest USA,Four
+117,3,25-34,The Midwest USA,Four
+118,3,25-34,The Midwest USA,Four
+119,3,35-44,The Midwest USA,Three
+120,3,25-34,The Midwest USA,Three
+121,3,25-34,The Midwest USA,Four
+122,3,25-34,The Midwest USA,Four
+123,3,18-24,The Midwest USA,Three
+124,3,35-44,The Midwest USA,Four
+125,3,25-34,The Midwest USA,Four
+126,3,18-24,The Midwest USA,Four
+127,3,25-34,The Midwest USA,Three
+128,3,25-34,The Midwest USA,Six
+129,3,25-34,The Midwest USA,Three
+130,3,45-54,The Midwest USA,Four
+131,3,25-34,The Midwest USA,Four
+132,3,25-34,The Midwest USA,Four
+133,3,>54,The Midwest USA,
+134,3,>54,The Midwest USA,
+135,3,25-34,The Midwest USA,
+136,3,35-44,The South USA,Four
+137,3,25-34,The South USA,
+138,3,>54,The South USA,Four
+139,3,25-34,The South USA,Four
+140,3,18-24,The South USA,Four
+141,3,35-44,The South USA,
+142,3,18-24,The South USA,Three
+143,3,25-34,The South USA,Four
+144,3,25-34,The South USA,Four
+145,3,18-24,The South USA,Four
+146,3,25-34,The South USA,
+147,3,35-44,The South USA,Four
+148,3,25-34,The South USA,Three
+149,3,35-44,The South USA,Five
+150,3,25-34,The South USA,Four
+151,3,25-34,The South USA,Four
+152,3,45-54,The South USA,Four
+153,3,45-54,The South USA,Four
+154,3,45-54,The South USA,Four
+155,3,18-24,The South USA,Five
+156,3,45-54,The South USA,Four
+157,3,18-24,The South USA,Four
+158,3,>54,The South USA,Four
+159,3,45-54,The South USA,Three
+160,3,45-54,The South USA,Four
+161,3,45-54,The South USA,Four
+162,3,45-54,The South USA,Three
+163,3,25-34,The South USA,Four
+164,3,>54,The South USA,Four
+165,3,35-44,The South USA,Five
+166,3,45-54,The South USA,Four
+167,3,>54,The South USA,Three
+168,3,25-34,The South USA,Four
+169,3,25-34,The South USA,Five
+170,3,25-34,The South USA,Four
+171,3,18-24,The South USA,Four
+172,3,>54,The South USA,Four
+173,3,25-34,The South USA,Three
+174,3,25-34,The South USA,Four
+175,3,25-34,The South USA,Four
+176,3,35-44,The South USA,Five
+177,3,25-34,The South USA,Five
+178,3,>54,The South USA,
+179,3,18-24,The South USA,Four
+180,3,18-24,The South USA,Four
+181,3,25-34,The South USA,Four
+182,3,18-24,The South USA,Three
+183,3,18-24,The South USA,
+184,3,Prefernottosay,The South USA,Four
+185,3,25-34,The South USA,Four
+186,3,25-34,The South USA,Four
+187,3,25-34,The South USA,Four
+188,3,Prefernottosay,The South USA,Three
+189,3,25-34,The South USA,Four
+190,3,35-44,The South USA,Four
+191,3,35-44,The South USA,Four
+192,3,45-54,The South USA,Four
+193,3,25-34,The South USA,Four
+194,3,25-34,The South USA,Four
+195,3,25-34,The South USA,Four
+196,3,18-24,The South USA,Four
+197,3,25-34,The South USA,Three
+198,3,25-34,The South USA,Four
+199,3,25-34,The South USA,Four
+200,3,25-34,The South USA,Four
+201,3,25-34,The South USA,Four
+202,3,25-34,The South USA,Four
+203,3,25-34,The South USA,Four
+204,3,25-34,The South USA,Four
+205,3,18-24,The South USA,Four
+206,3,18-24,The South USA,Four
+207,3,25-34,The South USA,Four
+208,3,45-54,The South USA,Four
+209,3,25-34,The South USA,Four
+210,3,25-34,The South USA,Four
+211,3,35-44,The South USA,Three
+212,3,35-44,The South USA,Six
+213,3,35-44,The South USA,Four
+214,3,25-34,The South USA,Four
+215,3,18-24,The South USA,Four
+216,3,25-34,The South USA,Four
+217,3,18-24,The South USA,Three
+218,3,25-34,The South USA,Four
+219,3,25-34,The South USA,Three
+220,3,25-34,The South USA,Three
+221,3,25-34,The South USA,Four
+222,3,>54,The South USA,Four
+223,3,35-44,The South USA,Four
+224,3,35-44,The South USA,Three
+225,3,25-34,The South USA,Three
+226,3,35-44,The South USA,Four
+227,3,35-44,The South USA,Three
+228,3,25-34,The South USA,Four
+229,3,45-54,The East Coast USA,Four
+230,3,35-44,The East Coast USA,Four
+231,3,18-24,The East Coast USA,Four
+232,3,25-34,The East Coast USA,Four
+233,3,45-54,The East Coast USA,Four
+234,3,>54,The East Coast USA,Three
+235,3,>54,The East Coast USA,Four
+236,3,45-54,The East Coast USA,Four
+237,3,>54,The East Coast USA,Four
+238,3,45-54,The East Coast USA,Six
+239,3,18-24,The East Coast USA,Three
+240,3,45-54,The East Coast USA,Four
+241,3,45-54,The East Coast USA,Four
+242,3,25-34,The East Coast USA,Four
+243,3,35-44,The East Coast USA,Four
+244,3,25-34,The East Coast USA,Four
+245,3,25-34,The East Coast USA,Four
+246,3,25-34,The East Coast USA,Four
+247,3,35-44,The East Coast USA,Four
+248,3,25-34,The East Coast USA,Six
+249,3,25-34,The East Coast USA,Four
+250,3,25-34,The East Coast USA,Four
+251,3,35-44,The East Coast USA,Four
+252,3,25-34,The East Coast USA,Four
+253,3,25-34,The East Coast USA,Four
+254,3,35-44,The East Coast USA,Four
+255,3,25-34,The East Coast USA,Four
+256,3,25-34,The East Coast USA,Three
+257,3,35-44,The East Coast USA,Five
+258,3,25-34,The East Coast USA,
+259,3,25-34,The East Coast USA,Four
+260,3,>54,The East Coast USA,Three
+261,3,25-34,The East Coast USA,Six
+262,3,25-34,The East Coast USA,
+263,3,25-34,The East Coast USA,Four
+264,3,25-34,The East Coast USA,Four
+265,3,25-34,The East Coast USA,Four
+266,3,25-34,The East Coast USA,Four
+267,3,35-44,The East Coast USA,Four
+268,3,45-54,The East Coast USA,Four
+269,3,35-44,The East Coast USA,Four
+270,3,25-34,The East Coast USA,Four
+271,3,25-34,The East Coast USA,Four
+272,3,18-24,The East Coast USA,
+273,3,25-34,The East Coast USA,Four
+274,3,25-34,The East Coast USA,Four
+275,3,25-34,The East Coast USA,Six
+276,3,25-34,The East Coast USA,Four
+277,3,25-34,The East Coast USA,Six
+278,3,25-34,The East Coast USA,Four
+279,3,25-34,The East Coast USA,Three
+280,3,18-24,The East Coast USA,Four
+281,3,25-34,The East Coast USA,Four
+282,3,18-24,The East Coast USA,Four
+283,3,25-34,The East Coast USA,Four
+284,3,25-34,The East Coast USA,Three
+285,3,25-34,The East Coast USA,Four
+286,3,25-34,The East Coast USA,Four
+287,3,25-34,The East Coast USA,Four
+288,3,25-34,The East Coast USA,Four
+289,3,45-54,The East Coast USA,Four
+290,3,25-34,The East Coast USA,Four
+291,3,35-44,The East Coast USA,Four
+292,3,25-34,The East Coast USA,Four
+293,3,25-34,The East Coast USA,Four
+294,3,25-34,The East Coast USA,Four
+295,3,25-34,The East Coast USA,Four
+296,3,25-34,The East Coast USA,Three
+297,3,25-34,The East Coast USA,Four
+298,3,25-34,The East Coast USA,Four
+299,3,25-34,The East Coast USA,Three
+300,3,35-44,The East Coast USA,Four
+301,3,25-34,The East Coast USA,Four
+302,3,25-34,The East Coast USA,
+303,3,35-44,The East Coast USA,Four
+304,3,35-44,The East Coast USA,Four
+305,3,25-34,The East Coast USA,Four
+306,3,45-54,The East Coast USA,Four
+307,3,45-54,The East Coast USA,Four
+308,3,25-34,The East Coast USA,Four
+309,3,25-34,The East Coast USA,Four
+310,3,25-34,The East Coast USA,Four
+311,3,25-34,The East Coast USA,Four
+312,3,25-34,The East Coast USA,Five
+313,3,18-24,The East Coast USA,Four
+314,3,25-34,The East Coast USA,Four
+315,3,35-44,The East Coast USA,Four
+316,3,45-54,The East Coast USA,Four
+317,3,25-34,The East Coast USA,Four
+318,3,18-24,The East Coast USA,Four
+319,3,25-34,The East Coast USA,Four
+320,3,25-34,The East Coast USA,Four
+321,3,25-34,The East Coast USA,Four
+322,3,25-34,The East Coast USA,Four
+323,3,25-34,The East Coast USA,Four
+324,3,25-34,The East Coast USA,Four
+325,3,35-44,The East Coast USA,Four
+326,3,25-34,The East Coast USA,Four
+327,3,35-44,The East Coast USA,Four
+328,3,18-24,The East Coast USA,Four
+329,3,35-44,The East Coast USA,Four
+330,3,25-34,The East Coast USA,
+331,3,25-34,The East Coast USA,
+0,4,>54,Other part of USA,20
+1,4,45-54,Other part of USA,15
+2,4,45-54,Other part of USA,5
+3,4,>54,Other part of USA,20
+5,4,45-54,Not in the USA,
+6,4,45-54,The Midwest USA,10
+7,4,45-54,Other part of USA,5
+8,4,45-54,The West Coast USA,5
+9,4,45-54,The West Coast USA,15
+10,4,35-44,The West Coast USA,
+11,4,45-54,The West Coast USA,
+12,4,18-24,The West Coast USA,5
+13,4,25-34,The West Coast USA,10
+14,4,35-44,The West Coast USA,10
+15,4,35-44,The West Coast USA,5
+16,4,>54,The West Coast USA,10
+17,4,45-54,The West Coast USA,10
+18,4,45-54,The West Coast USA,10
+19,4,45-54,The West Coast USA,5
+20,4,>54,The West Coast USA,10
+21,4,35-44,The West Coast USA,10
+22,4,18-24,The West Coast USA,5
+23,4,45-54,The West Coast USA,10
+24,4,45-54,The West Coast USA,5
+25,4,45-54,The West Coast USA,5
+26,4,35-44,The West Coast USA,10
+27,4,45-54,The West Coast USA,10
+28,4,45-54,The West Coast USA,5
+29,4,45-54,The West Coast USA,10
+30,4,>54,The West Coast USA,5
+31,4,45-54,The West Coast USA,15
+32,4,25-34,The West Coast USA,10
+33,4,45-54,The West Coast USA,5
+34,4,>54,The West Coast USA,5
+35,4,45-54,The West Coast USA,10
+36,4,45-54,The West Coast USA,15
+37,4,18-24,The West Coast USA,15
+38,4,25-34,The West Coast USA,5
+39,4,45-54,The West Coast USA,5
+40,4,45-54,The West Coast USA,5
+41,4,45-54,The West Coast USA,5
+42,4,25-34,The West Coast USA,5
+43,4,>54,The West Coast USA,5
+44,4,45-54,The West Coast USA,5
+45,4,45-54,The West Coast USA,5
+46,4,>54,The West Coast USA,10
+47,4,18-24,The West Coast USA,5
+48,4,45-54,The West Coast USA,10
+49,4,45-54,The West Coast USA,10
+50,4,45-54,The West Coast USA,5
+51,4,45-54,The West Coast USA,5
+52,4,35-44,The West Coast USA,5
+53,4,45-54,The West Coast USA,5
+54,4,45-54,The West Coast USA,5
+55,4,45-54,The West Coast USA,5
+56,4,45-54,The West Coast USA,15
+57,4,>54,The West Coast USA,5
+58,4,>54,The West Coast USA,5
+59,4,45-54,The West Coast USA,10
+60,4,35-44,The West Coast USA,10
+61,4,25-34,The West Coast USA,10
+62,4,45-54,The West Coast USA,10
+63,4,25-34,The West Coast USA,10
+64,4,18-24,The West Coast USA,5
+65,4,45-54,The West Coast USA,10
+66,4,45-54,The West Coast USA,10
+67,4,18-24,The West Coast USA,5
+68,4,>54,The West Coast USA,5
+69,4,>54,The West Coast USA,10
+70,4,18-24,The Midwest USA,5
+71,4,>54,The Midwest USA,5
+72,4,35-44,The Midwest USA,15
+73,4,>54,The Midwest USA,5
+74,4,45-54,The Midwest USA,10
+75,4,25-34,The Midwest USA,10
+76,4,>54,The Midwest USA,10
+77,4,25-34,The Midwest USA,10
+78,4,25-34,The Midwest USA,5
+79,4,45-54,The Midwest USA,10
+80,4,18-24,The Midwest USA,20
+81,4,25-34,The Midwest USA,
+82,4,25-34,The Midwest USA,5
+83,4,25-34,The Midwest USA,5
+84,4,18-24,The Midwest USA,10
+85,4,25-34,The Midwest USA,5
+86,4,25-34,The Midwest USA,10
+87,4,25-34,The Midwest USA,10
+88,4,25-34,The Midwest USA,10
+89,4,45-54,The Midwest USA,
+90,4,35-44,The Midwest USA,10
+91,4,35-44,The Midwest USA,10
+92,4,35-44,The Midwest USA,10
+93,4,35-44,The Midwest USA,5
+94,4,35-44,The Midwest USA,10
+95,4,18-24,The Midwest USA,
+96,4,35-44,The Midwest USA,10
+97,4,25-34,The Midwest USA,10
+98,4,35-44,The Midwest USA,10
+99,4,35-44,The Midwest USA,
+100,4,25-34,The Midwest USA,10
+101,4,18-24,The Midwest USA,5
+102,4,25-34,The Midwest USA,
+103,4,25-34,The Midwest USA,10
+104,4,25-34,The Midwest USA,
+105,4,25-34,The Midwest USA,
+106,4,25-34,The Midwest USA,
+107,4,35-44,The Midwest USA,
+108,4,25-34,The Midwest USA,10
+109,4,25-34,The Midwest USA,10
+110,4,18-24,The Midwest USA,
+111,4,35-44,The Midwest USA,5
+112,4,35-44,The Midwest USA,
+113,4,45-54,The Midwest USA,5
+114,4,25-34,The Midwest USA,5
+115,4,18-24,The Midwest USA,5
+116,4,35-44,The Midwest USA,
+117,4,25-34,The Midwest USA,
+118,4,25-34,The Midwest USA,10
+119,4,35-44,The Midwest USA,
+120,4,25-34,The Midwest USA,5
+121,4,25-34,The Midwest USA,5
+122,4,25-34,The Midwest USA,10
+123,4,18-24,The Midwest USA,5
+124,4,35-44,The Midwest USA,5
+125,4,25-34,The Midwest USA,5
+126,4,18-24,The Midwest USA,5
+127,4,25-34,The Midwest USA,
+128,4,25-34,The Midwest USA,
+129,4,25-34,The Midwest USA,10
+130,4,45-54,The Midwest USA,10
+131,4,25-34,The Midwest USA,5
+132,4,25-34,The Midwest USA,10
+133,4,>54,The Midwest USA,
+134,4,>54,The Midwest USA,
+135,4,25-34,The Midwest USA,5
+136,4,35-44,The South USA,
+137,4,25-34,The South USA,
+138,4,>54,The South USA,5
+139,4,25-34,The South USA,
+140,4,18-24,The South USA,5
+141,4,35-44,The South USA,
+142,4,18-24,The South USA,10
+143,4,25-34,The South USA,5
+144,4,25-34,The South USA,5
+145,4,18-24,The South USA,5
+146,4,25-34,The South USA,5
+147,4,35-44,The South USA,5
+148,4,25-34,The South USA,10
+149,4,35-44,The South USA,5
+150,4,25-34,The South USA,
+151,4,25-34,The South USA,10
+152,4,45-54,The South USA,5
+153,4,45-54,The South USA,10
+154,4,45-54,The South USA,10
+155,4,18-24,The South USA,10
+156,4,45-54,The South USA,10
+157,4,18-24,The South USA,10
+158,4,>54,The South USA,5
+159,4,45-54,The South USA,5
+160,4,45-54,The South USA,5
+161,4,45-54,The South USA,10
+162,4,45-54,The South USA,5
+163,4,25-34,The South USA,10
+164,4,>54,The South USA,5
+165,4,35-44,The South USA,5
+166,4,45-54,The South USA,5
+167,4,>54,The South USA,5
+168,4,25-34,The South USA,5
+169,4,25-34,The South USA,10
+170,4,25-34,The South USA,10
+171,4,18-24,The South USA,
+172,4,>54,The South USA,5
+173,4,25-34,The South USA,5
+174,4,25-34,The South USA,10
+175,4,25-34,The South USA,10
+176,4,35-44,The South USA,
+177,4,25-34,The South USA,10
+178,4,>54,The South USA,5
+179,4,18-24,The South USA,10
+180,4,18-24,The South USA,10
+181,4,25-34,The South USA,10
+182,4,18-24,The South USA,
+183,4,18-24,The South USA,
+184,4,Prefernottosay,The South USA,
+185,4,25-34,The South USA,15
+186,4,25-34,The South USA,10
+187,4,25-34,The South USA,10
+188,4,Prefernottosay,The South USA,20
+189,4,25-34,The South USA,
+190,4,35-44,The South USA,10
+191,4,35-44,The South USA,5
+192,4,45-54,The South USA,10
+193,4,25-34,The South USA,5
+194,4,25-34,The South USA,5
+195,4,25-34,The South USA,10
+196,4,18-24,The South USA,
+197,4,25-34,The South USA,15
+198,4,25-34,The South USA,
+199,4,25-34,The South USA,
+200,4,25-34,The South USA,
+201,4,25-34,The South USA,10
+202,4,25-34,The South USA,
+203,4,25-34,The South USA,10
+204,4,25-34,The South USA,
+205,4,18-24,The South USA,
+206,4,18-24,The South USA,
+207,4,25-34,The South USA,10
+208,4,45-54,The South USA,
+209,4,25-34,The South USA,
+210,4,25-34,The South USA,
+211,4,35-44,The South USA,10
+212,4,35-44,The South USA,10
+213,4,35-44,The South USA,
+214,4,25-34,The South USA,
+215,4,18-24,The South USA,10
+216,4,25-34,The South USA,
+217,4,18-24,The South USA,5
+218,4,25-34,The South USA,
+219,4,25-34,The South USA,5
+220,4,25-34,The South USA,5
+221,4,25-34,The South USA,
+222,4,>54,The South USA,5
+223,4,35-44,The South USA,5
+224,4,35-44,The South USA,10
+225,4,25-34,The South USA,5
+226,4,35-44,The South USA,10
+227,4,35-44,The South USA,20
+228,4,25-34,The South USA,
+229,4,45-54,The East Coast USA,10
+230,4,35-44,The East Coast USA,10
+231,4,18-24,The East Coast USA,15
+232,4,25-34,The East Coast USA,5
+233,4,45-54,The East Coast USA,5
+234,4,>54,The East Coast USA,5
+235,4,>54,The East Coast USA,15
+236,4,45-54,The East Coast USA,10
+237,4,>54,The East Coast USA,10
+238,4,45-54,The East Coast USA,10
+239,4,18-24,The East Coast USA,15
+240,4,45-54,The East Coast USA,5
+241,4,45-54,The East Coast USA,5
+242,4,25-34,The East Coast USA,
+243,4,35-44,The East Coast USA,5
+244,4,25-34,The East Coast USA,
+245,4,25-34,The East Coast USA,
+246,4,25-34,The East Coast USA,10
+247,4,35-44,The East Coast USA,
+248,4,25-34,The East Coast USA,10
+249,4,25-34,The East Coast USA,10
+250,4,25-34,The East Coast USA,5
+251,4,35-44,The East Coast USA,5
+252,4,25-34,The East Coast USA,10
+253,4,25-34,The East Coast USA,10
+254,4,35-44,The East Coast USA,10
+255,4,25-34,The East Coast USA,10
+256,4,25-34,The East Coast USA,
+257,4,35-44,The East Coast USA,
+258,4,25-34,The East Coast USA,
+259,4,25-34,The East Coast USA,5
+260,4,>54,The East Coast USA,5
+261,4,25-34,The East Coast USA,10
+262,4,25-34,The East Coast USA,
+263,4,25-34,The East Coast USA,
+264,4,25-34,The East Coast USA,10
+265,4,25-34,The East Coast USA,
+266,4,25-34,The East Coast USA,10
+267,4,35-44,The East Coast USA,10
+268,4,45-54,The East Coast USA,5
+269,4,35-44,The East Coast USA,10
+270,4,25-34,The East Coast USA,10
+271,4,25-34,The East Coast USA,
+272,4,18-24,The East Coast USA,
+273,4,25-34,The East Coast USA,
+274,4,25-34,The East Coast USA,10
+275,4,25-34,The East Coast USA,5
+276,4,25-34,The East Coast USA,5
+277,4,25-34,The East Coast USA,5
+278,4,25-34,The East Coast USA,
+279,4,25-34,The East Coast USA,10
+280,4,18-24,The East Coast USA,
+281,4,25-34,The East Coast USA,
+282,4,18-24,The East Coast USA,
+283,4,25-34,The East Coast USA,10
+284,4,25-34,The East Coast USA,5
+285,4,25-34,The East Coast USA,
+286,4,25-34,The East Coast USA,10
+287,4,25-34,The East Coast USA,5
+288,4,25-34,The East Coast USA,
+289,4,45-54,The East Coast USA,10
+290,4,25-34,The East Coast USA,
+291,4,35-44,The East Coast USA,5
+292,4,25-34,The East Coast USA,5
+293,4,25-34,The East Coast USA,10
+294,4,25-34,The East Coast USA,10
+295,4,25-34,The East Coast USA,
+296,4,25-34,The East Coast USA,5
+297,4,25-34,The East Coast USA,5
+298,4,25-34,The East Coast USA,10
+299,4,25-34,The East Coast USA,
+300,4,35-44,The East Coast USA,
+301,4,25-34,The East Coast USA,10
+302,4,25-34,The East Coast USA,10
+303,4,35-44,The East Coast USA,5
+304,4,35-44,The East Coast USA,10
+305,4,25-34,The East Coast USA,5
+306,4,45-54,The East Coast USA,10
+307,4,45-54,The East Coast USA,15
+308,4,25-34,The East Coast USA,15
+309,4,25-34,The East Coast USA,10
+310,4,25-34,The East Coast USA,20
+311,4,25-34,The East Coast USA,
+312,4,25-34,The East Coast USA,10
+313,4,18-24,The East Coast USA,
+314,4,25-34,The East Coast USA,10
+315,4,35-44,The East Coast USA,
+316,4,45-54,The East Coast USA,5
+317,4,25-34,The East Coast USA,5
+318,4,18-24,The East Coast USA,5
+319,4,25-34,The East Coast USA,5
+320,4,25-34,The East Coast USA,10
+321,4,25-34,The East Coast USA,10
+322,4,25-34,The East Coast USA,5
+323,4,25-34,The East Coast USA,5
+324,4,25-34,The East Coast USA,10
+325,4,35-44,The East Coast USA,10
+326,4,25-34,The East Coast USA,10
+327,4,35-44,The East Coast USA,5
+328,4,18-24,The East Coast USA,10
+329,4,35-44,The East Coast USA,10
+330,4,25-34,The East Coast USA,10
+331,4,25-34,The East Coast USA,
+0,5,>54,Other part of USA,Whole Game
+1,5,45-54,Other part of USA,Rise and Fly
+2,5,45-54,Other part of USA,Whole Game
+3,5,>54,Other part of USA,Rise and Fly
+5,5,45-54,Not in the USA,Whole Game
+6,5,45-54,The Midwest USA,Rise and Fly
+7,5,45-54,Other part of USA,Whole Game
+8,5,45-54,The West Coast USA,Whole Game
+9,5,45-54,The West Coast USA,Whole Game
+10,5,35-44,The West Coast USA,Whole Game
+11,5,45-54,The West Coast USA,Whole Game
+12,5,18-24,The West Coast USA,Whole Game
+13,5,25-34,The West Coast USA,
+14,5,35-44,The West Coast USA,Whole Game
+15,5,35-44,The West Coast USA,Whole Game
+16,5,>54,The West Coast USA,Rise and Fly
+17,5,45-54,The West Coast USA,Rise and Fly
+18,5,45-54,The West Coast USA,Whole Game
+19,5,45-54,The West Coast USA,Whole Game
+20,5,>54,The West Coast USA,Rise and Fly
+21,5,35-44,The West Coast USA,Whole Game
+22,5,18-24,The West Coast USA,Whole Game
+23,5,45-54,The West Coast USA,Whole Game
+24,5,45-54,The West Coast USA,Whole Game
+25,5,45-54,The West Coast USA,Rise and Fly
+26,5,35-44,The West Coast USA,Whole Game
+27,5,45-54,The West Coast USA,Whole Game
+28,5,45-54,The West Coast USA,Whole Game
+29,5,45-54,The West Coast USA,Rise and Fly
+30,5,>54,The West Coast USA,Whole Game
+31,5,45-54,The West Coast USA,Rise and Fly
+32,5,25-34,The West Coast USA,Whole Game
+33,5,45-54,The West Coast USA,Rise and Fly
+34,5,>54,The West Coast USA,Whole Game
+35,5,45-54,The West Coast USA,Whole Game
+36,5,45-54,The West Coast USA,Whole Game
+37,5,18-24,The West Coast USA,Whole Game
+38,5,25-34,The West Coast USA,Whole Game
+39,5,45-54,The West Coast USA,Whole Game
+40,5,45-54,The West Coast USA,Whole Game
+41,5,45-54,The West Coast USA,Rise and Fly
+42,5,25-34,The West Coast USA,Whole Game
+43,5,>54,The West Coast USA,Whole Game
+44,5,45-54,The West Coast USA,Whole Game
+45,5,45-54,The West Coast USA,Whole Game
+46,5,>54,The West Coast USA,Whole Game
+47,5,18-24,The West Coast USA,Rise and Fly
+48,5,45-54,The West Coast USA,Whole Game
+49,5,45-54,The West Coast USA,Whole Game
+50,5,45-54,The West Coast USA,Rise and Fly
+51,5,45-54,The West Coast USA,Rise and Fly
+52,5,35-44,The West Coast USA,Whole Game
+53,5,45-54,The West Coast USA,Whole Game
+54,5,45-54,The West Coast USA,Whole Game
+55,5,45-54,The West Coast USA,Whole Game
+56,5,45-54,The West Coast USA,Rise and Fly
+57,5,>54,The West Coast USA,Whole Game
+58,5,>54,The West Coast USA,Whole Game
+59,5,45-54,The West Coast USA,Whole Game
+60,5,35-44,The West Coast USA,Whole Game
+61,5,25-34,The West Coast USA,Whole Game
+62,5,45-54,The West Coast USA,Whole Game
+63,5,25-34,The West Coast USA,Rise and Fly
+64,5,18-24,The West Coast USA,Whole Game
+65,5,45-54,The West Coast USA,Whole Game
+66,5,45-54,The West Coast USA,Whole Game
+67,5,18-24,The West Coast USA,Whole Game
+68,5,>54,The West Coast USA,Whole Game
+69,5,>54,The West Coast USA,Rise and Fly
+70,5,18-24,The Midwest USA,Whole Game
+71,5,>54,The Midwest USA,Whole Game
+72,5,35-44,The Midwest USA,Rise and Fly
+73,5,>54,The Midwest USA,Rise and Fly
+74,5,45-54,The Midwest USA,Rise and Fly
+75,5,25-34,The Midwest USA,Whole Game
+76,5,>54,The Midwest USA,Whole Game
+77,5,25-34,The Midwest USA,Whole Game
+78,5,25-34,The Midwest USA,Whole Game
+79,5,45-54,The Midwest USA,Whole Game
+80,5,18-24,The Midwest USA,Rise and Fly
+81,5,25-34,The Midwest USA,Whole Game
+82,5,25-34,The Midwest USA,Whole Game
+83,5,25-34,The Midwest USA,Rise and Fly
+84,5,18-24,The Midwest USA,Rise and Fly
+85,5,25-34,The Midwest USA,Rise and Fly
+86,5,25-34,The Midwest USA,Whole Game
+87,5,25-34,The Midwest USA,Rise and Fly
+88,5,25-34,The Midwest USA,Rise and Fly
+89,5,45-54,The Midwest USA,Whole Game
+90,5,35-44,The Midwest USA,Rise and Fly
+91,5,35-44,The Midwest USA,Rise and Fly
+92,5,35-44,The Midwest USA,Whole Game
+93,5,35-44,The Midwest USA,Whole Game
+94,5,35-44,The Midwest USA,Whole Game
+95,5,18-24,The Midwest USA,Rise and Fly
+96,5,35-44,The Midwest USA,Whole Game
+97,5,25-34,The Midwest USA,Whole Game
+98,5,35-44,The Midwest USA,Whole Game
+99,5,35-44,The Midwest USA,Rise and Fly
+100,5,25-34,The Midwest USA,Rise and Fly
+101,5,18-24,The Midwest USA,Whole Game
+102,5,25-34,The Midwest USA,Rise and Fly
+103,5,25-34,The Midwest USA,Whole Game
+104,5,25-34,The Midwest USA,Whole Game
+105,5,25-34,The Midwest USA,Rise and Fly
+106,5,25-34,The Midwest USA,Whole Game
+107,5,35-44,The Midwest USA,Whole Game
+108,5,25-34,The Midwest USA,Whole Game
+109,5,25-34,The Midwest USA,Whole Game
+110,5,18-24,The Midwest USA,Whole Game
+111,5,35-44,The Midwest USA,Rise and Fly
+112,5,35-44,The Midwest USA,Whole Game
+113,5,45-54,The Midwest USA,Rise and Fly
+114,5,25-34,The Midwest USA,Rise and Fly
+115,5,18-24,The Midwest USA,Whole Game
+116,5,35-44,The Midwest USA,Whole Game
+117,5,25-34,The Midwest USA,Whole Game
+118,5,25-34,The Midwest USA,Whole Game
+119,5,35-44,The Midwest USA,Whole Game
+120,5,25-34,The Midwest USA,Whole Game
+121,5,25-34,The Midwest USA,Rise and Fly
+122,5,25-34,The Midwest USA,Whole Game
+123,5,18-24,The Midwest USA,Whole Game
+124,5,35-44,The Midwest USA,Whole Game
+125,5,25-34,The Midwest USA,Whole Game
+126,5,18-24,The Midwest USA,Whole Game
+127,5,25-34,The Midwest USA,Whole Game
+128,5,25-34,The Midwest USA,Whole Game
+129,5,25-34,The Midwest USA,Rise and Fly
+130,5,45-54,The Midwest USA,Whole Game
+131,5,25-34,The Midwest USA,Rise and Fly
+132,5,25-34,The Midwest USA,Whole Game
+133,5,>54,The Midwest USA,
+134,5,>54,The Midwest USA,
+135,5,25-34,The Midwest USA,
+136,5,35-44,The South USA,Whole Game
+137,5,25-34,The South USA,Whole Game
+138,5,>54,The South USA,Whole Game
+139,5,25-34,The South USA,Whole Game
+140,5,18-24,The South USA,Whole Game
+141,5,35-44,The South USA,Whole Game
+142,5,18-24,The South USA,Whole Game
+143,5,25-34,The South USA,Rise and Fly
+144,5,25-34,The South USA,Whole Game
+145,5,18-24,The South USA,Whole Game
+146,5,25-34,The South USA,Whole Game
+147,5,35-44,The South USA,Whole Game
+148,5,25-34,The South USA,Rise and Fly
+149,5,35-44,The South USA,Whole Game
+150,5,25-34,The South USA,Whole Game
+151,5,25-34,The South USA,Rise and Fly
+152,5,45-54,The South USA,Whole Game
+153,5,45-54,The South USA,Rise and Fly
+154,5,45-54,The South USA,Rise and Fly
+155,5,18-24,The South USA,Whole Game
+156,5,45-54,The South USA,Whole Game
+157,5,18-24,The South USA,Whole Game
+158,5,>54,The South USA,Whole Game
+159,5,45-54,The South USA,Rise and Fly
+160,5,45-54,The South USA,Whole Game
+161,5,45-54,The South USA,Whole Game
+162,5,45-54,The South USA,Whole Game
+163,5,25-34,The South USA,Whole Game
+164,5,>54,The South USA,Whole Game
+165,5,35-44,The South USA,Whole Game
+166,5,45-54,The South USA,Rise and Fly
+167,5,>54,The South USA,Whole Game
+168,5,25-34,The South USA,Whole Game
+169,5,25-34,The South USA,Whole Game
+170,5,25-34,The South USA,Whole Game
+171,5,18-24,The South USA,Whole Game
+172,5,>54,The South USA,Rise and Fly
+173,5,25-34,The South USA,Whole Game
+174,5,25-34,The South USA,Rise and Fly
+175,5,25-34,The South USA,Whole Game
+176,5,35-44,The South USA,Rise and Fly
+177,5,25-34,The South USA,Whole Game
+178,5,>54,The South USA,Whole Game
+179,5,18-24,The South USA,Whole Game
+180,5,18-24,The South USA,Whole Game
+181,5,25-34,The South USA,Rise and Fly
+182,5,18-24,The South USA,Whole Game
+183,5,18-24,The South USA,Whole Game
+184,5,Prefernottosay,The South USA,Whole Game
+185,5,25-34,The South USA,Whole Game
+186,5,25-34,The South USA,Whole Game
+187,5,25-34,The South USA,Whole Game
+188,5,Prefernottosay,The South USA,Rise and Fly
+189,5,25-34,The South USA,Whole Game
+190,5,35-44,The South USA,Whole Game
+191,5,35-44,The South USA,Whole Game
+192,5,45-54,The South USA,Rise and Fly
+193,5,25-34,The South USA,Whole Game
+194,5,25-34,The South USA,Whole Game
+195,5,25-34,The South USA,Whole Game
+196,5,18-24,The South USA,Whole Game
+197,5,25-34,The South USA,Rise and Fly
+198,5,25-34,The South USA,Whole Game
+199,5,25-34,The South USA,Whole Game
+200,5,25-34,The South USA,Rise and Fly
+201,5,25-34,The South USA,Whole Game
+202,5,25-34,The South USA,Whole Game
+203,5,25-34,The South USA,Whole Game
+204,5,25-34,The South USA,Whole Game
+205,5,18-24,The South USA,Whole Game
+206,5,18-24,The South USA,Whole Game
+207,5,25-34,The South USA,Whole Game
+208,5,45-54,The South USA,Whole Game
+209,5,25-34,The South USA,Whole Game
+210,5,25-34,The South USA,Whole Game
+211,5,35-44,The South USA,Whole Game
+212,5,35-44,The South USA,Whole Game
+213,5,35-44,The South USA,Whole Game
+214,5,25-34,The South USA,Rise and Fly
+215,5,18-24,The South USA,Whole Game
+216,5,25-34,The South USA,Whole Game
+217,5,18-24,The South USA,Rise and Fly
+218,5,25-34,The South USA,Whole Game
+219,5,25-34,The South USA,Whole Game
+220,5,25-34,The South USA,Rise and Fly
+221,5,25-34,The South USA,Whole Game
+222,5,>54,The South USA,Whole Game
+223,5,35-44,The South USA,Whole Game
+224,5,35-44,The South USA,Rise and Fly
+225,5,25-34,The South USA,Whole Game
+226,5,35-44,The South USA,Whole Game
+227,5,35-44,The South USA,Whole Game
+228,5,25-34,The South USA,Whole Game
+229,5,45-54,The East Coast USA,Rise and Fly
+230,5,35-44,The East Coast USA,Rise and Fly
+231,5,18-24,The East Coast USA,Rise and Fly
+232,5,25-34,The East Coast USA,Whole Game
+233,5,45-54,The East Coast USA,Whole Game
+234,5,>54,The East Coast USA,Whole Game
+235,5,>54,The East Coast USA,Whole Game
+236,5,45-54,The East Coast USA,Whole Game
+237,5,>54,The East Coast USA,Whole Game
+238,5,45-54,The East Coast USA,Whole Game
+239,5,18-24,The East Coast USA,Whole Game
+240,5,45-54,The East Coast USA,Whole Game
+241,5,45-54,The East Coast USA,Whole Game
+242,5,25-34,The East Coast USA,Whole Game
+243,5,35-44,The East Coast USA,Whole Game
+244,5,25-34,The East Coast USA,Whole Game
+245,5,25-34,The East Coast USA,Whole Game
+246,5,25-34,The East Coast USA,Whole Game
+247,5,35-44,The East Coast USA,Whole Game
+248,5,25-34,The East Coast USA,Whole Game
+249,5,25-34,The East Coast USA,Whole Game
+250,5,25-34,The East Coast USA,Whole Game
+251,5,35-44,The East Coast USA,Whole Game
+252,5,25-34,The East Coast USA,Whole Game
+253,5,25-34,The East Coast USA,Whole Game
+254,5,35-44,The East Coast USA,Rise and Fly
+255,5,25-34,The East Coast USA,Whole Game
+256,5,25-34,The East Coast USA,Whole Game
+257,5,35-44,The East Coast USA,Whole Game
+258,5,25-34,The East Coast USA,Whole Game
+259,5,25-34,The East Coast USA,Whole Game
+260,5,>54,The East Coast USA,Rise and Fly
+261,5,25-34,The East Coast USA,Whole Game
+262,5,25-34,The East Coast USA,Whole Game
+263,5,25-34,The East Coast USA,Whole Game
+264,5,25-34,The East Coast USA,Whole Game
+265,5,25-34,The East Coast USA,Whole Game
+266,5,25-34,The East Coast USA,Rise and Fly
+267,5,35-44,The East Coast USA,Whole Game
+268,5,45-54,The East Coast USA,Rise and Fly
+269,5,35-44,The East Coast USA,Whole Game
+270,5,25-34,The East Coast USA,Whole Game
+271,5,25-34,The East Coast USA,Whole Game
+272,5,18-24,The East Coast USA,Whole Game
+273,5,25-34,The East Coast USA,Whole Game
+274,5,25-34,The East Coast USA,Whole Game
+275,5,25-34,The East Coast USA,Whole Game
+276,5,25-34,The East Coast USA,Whole Game
+277,5,25-34,The East Coast USA,Rise and Fly
+278,5,25-34,The East Coast USA,Whole Game
+279,5,25-34,The East Coast USA,Whole Game
+280,5,18-24,The East Coast USA,Whole Game
+281,5,25-34,The East Coast USA,Rise and Fly
+282,5,18-24,The East Coast USA,Whole Game
+283,5,25-34,The East Coast USA,Whole Game
+284,5,25-34,The East Coast USA,Whole Game
+285,5,25-34,The East Coast USA,Whole Game
+286,5,25-34,The East Coast USA,Whole Game
+287,5,25-34,The East Coast USA,Whole Game
+288,5,25-34,The East Coast USA,Whole Game
+289,5,45-54,The East Coast USA,Whole Game
+290,5,25-34,The East Coast USA,Whole Game
+291,5,35-44,The East Coast USA,Rise and Fly
+292,5,25-34,The East Coast USA,Whole Game
+293,5,25-34,The East Coast USA,Whole Game
+294,5,25-34,The East Coast USA,Whole Game
+295,5,25-34,The East Coast USA,Whole Game
+296,5,25-34,The East Coast USA,Whole Game
+297,5,25-34,The East Coast USA,Whole Game
+298,5,25-34,The East Coast USA,Whole Game
+299,5,25-34,The East Coast USA,Whole Game
+300,5,35-44,The East Coast USA,Whole Game
+301,5,25-34,The East Coast USA,Whole Game
+302,5,25-34,The East Coast USA,Rise and Fly
+303,5,35-44,The East Coast USA,Whole Game
+304,5,35-44,The East Coast USA,Whole Game
+305,5,25-34,The East Coast USA,Whole Game
+306,5,45-54,The East Coast USA,Whole Game
+307,5,45-54,The East Coast USA,Whole Game
+308,5,25-34,The East Coast USA,Whole Game
+309,5,25-34,The East Coast USA,Rise and Fly
+310,5,25-34,The East Coast USA,Rise and Fly
+311,5,25-34,The East Coast USA,Whole Game
+312,5,25-34,The East Coast USA,Whole Game
+313,5,18-24,The East Coast USA,Whole Game
+314,5,25-34,The East Coast USA,Whole Game
+315,5,35-44,The East Coast USA,Whole Game
+316,5,45-54,The East Coast USA,Whole Game
+317,5,25-34,The East Coast USA,Whole Game
+318,5,18-24,The East Coast USA,Whole Game
+319,5,25-34,The East Coast USA,Whole Game
+320,5,25-34,The East Coast USA,Whole Game
+321,5,25-34,The East Coast USA,Whole Game
+322,5,25-34,The East Coast USA,Whole Game
+323,5,25-34,The East Coast USA,Whole Game
+324,5,25-34,The East Coast USA,Whole Game
+325,5,35-44,The East Coast USA,Whole Game
+326,5,25-34,The East Coast USA,Whole Game
+327,5,35-44,The East Coast USA,Whole Game
+328,5,18-24,The East Coast USA,Whole Game
+329,5,35-44,The East Coast USA,Whole Game
+330,5,25-34,The East Coast USA,
+331,5,25-34,The East Coast USA,
+0,6,>54,Other part of USA,Yes
+1,6,45-54,Other part of USA,No
+2,6,45-54,Other part of USA,No
+3,6,>54,Other part of USA,
+5,6,45-54,Not in the USA,
+6,6,45-54,The Midwest USA,
+7,6,45-54,Other part of USA,No
+8,6,45-54,The West Coast USA,
+9,6,45-54,The West Coast USA,
+10,6,35-44,The West Coast USA,
+11,6,45-54,The West Coast USA,
+12,6,18-24,The West Coast USA,
+13,6,25-34,The West Coast USA,Yes
+14,6,35-44,The West Coast USA,Yes
+15,6,35-44,The West Coast USA,Yes
+16,6,>54,The West Coast USA,Yes
+17,6,45-54,The West Coast USA,Yes
+18,6,45-54,The West Coast USA,Yes
+19,6,45-54,The West Coast USA,No
+20,6,>54,The West Coast USA,No
+21,6,35-44,The West Coast USA,No
+22,6,18-24,The West Coast USA,No
+23,6,45-54,The West Coast USA,Yes
+24,6,45-54,The West Coast USA,Yes
+25,6,45-54,The West Coast USA,Yes
+26,6,35-44,The West Coast USA,No
+27,6,45-54,The West Coast USA,Yes
+28,6,45-54,The West Coast USA,Yes
+29,6,45-54,The West Coast USA,Yes
+30,6,>54,The West Coast USA,Yes
+31,6,45-54,The West Coast USA,Yes
+32,6,25-34,The West Coast USA,No
+33,6,45-54,The West Coast USA,Yes
+34,6,>54,The West Coast USA,Yes
+35,6,45-54,The West Coast USA,Yes
+36,6,45-54,The West Coast USA,Yes
+37,6,18-24,The West Coast USA,Yes
+38,6,25-34,The West Coast USA,No
+39,6,45-54,The West Coast USA,Yes
+40,6,45-54,The West Coast USA,No
+41,6,45-54,The West Coast USA,Yes
+42,6,25-34,The West Coast USA,Yes
+43,6,>54,The West Coast USA,Yes
+44,6,45-54,The West Coast USA,No
+45,6,45-54,The West Coast USA,No
+46,6,>54,The West Coast USA,No
+47,6,18-24,The West Coast USA,No
+48,6,45-54,The West Coast USA,No
+49,6,45-54,The West Coast USA,Yes
+50,6,45-54,The West Coast USA,Yes
+51,6,45-54,The West Coast USA,No
+52,6,35-44,The West Coast USA,Yes
+53,6,45-54,The West Coast USA,Yes
+54,6,45-54,The West Coast USA,Yes
+55,6,45-54,The West Coast USA,Yes
+56,6,45-54,The West Coast USA,No
+57,6,>54,The West Coast USA,Yes
+58,6,>54,The West Coast USA,Yes
+59,6,45-54,The West Coast USA,No
+60,6,35-44,The West Coast USA,Yes
+61,6,25-34,The West Coast USA,Yes
+62,6,45-54,The West Coast USA,Yes
+63,6,25-34,The West Coast USA,Yes
+64,6,18-24,The West Coast USA,No
+65,6,45-54,The West Coast USA,No
+66,6,45-54,The West Coast USA,Yes
+67,6,18-24,The West Coast USA,No
+68,6,>54,The West Coast USA,Yes
+69,6,>54,The West Coast USA,No
+70,6,18-24,The Midwest USA,Yes
+71,6,>54,The Midwest USA,Yes
+72,6,35-44,The Midwest USA,Yes
+73,6,>54,The Midwest USA,No
+74,6,45-54,The Midwest USA,No
+75,6,25-34,The Midwest USA,Yes
+76,6,>54,The Midwest USA,Yes
+77,6,25-34,The Midwest USA,Yes
+78,6,25-34,The Midwest USA,No
+79,6,45-54,The Midwest USA,Yes
+80,6,18-24,The Midwest USA,
+81,6,25-34,The Midwest USA,
+82,6,25-34,The Midwest USA,
+83,6,25-34,The Midwest USA,
+84,6,18-24,The Midwest USA,
+85,6,25-34,The Midwest USA,
+86,6,25-34,The Midwest USA,
+87,6,25-34,The Midwest USA,
+88,6,25-34,The Midwest USA,
+89,6,45-54,The Midwest USA,
+90,6,35-44,The Midwest USA,
+91,6,35-44,The Midwest USA,
+92,6,35-44,The Midwest USA,
+93,6,35-44,The Midwest USA,
+94,6,35-44,The Midwest USA,
+95,6,18-24,The Midwest USA,
+96,6,35-44,The Midwest USA,
+97,6,25-34,The Midwest USA,
+98,6,35-44,The Midwest USA,
+99,6,35-44,The Midwest USA,
+100,6,25-34,The Midwest USA,
+101,6,18-24,The Midwest USA,
+102,6,25-34,The Midwest USA,
+103,6,25-34,The Midwest USA,
+104,6,25-34,The Midwest USA,
+105,6,25-34,The Midwest USA,
+106,6,25-34,The Midwest USA,
+107,6,35-44,The Midwest USA,
+108,6,25-34,The Midwest USA,
+109,6,25-34,The Midwest USA,
+110,6,18-24,The Midwest USA,
+111,6,35-44,The Midwest USA,
+112,6,35-44,The Midwest USA,
+113,6,45-54,The Midwest USA,
+114,6,25-34,The Midwest USA,
+115,6,18-24,The Midwest USA,
+116,6,35-44,The Midwest USA,
+117,6,25-34,The Midwest USA,No
+118,6,25-34,The Midwest USA,
+119,6,35-44,The Midwest USA,
+120,6,25-34,The Midwest USA,
+121,6,25-34,The Midwest USA,
+122,6,25-34,The Midwest USA,
+123,6,18-24,The Midwest USA,
+124,6,35-44,The Midwest USA,
+125,6,25-34,The Midwest USA,
+126,6,18-24,The Midwest USA,
+127,6,25-34,The Midwest USA,
+128,6,25-34,The Midwest USA,
+129,6,25-34,The Midwest USA,
+130,6,45-54,The Midwest USA,
+131,6,25-34,The Midwest USA,
+132,6,25-34,The Midwest USA,
+133,6,>54,The Midwest USA,Yes
+134,6,>54,The Midwest USA,Yes
+135,6,25-34,The Midwest USA,Yes
+136,6,35-44,The South USA,
+137,6,25-34,The South USA,Yes
+138,6,>54,The South USA,
+139,6,25-34,The South USA,
+140,6,18-24,The South USA,
+141,6,35-44,The South USA,Yes
+142,6,18-24,The South USA,
+143,6,25-34,The South USA,
+144,6,25-34,The South USA,
+145,6,18-24,The South USA,
+146,6,25-34,The South USA,
+147,6,35-44,The South USA,
+148,6,25-34,The South USA,
+149,6,35-44,The South USA,Yes
+150,6,25-34,The South USA,
+151,6,25-34,The South USA,
+152,6,45-54,The South USA,Yes
+153,6,45-54,The South USA,Yes
+154,6,45-54,The South USA,Yes
+155,6,18-24,The South USA,Yes
+156,6,45-54,The South USA,Yes
+157,6,18-24,The South USA,No
+158,6,>54,The South USA,No
+159,6,45-54,The South USA,No
+160,6,45-54,The South USA,No
+161,6,45-54,The South USA,Yes
+162,6,45-54,The South USA,Yes
+163,6,25-34,The South USA,No
+164,6,>54,The South USA,Yes
+165,6,35-44,The South USA,No
+166,6,45-54,The South USA,No
+167,6,>54,The South USA,Yes
+168,6,25-34,The South USA,
+169,6,25-34,The South USA,
+170,6,25-34,The South USA,
+171,6,18-24,The South USA,
+172,6,>54,The South USA,
+173,6,25-34,The South USA,
+174,6,25-34,The South USA,
+175,6,25-34,The South USA,
+176,6,35-44,The South USA,
+177,6,25-34,The South USA,
+178,6,>54,The South USA,
+179,6,18-24,The South USA,
+180,6,18-24,The South USA,
+181,6,25-34,The South USA,
+182,6,18-24,The South USA,
+183,6,18-24,The South USA,
+184,6,Prefernottosay,The South USA,No
+185,6,25-34,The South USA,Yes
+186,6,25-34,The South USA,
+187,6,25-34,The South USA,
+188,6,Prefernottosay,The South USA,
+189,6,25-34,The South USA,
+190,6,35-44,The South USA,
+191,6,35-44,The South USA,
+192,6,45-54,The South USA,
+193,6,25-34,The South USA,
+194,6,25-34,The South USA,
+195,6,25-34,The South USA,
+196,6,18-24,The South USA,
+197,6,25-34,The South USA,
+198,6,25-34,The South USA,
+199,6,25-34,The South USA,Yes
+200,6,25-34,The South USA,
+201,6,25-34,The South USA,
+202,6,25-34,The South USA,
+203,6,25-34,The South USA,
+204,6,25-34,The South USA,
+205,6,18-24,The South USA,
+206,6,18-24,The South USA,
+207,6,25-34,The South USA,
+208,6,45-54,The South USA,
+209,6,25-34,The South USA,No
+210,6,25-34,The South USA,
+211,6,35-44,The South USA,
+212,6,35-44,The South USA,
+213,6,35-44,The South USA,
+214,6,25-34,The South USA,
+215,6,18-24,The South USA,
+216,6,25-34,The South USA,Yes
+217,6,18-24,The South USA,
+218,6,25-34,The South USA,
+219,6,25-34,The South USA,
+220,6,25-34,The South USA,
+221,6,25-34,The South USA,
+222,6,>54,The South USA,
+223,6,35-44,The South USA,
+224,6,35-44,The South USA,
+225,6,25-34,The South USA,
+226,6,35-44,The South USA,
+227,6,35-44,The South USA,
+228,6,25-34,The South USA,
+229,6,45-54,The East Coast USA,No
+230,6,35-44,The East Coast USA,Yes
+231,6,18-24,The East Coast USA,No
+232,6,25-34,The East Coast USA,Yes
+233,6,45-54,The East Coast USA,No
+234,6,>54,The East Coast USA,Yes
+235,6,>54,The East Coast USA,No
+236,6,45-54,The East Coast USA,Yes
+237,6,>54,The East Coast USA,No
+238,6,45-54,The East Coast USA,Yes
+239,6,18-24,The East Coast USA,No
+240,6,45-54,The East Coast USA,Yes
+241,6,45-54,The East Coast USA,Yes
+242,6,25-34,The East Coast USA,
+243,6,35-44,The East Coast USA,
+244,6,25-34,The East Coast USA,
+245,6,25-34,The East Coast USA,
+246,6,25-34,The East Coast USA,
+247,6,35-44,The East Coast USA,
+248,6,25-34,The East Coast USA,
+249,6,25-34,The East Coast USA,
+250,6,25-34,The East Coast USA,
+251,6,35-44,The East Coast USA,
+252,6,25-34,The East Coast USA,
+253,6,25-34,The East Coast USA,
+254,6,35-44,The East Coast USA,
+255,6,25-34,The East Coast USA,
+256,6,25-34,The East Coast USA,
+257,6,35-44,The East Coast USA,
+258,6,25-34,The East Coast USA,No
+259,6,25-34,The East Coast USA,
+260,6,>54,The East Coast USA,
+261,6,25-34,The East Coast USA,
+262,6,25-34,The East Coast USA,
+263,6,25-34,The East Coast USA,
+264,6,25-34,The East Coast USA,
+265,6,25-34,The East Coast USA,
+266,6,25-34,The East Coast USA,
+267,6,35-44,The East Coast USA,
+268,6,45-54,The East Coast USA,
+269,6,35-44,The East Coast USA,
+270,6,25-34,The East Coast USA,
+271,6,25-34,The East Coast USA,
+272,6,18-24,The East Coast USA,
+273,6,25-34,The East Coast USA,No
+274,6,25-34,The East Coast USA,
+275,6,25-34,The East Coast USA,
+276,6,25-34,The East Coast USA,
+277,6,25-34,The East Coast USA,
+278,6,25-34,The East Coast USA,
+279,6,25-34,The East Coast USA,Yes
+280,6,18-24,The East Coast USA,Yes
+281,6,25-34,The East Coast USA,
+282,6,18-24,The East Coast USA,
+283,6,25-34,The East Coast USA,
+284,6,25-34,The East Coast USA,
+285,6,25-34,The East Coast USA,
+286,6,25-34,The East Coast USA,
+287,6,25-34,The East Coast USA,
+288,6,25-34,The East Coast USA,
+289,6,45-54,The East Coast USA,
+290,6,25-34,The East Coast USA,
+291,6,35-44,The East Coast USA,
+292,6,25-34,The East Coast USA,
+293,6,25-34,The East Coast USA,
+294,6,25-34,The East Coast USA,
+295,6,25-34,The East Coast USA,
+296,6,25-34,The East Coast USA,
+297,6,25-34,The East Coast USA,
+298,6,25-34,The East Coast USA,
+299,6,25-34,The East Coast USA,No
+300,6,35-44,The East Coast USA,
+301,6,25-34,The East Coast USA,
+302,6,25-34,The East Coast USA,
+303,6,35-44,The East Coast USA,
+304,6,35-44,The East Coast USA,
+305,6,25-34,The East Coast USA,
+306,6,45-54,The East Coast USA,
+307,6,45-54,The East Coast USA,
+308,6,25-34,The East Coast USA,
+309,6,25-34,The East Coast USA,
+310,6,25-34,The East Coast USA,
+311,6,25-34,The East Coast USA,
+312,6,25-34,The East Coast USA,No
+313,6,18-24,The East Coast USA,
+314,6,25-34,The East Coast USA,
+315,6,35-44,The East Coast USA,
+316,6,45-54,The East Coast USA,
+317,6,25-34,The East Coast USA,Yes
+318,6,18-24,The East Coast USA,
+319,6,25-34,The East Coast USA,
+320,6,25-34,The East Coast USA,
+321,6,25-34,The East Coast USA,
+322,6,25-34,The East Coast USA,
+323,6,25-34,The East Coast USA,
+324,6,25-34,The East Coast USA,
+325,6,35-44,The East Coast USA,No
+326,6,25-34,The East Coast USA,
+327,6,35-44,The East Coast USA,
+328,6,18-24,The East Coast USA,
+329,6,35-44,The East Coast USA,
+330,6,25-34,The East Coast USA,No
+331,6,25-34,The East Coast USA,Yes
+0,7,>54,Other part of USA,Family
+1,7,45-54,Other part of USA,Friend
+2,7,45-54,Other part of USA,Family
+3,7,>54,Other part of USA,
+5,7,45-54,Not in the USA,
+6,7,45-54,The Midwest USA,Learned by watching
+7,7,45-54,Other part of USA,Friend
+8,7,45-54,The West Coast USA,Family
+9,7,45-54,The West Coast USA,Family
+10,7,35-44,The West Coast USA,Family
+11,7,45-54,The West Coast USA,Friend
+12,7,18-24,The West Coast USA,Friend
+13,7,25-34,The West Coast USA,Family
+14,7,35-44,The West Coast USA,Family
+15,7,35-44,The West Coast USA,Family
+16,7,>54,The West Coast USA,Learned by watching
+17,7,45-54,The West Coast USA,Friend
+18,7,45-54,The West Coast USA,Family
+19,7,45-54,The West Coast USA,
+20,7,>54,The West Coast USA,Friend
+21,7,35-44,The West Coast USA,Learned by watching
+22,7,18-24,The West Coast USA,Friend
+23,7,45-54,The West Coast USA,Family
+24,7,45-54,The West Coast USA,Friend
+25,7,45-54,The West Coast USA,Family
+26,7,35-44,The West Coast USA,Family
+27,7,45-54,The West Coast USA,Learned by watching
+28,7,45-54,The West Coast USA,Family
+29,7,45-54,The West Coast USA,Friend
+30,7,>54,The West Coast USA,Family
+31,7,45-54,The West Coast USA,Family
+32,7,25-34,The West Coast USA,Family
+33,7,45-54,The West Coast USA,Family
+34,7,>54,The West Coast USA,Family
+35,7,45-54,The West Coast USA,Learned by watching
+36,7,45-54,The West Coast USA,Learned by watching
+37,7,18-24,The West Coast USA,Friend
+38,7,25-34,The West Coast USA,Learned by watching
+39,7,45-54,The West Coast USA,Family
+40,7,45-54,The West Coast USA,Friend
+41,7,45-54,The West Coast USA,Family
+42,7,25-34,The West Coast USA,
+43,7,>54,The West Coast USA,Friend
+44,7,45-54,The West Coast USA,Learned by watching
+45,7,45-54,The West Coast USA,Family
+46,7,>54,The West Coast USA,Learned by watching
+47,7,18-24,The West Coast USA,Family
+48,7,45-54,The West Coast USA,Family
+49,7,45-54,The West Coast USA,Family
+50,7,45-54,The West Coast USA,Learned by watching
+51,7,45-54,The West Coast USA,Family
+52,7,35-44,The West Coast USA,Family
+53,7,45-54,The West Coast USA,Friend
+54,7,45-54,The West Coast USA,
+55,7,45-54,The West Coast USA,Family
+56,7,45-54,The West Coast USA,Family
+57,7,>54,The West Coast USA,Family
+58,7,>54,The West Coast USA,Family
+59,7,45-54,The West Coast USA,Family
+60,7,35-44,The West Coast USA,Family
+61,7,25-34,The West Coast USA,Friend
+62,7,45-54,The West Coast USA,Family
+63,7,25-34,The West Coast USA,
+64,7,18-24,The West Coast USA,Family
+65,7,45-54,The West Coast USA,Learned by watching
+66,7,45-54,The West Coast USA,Learned by watching
+67,7,18-24,The West Coast USA,Family
+68,7,>54,The West Coast USA,Family
+69,7,>54,The West Coast USA,Learned by watching
+70,7,18-24,The Midwest USA,Family
+71,7,>54,The Midwest USA,Family
+72,7,35-44,The Midwest USA,Family
+73,7,>54,The Midwest USA,Family
+74,7,45-54,The Midwest USA,Family
+75,7,25-34,The Midwest USA,Family
+76,7,>54,The Midwest USA,Family
+77,7,25-34,The Midwest USA,
+78,7,25-34,The Midwest USA,Family
+79,7,45-54,The Midwest USA,Family
+80,7,18-24,The Midwest USA,
+81,7,25-34,The Midwest USA,Family
+82,7,25-34,The Midwest USA,Learned by watching
+83,7,25-34,The Midwest USA,Family
+84,7,18-24,The Midwest USA,Family
+85,7,25-34,The Midwest USA,Family
+86,7,25-34,The Midwest USA,Family
+87,7,25-34,The Midwest USA,Learned by watching
+88,7,25-34,The Midwest USA,Learned by watching
+89,7,45-54,The Midwest USA,Family
+90,7,35-44,The Midwest USA,Family
+91,7,35-44,The Midwest USA,
+92,7,35-44,The Midwest USA,Learned by watching
+93,7,35-44,The Midwest USA,Family
+94,7,35-44,The Midwest USA,Family
+95,7,18-24,The Midwest USA,Family
+96,7,35-44,The Midwest USA,Family
+97,7,25-34,The Midwest USA,Learned by watching
+98,7,35-44,The Midwest USA,Family
+99,7,35-44,The Midwest USA,Learned by watching
+100,7,25-34,The Midwest USA,Family
+101,7,18-24,The Midwest USA,Family
+102,7,25-34,The Midwest USA,Family
+103,7,25-34,The Midwest USA,Learned by watching
+104,7,25-34,The Midwest USA,Friend
+105,7,25-34,The Midwest USA,Friend
+106,7,25-34,The Midwest USA,Family
+107,7,35-44,The Midwest USA,Family
+108,7,25-34,The Midwest USA,Family
+109,7,25-34,The Midwest USA,
+110,7,18-24,The Midwest USA,Learned by watching
+111,7,35-44,The Midwest USA,Family
+112,7,35-44,The Midwest USA,Family
+113,7,45-54,The Midwest USA,Family
+114,7,25-34,The Midwest USA,Family
+115,7,18-24,The Midwest USA,Friend
+116,7,35-44,The Midwest USA,
+117,7,25-34,The Midwest USA,Family
+118,7,25-34,The Midwest USA,
+119,7,35-44,The Midwest USA,Family
+120,7,25-34,The Midwest USA,Family
+121,7,25-34,The Midwest USA,Family
+122,7,25-34,The Midwest USA,Family
+123,7,18-24,The Midwest USA,Friend
+124,7,35-44,The Midwest USA,Friend
+125,7,25-34,The Midwest USA,Family
+126,7,18-24,The Midwest USA,
+127,7,25-34,The Midwest USA,Friend
+128,7,25-34,The Midwest USA,Family
+129,7,25-34,The Midwest USA,Friend
+130,7,45-54,The Midwest USA,Friend
+131,7,25-34,The Midwest USA,Learned by watching
+132,7,25-34,The Midwest USA,Learned by watching
+133,7,>54,The Midwest USA,Family
+134,7,>54,The Midwest USA,
+135,7,25-34,The Midwest USA,Learned by watching
+136,7,35-44,The South USA,Family
+137,7,25-34,The South USA,
+138,7,>54,The South USA,Family
+139,7,25-34,The South USA,Family
+140,7,18-24,The South USA,Family
+141,7,35-44,The South USA,Friend
+142,7,18-24,The South USA,Family
+143,7,25-34,The South USA,Family
+144,7,25-34,The South USA,Family
+145,7,18-24,The South USA,Friend
+146,7,25-34,The South USA,Family
+147,7,35-44,The South USA,
+148,7,25-34,The South USA,Learned by watching
+149,7,35-44,The South USA,Family
+150,7,25-34,The South USA,Family
+151,7,25-34,The South USA,Family
+152,7,45-54,The South USA,Family
+153,7,45-54,The South USA,Family
+154,7,45-54,The South USA,Family
+155,7,18-24,The South USA,Learned by watching
+156,7,45-54,The South USA,Family
+157,7,18-24,The South USA,Family
+158,7,>54,The South USA,Friend
+159,7,45-54,The South USA,Family
+160,7,45-54,The South USA,Family
+161,7,45-54,The South USA,Family
+162,7,45-54,The South USA,Family
+163,7,25-34,The South USA,Friend
+164,7,>54,The South USA,Family
+165,7,35-44,The South USA,Friend
+166,7,45-54,The South USA,Learned by watching
+167,7,>54,The South USA,
+168,7,25-34,The South USA,Family
+169,7,25-34,The South USA,
+170,7,25-34,The South USA,Friend
+171,7,18-24,The South USA,Family
+172,7,>54,The South USA,Friend
+173,7,25-34,The South USA,Family
+174,7,25-34,The South USA,Family
+175,7,25-34,The South USA,Family
+176,7,35-44,The South USA,Family
+177,7,25-34,The South USA,Family
+178,7,>54,The South USA,
+179,7,18-24,The South USA,Friend
+180,7,18-24,The South USA,Learned by watching
+181,7,25-34,The South USA,Family
+182,7,18-24,The South USA,Learned by watching
+183,7,18-24,The South USA,Friend
+184,7,Prefernottosay,The South USA,Friend
+185,7,25-34,The South USA,Family
+186,7,25-34,The South USA,Family
+187,7,25-34,The South USA,Family
+188,7,Prefernottosay,The South USA,Family
+189,7,25-34,The South USA,Family
+190,7,35-44,The South USA,Friend
+191,7,35-44,The South USA,Friend
+192,7,45-54,The South USA,Family
+193,7,25-34,The South USA,Family
+194,7,25-34,The South USA,Family
+195,7,25-34,The South USA,Family
+196,7,18-24,The South USA,
+197,7,25-34,The South USA,Family
+198,7,25-34,The South USA,Family
+199,7,25-34,The South USA,Friend
+200,7,25-34,The South USA,Family
+201,7,25-34,The South USA,
+202,7,25-34,The South USA,Friend
+203,7,25-34,The South USA,Family
+204,7,25-34,The South USA,Family
+205,7,18-24,The South USA,Family
+206,7,18-24,The South USA,Family
+207,7,25-34,The South USA,Family
+208,7,45-54,The South USA,Family
+209,7,25-34,The South USA,Family
+210,7,25-34,The South USA,Family
+211,7,35-44,The South USA,Family
+212,7,35-44,The South USA,Family
+213,7,35-44,The South USA,Friend
+214,7,25-34,The South USA,Family
+215,7,18-24,The South USA,
+216,7,25-34,The South USA,Family
+217,7,18-24,The South USA,Family
+218,7,25-34,The South USA,Friend
+219,7,25-34,The South USA,Family
+220,7,25-34,The South USA,
+221,7,25-34,The South USA,Learned by watching
+222,7,>54,The South USA,Learned by watching
+223,7,35-44,The South USA,Learned by watching
+224,7,35-44,The South USA,Learned by watching
+225,7,25-34,The South USA,Learned by watching
+226,7,35-44,The South USA,Learned by watching
+227,7,35-44,The South USA,Learned by watching
+228,7,25-34,The South USA,Learned by watching
+229,7,45-54,The East Coast USA,Family
+230,7,35-44,The East Coast USA,Friend
+231,7,18-24,The East Coast USA,Friend
+232,7,25-34,The East Coast USA,Learned by watching
+233,7,45-54,The East Coast USA,Family
+234,7,>54,The East Coast USA,Family
+235,7,>54,The East Coast USA,Family
+236,7,45-54,The East Coast USA,Family
+237,7,>54,The East Coast USA,Family
+238,7,45-54,The East Coast USA,Learned by watching
+239,7,18-24,The East Coast USA,
+240,7,45-54,The East Coast USA,Family
+241,7,45-54,The East Coast USA,Family
+242,7,25-34,The East Coast USA,Family
+243,7,35-44,The East Coast USA,Family
+244,7,25-34,The East Coast USA,Family
+245,7,25-34,The East Coast USA,Family
+246,7,25-34,The East Coast USA,Friend
+247,7,35-44,The East Coast USA,Family
+248,7,25-34,The East Coast USA,Friend
+249,7,25-34,The East Coast USA,
+250,7,25-34,The East Coast USA,Friend
+251,7,35-44,The East Coast USA,Family
+252,7,25-34,The East Coast USA,Learned by watching
+253,7,25-34,The East Coast USA,Learned by watching
+254,7,35-44,The East Coast USA,Friend
+255,7,25-34,The East Coast USA,Family
+256,7,25-34,The East Coast USA,Friend
+257,7,35-44,The East Coast USA,Family
+258,7,25-34,The East Coast USA,
+259,7,25-34,The East Coast USA,
+260,7,>54,The East Coast USA,Friend
+261,7,25-34,The East Coast USA,
+262,7,25-34,The East Coast USA,Friend
+263,7,25-34,The East Coast USA,Family
+264,7,25-34,The East Coast USA,Family
+265,7,25-34,The East Coast USA,Family
+266,7,25-34,The East Coast USA,Family
+267,7,35-44,The East Coast USA,Family
+268,7,45-54,The East Coast USA,Family
+269,7,35-44,The East Coast USA,
+270,7,25-34,The East Coast USA,Friend
+271,7,25-34,The East Coast USA,
+272,7,18-24,The East Coast USA,Family
+273,7,25-34,The East Coast USA,Family
+274,7,25-34,The East Coast USA,Learned by watching
+275,7,25-34,The East Coast USA,Friend
+276,7,25-34,The East Coast USA,Family
+277,7,25-34,The East Coast USA,Family
+278,7,25-34,The East Coast USA,Family
+279,7,25-34,The East Coast USA,Friend
+280,7,18-24,The East Coast USA,Family
+281,7,25-34,The East Coast USA,Learned by watching
+282,7,18-24,The East Coast USA,Family
+283,7,25-34,The East Coast USA,Friend
+284,7,25-34,The East Coast USA,Family
+285,7,25-34,The East Coast USA,Friend
+286,7,25-34,The East Coast USA,Friend
+287,7,25-34,The East Coast USA,Friend
+288,7,25-34,The East Coast USA,Friend
+289,7,45-54,The East Coast USA,Family
+290,7,25-34,The East Coast USA,Friend
+291,7,35-44,The East Coast USA,Family
+292,7,25-34,The East Coast USA,Family
+293,7,25-34,The East Coast USA,Family
+294,7,25-34,The East Coast USA,
+295,7,25-34,The East Coast USA,
+296,7,25-34,The East Coast USA,Friend
+297,7,25-34,The East Coast USA,Family
+298,7,25-34,The East Coast USA,Friend
+299,7,25-34,The East Coast USA,Family
+300,7,35-44,The East Coast USA,Family
+301,7,25-34,The East Coast USA,Family
+302,7,25-34,The East Coast USA,Friend
+303,7,35-44,The East Coast USA,Friend
+304,7,35-44,The East Coast USA,Family
+305,7,25-34,The East Coast USA,
+306,7,45-54,The East Coast USA,Family
+307,7,45-54,The East Coast USA,Family
+308,7,25-34,The East Coast USA,Friend
+309,7,25-34,The East Coast USA,
+310,7,25-34,The East Coast USA,
+311,7,25-34,The East Coast USA,Friend
+312,7,25-34,The East Coast USA,Friend
+313,7,18-24,The East Coast USA,Friend
+314,7,25-34,The East Coast USA,Family
+315,7,35-44,The East Coast USA,Friend
+316,7,45-54,The East Coast USA,Family
+317,7,25-34,The East Coast USA,Family
+318,7,18-24,The East Coast USA,Family
+319,7,25-34,The East Coast USA,
+320,7,25-34,The East Coast USA,Family
+321,7,25-34,The East Coast USA,Family
+322,7,25-34,The East Coast USA,Family
+323,7,25-34,The East Coast USA,Friend
+324,7,25-34,The East Coast USA,Learned by watching
+325,7,35-44,The East Coast USA,Learned by watching
+326,7,25-34,The East Coast USA,Learned by watching
+327,7,35-44,The East Coast USA,Learned by watching
+328,7,18-24,The East Coast USA,Learned by watching
+329,7,35-44,The East Coast USA,Learned by watching
+330,7,25-34,The East Coast USA,Friend
+331,7,25-34,The East Coast USA,Family
+0,8,>54,Other part of USA,18-24
+1,8,45-54,Other part of USA,over 34
+2,8,45-54,Other part of USA,Under 12
+3,8,>54,Other part of USA,Under 12
+5,8,45-54,Not in the USA,18-24
+6,8,45-54,The Midwest USA,18-24
+7,8,45-54,Other part of USA,25-34
+8,8,45-54,The West Coast USA,25-34
+9,8,45-54,The West Coast USA,25-34
+10,8,35-44,The West Coast USA,12-17
+11,8,45-54,The West Coast USA,25-34
+12,8,18-24,The West Coast USA,Under 12
+13,8,25-34,The West Coast USA,Under 12
+14,8,35-44,The West Coast USA,12-17
+15,8,35-44,The West Coast USA,18-24
+16,8,>54,The West Coast USA,18-24
+17,8,45-54,The West Coast USA,18-24
+18,8,45-54,The West Coast USA,Under 12
+19,8,45-54,The West Coast USA,18-24
+20,8,>54,The West Coast USA,18-24
+21,8,35-44,The West Coast USA,25-34
+22,8,18-24,The West Coast USA,18-24
+23,8,45-54,The West Coast USA,Under 12
+24,8,45-54,The West Coast USA,Under 12
+25,8,45-54,The West Coast USA,Under 12
+26,8,35-44,The West Coast USA,12-17
+27,8,45-54,The West Coast USA,over 34
+28,8,45-54,The West Coast USA,12-17
+29,8,45-54,The West Coast USA,12-17
+30,8,>54,The West Coast USA,12-17
+31,8,45-54,The West Coast USA,Under 12
+32,8,25-34,The West Coast USA,12-17
+33,8,45-54,The West Coast USA,12-17
+34,8,>54,The West Coast USA,12-17
+35,8,45-54,The West Coast USA,over 34
+36,8,45-54,The West Coast USA,18-24
+37,8,18-24,The West Coast USA,12-17
+38,8,25-34,The West Coast USA,18-24
+39,8,45-54,The West Coast USA,Under 12
+40,8,45-54,The West Coast USA,12-17
+41,8,45-54,The West Coast USA,Under 12
+42,8,25-34,The West Coast USA,18-24
+43,8,>54,The West Coast USA,18-24
+44,8,45-54,The West Coast USA,12-17
+45,8,45-54,The West Coast USA,12-17
+46,8,>54,The West Coast USA,18-24
+47,8,18-24,The West Coast USA,12-17
+48,8,45-54,The West Coast USA,Under 12
+49,8,45-54,The West Coast USA,12-17
+50,8,45-54,The West Coast USA,12-17
+51,8,45-54,The West Coast USA,over 34
+52,8,35-44,The West Coast USA,12-17
+53,8,45-54,The West Coast USA,25-34
+54,8,45-54,The West Coast USA,12-17
+55,8,45-54,The West Coast USA,Under 12
+56,8,45-54,The West Coast USA,12-17
+57,8,>54,The West Coast USA,Under 12
+58,8,>54,The West Coast USA,18-24
+59,8,45-54,The West Coast USA,12-17
+60,8,35-44,The West Coast USA,12-17
+61,8,25-34,The West Coast USA,25-34
+62,8,45-54,The West Coast USA,12-17
+63,8,25-34,The West Coast USA,18-24
+64,8,18-24,The West Coast USA,12-17
+65,8,45-54,The West Coast USA,12-17
+66,8,45-54,The West Coast USA,over 34
+67,8,18-24,The West Coast USA,Under 12
+68,8,>54,The West Coast USA,12-17
+69,8,>54,The West Coast USA,
+70,8,18-24,The Midwest USA,18-24
+71,8,>54,The Midwest USA,Under 12
+72,8,35-44,The Midwest USA,25-34
+73,8,>54,The Midwest USA,12-17
+74,8,45-54,The Midwest USA,12-17
+75,8,25-34,The Midwest USA,Under 12
+76,8,>54,The Midwest USA,12-17
+77,8,25-34,The Midwest USA,12-17
+78,8,25-34,The Midwest USA,Under 12
+79,8,45-54,The Midwest USA,Under 12
+80,8,18-24,The Midwest USA,18-24
+81,8,25-34,The Midwest USA,Under 12
+82,8,25-34,The Midwest USA,12-17
+83,8,25-34,The Midwest USA,25-34
+84,8,18-24,The Midwest USA,Under 12
+85,8,25-34,The Midwest USA,12-17
+86,8,25-34,The Midwest USA,Under 12
+87,8,25-34,The Midwest USA,12-17
+88,8,25-34,The Midwest USA,12-17
+89,8,45-54,The Midwest USA,12-17
+90,8,35-44,The Midwest USA,12-17
+91,8,35-44,The Midwest USA,12-17
+92,8,35-44,The Midwest USA,12-17
+93,8,35-44,The Midwest USA,12-17
+94,8,35-44,The Midwest USA,12-17
+95,8,18-24,The Midwest USA,Under 12
+96,8,35-44,The Midwest USA,12-17
+97,8,25-34,The Midwest USA,12-17
+98,8,35-44,The Midwest USA,Under 12
+99,8,35-44,The Midwest USA,Under 12
+100,8,25-34,The Midwest USA,12-17
+101,8,18-24,The Midwest USA,18-24
+102,8,25-34,The Midwest USA,Under 12
+103,8,25-34,The Midwest USA,12-17
+104,8,25-34,The Midwest USA,12-17
+105,8,25-34,The Midwest USA,Under 12
+106,8,25-34,The Midwest USA,12-17
+107,8,35-44,The Midwest USA,Under 12
+108,8,25-34,The Midwest USA,18-24
+109,8,25-34,The Midwest USA,12-17
+110,8,18-24,The Midwest USA,Under 12
+111,8,35-44,The Midwest USA,Under 12
+112,8,35-44,The Midwest USA,Under 12
+113,8,45-54,The Midwest USA,18-24
+114,8,25-34,The Midwest USA,12-17
+115,8,18-24,The Midwest USA,12-17
+116,8,35-44,The Midwest USA,12-17
+117,8,25-34,The Midwest USA,Under 12
+118,8,25-34,The Midwest USA,12-17
+119,8,35-44,The Midwest USA,Under 12
+120,8,25-34,The Midwest USA,12-17
+121,8,25-34,The Midwest USA,Under 12
+122,8,25-34,The Midwest USA,Under 12
+123,8,18-24,The Midwest USA,12-17
+124,8,35-44,The Midwest USA,18-24
+125,8,25-34,The Midwest USA,12-17
+126,8,18-24,The Midwest USA,18-24
+127,8,25-34,The Midwest USA,25-34
+128,8,25-34,The Midwest USA,25-34
+129,8,25-34,The Midwest USA,18-24
+130,8,45-54,The Midwest USA,18-24
+131,8,25-34,The Midwest USA,12-17
+132,8,25-34,The Midwest USA,18-24
+133,8,>54,The Midwest USA,Under 12
+134,8,>54,The Midwest USA,18-24
+135,8,25-34,The Midwest USA,25-34
+136,8,35-44,The South USA,Under 12
+137,8,25-34,The South USA,18-24
+138,8,>54,The South USA,Under 12
+139,8,25-34,The South USA,Under 12
+140,8,18-24,The South USA,18-24
+141,8,35-44,The South USA,18-24
+142,8,18-24,The South USA,Under 12
+143,8,25-34,The South USA,Under 12
+144,8,25-34,The South USA,Under 12
+145,8,18-24,The South USA,18-24
+146,8,25-34,The South USA,18-24
+147,8,35-44,The South USA,over 34
+148,8,25-34,The South USA,12-17
+149,8,35-44,The South USA,Under 12
+150,8,25-34,The South USA,12-17
+151,8,25-34,The South USA,Under 12
+152,8,45-54,The South USA,Under 12
+153,8,45-54,The South USA,12-17
+154,8,45-54,The South USA,Under 12
+155,8,18-24,The South USA,12-17
+156,8,45-54,The South USA,18-24
+157,8,18-24,The South USA,12-17
+158,8,>54,The South USA,12-17
+159,8,45-54,The South USA,Under 12
+160,8,45-54,The South USA,Under 12
+161,8,45-54,The South USA,Under 12
+162,8,45-54,The South USA,Under 12
+163,8,25-34,The South USA,18-24
+164,8,>54,The South USA,12-17
+165,8,35-44,The South USA,12-17
+166,8,45-54,The South USA,12-17
+167,8,>54,The South USA,18-24
+168,8,25-34,The South USA,18-24
+169,8,25-34,The South USA,25-34
+170,8,25-34,The South USA,12-17
+171,8,18-24,The South USA,18-24
+172,8,>54,The South USA,18-24
+173,8,25-34,The South USA,Under 12
+174,8,25-34,The South USA,Under 12
+175,8,25-34,The South USA,Under 12
+176,8,35-44,The South USA,12-17
+177,8,25-34,The South USA,25-34
+178,8,>54,The South USA,12-17
+179,8,18-24,The South USA,12-17
+180,8,18-24,The South USA,Under 12
+181,8,25-34,The South USA,Under 12
+182,8,18-24,The South USA,12-17
+183,8,18-24,The South USA,12-17
+184,8,Prefernottosay,The South USA,18-24
+185,8,25-34,The South USA,18-24
+186,8,25-34,The South USA,12-17
+187,8,25-34,The South USA,12-17
+188,8,Prefernottosay,The South USA,Under 12
+189,8,25-34,The South USA,Under 12
+190,8,35-44,The South USA,18-24
+191,8,35-44,The South USA,12-17
+192,8,45-54,The South USA,12-17
+193,8,25-34,The South USA,12-17
+194,8,25-34,The South USA,Under 12
+195,8,25-34,The South USA,12-17
+196,8,18-24,The South USA,12-17
+197,8,25-34,The South USA,Under 12
+198,8,25-34,The South USA,Under 12
+199,8,25-34,The South USA,12-17
+200,8,25-34,The South USA,Under 12
+201,8,25-34,The South USA,
+202,8,25-34,The South USA,over 34
+203,8,25-34,The South USA,12-17
+204,8,25-34,The South USA,12-17
+205,8,18-24,The South USA,Under 12
+206,8,18-24,The South USA,Under 12
+207,8,25-34,The South USA,12-17
+208,8,45-54,The South USA,25-34
+209,8,25-34,The South USA,18-24
+210,8,25-34,The South USA,12-17
+211,8,35-44,The South USA,Under 12
+212,8,35-44,The South USA,12-17
+213,8,35-44,The South USA,12-17
+214,8,25-34,The South USA,12-17
+215,8,18-24,The South USA,18-24
+216,8,25-34,The South USA,12-17
+217,8,18-24,The South USA,18-24
+218,8,25-34,The South USA,18-24
+219,8,25-34,The South USA,18-24
+220,8,25-34,The South USA,18-24
+221,8,25-34,The South USA,18-24
+222,8,>54,The South USA,12-17
+223,8,35-44,The South USA,12-17
+224,8,35-44,The South USA,18-24
+225,8,25-34,The South USA,12-17
+226,8,35-44,The South USA,Under 12
+227,8,35-44,The South USA,12-17
+228,8,25-34,The South USA,12-17
+229,8,45-54,The East Coast USA,Under 12
+230,8,35-44,The East Coast USA,12-17
+231,8,18-24,The East Coast USA,18-24
+232,8,25-34,The East Coast USA,Under 12
+233,8,45-54,The East Coast USA,12-17
+234,8,>54,The East Coast USA,12-17
+235,8,>54,The East Coast USA,12-17
+236,8,45-54,The East Coast USA,Under 12
+237,8,>54,The East Coast USA,12-17
+238,8,45-54,The East Coast USA,12-17
+239,8,18-24,The East Coast USA,18-24
+240,8,45-54,The East Coast USA,Under 12
+241,8,45-54,The East Coast USA,12-17
+242,8,25-34,The East Coast USA,Under 12
+243,8,35-44,The East Coast USA,Under 12
+244,8,25-34,The East Coast USA,Under 12
+245,8,25-34,The East Coast USA,Under 12
+246,8,25-34,The East Coast USA,18-24
+247,8,35-44,The East Coast USA,12-17
+248,8,25-34,The East Coast USA,over 34
+249,8,25-34,The East Coast USA,18-24
+250,8,25-34,The East Coast USA,18-24
+251,8,35-44,The East Coast USA,18-24
+252,8,25-34,The East Coast USA,12-17
+253,8,25-34,The East Coast USA,25-34
+254,8,35-44,The East Coast USA,18-24
+255,8,25-34,The East Coast USA,12-17
+256,8,25-34,The East Coast USA,25-34
+257,8,35-44,The East Coast USA,Under 12
+258,8,25-34,The East Coast USA,18-24
+259,8,25-34,The East Coast USA,25-34
+260,8,>54,The East Coast USA,Over 34
+261,8,25-34,The East Coast USA,12-17
+262,8,25-34,The East Coast USA,18-24
+263,8,25-34,The East Coast USA,Under 12
+264,8,25-34,The East Coast USA,Under 12
+265,8,25-34,The East Coast USA,12-17
+266,8,25-34,The East Coast USA,12-17
+267,8,35-44,The East Coast USA,Under 12
+268,8,45-54,The East Coast USA,Under 12
+269,8,35-44,The East Coast USA,12-17
+270,8,25-34,The East Coast USA,12-17
+271,8,25-34,The East Coast USA,Under 12
+272,8,18-24,The East Coast USA,Under 12
+273,8,25-34,The East Coast USA,12-17
+274,8,25-34,The East Coast USA,18-24
+275,8,25-34,The East Coast USA,12-17
+276,8,25-34,The East Coast USA,Under 12
+277,8,25-34,The East Coast USA,25-34
+278,8,25-34,The East Coast USA,12-17
+279,8,25-34,The East Coast USA,12-17
+280,8,18-24,The East Coast USA,Under 12
+281,8,25-34,The East Coast USA,Under 12
+282,8,18-24,The East Coast USA,12-17
+283,8,25-34,The East Coast USA,18-24
+284,8,25-34,The East Coast USA,Under 12
+285,8,25-34,The East Coast USA,12-17
+286,8,25-34,The East Coast USA,12-17
+287,8,25-34,The East Coast USA,12-17
+288,8,25-34,The East Coast USA,12-17
+289,8,45-54,The East Coast USA,Under 12
+290,8,25-34,The East Coast USA,12-17
+291,8,35-44,The East Coast USA,Under 12
+292,8,25-34,The East Coast USA,Under 12
+293,8,25-34,The East Coast USA,Under 12
+294,8,25-34,The East Coast USA,12-17
+295,8,25-34,The East Coast USA,18-24
+296,8,25-34,The East Coast USA,18-24
+297,8,25-34,The East Coast USA,Under 12
+298,8,25-34,The East Coast USA,18-24
+299,8,25-34,The East Coast USA,Under 12
+300,8,35-44,The East Coast USA,Under 12
+301,8,25-34,The East Coast USA,Under 12
+302,8,25-34,The East Coast USA,18-24
+303,8,35-44,The East Coast USA,12-17
+304,8,35-44,The East Coast USA,Under 12
+305,8,25-34,The East Coast USA,Under 12
+306,8,45-54,The East Coast USA,12-17
+307,8,45-54,The East Coast USA,12-17
+308,8,25-34,The East Coast USA,18-24
+309,8,25-34,The East Coast USA,
+310,8,25-34,The East Coast USA,18-24
+311,8,25-34,The East Coast USA,12-17
+312,8,25-34,The East Coast USA,12-17
+313,8,18-24,The East Coast USA,12-17
+314,8,25-34,The East Coast USA,18-24
+315,8,35-44,The East Coast USA,Under 12
+316,8,45-54,The East Coast USA,over 34
+317,8,25-34,The East Coast USA,Under 12
+318,8,18-24,The East Coast USA,12-17
+319,8,25-34,The East Coast USA,18-24
+320,8,25-34,The East Coast USA,18-24
+321,8,25-34,The East Coast USA,12-17
+322,8,25-34,The East Coast USA,18-24
+323,8,25-34,The East Coast USA,25-34
+324,8,25-34,The East Coast USA,Under 12
+325,8,35-44,The East Coast USA,12-17
+326,8,25-34,The East Coast USA,12-17
+327,8,35-44,The East Coast USA,12-17
+328,8,18-24,The East Coast USA,18-24
+329,8,35-44,The East Coast USA,18-24
+330,8,25-34,The East Coast USA,18-24
+331,8,25-34,The East Coast USA,Under 12
+0,9,>54,Other part of USA,No
+1,9,45-54,Other part of USA,Not sure/Never thought about that
+2,9,45-54,Other part of USA,No
+3,9,>54,Other part of USA,Not sure/Never thought about that
+5,9,45-54,Not in the USA,No
+6,9,45-54,The Midwest USA,Not sure/Never thought about that
+7,9,45-54,Other part of USA,No
+8,9,45-54,The West Coast USA,Yes
+9,9,45-54,The West Coast USA,Yes
+10,9,35-44,The West Coast USA,Not sure/Never thought about that
+11,9,45-54,The West Coast USA,No
+12,9,18-24,The West Coast USA,Not sure/Never thought about that
+13,9,25-34,The West Coast USA,
+14,9,35-44,The West Coast USA,Yes
+15,9,35-44,The West Coast USA,Yes
+16,9,>54,The West Coast USA,Yes
+17,9,45-54,The West Coast USA,No
+18,9,45-54,The West Coast USA,No
+19,9,45-54,The West Coast USA,No
+20,9,>54,The West Coast USA,Not sure/Never thought about that
+21,9,35-44,The West Coast USA,No
+22,9,18-24,The West Coast USA,No
+23,9,45-54,The West Coast USA,No
+24,9,45-54,The West Coast USA,No
+25,9,45-54,The West Coast USA,No
+26,9,35-44,The West Coast USA,Not sure/Never thought about that
+27,9,45-54,The West Coast USA,No
+28,9,45-54,The West Coast USA,Not sure/Never thought about that
+29,9,45-54,The West Coast USA,No
+30,9,>54,The West Coast USA,No
+31,9,45-54,The West Coast USA,Not sure/Never thought about that
+32,9,25-34,The West Coast USA,No
+33,9,45-54,The West Coast USA,Not sure/Never thought about that
+34,9,>54,The West Coast USA,No
+35,9,45-54,The West Coast USA,No
+36,9,45-54,The West Coast USA,No
+37,9,18-24,The West Coast USA,No
+38,9,25-34,The West Coast USA,No
+39,9,45-54,The West Coast USA,No
+40,9,45-54,The West Coast USA,No
+41,9,45-54,The West Coast USA,No
+42,9,25-34,The West Coast USA,No
+43,9,>54,The West Coast USA,No
+44,9,45-54,The West Coast USA,No
+45,9,45-54,The West Coast USA,No
+46,9,>54,The West Coast USA,Not sure/Never thought about that
+47,9,18-24,The West Coast USA,No
+48,9,45-54,The West Coast USA,Not sure/Never thought about that
+49,9,45-54,The West Coast USA,No
+50,9,45-54,The West Coast USA,Not sure/Never thought about that
+51,9,45-54,The West Coast USA,Not sure/Never thought about that
+52,9,35-44,The West Coast USA,Not sure/Never thought about that
+53,9,45-54,The West Coast USA,No
+54,9,45-54,The West Coast USA,Not sure/Never thought about that
+55,9,45-54,The West Coast USA,No
+56,9,45-54,The West Coast USA,No
+57,9,>54,The West Coast USA,No
+58,9,>54,The West Coast USA,No
+59,9,45-54,The West Coast USA,No
+60,9,35-44,The West Coast USA,No
+61,9,25-34,The West Coast USA,No
+62,9,45-54,The West Coast USA,No
+63,9,25-34,The West Coast USA,No
+64,9,18-24,The West Coast USA,Not sure/Never thought about that
+65,9,45-54,The West Coast USA,No
+66,9,45-54,The West Coast USA,No
+67,9,18-24,The West Coast USA,Not sure/Never thought about that
+68,9,>54,The West Coast USA,No
+69,9,>54,The West Coast USA,Not sure/Never thought about that
+70,9,18-24,The Midwest USA,Yes
+71,9,>54,The Midwest USA,Yes
+72,9,35-44,The Midwest USA,Yes
+73,9,>54,The Midwest USA,Not sure/Never thought about that
+74,9,45-54,The Midwest USA,Not sure/Never thought about that
+75,9,25-34,The Midwest USA,No
+76,9,>54,The Midwest USA,No
+77,9,25-34,The Midwest USA,No
+78,9,25-34,The Midwest USA,No
+79,9,45-54,The Midwest USA,No
+80,9,18-24,The Midwest USA,Yes
+81,9,25-34,The Midwest USA,No
+82,9,25-34,The Midwest USA,No
+83,9,25-34,The Midwest USA,Yes
+84,9,18-24,The Midwest USA,Yes
+85,9,25-34,The Midwest USA,Yes
+86,9,25-34,The Midwest USA,Yes
+87,9,25-34,The Midwest USA,Yes
+88,9,25-34,The Midwest USA,Yes
+89,9,45-54,The Midwest USA,Yes
+90,9,35-44,The Midwest USA,Yes
+91,9,35-44,The Midwest USA,Yes
+92,9,35-44,The Midwest USA,Yes
+93,9,35-44,The Midwest USA,Yes
+94,9,35-44,The Midwest USA,Yes
+95,9,18-24,The Midwest USA,Yes
+96,9,35-44,The Midwest USA,Yes
+97,9,25-34,The Midwest USA,Yes
+98,9,35-44,The Midwest USA,Yes
+99,9,35-44,The Midwest USA,Yes
+100,9,25-34,The Midwest USA,Not sure/Never thought about that
+101,9,18-24,The Midwest USA,No
+102,9,25-34,The Midwest USA,No
+103,9,25-34,The Midwest USA,Not sure/Never thought about that
+104,9,25-34,The Midwest USA,No
+105,9,25-34,The Midwest USA,No
+106,9,25-34,The Midwest USA,Not sure/Never thought about that
+107,9,35-44,The Midwest USA,Not sure/Never thought about that
+108,9,25-34,The Midwest USA,No
+109,9,25-34,The Midwest USA,Not sure/Never thought about that
+110,9,18-24,The Midwest USA,Not sure/Never thought about that
+111,9,35-44,The Midwest USA,No
+112,9,35-44,The Midwest USA,Not sure/Never thought about that
+113,9,45-54,The Midwest USA,No
+114,9,25-34,The Midwest USA,Not sure/Never thought about that
+115,9,18-24,The Midwest USA,Not sure/Never thought about that
+116,9,35-44,The Midwest USA,No
+117,9,25-34,The Midwest USA,Not sure/Never thought about that
+118,9,25-34,The Midwest USA,Not sure/Never thought about that
+119,9,35-44,The Midwest USA,Not sure/Never thought about that
+120,9,25-34,The Midwest USA,No
+121,9,25-34,The Midwest USA,No
+122,9,25-34,The Midwest USA,No
+123,9,18-24,The Midwest USA,No
+124,9,35-44,The Midwest USA,No
+125,9,25-34,The Midwest USA,Not sure/Never thought about that
+126,9,18-24,The Midwest USA,Not sure/Never thought about that
+127,9,25-34,The Midwest USA,Not sure/Never thought about that
+128,9,25-34,The Midwest USA,Not sure/Never thought about that
+129,9,25-34,The Midwest USA,No
+130,9,45-54,The Midwest USA,Not sure/Never thought about that
+131,9,25-34,The Midwest USA,Not sure/Never thought about that
+132,9,25-34,The Midwest USA,No
+133,9,>54,The Midwest USA,
+134,9,>54,The Midwest USA,
+135,9,25-34,The Midwest USA,
+136,9,35-44,The South USA,Yes
+137,9,25-34,The South USA,No
+138,9,>54,The South USA,No
+139,9,25-34,The South USA,Not sure/Never thought about that
+140,9,18-24,The South USA,No
+141,9,35-44,The South USA,No
+142,9,18-24,The South USA,Not sure/Never thought about that
+143,9,25-34,The South USA,Not sure/Never thought about that
+144,9,25-34,The South USA,Not sure/Never thought about that
+145,9,18-24,The South USA,Not sure/Never thought about that
+146,9,25-34,The South USA,No
+147,9,35-44,The South USA,Not sure/Never thought about that
+148,9,25-34,The South USA,Not sure/Never thought about that
+149,9,35-44,The South USA,Yes
+150,9,25-34,The South USA,Yes
+151,9,25-34,The South USA,Yes
+152,9,45-54,The South USA,Yes
+153,9,45-54,The South USA,No
+154,9,45-54,The South USA,No
+155,9,18-24,The South USA,No
+156,9,45-54,The South USA,No
+157,9,18-24,The South USA,Not sure/Never thought about that
+158,9,>54,The South USA,No
+159,9,45-54,The South USA,No
+160,9,45-54,The South USA,Not sure/Never thought about that
+161,9,45-54,The South USA,No
+162,9,45-54,The South USA,No
+163,9,25-34,The South USA,Not sure/Never thought about that
+164,9,>54,The South USA,No
+165,9,35-44,The South USA,No
+166,9,45-54,The South USA,Not sure/Never thought about that
+167,9,>54,The South USA,No
+168,9,25-34,The South USA,Yes
+169,9,25-34,The South USA,Yes
+170,9,25-34,The South USA,Yes
+171,9,18-24,The South USA,Yes
+172,9,>54,The South USA,Yes
+173,9,25-34,The South USA,Yes
+174,9,25-34,The South USA,Yes
+175,9,25-34,The South USA,Yes
+176,9,35-44,The South USA,Yes
+177,9,25-34,The South USA,Not sure/Never thought about that
+178,9,>54,The South USA,No
+179,9,18-24,The South USA,No
+180,9,18-24,The South USA,Not sure/Never thought about that
+181,9,25-34,The South USA,Not sure/Never thought about that
+182,9,18-24,The South USA,No
+183,9,18-24,The South USA,No
+184,9,Prefernottosay,The South USA,No
+185,9,25-34,The South USA,Not sure/Never thought about that
+186,9,25-34,The South USA,No
+187,9,25-34,The South USA,Not sure/Never thought about that
+188,9,Prefernottosay,The South USA,No
+189,9,25-34,The South USA,Not sure/Never thought about that
+190,9,35-44,The South USA,No
+191,9,35-44,The South USA,Not sure/Never thought about that
+192,9,45-54,The South USA,No
+193,9,25-34,The South USA,Not sure/Never thought about that
+194,9,25-34,The South USA,Not sure/Never thought about that
+195,9,25-34,The South USA,No
+196,9,18-24,The South USA,No
+197,9,25-34,The South USA,No
+198,9,25-34,The South USA,No
+199,9,25-34,The South USA,No
+200,9,25-34,The South USA,No
+201,9,25-34,The South USA,Not sure/Never thought about that
+202,9,25-34,The South USA,No
+203,9,25-34,The South USA,Not sure/Never thought about that
+204,9,25-34,The South USA,Not sure/Never thought about that
+205,9,18-24,The South USA,Not sure/Never thought about that
+206,9,18-24,The South USA,Not sure/Never thought about that
+207,9,25-34,The South USA,Not sure/Never thought about that
+208,9,45-54,The South USA,No
+209,9,25-34,The South USA,No
+210,9,25-34,The South USA,No
+211,9,35-44,The South USA,Not sure/Never thought about that
+212,9,35-44,The South USA,Not sure/Never thought about that
+213,9,35-44,The South USA,Not sure/Never thought about that
+214,9,25-34,The South USA,Not sure/Never thought about that
+215,9,18-24,The South USA,No
+216,9,25-34,The South USA,No
+217,9,18-24,The South USA,Not sure/Never thought about that
+218,9,25-34,The South USA,Not sure/Never thought about that
+219,9,25-34,The South USA,Not sure/Never thought about that
+220,9,25-34,The South USA,No
+221,9,25-34,The South USA,Not sure/Never thought about that
+222,9,>54,The South USA,Not sure/Never thought about that
+223,9,35-44,The South USA,Not sure/Never thought about that
+224,9,35-44,The South USA,No
+225,9,25-34,The South USA,No
+226,9,35-44,The South USA,Not sure/Never thought about that
+227,9,35-44,The South USA,No
+228,9,25-34,The South USA,Not sure/Never thought about that
+229,9,45-54,The East Coast USA,Yes
+230,9,35-44,The East Coast USA,No
+231,9,18-24,The East Coast USA,No
+232,9,25-34,The East Coast USA,No
+233,9,45-54,The East Coast USA,No
+234,9,>54,The East Coast USA,No
+235,9,>54,The East Coast USA,Not sure/Never thought about that
+236,9,45-54,The East Coast USA,Not sure/Never thought about that
+237,9,>54,The East Coast USA,No
+238,9,45-54,The East Coast USA,Not sure/Never thought about that
+239,9,18-24,The East Coast USA,No
+240,9,45-54,The East Coast USA,Not sure/Never thought about that
+241,9,45-54,The East Coast USA,Not sure/Never thought about that
+242,9,25-34,The East Coast USA,Yes
+243,9,35-44,The East Coast USA,Yes
+244,9,25-34,The East Coast USA,Yes
+245,9,25-34,The East Coast USA,Yes
+246,9,25-34,The East Coast USA,Yes
+247,9,35-44,The East Coast USA,Yes
+248,9,25-34,The East Coast USA,Yes
+249,9,25-34,The East Coast USA,Yes
+250,9,25-34,The East Coast USA,Yes
+251,9,35-44,The East Coast USA,Yes
+252,9,25-34,The East Coast USA,Yes
+253,9,25-34,The East Coast USA,Yes
+254,9,35-44,The East Coast USA,Yes
+255,9,25-34,The East Coast USA,Yes
+256,9,25-34,The East Coast USA,Yes
+257,9,35-44,The East Coast USA,Yes
+258,9,25-34,The East Coast USA,No
+259,9,25-34,The East Coast USA,Not sure/Never thought about that
+260,9,>54,The East Coast USA,No
+261,9,25-34,The East Coast USA,Not sure/Never thought about that
+262,9,25-34,The East Coast USA,No
+263,9,25-34,The East Coast USA,No
+264,9,25-34,The East Coast USA,Not sure/Never thought about that
+265,9,25-34,The East Coast USA,No
+266,9,25-34,The East Coast USA,Not sure/Never thought about that
+267,9,35-44,The East Coast USA,Not sure/Never thought about that
+268,9,45-54,The East Coast USA,No
+269,9,35-44,The East Coast USA,Not sure/Never thought about that
+270,9,25-34,The East Coast USA,Not sure/Never thought about that
+271,9,25-34,The East Coast USA,No
+272,9,18-24,The East Coast USA,Not sure/Never thought about that
+273,9,25-34,The East Coast USA,No
+274,9,25-34,The East Coast USA,No
+275,9,25-34,The East Coast USA,No
+276,9,25-34,The East Coast USA,Not sure/Never thought about that
+277,9,25-34,The East Coast USA,Not sure/Never thought about that
+278,9,25-34,The East Coast USA,No
+279,9,25-34,The East Coast USA,No
+280,9,18-24,The East Coast USA,Not sure/Never thought about that
+281,9,25-34,The East Coast USA,Not sure/Never thought about that
+282,9,18-24,The East Coast USA,No
+283,9,25-34,The East Coast USA,No
+284,9,25-34,The East Coast USA,No
+285,9,25-34,The East Coast USA,Not sure/Never thought about that
+286,9,25-34,The East Coast USA,Not sure/Never thought about that
+287,9,25-34,The East Coast USA,Not sure/Never thought about that
+288,9,25-34,The East Coast USA,No
+289,9,45-54,The East Coast USA,No
+290,9,25-34,The East Coast USA,No
+291,9,35-44,The East Coast USA,No
+292,9,25-34,The East Coast USA,Not sure/Never thought about that
+293,9,25-34,The East Coast USA,No
+294,9,25-34,The East Coast USA,No
+295,9,25-34,The East Coast USA,No
+296,9,25-34,The East Coast USA,No
+297,9,25-34,The East Coast USA,Not sure/Never thought about that
+298,9,25-34,The East Coast USA,Not sure/Never thought about that
+299,9,25-34,The East Coast USA,Not sure/Never thought about that
+300,9,35-44,The East Coast USA,Not sure/Never thought about that
+301,9,25-34,The East Coast USA,No
+302,9,25-34,The East Coast USA,Not sure/Never thought about that
+303,9,35-44,The East Coast USA,No
+304,9,35-44,The East Coast USA,No
+305,9,25-34,The East Coast USA,No
+306,9,45-54,The East Coast USA,Not sure/Never thought about that
+307,9,45-54,The East Coast USA,No
+308,9,25-34,The East Coast USA,No
+309,9,25-34,The East Coast USA,Not sure/Never thought about that
+310,9,25-34,The East Coast USA,No
+311,9,25-34,The East Coast USA,No
+312,9,25-34,The East Coast USA,Not sure/Never thought about that
+313,9,18-24,The East Coast USA,Not sure/Never thought about that
+314,9,25-34,The East Coast USA,Not sure/Never thought about that
+315,9,35-44,The East Coast USA,No
+316,9,45-54,The East Coast USA,No
+317,9,25-34,The East Coast USA,Not sure/Never thought about that
+318,9,18-24,The East Coast USA,No
+319,9,25-34,The East Coast USA,No
+320,9,25-34,The East Coast USA,Not sure/Never thought about that
+321,9,25-34,The East Coast USA,No
+322,9,25-34,The East Coast USA,No
+323,9,25-34,The East Coast USA,No
+324,9,25-34,The East Coast USA,Not sure/Never thought about that
+325,9,35-44,The East Coast USA,No
+326,9,25-34,The East Coast USA,No
+327,9,35-44,The East Coast USA,Not sure/Never thought about that
+328,9,18-24,The East Coast USA,Not sure/Never thought about that
+329,9,35-44,The East Coast USA,Not sure/Never thought about that
+330,9,25-34,The East Coast USA,
+331,9,25-34,The East Coast USA,
+0,10,>54,Other part of USA,Yes
+1,10,45-54,Other part of USA,Yes
+2,10,45-54,Other part of USA,Yes
+3,10,>54,Other part of USA,
+5,10,45-54,Not in the USA,
+6,10,45-54,The Midwest USA,
+7,10,45-54,Other part of USA,Yes
+8,10,45-54,The West Coast USA,
+9,10,45-54,The West Coast USA,
+10,10,35-44,The West Coast USA,
+11,10,45-54,The West Coast USA,
+12,10,18-24,The West Coast USA,
+13,10,25-34,The West Coast USA,
+14,10,35-44,The West Coast USA,No
+15,10,35-44,The West Coast USA,Yes
+16,10,>54,The West Coast USA,No
+17,10,45-54,The West Coast USA,Yes
+18,10,45-54,The West Coast USA,Yes
+19,10,45-54,The West Coast USA,Yes
+20,10,>54,The West Coast USA,Yes
+21,10,35-44,The West Coast USA,No
+22,10,18-24,The West Coast USA,Yes
+23,10,45-54,The West Coast USA,Yes
+24,10,45-54,The West Coast USA,Yes
+25,10,45-54,The West Coast USA,Yes
+26,10,35-44,The West Coast USA,No
+27,10,45-54,The West Coast USA,No
+28,10,45-54,The West Coast USA,Yes
+29,10,45-54,The West Coast USA,Yes
+30,10,>54,The West Coast USA,Yes
+31,10,45-54,The West Coast USA,Yes
+32,10,25-34,The West Coast USA,No
+33,10,45-54,The West Coast USA,Yes
+34,10,>54,The West Coast USA,Yes
+35,10,45-54,The West Coast USA,No
+36,10,45-54,The West Coast USA,Yes
+37,10,18-24,The West Coast USA,Yes
+38,10,25-34,The West Coast USA,No
+39,10,45-54,The West Coast USA,No
+40,10,45-54,The West Coast USA,No
+41,10,45-54,The West Coast USA,Yes
+42,10,25-34,The West Coast USA,Yes
+43,10,>54,The West Coast USA,Yes
+44,10,45-54,The West Coast USA,Yes
+45,10,45-54,The West Coast USA,No
+46,10,>54,The West Coast USA,Yes
+47,10,18-24,The West Coast USA,No
+48,10,45-54,The West Coast USA,Yes
+49,10,45-54,The West Coast USA,No
+50,10,45-54,The West Coast USA,Yes
+51,10,45-54,The West Coast USA,No
+52,10,35-44,The West Coast USA,No
+53,10,45-54,The West Coast USA,No
+54,10,45-54,The West Coast USA,Yes
+55,10,45-54,The West Coast USA,Yes
+56,10,45-54,The West Coast USA,Yes
+57,10,>54,The West Coast USA,Yes
+58,10,>54,The West Coast USA,No
+59,10,45-54,The West Coast USA,Yes
+60,10,35-44,The West Coast USA,Yes
+61,10,25-34,The West Coast USA,No
+62,10,45-54,The West Coast USA,No
+63,10,25-34,The West Coast USA,Yes
+64,10,18-24,The West Coast USA,Yes
+65,10,45-54,The West Coast USA,No
+66,10,45-54,The West Coast USA,No
+67,10,18-24,The West Coast USA,Yes
+68,10,>54,The West Coast USA,Yes
+69,10,>54,The West Coast USA,No
+70,10,18-24,The Midwest USA,Yes
+71,10,>54,The Midwest USA,No
+72,10,35-44,The Midwest USA,No
+73,10,>54,The Midwest USA,Yes
+74,10,45-54,The Midwest USA,Yes
+75,10,25-34,The Midwest USA,Yes
+76,10,>54,The Midwest USA,No
+77,10,25-34,The Midwest USA,Yes
+78,10,25-34,The Midwest USA,Yes
+79,10,45-54,The Midwest USA,Yes
+80,10,18-24,The Midwest USA,
+81,10,25-34,The Midwest USA,
+82,10,25-34,The Midwest USA,
+83,10,25-34,The Midwest USA,
+84,10,18-24,The Midwest USA,
+85,10,25-34,The Midwest USA,
+86,10,25-34,The Midwest USA,
+87,10,25-34,The Midwest USA,
+88,10,25-34,The Midwest USA,
+89,10,45-54,The Midwest USA,
+90,10,35-44,The Midwest USA,
+91,10,35-44,The Midwest USA,
+92,10,35-44,The Midwest USA,
+93,10,35-44,The Midwest USA,
+94,10,35-44,The Midwest USA,
+95,10,18-24,The Midwest USA,
+96,10,35-44,The Midwest USA,
+97,10,25-34,The Midwest USA,
+98,10,35-44,The Midwest USA,
+99,10,35-44,The Midwest USA,
+100,10,25-34,The Midwest USA,
+101,10,18-24,The Midwest USA,
+102,10,25-34,The Midwest USA,
+103,10,25-34,The Midwest USA,
+104,10,25-34,The Midwest USA,
+105,10,25-34,The Midwest USA,
+106,10,25-34,The Midwest USA,
+107,10,35-44,The Midwest USA,
+108,10,25-34,The Midwest USA,
+109,10,25-34,The Midwest USA,
+110,10,18-24,The Midwest USA,
+111,10,35-44,The Midwest USA,
+112,10,35-44,The Midwest USA,
+113,10,45-54,The Midwest USA,
+114,10,25-34,The Midwest USA,
+115,10,18-24,The Midwest USA,
+116,10,35-44,The Midwest USA,
+117,10,25-34,The Midwest USA,Yes
+118,10,25-34,The Midwest USA,
+119,10,35-44,The Midwest USA,
+120,10,25-34,The Midwest USA,
+121,10,25-34,The Midwest USA,
+122,10,25-34,The Midwest USA,
+123,10,18-24,The Midwest USA,
+124,10,35-44,The Midwest USA,
+125,10,25-34,The Midwest USA,
+126,10,18-24,The Midwest USA,
+127,10,25-34,The Midwest USA,
+128,10,25-34,The Midwest USA,
+129,10,25-34,The Midwest USA,
+130,10,45-54,The Midwest USA,
+131,10,25-34,The Midwest USA,
+132,10,25-34,The Midwest USA,
+133,10,>54,The Midwest USA,
+134,10,>54,The Midwest USA,
+135,10,25-34,The Midwest USA,
+136,10,35-44,The South USA,
+137,10,25-34,The South USA,No
+138,10,>54,The South USA,
+139,10,25-34,The South USA,
+140,10,18-24,The South USA,
+141,10,35-44,The South USA,No
+142,10,18-24,The South USA,
+143,10,25-34,The South USA,
+144,10,25-34,The South USA,
+145,10,18-24,The South USA,
+146,10,25-34,The South USA,
+147,10,35-44,The South USA,
+148,10,25-34,The South USA,
+149,10,35-44,The South USA,Yes
+150,10,25-34,The South USA,
+151,10,25-34,The South USA,
+152,10,45-54,The South USA,Yes
+153,10,45-54,The South USA,Yes
+154,10,45-54,The South USA,Yes
+155,10,18-24,The South USA,No
+156,10,45-54,The South USA,No
+157,10,18-24,The South USA,Yes
+158,10,>54,The South USA,Yes
+159,10,45-54,The South USA,No
+160,10,45-54,The South USA,Yes
+161,10,45-54,The South USA,Yes
+162,10,45-54,The South USA,Yes
+163,10,25-34,The South USA,Yes
+164,10,>54,The South USA,Yes
+165,10,35-44,The South USA,Yes
+166,10,45-54,The South USA,Yes
+167,10,>54,The South USA,Yes
+168,10,25-34,The South USA,
+169,10,25-34,The South USA,
+170,10,25-34,The South USA,
+171,10,18-24,The South USA,
+172,10,>54,The South USA,
+173,10,25-34,The South USA,
+174,10,25-34,The South USA,
+175,10,25-34,The South USA,
+176,10,35-44,The South USA,
+177,10,25-34,The South USA,
+178,10,>54,The South USA,
+179,10,18-24,The South USA,
+180,10,18-24,The South USA,
+181,10,25-34,The South USA,
+182,10,18-24,The South USA,
+183,10,18-24,The South USA,
+184,10,Prefernottosay,The South USA,Yes
+185,10,25-34,The South USA,Yes
+186,10,25-34,The South USA,
+187,10,25-34,The South USA,
+188,10,Prefernottosay,The South USA,
+189,10,25-34,The South USA,
+190,10,35-44,The South USA,
+191,10,35-44,The South USA,
+192,10,45-54,The South USA,
+193,10,25-34,The South USA,
+194,10,25-34,The South USA,
+195,10,25-34,The South USA,
+196,10,18-24,The South USA,
+197,10,25-34,The South USA,
+198,10,25-34,The South USA,
+199,10,25-34,The South USA,Yes
+200,10,25-34,The South USA,
+201,10,25-34,The South USA,
+202,10,25-34,The South USA,
+203,10,25-34,The South USA,
+204,10,25-34,The South USA,
+205,10,18-24,The South USA,
+206,10,18-24,The South USA,
+207,10,25-34,The South USA,
+208,10,45-54,The South USA,
+209,10,25-34,The South USA,No
+210,10,25-34,The South USA,
+211,10,35-44,The South USA,
+212,10,35-44,The South USA,
+213,10,35-44,The South USA,
+214,10,25-34,The South USA,
+215,10,18-24,The South USA,
+216,10,25-34,The South USA,Yes
+217,10,18-24,The South USA,
+218,10,25-34,The South USA,
+219,10,25-34,The South USA,
+220,10,25-34,The South USA,
+221,10,25-34,The South USA,
+222,10,>54,The South USA,
+223,10,35-44,The South USA,
+224,10,35-44,The South USA,
+225,10,25-34,The South USA,
+226,10,35-44,The South USA,
+227,10,35-44,The South USA,
+228,10,25-34,The South USA,
+229,10,45-54,The East Coast USA,Yes
+230,10,35-44,The East Coast USA,Yes
+231,10,18-24,The East Coast USA,No
+232,10,25-34,The East Coast USA,Yes
+233,10,45-54,The East Coast USA,No
+234,10,>54,The East Coast USA,Yes
+235,10,>54,The East Coast USA,No
+236,10,45-54,The East Coast USA,Yes
+237,10,>54,The East Coast USA,No
+238,10,45-54,The East Coast USA,Yes
+239,10,18-24,The East Coast USA,Yes
+240,10,45-54,The East Coast USA,Yes
+241,10,45-54,The East Coast USA,Yes
+242,10,25-34,The East Coast USA,
+243,10,35-44,The East Coast USA,
+244,10,25-34,The East Coast USA,
+245,10,25-34,The East Coast USA,
+246,10,25-34,The East Coast USA,
+247,10,35-44,The East Coast USA,
+248,10,25-34,The East Coast USA,
+249,10,25-34,The East Coast USA,
+250,10,25-34,The East Coast USA,
+251,10,35-44,The East Coast USA,
+252,10,25-34,The East Coast USA,
+253,10,25-34,The East Coast USA,
+254,10,35-44,The East Coast USA,
+255,10,25-34,The East Coast USA,
+256,10,25-34,The East Coast USA,
+257,10,35-44,The East Coast USA,
+258,10,25-34,The East Coast USA,No
+259,10,25-34,The East Coast USA,
+260,10,>54,The East Coast USA,
+261,10,25-34,The East Coast USA,
+262,10,25-34,The East Coast USA,
+263,10,25-34,The East Coast USA,
+264,10,25-34,The East Coast USA,
+265,10,25-34,The East Coast USA,
+266,10,25-34,The East Coast USA,
+267,10,35-44,The East Coast USA,
+268,10,45-54,The East Coast USA,
+269,10,35-44,The East Coast USA,
+270,10,25-34,The East Coast USA,
+271,10,25-34,The East Coast USA,
+272,10,18-24,The East Coast USA,
+273,10,25-34,The East Coast USA,No
+274,10,25-34,The East Coast USA,
+275,10,25-34,The East Coast USA,
+276,10,25-34,The East Coast USA,
+277,10,25-34,The East Coast USA,
+278,10,25-34,The East Coast USA,
+279,10,25-34,The East Coast USA,No
+280,10,18-24,The East Coast USA,Yes
+281,10,25-34,The East Coast USA,
+282,10,18-24,The East Coast USA,
+283,10,25-34,The East Coast USA,
+284,10,25-34,The East Coast USA,
+285,10,25-34,The East Coast USA,
+286,10,25-34,The East Coast USA,
+287,10,25-34,The East Coast USA,
+288,10,25-34,The East Coast USA,
+289,10,45-54,The East Coast USA,
+290,10,25-34,The East Coast USA,
+291,10,35-44,The East Coast USA,
+292,10,25-34,The East Coast USA,
+293,10,25-34,The East Coast USA,
+294,10,25-34,The East Coast USA,
+295,10,25-34,The East Coast USA,
+296,10,25-34,The East Coast USA,
+297,10,25-34,The East Coast USA,
+298,10,25-34,The East Coast USA,
+299,10,25-34,The East Coast USA,Yes
+300,10,35-44,The East Coast USA,
+301,10,25-34,The East Coast USA,
+302,10,25-34,The East Coast USA,
+303,10,35-44,The East Coast USA,
+304,10,35-44,The East Coast USA,
+305,10,25-34,The East Coast USA,
+306,10,45-54,The East Coast USA,
+307,10,45-54,The East Coast USA,
+308,10,25-34,The East Coast USA,
+309,10,25-34,The East Coast USA,
+310,10,25-34,The East Coast USA,
+311,10,25-34,The East Coast USA,
+312,10,25-34,The East Coast USA,Yes
+313,10,18-24,The East Coast USA,
+314,10,25-34,The East Coast USA,
+315,10,35-44,The East Coast USA,
+316,10,45-54,The East Coast USA,
+317,10,25-34,The East Coast USA,No
+318,10,18-24,The East Coast USA,
+319,10,25-34,The East Coast USA,
+320,10,25-34,The East Coast USA,
+321,10,25-34,The East Coast USA,
+322,10,25-34,The East Coast USA,
+323,10,25-34,The East Coast USA,
+324,10,25-34,The East Coast USA,
+325,10,35-44,The East Coast USA,Yes
+326,10,25-34,The East Coast USA,
+327,10,35-44,The East Coast USA,
+328,10,18-24,The East Coast USA,
+329,10,35-44,The East Coast USA,
+330,10,25-34,The East Coast USA,
+331,10,25-34,The East Coast USA,

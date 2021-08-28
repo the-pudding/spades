@@ -3,18 +3,31 @@
 
 <script>
     import ageData from "../data/age.csv";
-    import {group, groups, rollup, rollups, count, sum} from 'd3-array';
+    import {group, groups, rollup, rollups, count, sum, max} from 'd3-array';
     import { onMount, tick } from "svelte";
     import ButtonSet from "./helpers/ButtonSet.svelte";
 
     let mounted;
     let data;
 
+    let options = [
+        "age","location"
+    ];
+
     let filter = "age";
 
     let questionDict = {
         "1": "When you play Spades, do you play Big Joker, Little Joker, 2 of diamonds, two of spades?",
-        "2": "Is talking over the table (about the game) allowed?"
+        "2": "Is talking over the table (about the game) allowed?",
+        "3": "Whats your board?",
+        "4": "How many sandbags is the other team allowed to get before they forfeit or automatically lose the game?",
+        "5":"Do you typically play a whole game (to a set score) at once or rise and fly (if you lose after one round, you get up, and whoever wins stays seated to play the next team)?",
+        "6":"Have you ever reneged?",
+        "7":"Who taught you to play Spades?",
+        "8":"Hold old were you when you learned to play Spades?",
+        "9":"Is there an age in your family where learning spades is like a rite of passage?",
+        "10":"Have you ever gone blind successfully?"
+
     }
 
     let filterKey = {
@@ -41,17 +54,17 @@
 
     function getQuestion(questionToGet,cut){
 
-        console.log("questioning");
-
         let questionToFilterFor = questionToGet;
+        console.log(ageData)
 
         let grouped = ageData.filter(d => {
             // console.log(d.question,questionToFilterFor);
-            return d.question == questionToFilterFor
+            return d.question == questionToFilterFor && d.answer != "";
                 // console.log("same")
         });
 
         let rolluped = rollups(grouped, v => rollups(v, z => z, d => d.answer.toLowerCase()), d => d[cut]);
+
 
         rolluped.forEach(d => {
             let counts = []
@@ -66,9 +79,12 @@
             })
 
         })
+
+        let maxAnswer = max(rolluped, d => d[1].length);
+        console.log(rolluped,maxAnswer)
         
         rolluped = rolluped.filter(d => {
-            return d.percents.length > 1;
+            return d.percents.length == maxAnswer;
         });
 
         if(filter == "location"){
@@ -80,6 +96,8 @@
 
         return rolluped;
     }
+
+    let thing = 'age';
 
 
 
@@ -106,12 +124,17 @@
 
             <p class="small-label">filter by</p>
             <div class="filter-row">
-                <label class:selected={filter == "age"}>
-                    <input bind:group={filter} type="radio" name="amount" value="age" /> age
-                </label>
-                <label class:selected={filter == "location"}>
-                    <input bind:group={filter} type="radio" name="amount" value="location" /> location
-                </label>
+
+                <!-- <ButtonSet options={[{ value: "age" }, { value: "location" }]} bind:value={filter} /> -->
+
+                {#each options as value}
+                    <label on:click={() => console.log("hi")} class:selected={filter == value}><input bind:group={filter} type="radio" name="amount" {value}> {value}</label>
+                {/each}
+
+                
+                <!-- <label on:click={() => filter = "location"} class:selected={filter == "location"}>
+                    <input bind:group={filter} type="radio" name="amount" value={"location"} /> location
+                </label> -->
             </div>
 
             <div class="table-wrap">
