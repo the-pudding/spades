@@ -23,7 +23,7 @@ function toggleData(){
 }
 
 onMount(async() => {
-    mounted = true;    
+    mounted = true;
     await tick();
 
     backCardSvg = select(".back-card-svg").select("svg")
@@ -33,7 +33,7 @@ onMount(async() => {
         .each(function(d){
 
             let paths = [];
-            
+
             select(this).selectAll("path").each(function(d){
                 paths.push([select(this).attr("d"),"white"]);
             })
@@ -44,10 +44,10 @@ onMount(async() => {
 
 
 })
-  
+
 </script>
 
-<div aria-label="Word cloud of commonly used phrases from the question on the survey of How Does Spades Make You Fee. The common responses include Play, 51x, Good 44x, Fun 43x, Competitive 41x, Feel 41x, Black 36x, Happy 33x, Spade 31x, Game 27x, Excite 25x, Love 23x, Family 20x, Great 17x, Friend 17x, LOL 14x, Win 12x Connect 12x, Relaxed 10x Home 7x, Know 7x, Amaze 6x, Community 6x" class:flipped class="back-card-wrapper" on:click={() => flipped = !flipped }>
+<div aria-label="Word cloud of commonly used phrases from the question on the survey of How Does Spades Make You Fee. The common responses include Play, 51x, Good 44x, Fun 43x, Competitive 41x, Feel 41x, Black 36x, Happy 33x, Spade 31x, Game 27x, Excite 25x, Love 23x, Family 20x, Great 17x, Friend 17x, LOL 14x, Win 12x Connect 12x, Relaxed 10x Home 7x, Know 7x, Amaze 6x, Community 6x" class:flipped class="back-card-wrapper swiper-no-swiping" on:click={() => flipped = !flipped }>
     <div class="back-card card-slide back-card-front">
       <div class="back-card-svg">
         {@html backCardOne}

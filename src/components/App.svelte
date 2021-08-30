@@ -298,7 +298,7 @@
 
     </div>
 
-    <Swiper centeredSlides="{'true'}" keyboard="{{enabled:true, onlyInViewport: false, pageUpDown: true }}" noSwiping="{'true'}" noSwipingClass="{'swiper-no-swiping'}" direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{'true'}" slideToClickedSlide="{'false'}" spaceBetween="{convertRemToPixels(.5)}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
+    <Swiper centeredSlides="{'true'}" keyboard="{{enabled:true, onlyInViewport: false, pageUpDown: true }}" noSwiping="{'true'}" noSwipingClass="{'swiper-no-swiping'}" direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{'true'}" slideToClickedSlide="{false}" spaceBetween="{convertRemToPixels(.5)}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
         "100": {
           "centeredSlides": false
         },
