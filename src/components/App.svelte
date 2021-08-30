@@ -87,7 +87,7 @@
       return cardOrder[(index) % 13]
     }
     if(countInner){
-      return cardOrder[(index + countInner) % 13]  
+      return cardOrder[(index + countInner) % 13]
     }
     return "hi";
   }
@@ -127,7 +127,7 @@
 
   const changedSlideEnd = (e) => {
 
-    
+
 
 
     const [swiper] = e.detail[0];
@@ -150,7 +150,7 @@
 
       if(swiper.activeIndex == 1 && started && !disableStartEvents){
         select(".card-container").classed("not-started", false);
-        
+
         selectAll(".open-box")
           .style("display","none")
 
@@ -204,7 +204,7 @@
       }
   }
 
-  
+
 
   let cardOrder = {
     0:2,
@@ -222,7 +222,7 @@
     12:"A"
   }
 
-  function convertRemToPixels(rem) {    
+  function convertRemToPixels(rem) {
     return rem * parseFloat(getComputedStyle(document.documentElement).fontSize);
   }
 
@@ -231,7 +231,7 @@
 
   // install Swiper modules
   SwiperCore.use([Mousewheel,Pagination,Controller, Keyboard, A11y]);
-  
+
   function pivotPopOff(e){
     let el = select(e.srcElement);
     if(!el.classed("pop-off-centered")){
@@ -255,7 +255,7 @@
 
     console.log("mounted")
 
-    
+
     await tick();
 
     for (let item in copy.cards) {
@@ -264,9 +264,9 @@
       if(props.indexOf("nested") > -1){
         innerSwiperIndex = item;
         countInner = copy.cards[item].cardText.length - 1;
-      }      
+      }
     }
-    
+
     select("#content").selectAll("a").attr("target","_blank");
     select(".nested-swiper").node().parentNode.classList.add('card-style-none');
     select(".starting-slide").attr("aria-label","pack of cards with How Does Spades Make You Feel on the front. Written by Gabrielle Ione Hickmon. Spades in the African-American Community.")
@@ -277,7 +277,7 @@
 
   });
 
-  
+
 
 </script>
 
@@ -298,11 +298,14 @@
 
     </div>
 
-    <Swiper keyboard="{{enabled:true, onlyInViewport: false, pageUpDown: true }}" noSwiping="{'true'}" noSwipingClass="{'swiper-no-swiping'}" direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{'true'}" slideToClickedSlide="{'false'}" spaceBetween="{convertRemToPixels(.5)}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
+    <Swiper centeredSlides="{'true'}" keyboard="{{enabled:true, onlyInViewport: false, pageUpDown: true }}" noSwiping="{'true'}" noSwipingClass="{'swiper-no-swiping'}" direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{'true'}" slideToClickedSlide="{'false'}" spaceBetween="{convertRemToPixels(.5)}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
+        "100": {
+          "centeredSlides": false
+        },
         "640": {
           "direction": 'horizontal',
           "freeMode": true,
-          centeredSlides: true
+          "centeredSlides": true
         }
       }}'
 
@@ -317,7 +320,7 @@
         </a>
       </div>
 
-      <div class="byline">By 
+      <div class="byline">By
         <a href="https://pudding.cool/author/gabrielle-hickmon" target="_blank">
           Gabrielle Ione Hickmon
         </a>
@@ -345,13 +348,13 @@
                 <p class="pop-off-para">{@html card.background}</p>
               </div>
             </div>
-            
+
           </div>
         </div>
-        
+
       {/if}
 
-      
+
 
         <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.transformUp ? "post-background-slide" : ""} { !!card.agecard ? "age-slide" : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
 
@@ -365,7 +368,7 @@
               on:slideChange={() => console.log('slide change')}
             >
               {#each card.cardText as cardText, indexInner}
-                
+
 
                   <SwiperSlide class="card-slide">
                     {#if innerSwiperIndex}
@@ -377,7 +380,7 @@
 
                     {#if cardText.text}
                       <p class="para para-center para-no-margin">{@html cardText.text}</p>
-                      
+
                     {/if}
                     {#if cardText.hed}
                       <p class="card-title">{@html cardText.hed}</p>
@@ -418,14 +421,14 @@
                           <p>{indexInner+1} of {card.cardText.length}</p>
                         </div>
                       </div>
-                      
+
                     {/if}
                   </SwiperSlide>
 
               {/each}
             </Swiper>
-          
-            
+
+
           {:else}
             <div class="card-wrapper" class:text-only-wrapper="{!!card.textOnlyCard}">
               {#if innerSwiperIndex}
@@ -434,7 +437,7 @@
                   <div class="card-suit">{@html getSuit(index) }</div>
                 </div>
               {/if}
-              
+
 
               {#if card.agecard}
                 <Age></Age>
@@ -468,11 +471,11 @@
 
                     <div class="background-image-fill {card.backgroundFillWidthMax}" style="{card.styling} background-image: url('assets/{$viewport.width < 640 ? card.backgroundFillMobile : card.backgroundFill}')">
                     </div>
-                  
+
                   {:else}
                     <img src="assets/{card.backgroundFill}" alt="">
                   {/if}
-                  
+
                 </div>
               {/if}
 
@@ -498,7 +501,7 @@
 
             </div>
           {/if}
-          
+
         </SwiperSlide>
       {/each}
     </Swiper>
@@ -614,7 +617,7 @@
     width: calc(100% - 2rem);
     margin: 0 auto;
     opacity: .8;
-  } 
+  }
 
   .image-source-single-line {
     margin-top: 1rem;
@@ -642,7 +645,7 @@
     text-transform: uppercase;
   }
 
-  
+
 
 
   .half-text-wrapper::-webkit-scrollbar-track {
@@ -657,7 +660,7 @@
     background: #fbf7f0;
   }
 
-  
+
 .flex-grow {
   height: auto;
   flex-grow: 1;
@@ -685,7 +688,7 @@
     left: 0;
     z-index: 1000;
     transform: translate(calc(-100% + 270px), calc(0% - 130px)) rotate(10deg);
-    transition: transform 0.3s; 
+    transition: transform 0.3s;
     max-height: none;
   }
 
@@ -770,7 +773,7 @@
     margin-right: 1rem;
     margin-left: auto;
     margin-top: 1rem;
-    font-size: 1.8rem; 
+    font-size: 1.8rem;
     font-weight: 300;
     line-height: 1.2;
     font-family: 'Ohno Blazeface';
@@ -822,7 +825,7 @@
   .text-wrapper p:first-of-type {
     margin-top: 0;
   }
-  
+
   .text-only-wrapper .text-wrapper p:first-of-type::first-letter {
     color: #000;
     float: left;
@@ -849,7 +852,7 @@
   }
 
   .para-no-margin {
-   margin: 0 auto; 
+   margin: 0 auto;
   }
 
   .para {
@@ -1010,7 +1013,7 @@
     max-width: calc(100% - 8rem);
   }
 
-  
+
 
   .order-very-bottom {
     order: 3;
@@ -1028,11 +1031,11 @@
   .not-started .open-box-top {
     transform: translate(0, calc(-100% + 0px)) rotate(180deg);
     top: -10px;
-    
+
   }
 
   .not-started .open-box-bottom {
-    transform: translate(0, calc(-100% + -169px)) rotate(180deg); 
+    transform: translate(0, calc(-100% + -169px)) rotate(180deg);
   }
 
   .open-box {
@@ -1175,9 +1178,9 @@
       font-size: 18px;
     }
 }
-    
 
 
-  
+
+
 
 </style>

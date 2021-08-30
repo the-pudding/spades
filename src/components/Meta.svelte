@@ -26,7 +26,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="https://pudding.cool" />
   <meta name="twitter:creator" content="@gabbyhickmon" />
-  <meta name="twitter:title" content="How you play spades is how you play life" />
+  <meta name="twitter:title" content="How you play Spades is how you play life" />
   <meta name="twitter:description" content="First-of-its kind data exploration of Spades in the African-American community" />
   <meta
     name="twitter:image:src"
