@@ -654,6 +654,8 @@
     text-transform: uppercase;
   }
 
+  
+
 
   .half-text-wrapper::-webkit-scrollbar-track {
     background: #fbf7f0;
@@ -1126,6 +1128,29 @@
   }
 
   }
+
+
+  @media only screen and (max-height: 500px) {
+
+    .text-wrapper {
+      overflow:scroll;
+      pointer-events: all;
+    }
+
+    .text-wrapper::-webkit-scrollbar-track {
+    background: #fbf7f0;
+  }
+
+  .text-wrapper::-webkit-scrollbar-corner {
+    background: #fbf7f0;
+  }
+
+  .text-wrapper::-webkit-resizer {
+    background: #fbf7f0;
+  }
+
+  }
+
 
   @media only screen and (max-width: 350px) {
 

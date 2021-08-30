@@ -503,6 +503,10 @@ button.swiper-pagination-bullet {
   padding-left: 3rem;
 }
 
+.trifold-slide-2 .text-wrapper .para {
+  font-size: 12px;
+}
+
 
 .trifold-slide-3 .text-wrapper {
   padding-right: 0;
@@ -545,6 +549,10 @@ button.swiper-pagination-bullet {
     border-top-left-radius: 4px;
 }
 
+.nested-swiper .swiper-wrapper {
+  margin-top:0;
+}
+
 .swiper-wrapper {
   margin-top: 5px;
 }
@@ -585,7 +593,7 @@ button.swiper-pagination-bullet {
 
   .trifold-slide-1 .text-wrapper {
     padding-left: 4rem;
-    padding-top: 8rem;
+    padding-top: 0rem;
   }
 
   .trifold-slide-2 .text-wrapper {
