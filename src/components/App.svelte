@@ -305,7 +305,8 @@
         "640": {
           "direction": 'horizontal',
           "freeMode": true,
-          "centeredSlides": true
+          "centeredSlides": true,
+          "slideToClickedSlide": false
         }
       }}'
 
@@ -356,7 +357,7 @@
 
 
 
-        <SwiperSlide class="card-slide { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.transformUp ? "post-background-slide" : ""} { !!card.agecard ? "age-slide" : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
+        <SwiperSlide class="card-slide { !!card.backCard ? "card-back-slide" : ""} { !!card.trifold ? "trifold-slide-"+card.trifold : ""} { !!card.transformUp ? "post-background-slide" : ""} { !!card.agecard ? "age-slide" : ""} { !!card.trifold ? "trifold-slide" : ""} { index == 0 ? "first-slide" : ""}">
 
           {#if card.nested}
             <Swiper class="nested-swiper"
