@@ -3,9 +3,8 @@
 
 <script>
     import ageData from "../data/age.csv";
-    import {group, groups, rollup, rollups, count, sum, max} from 'd3-array';
+    import {rollups, sum, max} from 'd3-array';
     import { onMount, tick } from "svelte";
-    import ButtonSet from "./helpers/ButtonSet.svelte";
 
     let mounted;
     let data;
@@ -128,7 +127,7 @@
                 <!-- <ButtonSet options={[{ value: "age" }, { value: "location" }]} bind:value={filter} /> -->
 
                 {#each options as value}
-                    <label on:click={() => console.log("hi")} class:selected={filter == value}><input bind:group={filter} type="radio" name="amount" {value}> {value}</label>
+                    <label class="swiper-no-swiping" on:click={() => console.log("hi")} class:selected={filter == value}><input bind:group={filter} type="radio" name="amount" {value}> {value}</label>
                 {/each}
 
                 
@@ -157,6 +156,7 @@
                             {/each}
                         </div>
                     </div>
+
                 {/each}
             </div>
 
@@ -235,6 +235,7 @@
             text-align: center;
             border: 2px solid black;
             cursor: pointer;
+            user-select: none;
         }
 
         .filter-row label:first-of-type {

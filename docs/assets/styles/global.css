@@ -538,7 +538,9 @@ button.swiper-pagination-bullet {
 .gab-image {
   width: 200px;
   position: absolute;
-  right: 2rem;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
   top: 1rem;
 }
 
@@ -566,6 +568,15 @@ button.swiper-pagination-bullet {
   border-radius: 0;
   border-bottom-right-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+@media only screen and (max-width: 350px) {
+
+  .flex-center p {
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
 }
 
 

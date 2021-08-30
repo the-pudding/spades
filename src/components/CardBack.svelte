@@ -3,12 +3,9 @@
 <script>
 
 import { onMount, tick } from "svelte";
-import {selectAll, select} from 'd3-selection';
-import { transition } from 'd3-transition';
+import { select } from 'd3-selection';
 import backCardOne from "../svg/card_back_1_2.svg";
 import backCardTwo from "../svg/data.svg";
-import Prose from "./Prose.svelte";
-
 
 let mounted;
 let toChange = {};
@@ -18,89 +15,10 @@ let moved = false;
 let updated = false;
 let flipped;
 
-// let wordsToMove = [
-//     "love","play","good","fun","competitive","feel","black","happy","spade","game","excite","love",
-//     "family","great","friend","lol","win","connect","relaxed","home","know","amaze","community"
-// ]
-
 
 function toggleData(){
 
     select(this).style("transform","rotateY(180deg)");
-
-    // console.log(toChange)
-
-    // let newData = backCardSvg.select("#card_back")
-    //     .selectAll("g")
-    //     .datum(function(d,i){
-
-    //         if(!updated){
-    //             let key = select(this).attr("id");
-    //             return {key:key,i:i}
-    //         }
-    //         return d;
-
-    //     })
-    //     .filter(function(d,i){
-    //         return i < 20 && wordsToMove.indexOf(d.key) > -1;
-    //     })
-    //     .selectAll("path")
-    //     .datum(function(d,i){
-
-    //         if(!updated){
-    //             let parent = select(this.parentNode).datum();
-
-    //             let newString = null;
-
-    //             let id = select(this).node().parentNode.id
-
-    //             // console.log(id,i)
-    //             if(Object.keys(toChange).indexOf(id) > -1){
-    //                 // console.log(toChange[id],i)
-
-    //                 newString = toChange[id][i][0];
-    //             }
-
-    //             return {start:select(this).attr("d"),end: newString, id: id, dOfI: parent.i};
-    //         }
-
-    //         if(updated){
-    //             let start = d.start;
-    //             let end = d.end;
-    //             d.start = end;
-    //             d.end = start;
-    //         }
-    //         return d;          
-
-    //     })
-    //     // .each(function(d){
-    //     //     console.log(d.start, d.end)
-    //     // })
-    //     .transition()
-    //     .duration(3000)
-    //     .attrTween("d", function(d,i) {
-
-    //         return function(t) {
-    //             let time = t.round(1);
-    //             return interpolate(
-    //             d.start, 
-    //             d.end, 
-    //                 {maxSegmentLength: 10}
-    //             );
-    //         }
-
-            
-    //     }).end();
-
-    // backCardSvg.select("#card_back")
-    //     .selectAll("g")
-    //     .filter(function(d,i){
-    //         return wordsToMove.indexOf(d.key) == -1;
-    //     })
-    //     .style("opacity",0);
-
-    // updated = true;
-    // moved = !moved;
 
 }
 
@@ -129,7 +47,7 @@ onMount(async() => {
   
 </script>
 
-<div class:flipped class="back-card-wrapper" on:click={() => flipped = !flipped }>
+<div aria-label="Word cloud of commonly used phrases from the question on the survey of How Does Spades Make You Fee. The common responses include Play, 51x, Good 44x, Fun 43x, Competitive 41x, Feel 41x, Black 36x, Happy 33x, Spade 31x, Game 27x, Excite 25x, Love 23x, Family 20x, Great 17x, Friend 17x, LOL 14x, Win 12x Connect 12x, Relaxed 10x Home 7x, Know 7x, Amaze 6x, Community 6x" class:flipped class="back-card-wrapper" on:click={() => flipped = !flipped }>
     <div class="back-card card-slide back-card-front">
       <div class="back-card-svg">
         {@html backCardOne}

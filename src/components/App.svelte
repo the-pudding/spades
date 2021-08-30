@@ -1,23 +1,10 @@
 <script>
-  import { descending } from "d3-array";
   import Meta from "./Meta.svelte";
-  import Header from "./pudding/Header.svelte";
-  import Intro from "./Intro.svelte";
-  import Swarm from "./Swarm.svelte";
-  import Scatter from "./Scatter.svelte";
-  import Prose from "./Prose.svelte";
-  import FigureInfo from "./FigureInfo.svelte";
-  import FigureSource from "./FigureSource.svelte";
-  import ButtonSet from "./helpers/ButtonSet.svelte";
   import Footer from "./pudding/Footer.svelte";
   import copy from "../data/doc.json";
   import mq from "../stores/mq.js";
   import {selectAll, select} from 'd3-selection';
-	import { tweened } from 'svelte/motion';
-	import * as eases from 'svelte/easing';
-	import {cubicOut} from 'svelte/easing';
   import { transition } from 'd3-transition';
-
   import spade from "../svg/spade.svg"
   import heart from "../svg/heart.svg"
   import diamond from "../svg/diamond.svg"
@@ -37,7 +24,7 @@
 
   import { Swiper, SwiperSlide } from 'swiper/svelte';
   import SwiperCore, {
-    Controller,Mousewheel,Pagination
+    Controller,Mousewheel,Pagination, Keyboard, A11y
   } from 'swiper/core';
 
   let disableStartEvents = false;
@@ -140,6 +127,9 @@
 
   const changedSlideEnd = (e) => {
 
+    
+
+
     const [swiper] = e.detail[0];
 
       if(swiper.activeIndex > 1 && !disableStartEvents){
@@ -240,7 +230,7 @@
 
 
   // install Swiper modules
-  SwiperCore.use([Mousewheel,Pagination,Controller]);
+  SwiperCore.use([Mousewheel,Pagination,Controller, Keyboard, A11y]);
   
   function pivotPopOff(e){
     let el = select(e.srcElement);
@@ -279,12 +269,11 @@
     
     select("#content").selectAll("a").attr("target","_blank");
     select(".nested-swiper").node().parentNode.classList.add('card-style-none');
+    select(".starting-slide").attr("aria-label","pack of cards with How Does Spades Make You Feel on the front. Written by Gabrielle Ione Hickmon. Spades in the African-American Community.")
 
-
-
-
-
-
+    select("#flex-bar-chart").attr("alt","67% have a board of 4, 18% have other or no limit, 15% have 3");
+    select("#flex-col-chart").attr("alt","49% have 10 sand bags, 40% have 5...the remaining that 15 or 20.");
+    select("#flex-whole-chart").attr("alt","80% do whole game. 20% do rise and fly.");
 
   });
 
@@ -299,18 +288,17 @@
   <section class="card-container not-started">
 
     <div class="open-box-top open-box">
-        <img src="assets/top_open.png" alt="">
+        <img src="assets/top_open.png" alt="top flap part of pack of cards">
     </div>
     <div class="open-box-bottom open-box">
-      <img src="assets/bottom_open.png" alt="">
+      <img src="assets/bottom_open.png" alt="pack of cards with How Does Spades Make You Feel on the front. Written by Gabrielle Ione Hickmon. Spades in the African-American Community.">
     </div>
 
     <div class="start-wrapper">
 
     </div>
 
-    <Swiper
-      direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{true}" slideToClickedSlide="{false}" spaceBetween="{convertRemToPixels(.5)}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
+    <Swiper keyboard="{{enabled:true, onlyInViewport: false, pageUpDown: true }}" noSwiping="{'true'}" noSwipingClass="{'swiper-no-swiping'}" direction="{'vertical'}" initialSlide="{startingSlide}" grabCursor="{'true'}" slideToClickedSlide="{'false'}" spaceBetween="{convertRemToPixels(.5)}" slidesPerView="{'auto'}" mousewheel="{{forceToAxis:true, sensitivity: 1}}" breakpoints='{{
         "640": {
           "direction": 'horizontal',
           "freeMode": true,
@@ -324,7 +312,7 @@
 
     <SwiperSlide class="starting-slide card-slide">
       <div class="masthead">
-        <a href="/" target="_blank">
+        <a href="https://pudding.cool" alt="The Pudding homepage" target="_blank">
           {@html puddingLogo}
         </a>
       </div>
@@ -397,7 +385,7 @@
 
                     {#if cardText.img}
                       <div class="img-wrapper">
-                        <img style="min-width:{cardText.imgMinWidth !== undefined, cardText.imgMinWidth}px; width:{cardText.imgWidth !== undefined, cardText.imgWidth}%;" src="assets/{cardText.img}">
+                        <img alt={cardText.altText} style="min-width:{cardText.imgMinWidth !== undefined, cardText.imgMinWidth}px; width:{cardText.imgWidth !== undefined, cardText.imgWidth}%;" src="assets/{cardText.img}">
                         {#if cardText.imgTwo}
                           <div class="svg-wrapper" style="min-width:{cardText.imgMinWidth !== undefined, cardText.imgMinWidth}px; width:{cardText.imgWidth !== undefined, cardText.imgWidth}%;">
                             {#if cardText.imgTwo == "table2.svg"}
@@ -461,7 +449,7 @@
 
               {#if card.imgTwo}
               <div class="img-wrapper">
-                <div alt={card.altText} class="svg-wrapper" style="min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;">
+                <div aria-label={card.altText} class="svg-wrapper" style="min-width:{card.imgMinWidth !== undefined, card.imgMinWidth}px; width:{card.imgWidth !== undefined, card.imgWidth}%;">
                   {#if card.imgTwo == "ageaint2.svg"}
                     {@html ageAint}
                   {/if}
@@ -1167,6 +1155,8 @@
       font-size: 14px;
       line-height: 1.3;
     }
+
+
 
     .card-title {
       font-size: 1.2rem;
