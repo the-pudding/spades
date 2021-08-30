@@ -14,6 +14,7 @@
   import Age from './Age.svelte'
 
   import CardBack from './CardBack.svelte'
+  import SignupCard from './SignupCard.svelte'
 
   import { onMount, tick } from "svelte";
   import tableTalk from "../svg/table2.svg";
@@ -498,6 +499,16 @@
                 <CardBack>
 
                 </CardBack>
+              {/if}
+
+              {#if card.signupCard}
+                <SignupCard>
+                </SignupCard>
+              {/if}
+
+              {#if card.footerCard}
+                <Footer>
+                </Footer>
               {/if}
 
             </div>

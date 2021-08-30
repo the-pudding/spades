@@ -34,6 +34,7 @@
 </script>
 
 <footer>
+  <p style="text-align: center;">Check out some of our other projects</p>
   <section class="stories">
     {#await fetchData then data}
       {#each data as { hed, url, image }}
@@ -49,60 +50,32 @@
       {/each}
     {/await}
   </section>
-
-  <section class="about">
-    <div class="wordmark">
-      {@html wordmark}
-    </div>
-    <p>
-      <a href="https://pudding.cool">The Pudding</a>
-      is a digital publication that explains ideas debated in culture with visual
-      essays.
-    </p>
-  </section>
-
-  <section class="links">
-    <ul>
-      {#each links as link}
-        <li>
-          <a href="{link.url}">
-            <!-- TODO icon -->
-            <span>{link.name.toUpperCase()}</span>
-          </a>
-        </li>
-      {/each}
-    </ul>
-  </section>
 </footer>
 
 <style>
   footer {
-    background-color: var(--text-main);
-    color: var(--background-body);
-    font-family: var(--sans);
-    padding: 3em 1em;
-    margin-top: 3em;
   }
 
-  a,
-  a:visited,
-  a:hover {
-    color: var(--background-body);
+  p {
+    font-size: 1rem;
+    line-height: 1.1;
   }
 
   .stories {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 70em;
+    flex-direction: row;
+    width: calc(100% - 1rem);
+    margin: 0 auto;
   }
 
   .story {
     display: block;
     width: 100%;
     border: none;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
+    width: 50%;
   }
 
   .story a {
@@ -115,6 +88,8 @@
     display: block;
     margin-top: 1em;
     line-height: 1.2;
+    font-family: 'Lyon Text Web';
+    text-align: center;
   }
 
   .wordmark {
@@ -152,14 +127,12 @@
 
   @media only screen and (min-width: 30em) {
     .story {
-      width: 50%;
       padding: 0 1em;
     }
   }
 
   @media only screen and (min-width: 50em) {
     .story {
-      width: 25%;
       padding: 0 1em;
     }
   }
