@@ -14,7 +14,7 @@
         <input type="hidden" name="u" value="c70d3c0e372cde433143ffeab">
         <input type="hidden" name="id" value="9af100ac0f">
         <input label="email" class="newsletter__input" type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="" placeholder="you@example.com">
-        <div class="hidden-from-view" style="left:-10000px;position:absolute">
+        <div class="hidden-from-view" style="right:-10000px;position:absolute">
           <input label="text" type="text" name="b_c70d3c0e372cde433143ffeab_9af100ac0f" tabindex="-1" value="">
         </div>
         <input class="btn" style="" type="submit" name="submit" value="Subscribe">
