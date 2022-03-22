@@ -1031,6 +1031,12 @@
     order: 3;
   }
 
+  .card-wrapper .deck-image {
+    margin-top: 1rem;
+    flex-grow: 0;
+    margin-bottom: 1rem;
+  }
+
   .start-wrapper {
     position: absolute;
     z-index: 10000;
